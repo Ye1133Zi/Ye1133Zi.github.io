@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>桌面美化</title>
+    <url>/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/</url>
+    <content><![CDATA[<pre><code>本篇博客与xmz合作完成（主要是他写的，我只负责转成.md格式），感谢舍友xmz的创作与分享！
+</code></pre>
+<h2 id="快来解锁个性化壁纸："><a href="#快来解锁个性化壁纸：" class="headerlink" title="快来解锁个性化壁纸："></a>快来解锁个性化壁纸：</h2><p><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/1.jpg" alt="1"><br><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/2.jpg" alt="2"><br>拥有一个好看的桌面是有仪式感的生活中必不可少的一部分。这个国庆节之前我一直用的出厂桌面。。。。（找不到原来的壁纸了，就放了张网图）。 </p>
+<p>趁国庆节7天假期，我突然觉得我这么追求仪式感的家伙应该搞一个惊艳的壁纸（哈哈哈），于是我去搜索了一些壁纸软件像upupoo，还有wallpaper engine等，然后发现主流的壁纸软件个性化很差，可以说没有自由度，（主要原因还是贵。。。），</p>
+<p>这我能忍？于是我去知乎上经过了一番搜索发现了几位大神博主分享的几个软件，我把其中3个软件结合使用，然后得到了图1图2等（还有很多没放出来）壁纸，（是不是比原厂壁纸好多了）做出来的桌面干净清爽，还能检测和控制系统参数（电池，cpu占用，音量，磁盘剩余空间等等），我发现可以说利用这三款软件你的桌面可以随心所欲的变成你想要的样子，而不用纠结于其他壁纸软件中的某几个壁纸了（主要还不用花钱 ：） ），<strong>好东西肯定要跟大家分享了</strong>。  </p>
+<p>话不多说，来介绍一下这三款软件和操作步骤。（文章后面会附带百度网盘链接，不用谢~）  </p>
+<h2 id="1-TranslucentTB"><a href="#1-TranslucentTB" class="headerlink" title="1.TranslucentTB"></a>1.TranslucentTB</h2><p>知乎上的大神推荐的第一款软件是TranslucentTB，我从别处找到了一个同样作用的小软件，它的作用就是让你的任务栏变成透明的，就是从以前的样子变成下图这样（这是我做的，任务栏下面是壁纸和插件，显得有点乱，但是最终时要将任务栏隐藏起来的。）<br><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/3.jpg" alt="3"><br>这个软件操作很简单点开快捷方式后任务栏就会自动变透明。  </p>
+<h2 id="2-Rainmeter（雨滴桌面）"><a href="#2-Rainmeter（雨滴桌面）" class="headerlink" title="2.Rainmeter（雨滴桌面）"></a>2.Rainmeter（雨滴桌面）</h2><p>这是一个开源的皮肤软件也是壁纸个性化的精髓，你可以通过它在你的桌面上添加任加你想要的插件，如果网上的插件不够你用你甚至可以自己用代码做一个（如果你会的话，我比较菜所以不会，但是网上的众多资源确实够用了！）功能强大，所以操作必然就相对复杂一点（但我相信聪明的你一定可以轻松驾驭）。来介绍一下雨滴桌面的操作。<br><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/4.jpg" alt="4"><br>下载安装完后是一个文件夹，打开之后有如上文件，第六个就是应用程序，打开它软件就开始运行了，自带的插件很难看，直接右键菜单里的关闭壁纸关掉，倒数第二个是插件的安装程序，用来安装网上下载或DIY的插件。（注意安装插件过程。下载的文件如果是.rmskin格式，右键点击打开方式找到这个倒数第二个程序（skininstaller），如果不是就用记事本打开配置文件，复制里面的代码，自己创建皮肤包，粘贴进去，别忘记把文件夹里的图片等copy进你建的文件夹）  </p>
+<p><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/5.jpg" alt="5"><br>上图是插件的右键菜单，里面的选项可以自己探索看看，若点击管理皮肤就会呼出下图菜单（rainmeter管理器），左边框框里是你下载的插件（如时间，天气，日期的各种花里胡哨的图案或音乐频谱等。）点击即可在右边配置。如图一，我加载了时间，日期，问候，几个系统参数，音乐频谱和时钟等，我用的几个插件也会在后面分享。关于rainmeter如果有问题也可找我问。  </p>
+<p><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/6.jpg" alt="6"><br>还有个功能值得说一下，就是下图菜单中的主题，你可以把做好的皮肤一键保存，然后一键加载，十分好用。  </p>
+<p><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/7.jpg" alt="7">   </p>
+<h2 id="3-Bitdock"><a href="#3-Bitdock" class="headerlink" title="3.Bitdock"></a>3.Bitdock</h2><p><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/8.jpg" alt="8"><br>简单说就是一个用来代替任务栏的应用，像极了mac os系统。。。比任务栏好看多了，而且动画流畅，支持自己调节，正确打开方式是把任务栏透明后隐藏在屏幕左侧，实际上Bitdock可以完美取代win10的任务栏，而且提供了几个好用的功能（自己去看看！）。  </p>
+<p><strong>至此，三个软件就都介绍完了，都安装好后你的个性桌面就上线了！！！</strong></p>
+<p>有几个小tips：  </p>
+<ol>
+<li>第2，3个软件都可开机自启，但第一个不好设置，建议把它的快捷方式固定在任务栏，开机后点击一下就好了。  </li>
+<li>三个软件系统占用都比较低，不用担心打开后电脑hold不住  </li>
+<li>Rainmeter的插件可以在右键菜单里调节一些设置，摆放好插件位置后一定要勾选“点击穿透”  </li>
+<li>取消勾选显示桌面图标选项能隐藏桌面应用图标，美化桌面，可以把应用应用图标放在Bitdock里<br><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/8.jpg" alt="8"><h3 id="应用链接"><a href="#应用链接" class="headerlink" title="应用链接"></a>应用链接</h3>雨滴桌面去官网自己下rainmeter.net/  </li>
+<li>任务栏透明链接：<a href="https://pan.baidu.com/s/1C8OgzxNsCvjYoxQyWTYXTA">https://pan.baidu.com/s/1C8OgzxNsCvjYoxQyWTYXTA</a><br>提取码：zh1k</li>
+<li>Bitdock自己去官网BitDock比特工具栏-官方网站</li>
+<li>插件链接：链接：<a href="https://pan.baidu.com/s/1n2Qu5oB0uSCvKjFZb-3oGA">https://pan.baidu.com/s/1n2Qu5oB0uSCvKjFZb-3oGA</a><br>提取码：wull</li>
+</ol>
+<p><strong>忘了一件最重要的事！惊艳的桌面必须要惊艳的壁纸，发挥你们的能力自己去找点吧！</strong></p>
+<h2 id="制作人：xmz"><a href="#制作人：xmz" class="headerlink" title="制作人：xmz"></a>制作人：xmz</h2>]]></content>
+      <tags>
+        <tag>与xmz的合作</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MarkDown语法学习</title>
     <url>/2021/12/16/MarkDown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>通过hexo和gihub搭建的博客文章可以采用.md（Markdown）文件，我决定以边学边写的方式，通过此篇博客进行Markdown语法学习。  </p>
@@ -80,7 +112,7 @@
 <h4 id="注：记得用英文括号"><a href="#注：记得用英文括号" class="headerlink" title="注：记得用英文括号"></a>注：记得用英文括号</h4><ul>
 <li><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3></li>
 </ul>
-<p>同类似于插入网址链接，写成![图片alt](图片链接 “图片title”)，但是，如果是使用hexo，需要进行一些改变；<br>可参考<a href="https://zhuanlan.zhihu.com/p/265077468">知乎hexo博客如何插入图片</a><br>调整后效果如下：<br><img src="/2021/12/16/MarkDown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/%E9%BE%99%E7%8C%AB.jpg" alt="叶子最喜欢的龙猫">    </p>
+<p>同类似于插入网址链接，写成![图片alt](图片链接 “图片title”)，但是，如果是使用hexo，需要进行一些改变；<br>可参考<a href="https://zhuanlan.zhihu.com/p/265077468">知乎hexo博客如何插入图片</a><br>调整后效果如下：<br><img src="/%E9%BE%99%E7%8C%AB.jpg" alt="叶子最喜欢的龙猫">    </p>
 <h2 id="十，转义字符语法"><a href="#十，转义字符语法" class="headerlink" title="十，转义字符语法"></a>十，转义字符语法</h2><p>可用反斜杠进行转义字符的输出，</p>
 <h2 id="十一，内嵌html标签"><a href="#十一，内嵌html标签" class="headerlink" title="十一，内嵌html标签"></a>十一，内嵌html标签</h2><p>于 Markdown 涵盖范围之外的标签，都可以直接在文件里面用 HTML 本身。如需使用 HTML，不需要额外标注这是 HTML 或是 Markdown，只需 HTML 标签添加到 Markdown 文本中即可。</p>
 <h2 id="十二，表格语法"><a href="#十二，表格语法" class="headerlink" title="十二，表格语法"></a>十二，表格语法</h2><p>使用三个或多个连字符（—）创建每列的标题，并使用管道（|）分隔每列。您可以选择在表的任一端添加管道。   </p>
@@ -125,17 +157,6 @@
       </tags>
   </entry>
   <entry>
-    <title>“教你搭建属于自己的博客”</title>
-    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
-    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
-<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
-<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于几个网络工具</title>
     <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍<br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：    </p>
@@ -148,32 +169,14 @@
       </tags>
   </entry>
   <entry>
-    <title>桌面美化</title>
-    <url>/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/</url>
-    <content><![CDATA[<pre><code>本篇博客与xmz合作完成（主要是他写的，我只负责转成.md格式），感谢舍友xmz的创作与分享！
-</code></pre>
-<h2 id="快来解锁个性化壁纸："><a href="#快来解锁个性化壁纸：" class="headerlink" title="快来解锁个性化壁纸："></a>快来解锁个性化壁纸：</h2><p><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/1.jpg" alt="1"><br><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/2.jpg" alt="2"><br>拥有一个好看的桌面是有仪式感的生活中必不可少的一部分。这个国庆节之前我一直用的出厂桌面。。。。（找不到原来的壁纸了，就放了张网图）。 </p>
-<p>趁国庆节7天假期，我突然觉得我这么追求仪式感的家伙应该搞一个惊艳的壁纸（哈哈哈），于是我去搜索了一些壁纸软件像upupoo，还有wallpaper engine等，然后发现主流的壁纸软件个性化很差，可以说没有自由度，（主要原因还是贵。。。），</p>
-<p>这我能忍？于是我去知乎上经过了一番搜索发现了几位大神博主分享的几个软件，我把其中3个软件结合使用，然后得到了图1图2等（还有很多没放出来）壁纸，（是不是比原厂壁纸好多了）做出来的桌面干净清爽，还能检测和控制系统参数（电池，cpu占用，音量，磁盘剩余空间等等），我发现可以说利用这三款软件你的桌面可以随心所欲的变成你想要的样子，而不用纠结于其他壁纸软件中的某几个壁纸了（主要还不用花钱 ：） ），<strong>好东西肯定要跟大家分享了</strong>。  </p>
-<p>话不多说，来介绍一下这三款软件和操作步骤。（文章后面会附带百度网盘链接，不用谢~）  </p>
-<h2 id="1-TranslucentTB"><a href="#1-TranslucentTB" class="headerlink" title="1.TranslucentTB"></a>1.TranslucentTB</h2><p>知乎上的大神推荐的第一款软件是TranslucentTB，我从别处找到了一个同样作用的小软件，它的作用就是让你的任务栏变成透明的，就是从以前的样子变成下图这样（这是我做的，任务栏下面是壁纸和插件，显得有点乱，但是最终时要将任务栏隐藏起来的。）<br><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/3.jpg" alt="3"><br>这个软件操作很简单点开快捷方式后任务栏就会自动变透明。  </p>
-<h2 id="2-Rainmeter（雨滴桌面）"><a href="#2-Rainmeter（雨滴桌面）" class="headerlink" title="2.Rainmeter（雨滴桌面）"></a>2.Rainmeter（雨滴桌面）</h2><p>这是一个开源的皮肤软件也是壁纸个性化的精髓，你可以通过它在你的桌面上添加任加你想要的插件，如果网上的插件不够你用你甚至可以自己用代码做一个（如果你会的话，我比较菜所以不会，但是网上的众多资源确实够用了！）功能强大，所以操作必然就相对复杂一点（但我相信聪明的你一定可以轻松驾驭）。来介绍一下雨滴桌面的操作。<br><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/4.jpg" alt="4"><br>下载安装完后是一个文件夹，打开之后有如上文件，第六个就是应用程序，打开它软件就开始运行了，自带的插件很难看，直接右键菜单里的关闭壁纸关掉，倒数第二个是插件的安装程序，用来安装网上下载或DIY的插件。（注意安装插件过程。下载的文件如果是.rmskin格式，右键点击打开方式找到这个倒数第二个程序（skininstaller），如果不是就用记事本打开配置文件，复制里面的代码，自己创建皮肤包，粘贴进去，别忘记把文件夹里的图片等copy进你建的文件夹）  </p>
-<p><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/5.jpg" alt="5"><br>上图是插件的右键菜单，里面的选项可以自己探索看看，若点击管理皮肤就会呼出下图菜单（rainmeter管理器），左边框框里是你下载的插件（如时间，天气，日期的各种花里胡哨的图案或音乐频谱等。）点击即可在右边配置。如图一，我加载了时间，日期，问候，几个系统参数，音乐频谱和时钟等，我用的几个插件也会在后面分享。关于rainmeter如果有问题也可找我问。  </p>
-<p><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/6.jpg" alt="6"><br>还有个功能值得说一下，就是下图菜单中的主题，你可以把做好的皮肤一键保存，然后一键加载，十分好用。  </p>
-<p><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/7.jpg" alt="7">   </p>
-<h2 id="3-Bitdock"><a href="#3-Bitdock" class="headerlink" title="3.Bitdock"></a>3.Bitdock</h2><p><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/8.jpg" alt="8"><br>简单说就是一个用来代替任务栏的应用，像极了mac os系统。。。比任务栏好看多了，而且动画流畅，支持自己调节，正确打开方式是把任务栏透明后隐藏在屏幕左侧，实际上Bitdock可以完美取代win10的任务栏，而且提供了几个好用的功能（自己去看看！）。  </p>
-<p><strong>至此，三个软件就都介绍完了，都安装好后你的个性桌面就上线了！！！</strong></p>
-<p>有几个小tips：  </p>
-<ol>
-<li>第2，3个软件都可开机自启，但第一个不好设置，建议把它的快捷方式固定在任务栏，开机后点击一下就好了。  </li>
-<li>三个软件系统占用都比较低，不用担心打开后电脑hold不住  </li>
-<li>Rainmeter的插件可以在右键菜单里调节一些设置，摆放好插件位置后一定要勾选“点击穿透”  </li>
-<li>取消勾选显示桌面图标选项能隐藏桌面应用图标，美化桌面，可以把应用应用图标放在Bitdock里<br><img src="/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/8.jpg" alt="8"><h3 id="应用链接"><a href="#应用链接" class="headerlink" title="应用链接"></a>应用链接</h3>雨滴桌面去官网自己下rainmeter.net/  </li>
-<li>任务栏透明链接：<a href="https://pan.baidu.com/s/1C8OgzxNsCvjYoxQyWTYXTA">https://pan.baidu.com/s/1C8OgzxNsCvjYoxQyWTYXTA</a><br>提取码：zh1k</li>
-<li>Bitdock自己去官网BitDock比特工具栏-官方网站</li>
-<li>插件链接：链接：<a href="https://pan.baidu.com/s/1n2Qu5oB0uSCvKjFZb-3oGA">https://pan.baidu.com/s/1n2Qu5oB0uSCvKjFZb-3oGA</a><br>提取码：wull</li>
-</ol>
-<p><strong>忘了一件最重要的事！惊艳的桌面必须要惊艳的壁纸，发挥你们的能力自己去找点吧！</strong></p>
-<h2 id="制作人：xmz"><a href="#制作人：xmz" class="headerlink" title="制作人：xmz"></a>制作人：xmz</h2>]]></content>
+    <title>“教你搭建属于自己的博客”</title>
+    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
+    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
+<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
+<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
   </entry>
 </search>
