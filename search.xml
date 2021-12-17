@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>MarkDown语法学习</title>
+    <url>/2021/12/16/MarkDown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>通过hexo和gihub搭建的博客文章可以采用.md（Markdown）文件，我决定以边学边写的方式，通过此篇博客进行Markdown语法学习。  </p>
+<h2 id="一，什么是MarkDown？"><a href="#一，什么是MarkDown？" class="headerlink" title="一，什么是MarkDown？"></a>一，什么是MarkDown？</h2><p>markdown是一种轻量化、纯文本的网页内容编辑格式，简单易学，可以与HTML混编，被简书、维基、github等采用。  </p>
+<blockquote>
+<p>Markdown编辑器<br>本人选择Visual Studio Code（官网免费），安装Markdown预览插件。</p>
+</blockquote>
+<h2 id="二，标题语法"><a href="#二，标题语法" class="headerlink" title="二，标题语法"></a>二，标题语法</h2><p>通过添加#号进行标题分级<br>示例： 原markdown文件与实际效果对比<br># 标题1   </p>
+<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><p>## 标题2</p>
+<h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><p>### 标题3</p>
+<h3 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h3><p>#### 标题4</p>
+<h4 id="标题4"><a href="#标题4" class="headerlink" title="标题4"></a>标题4</h4><p>##### 标题5</p>
+<h5 id="标题5"><a href="#标题5" class="headerlink" title="标题5"></a>标题5</h5><p>###### 标题6</p>
+<h6 id="标题6"><a href="#标题6" class="headerlink" title="标题6"></a>标题6</h6><p> *注：记得用一个空格在 # 和标题之间进行分隔。</p>
+<h2 id="三，段落和换行语法"><a href="#三，段落和换行语法" class="headerlink" title="三，段落和换行语法"></a>三，段落和换行语法</h2><p>  用两个或多个空格进行换行。用空白一行进行分段<br>  不过学到目前还不能段落缩进（开头空两格）</p>
+<h2 id="四，强调语法"><a href="#四，强调语法" class="headerlink" title="四，强调语法"></a>四，强调语法</h2><ul>
+<li><h3 id="粗体"><a href="#粗体" class="headerlink" title="粗体"></a>粗体</h3></li>
+</ul>
+<p>要加粗文本，请在单词或短语的前后各添加两个星号或下划线。<br>如:<br>**你好 ** –&gt; <strong>你好</strong><br>__你好__  –&gt;  <strong>你好</strong></p>
+<ul>
+<li><h3 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h3></li>
+</ul>
+<p>单对星号或下划线包裹为斜体<br>_ 吃了吗您？_ –&gt;<em>吃了吗您？</em></p>
+<ul>
+<li><h3 id="综合使用"><a href="#综合使用" class="headerlink" title="综合使用"></a>综合使用</h3></li>
+</ul>
+<p>粗体和斜体双重使用，用三对星号或下划线包裹</p>
+<ul>
+<li><h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3></li>
+</ul>
+<p>可以通过在单词中心放置一条水平线来删除单词。结果看起来像这样。此功能使您可以指示某些单词是一个错误，要从文档中删除。若要删除单词，请在单词前后使用两个波浪号~~<br><del>删掉，删掉</del></p>
+<h2 id="五，引用语法"><a href="#五，引用语法" class="headerlink" title="五，引用语法"></a>五，引用语法</h2><p>可添加&gt;至段落前表示引用，如</p>
+<blockquote>
+<p>这不是厕所，这是洗手间  </p>
+</blockquote>
+<p>可用&gt;&gt;进行嵌套</p>
+<blockquote>
+<p>xmz说：  </p>
+<blockquote>
+<p>这不是厕所，这是洗手间</p>
+</blockquote>
+</blockquote>
+<p>其他还有:<br>1.&gt;## abc</p>
+<blockquote>
+<h2 id="abc"><a href="#abc" class="headerlink" title="abc"></a>abc</h2></blockquote>
+<p>2.&gt; - efg</p>
+<blockquote>
+<ul>
+<li>efg</li>
+</ul>
+</blockquote>
+<h2 id="六-列表语法"><a href="#六-列表语法" class="headerlink" title="六,列表语法"></a>六,列表语法</h2><ul>
+<li><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3></li>
+</ul>
+<p>请在每个列表项前添加数字并紧跟一个英文句点。数字不必按数学顺序排列，但是列表应当以数字 1 起始，记得空格。  </p>
+<ol>
+<li>我先学C语言</li>
+<li>再学高数</li>
+<li>要不先打会儿王者荣耀吧</li>
+<li>我靠，打到十一点了，还学什么习呀  </li>
+</ol>
+<h2 id="七，代码语法"><a href="#七，代码语法" class="headerlink" title="七，代码语法"></a>七，代码语法</h2><p>将其包裹在` (键盘的Esc下面那个）中<br>如 <code>#include&lt;stdio.h&gt;</code><br>或者也可以使用每一行缩进至少四个空格或一个制表符创建代码块    </p>
+<pre><code>int main()&#123;
+  int i=1;
+  int sum=0;
+  sum =(i++) + (++i);
+  printf(&quot;%d&quot;,sum); 
+  return =0;
+&#125; 
+</code></pre>
+<h2 id="八，分隔线"><a href="#八，分隔线" class="headerlink" title="八，分隔线"></a>八，分隔线</h2><p>要创建分隔线，请在单独一行上使用三个或多个星号 (***)、破折号 (—) 或下划线 (___) ，并且不能包含其他内容。</p>
+<hr>
+<h2 id="九，链接与插入语法"><a href="#九，链接与插入语法" class="headerlink" title="九，链接与插入语法"></a>九，链接与插入语法</h2><ul>
+<li><h3 id="链接网址"><a href="#链接网址" class="headerlink" title="链接网址"></a>链接网址</h3></li>
+</ul>
+<p>链接文本放在中括号内，链接地址放在后面的括号中，链接title可选。<br>超链接Markdown语法代码：[超链接显示名](超链接地址 “超链接title”)<br>效果：<a href="http://localhost:4000/" title="我的博客">超链接显示名</a>  </p>
+<h4 id="注：记得用英文括号"><a href="#注：记得用英文括号" class="headerlink" title="注：记得用英文括号"></a>注：记得用英文括号</h4><ul>
+<li><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3></li>
+</ul>
+<p>同类似于插入网址链接，写成![图片alt](图片链接 “图片title”)，但是，如果是使用hexo，需要进行一些改变；<br>可参考<a href="https://zhuanlan.zhihu.com/p/265077468">知乎hexo博客如何插入图片</a><br>调整后效果如下：<br><img src="/2021/12/16/MarkDown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/%E9%BE%99%E7%8C%AB.jpg" alt="叶子最喜欢的龙猫">    </p>
+<h2 id="十，转义字符语法"><a href="#十，转义字符语法" class="headerlink" title="十，转义字符语法"></a>十，转义字符语法</h2><p>可用反斜杠进行转义字符的输出，</p>
+<h2 id="十一，内嵌html标签"><a href="#十一，内嵌html标签" class="headerlink" title="十一，内嵌html标签"></a>十一，内嵌html标签</h2><p>于 Markdown 涵盖范围之外的标签，都可以直接在文件里面用 HTML 本身。如需使用 HTML，不需要额外标注这是 HTML 或是 Markdown，只需 HTML 标签添加到 Markdown 文本中即可。</p>
+<h2 id="十二，表格语法"><a href="#十二，表格语法" class="headerlink" title="十二，表格语法"></a>十二，表格语法</h2><p>使用三个或多个连字符（—）创建每列的标题，并使用管道（|）分隔每列。您可以选择在表的任一端添加管道。   </p>
+<pre><code>| Syntax      | Description |  
+| ----------- | ----------- |  
+| Header      | Title       |  
+| Paragraph   | Text        |   
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody></table>
+<p>Tip: 使用连字符和管道创建表可能很麻烦。为了加快该过程，请尝试使用<a href="https://www.tablesgenerator.com/markdown_tables">Markdown Tables Generator</a>。使用图形界面构建表，然后将生成的Markdown格式的文本复制到文件中。</p>
+<h2 id="十二，代码高亮"><a href="#十二，代码高亮" class="headerlink" title="十二，代码高亮"></a>十二，代码高亮</h2><p>许多Markdown处理器都支持受围栏代码块的语法突出显示。使用此功能，您可以为编写代码的任何语言添加颜色突出显示。要添加语法突出显示，请在受防护的代码块之前的反引号旁边指定一种语言  </p>
+<pre><code class="json">&#123;
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Smith&quot;,
+  &quot;age&quot;: 25
+&#125;
+</code></pre>
+<h2 id="十三，任务列表语法"><a href="#十三，任务列表语法" class="headerlink" title="十三，任务列表语法"></a>十三，任务列表语法</h2><p>任务列表使您可以创建带有复选框的项目列表。在支持任务列表的Markdown应用程序中，复选框将显示在内容旁边。要创建任务列表，请在任务列表项之前添加破折号-和方括号[ ]，并在[ ]前面加上空格。要选择一个复选框，请在方括号[x]之间添加 x 。</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 吃饭</li>
+<li><input checked="" disabled="" type="checkbox"> 睡觉</li>
+<li><input disabled="" type="checkbox"> 学习  <h2 id="注：本文参考：https-markdown-com-cn-basic-syntax-写成"><a href="#注：本文参考：https-markdown-com-cn-basic-syntax-写成" class="headerlink" title="注：本文参考：https://markdown.com.cn/basic-syntax/写成"></a>注：本文参考：<a href="https://markdown.com.cn/basic-syntax/%E5%86%99%E6%88%90">https://markdown.com.cn/basic-syntax/写成</a></h2></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>“教你搭建属于自己的博客”</title>
+    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
+    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
+<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
+<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于几个网络工具</title>
+    <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<p>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍<br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：    </p>
+<h4 id="一，网易uu加速器"><a href="#一，网易uu加速器" class="headerlink" title="一，网易uu加速器"></a>一，网易uu加速器</h4><p>可以免费加速steam社区，解决一些加好友、访问创意工坊、送游戏之类的问题。</p>
+<h4 id="二，Sidecar"><a href="#二，Sidecar" class="headerlink" title="二，Sidecar"></a>二，Sidecar</h4><p>一款免费开源的，用于专门加速GitHub这个全球最大的<br>同性交友网站。而且就在我用gitbash上传博客出现奇怪报错（挂小飞机、按网上指示修改文件参数、回退文件内容都没用），最后无可奈何到了重装nodejs边缘<br>的时候是它自带的NPM加速拯救了整个世界。<br>    注：可在github上获取  </p>
+<h4 id="三，科学上网"><a href="#三，科学上网" class="headerlink" title="三，科学上网"></a>三，科学上网</h4><p>这个最好了解一下翻墙原理，谨慎使用，不要发敏感言<br>论，注意隐私安全（在YouTube上看了下抓包，好像在服务器端窃取你的信息还是很容易的)。<br>    附一篇很有用的博客：<br>    <a href="https://tecrobe.github.io/blog/post/how-to-break-wall/">https://tecrobe.github.io/blog/post/how-to-break-wall/</a></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+</search>
