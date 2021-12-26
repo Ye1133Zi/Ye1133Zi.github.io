@@ -1,33 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>“教你搭建属于自己的博客”</title>
-    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
-    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
-<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
-<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于几个网络工具</title>
-    <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍<br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：  </p>
-<span id="more"></span>  
-<h4 id="一，网易uu加速器"><a href="#一，网易uu加速器" class="headerlink" title="一，网易uu加速器"></a>一，网易uu加速器</h4><p>可以免费加速steam社区，解决一些加好友、访问创意工坊、送游戏之类的问题。</p>
-<h4 id="二，Sidecar"><a href="#二，Sidecar" class="headerlink" title="二，Sidecar"></a>二，Sidecar</h4><p>一款免费开源的，用于专门加速GitHub这个全球最大的<br>同性交友网站。而且就在我用gitbash上传博客出现奇怪报错（挂小飞机、按网上指示修改文件参数、回退文件内容都没用），最后无可奈何到了重装nodejs边缘<br>的时候是它自带的NPM加速拯救了整个世界。<br>    注：可在github上获取  </p>
-<h4 id="三，科学上网"><a href="#三，科学上网" class="headerlink" title="三，科学上网"></a>三，科学上网</h4><p>这个最好了解一下翻墙原理，谨慎使用，不要发敏感言<br>论，注意隐私安全（在YouTube上看了下抓包，好像在服务器端窃取你的信息还是很容易的)。<br>    附一篇很有用的博客：<br>    <a href="https://tecrobe.github.io/blog/post/how-to-break-wall/">https://tecrobe.github.io/blog/post/how-to-break-wall/</a></p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MarkDown语法学习</title>
     <url>/2021/12/16/MarkDown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>通过hexo和gihub搭建的博客文章可以采用.md（Markdown）文件，我决定以边学边写的方式，通过此篇博客进行Markdown语法学习。  </p>
+    <content><![CDATA[<p><strong>通过hexo和gihub搭建的博客文章可以采用.md（Markdown）文件，我决定以边学边写的方式，通过此篇博客进行Markdown语法学习。</strong>  </p>
 <span id="more"></span>
 <h2 id="一，什么是MarkDown？"><a href="#一，什么是MarkDown？" class="headerlink" title="一，什么是MarkDown？"></a>一，什么是MarkDown？</h2><p>markdown是一种轻量化、纯文本的网页内容编辑格式，简单易学，可以与HTML混编，被简书、维基、github等采用。  </p>
 <blockquote>
@@ -150,6 +126,39 @@
       </tags>
   </entry>
   <entry>
+    <title>“hexo搜索功能出错的解决方案”</title>
+    <url>/2021/12/17/%E4%B8%BAHext%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<p><strong>今天在为hexo博客添加搜索功能时,本地生成可正常使用，上传到gihub时首页出现错位，修改主题文件中有关search的参数limits（将100改为1000成功解决问题)。</strong></p>
+]]></content>
+      <tags>
+        <tag>debug日志</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于几个网络工具</title>
+    <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<p><strong>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍</strong><br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：  </p>
+<span id="more"></span>  
+<h4 id="一，网易uu加速器"><a href="#一，网易uu加速器" class="headerlink" title="一，网易uu加速器"></a>一，网易uu加速器</h4><p>可以免费加速steam社区，解决一些加好友、访问创意工坊、送游戏之类的问题。</p>
+<h4 id="二，Sidecar"><a href="#二，Sidecar" class="headerlink" title="二，Sidecar"></a>二，Sidecar</h4><p>一款免费开源的，用于专门加速GitHub这个全球最大的<br>同性交友网站。而且就在我用gitbash上传博客出现奇怪报错（挂小飞机、按网上指示修改文件参数、回退文件内容都没用），最后无可奈何到了重装nodejs边缘<br>的时候是它自带的NPM加速拯救了整个世界。<br>    注：可在github上获取  </p>
+<h4 id="三，科学上网"><a href="#三，科学上网" class="headerlink" title="三，科学上网"></a>三，科学上网</h4><p>这个最好了解一下翻墙原理，谨慎使用，不要发敏感言<br>论，注意隐私安全（在YouTube上看了下抓包，好像在服务器端窃取你的信息还是很容易的)。<br>    附一篇很有用的博客：<br>    <a href="https://tecrobe.github.io/blog/post/how-to-break-wall/">https://tecrobe.github.io/blog/post/how-to-break-wall/</a></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>“教你搭建属于自己的博客”</title>
+    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
+    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
+<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
+<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>桌面美化</title>
     <url>/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/</url>
     <content><![CDATA[<pre><code>本篇博客与xmz合作完成（主要是他写的，我只负责转成.md格式），感谢舍友xmz的创作与分享！
@@ -184,9 +193,73 @@
       </tags>
   </entry>
   <entry>
-    <title>“hexo搜索功能出错的解决方案”</title>
-    <url>/2021/12/17/%E4%B8%BAHext%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E6%8A%A5%E9%94%99/</url>
-    <content><![CDATA[<p>今天在为hexo博客添加搜索功能时,本地生成可正常使用，上传到gihub时首页出现错位，修改主题文件中有关search的参数limits（将100改为1000成功解决问题。</p>
+    <title>docker学习</title>
+    <url>/2021/12/25/docker%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p><strong>学业指导老师让我们学习docker，写成报告作为大作业，之前自己也研究了下VMware，在上面安装了Ubuntu，正好趁此熟悉一下Linux操作系统，顺便为将来搭建服务器打基础。</strong><br> <span id="more"></span></p>
+<h1 id="docker-容器"><a href="#docker-容器" class="headerlink" title="docker 容器"></a>docker 容器</h1><h2 id="服务器搭建"><a href="#服务器搭建" class="headerlink" title="服务器搭建"></a>服务器搭建</h2><p>传统服务器：  </p>
+<pre><code> 宿主机： vmvare + cenntos（Ubuntu）= Linux
+ 物理机：  硬件 + 操作系统  
+</code></pre>
+<p>虚拟化服务器：   </p>
+<pre><code>  物理机 + host operating sever +  hypervisor + vmware
+ 
+</code></pre>
+<h2 id="容器技术"><a href="#容器技术" class="headerlink" title="容器技术"></a>容器技术</h2><p><strong>虚拟化工具</strong>：<br>VMware &emsp; Virtua &emsp;PCVirtualbox  </p>
+<ul>
+<li>vmware workstation（个人学习）  </li>
+<li>vmware ecxi（企业级）</li>
+</ul>
+<p>KVM&emsp;Docker</p>
+<p><strong>Docker的组件</strong><br>镜像&emsp;存储&emsp;网络&emsp;容器<br>docker file&emsp;dockerhub  </p>
+<h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><p>企业版（EE）&emsp;社区版（CE） </p>
+]]></content>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ubuntu学习</title>
+    <url>/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p><strong>在学习docker的时候遇到了些许困难，看来只会简单的linux命令不行，还是先深入学习一下ubuntu</strong>  </p>
+<span id="more"></span>  
+
+<pre><code>B站链接：https://www.bilibili.com/video/BV1na4y1773c?p=4
+（因为之前已经安装过ubuntu所以笔记从P7之后开始）
+</code></pre>
+<h2 id="快照与系统恢复"><a href="#快照与系统恢复" class="headerlink" title="快照与系统恢复"></a>快照与系统恢复</h2><p>系统异常：</p>
+<ol>
+<li>快照</li>
+<li>重装系统<h3 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h3><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E5%BF%AB%E7%85%A71.png"><h2 id="界面功能"><a href="#界面功能" class="headerlink" title="界面功能"></a>界面功能</h2>左上角活动 -&gt; 类似于Windows系统的win+Tab  <h2 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h2>目录：  </li>
+</ol>
+<p>-l 详尽信息<br>pwd （print working directory）<br>~ 代表当前用户主目录<br>. 代表当前用户目录<br>.. 上一级目录<br>mkdir（make directory）创建目录  ，多级目录使用-p<br>rmdir （remove directory）删除目录（空）<br>rm （remove） -r（recursive递归）f（force）<br>cp A-&gt;B(将A复制到B)<br>mv 移动或者重命名  </p>
+<p>归档：<br>tar （tape archive）打包成Tape包<br>例：tar -cvf example.tar exmple<br>其中<br>c，create，创建档案<br>v，verbose，显示详情<br>f，file<br>也可以多个文件打包成一个<br>解开tar -xvf （x，extract）后面加-C可以指定文件<br>tar -c<strong>z</strong>vf example.tar.gz example  </p>
+<p>软链接：<br>ln （link） -s（soft）本体 链接名  </p>
+<p>对用户操作：<br>useradd<br>sudo（管理员身份运行，需要sudoer）<br>-m 在/home下<br>sudo useradd -m name  创建<br>sudo password name  修改密码<br>sudo userdel name 删除用户（需要额外删除目录）  </p>
+<p>超级用户：root<br>sudo password root<br>su（switch user） root<br>exit<br>登录root的桌面环境：  </p>
+<ol>
+<li>终端切换root身份 </li>
+<li>修改系统配置文件，gedit /etc/pam.d/gdm-autologin<br>用#注释 auth required pam_succeed_if.so user !=root quiet_success<br>gedit /etc/pam.d/gdm-password<br>注释 auth requiredpam_succeed_if.so user!= root quiet success  </li>
+<li>重启  </li>
+</ol>
+<p>用户组：<br>groupadd group  创建组<br>useradd -m（modified） -g group name    创建用户入组<br>usermod -g boys name 修改用户入组<br>cat /etc/goup 组<br>cat etc/password  </p>
+]]></content>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的世界局域网ip地址错误及解决方案</title>
+    <url>/2021/12/26/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%B1%80%E5%9F%9F%E7%BD%91ip%E5%9C%B0%E5%9D%80%E9%94%99%E8%AF%AF%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p><strong>今天，想准备用Java版我的世界进行局域网和舍友进行联机，但有一个舍友搜索不到本地服务器，其他三人均可进行联机。</strong><br> <span id="more"></span>  </p>
+<h2 id="问题排查"><a href="#问题排查" class="headerlink" title="问题排查"></a>问题排查</h2><p> 打开两个游戏界面，一个负责创建局域网端口，一个负责加入  </p>
+<p> 现象：<br> 自己创建的局域网世界可以被自己搜索到，但是同校园网宿舍WiFi下，其他人创建的局域网世界搜索不到，自己的局域网世界，别人也搜索不到。 并且，自己创建的局域网世界所显示IP地址和其他人不一样（这里称它为错误IP）   </p>
+<p> 在shell中（管理员身份）使用ipconfig命令  </p>
+<p> 现象：<br> 发现自己本机实际IP和游戏中显示的错误IP不一致，按IP分段，本机实际IP与舍友同段，应该是正确的   </p>
+<p> 将网线连接路由器与问题设备  </p>
+<p> 现象：<br> ip改变，联机恢复正常  </p>
+<p> 继续研究ipconfig所提供的信息，发现错误IP和VMware的第一个虚拟网卡所提供的IP是一样的  </p>
+<h2 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h2><p> 打开控制面板-&gt;网络-&gt;高级选项，禁用VMware虚拟网卡或者以太网，成功解决问题  </p>
+<p>原来，所下载的Java版我的世界优先使用有线网络连接所分配的IP，所以误把VMware虚拟环境下所生成的IP当成有限网络IP优先使用</p>
 ]]></content>
       <tags>
         <tag>debug日志</tag>
