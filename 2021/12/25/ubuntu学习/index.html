@@ -28,8 +28,9 @@
 <meta property="og:description" content="在学习docker的时候遇到了些许困难，看来只会简单的linux命令不行，还是先深入学习一下ubuntu">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E5%BF%AB%E7%85%A71.png">
+<meta property="og:image" content="http://example.com/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E8%84%9A%E6%9C%AC1.png">
 <meta property="article:published_time" content="2021-12-25T06:30:49.000Z">
-<meta property="article:modified_time" content="2021-12-26T13:33:54.225Z">
+<meta property="article:modified_time" content="2021-12-28T01:20:09.435Z">
 <meta property="article:author" content="YeZi">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
@@ -212,7 +213,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-12-26 21:33:54" itemprop="dateModified" datetime="2021-12-26T21:33:54+08:00">2021-12-26</time>
+                <time title="修改时间：2021-12-28 09:20:09" itemprop="dateModified" datetime="2021-12-28T09:20:09+08:00">2021-12-28</time>
               </span>
 
           
@@ -228,7 +229,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1k</span>
+              <span>1.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -256,9 +257,10 @@
 <h2 id="快照与系统恢复"><a href="#快照与系统恢复" class="headerlink" title="快照与系统恢复"></a>快照与系统恢复</h2><p>系统异常：</p>
 <ol>
 <li>快照</li>
-<li>重装系统<h3 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h3><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E5%BF%AB%E7%85%A71.png"><h2 id="界面功能"><a href="#界面功能" class="headerlink" title="界面功能"></a>界面功能</h2>左上角活动 -&gt; 类似于Windows系统的win+Tab  <h2 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h2>目录：  </li>
+<li>重装系统<h3 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h3><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E5%BF%AB%E7%85%A71.png"><h2 id="界面功能"><a href="#界面功能" class="headerlink" title="界面功能"></a>界面功能</h2>左上角活动 -&gt; 类似于Windows系统的win+Tab  </li>
 </ol>
-<p>-l 详尽信息<br>pwd （print working directory）<br>~ 代表当前用户主目录<br>. 代表当前用户目录<br>.. 上一级目录<br>mkdir（make directory）创建目录  ，多级目录使用-p<br>rmdir （remove directory）删除目录（空）<br>rm （remove） -r（recursive递归）f（force）<br>cp A-&gt;B(将A复制到B)<br>mv 移动或者重命名  </p>
+<h2 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h2><p>目录：<br>-l 详尽信息<br>pwd （print working directory）<br>~ 代表当前用户主目录<br>. 代表当前用户目录<br>.. 上一级目录<br>mkdir（make directory）创建目录  ，多级目录使用-p<br>rmdir （remove directory）删除目录（空）<br>rm （remove） -r（recursive递归）f（force）<br>cp A-&gt;B(将A复制到B)<br>mv 移动或者重命名  </p>
+<p>文件：<br><strong>文件权限</strong><br>-owner<br>-r（read）<br>-w（write）<br>-x （excut）<br>查看权限：ls -l<br>九个字符：<br>rw-自己  r–同组  r–别人<br>修改权限：chmod（chnage file mod）<br>chmod o+w name.txt<br>o表示别人 +w表示增加write权限<br>a（all）所有人  u自己<br><strong>修改属主</strong><br>chown（—R递归）<br>opt目录可以放一些公共的东西<br>先名后目录   </p>
 <p>归档：<br>tar （tape archive）打包成Tape包<br>例：tar -cvf example.tar exmple<br>其中<br>c，create，创建档案<br>v，verbose，显示详情<br>f，file<br>也可以多个文件打包成一个<br>解开tar -xvf （x，extract）后面加-C可以指定文件<br>tar -c<strong>z</strong>vf example.tar.gz example  </p>
 <p>软链接：<br>ln （link） -s（soft）本体 链接名  </p>
 <p>对用户操作：<br>useradd<br>sudo（管理员身份运行，需要sudoer）<br>-m 在/home下<br>sudo useradd -m name  创建<br>sudo password name  修改密码<br>sudo userdel name 删除用户（需要额外删除目录）  </p>
@@ -268,7 +270,14 @@
 <li>修改系统配置文件，gedit /etc/pam.d/gdm-autologin<br>用#注释 auth required pam_succeed_if.so user !=root quiet_success<br>gedit /etc/pam.d/gdm-password<br>注释 auth requiredpam_succeed_if.so user!= root quiet success  </li>
 <li>重启  </li>
 </ol>
-<p>用户组：<br>groupadd group  创建组<br>useradd -m（modified） -g group name    创建用户入组<br>usermod -g boys name 修改用户入组<br>cat /etc/goup 组<br>cat etc/password  </p>
+<p>用户组：<br>groupadd group  创建组<br>useradd -m（modified） -g group name    创建用户入组<br>usermod -g boys name 修改用户入组<br>cat /etc/goup 组<br>cat etc/password    </p>
+<h2 id="可执行脚本"><a href="#可执行脚本" class="headerlink" title="可执行脚本"></a>可执行脚本</h2><p>脚本：Script，一种解释执行的程序<br>Linux下常见的三种脚本程序：  </p>
+<ul>
+<li>Shell  &emsp;*.sh  </li>
+<li>Perl    &emsp; *.pl  </li>
+<li>Python &emsp;*.py  </li>
+</ul>
+<p>可以到脚本目录直接执行脚本，也可以到脚本解释器执行脚本<br><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E8%84%9A%E6%9C%AC1.png"><br><strong>shell脚本</strong><br>创建编辑<br>#！/bin/sh<br>echo “hello world”<br>添加可执行权限<br>chmod +x hello.sh<br>执行程序<br>./hello.sh  </p>
 
     </div>
 
@@ -367,7 +376,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E7%85%A7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D"><span class="nav-number">1.</span> <span class="nav-text">快照与系统恢复</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E7%85%A7"><span class="nav-number">1.1.</span> <span class="nav-text">快照</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%95%8C%E9%9D%A2%E5%8A%9F%E8%83%BD"><span class="nav-number">2.</span> <span class="nav-text">界面功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linux%E5%91%BD%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">linux命令</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E7%85%A7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D"><span class="nav-number">1.</span> <span class="nav-text">快照与系统恢复</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E7%85%A7"><span class="nav-number">1.1.</span> <span class="nav-text">快照</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%95%8C%E9%9D%A2%E5%8A%9F%E8%83%BD"><span class="nav-number">2.</span> <span class="nav-text">界面功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linux%E5%91%BD%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">linux命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%AF%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC"><span class="nav-number">4.</span> <span class="nav-text">可执行脚本</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -382,14 +391,14 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -435,13 +444,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">7k</span>
+    <span title="站点总字数">8k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">6 分钟</span>
+    <span title="站点阅读时长">7 分钟</span>
 </div>
 
         
