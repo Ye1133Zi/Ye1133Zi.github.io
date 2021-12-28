@@ -1,69 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>docker学习</title>
-    <url>/2021/12/25/docker%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p><strong>学业指导老师让我们学习docker，写成报告作为大作业，之前自己也研究了下VMware，在上面安装了Ubuntu，正好趁此熟悉一下Linux操作系统，顺便为将来搭建服务器打基础。</strong><br> <span id="more"></span></p>
-<h1 id="docker-容器"><a href="#docker-容器" class="headerlink" title="docker 容器"></a>docker 容器</h1><h2 id="服务器搭建"><a href="#服务器搭建" class="headerlink" title="服务器搭建"></a>服务器搭建</h2><p>传统服务器：  </p>
-<pre><code> 宿主机： vmvare + cenntos（Ubuntu）= Linux
- 物理机：  硬件 + 操作系统  
-</code></pre>
-<p>虚拟化服务器：   </p>
-<pre><code>  物理机 + host operating sever +  hypervisor + vmware
- 
-</code></pre>
-<h2 id="容器技术"><a href="#容器技术" class="headerlink" title="容器技术"></a>容器技术</h2><p><strong>虚拟化工具</strong>：<br>VMware &emsp; Virtua &emsp;PCVirtualbox  </p>
-<ul>
-<li>vmware workstation（个人学习）  </li>
-<li>vmware ecxi（企业级）</li>
-</ul>
-<p>KVM&emsp;Docker</p>
-<p><strong>Docker的组件</strong><br>镜像&emsp;存储&emsp;网络&emsp;容器<br>docker file&emsp;dockerhub  </p>
-<h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><p>企业版（EE）&emsp;社区版（CE） </p>
-]]></content>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ubuntu学习</title>
-    <url>/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p><strong>在学习docker的时候遇到了些许困难，看来只会简单的linux命令不行，还是先深入学习一下ubuntu</strong>  </p>
-<span id="more"></span>  
-
-<pre><code>B站链接：https://www.bilibili.com/video/BV1na4y1773c?p=4
-（因为之前已经安装过ubuntu所以笔记从P7之后开始）
-</code></pre>
-<h2 id="快照与系统恢复"><a href="#快照与系统恢复" class="headerlink" title="快照与系统恢复"></a>快照与系统恢复</h2><p>系统异常：</p>
-<ol>
-<li>快照</li>
-<li>重装系统<h3 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h3><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E5%BF%AB%E7%85%A71.png"><h2 id="界面功能"><a href="#界面功能" class="headerlink" title="界面功能"></a>界面功能</h2>左上角活动 -&gt; 类似于Windows系统的win+Tab  </li>
-</ol>
-<h2 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h2><p>目录：<br>-l 详尽信息<br>pwd （print working directory）<br>~ 代表当前用户主目录<br>. 代表当前用户目录<br>.. 上一级目录<br>mkdir（make directory）创建目录  ，多级目录使用-p<br>rmdir （remove directory）删除目录（空）<br>rm （remove） -r（recursive递归）f（force）<br>cp A-&gt;B(将A复制到B)<br>mv 移动或者重命名  </p>
-<p>文件：<br><strong>文件权限</strong><br>-owner<br>-r（read）<br>-w（write）<br>-x （excut）<br>查看权限：ls -l<br>九个字符：<br>rw-自己  r–同组  r–别人<br>修改权限：chmod（chnage file mod）<br>chmod o+w name.txt<br>o表示别人 +w表示增加write权限<br>a（all）所有人  u自己<br><strong>修改属主</strong><br>chown（—R递归）<br>opt目录可以放一些公共的东西<br>先名后目录   </p>
-<p>归档：<br>tar （tape archive）打包成Tape包<br>例：tar -cvf example.tar exmple<br>其中<br>c，create，创建档案<br>v，verbose，显示详情<br>f，file<br>也可以多个文件打包成一个<br>解开tar -xvf （x，extract）后面加-C可以指定文件<br>tar -c<strong>z</strong>vf example.tar.gz example  </p>
-<p>软链接：<br>ln （link） -s（soft）本体 链接名  </p>
-<p>对用户操作：<br>useradd<br>sudo（管理员身份运行，需要sudoer）<br>-m 在/home下<br>sudo useradd -m name  创建<br>sudo password name  修改密码<br>sudo userdel name 删除用户（需要额外删除目录）  </p>
-<p>超级用户：root<br>sudo password root<br>su（switch user） root<br>exit<br>登录root的桌面环境：  </p>
-<ol>
-<li>终端切换root身份 </li>
-<li>修改系统配置文件，gedit /etc/pam.d/gdm-autologin<br>用#注释 auth required pam_succeed_if.so user !=root quiet_success<br>gedit /etc/pam.d/gdm-password<br>注释 auth requiredpam_succeed_if.so user!= root quiet success  </li>
-<li>重启  </li>
-</ol>
-<p>用户组：<br>groupadd group  创建组<br>useradd -m（modified） -g group name    创建用户入组<br>usermod -g boys name 修改用户入组<br>cat /etc/goup 组<br>cat etc/password    </p>
-<h2 id="可执行脚本"><a href="#可执行脚本" class="headerlink" title="可执行脚本"></a>可执行脚本</h2><p>脚本：Script，一种解释执行的程序<br>Linux下常见的三种脚本程序：  </p>
-<ul>
-<li>Shell  &emsp;*.sh  </li>
-<li>Perl    &emsp; *.pl  </li>
-<li>Python &emsp;*.py  </li>
-</ul>
-<p>可以到脚本目录直接执行脚本，也可以到脚本解释器执行脚本<br><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E8%84%9A%E6%9C%AC1.png"><br><strong>shell脚本</strong><br>创建编辑<br>#！/bin/sh<br>echo “hello world”<br>添加可执行权限<br>chmod +x hello.sh<br>执行程序<br>./hello.sh  </p>
-]]></content>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MarkDown语法学习</title>
     <url>/2021/12/16/MarkDown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p><strong>通过hexo和gihub搭建的博客文章可以采用.md（Markdown）文件，我决定以边学边写的方式，通过此篇博客进行Markdown语法学习。</strong>  </p>
@@ -189,6 +126,69 @@
       </tags>
   </entry>
   <entry>
+    <title>docker学习</title>
+    <url>/2021/12/25/docker%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p><strong>学业指导老师让我们学习docker，写成报告作为大作业，之前自己也研究了下VMware，在上面安装了Ubuntu，正好趁此熟悉一下Linux操作系统，顺便为将来搭建服务器打基础。</strong><br> <span id="more"></span></p>
+<h1 id="docker-容器"><a href="#docker-容器" class="headerlink" title="docker 容器"></a>docker 容器</h1><h2 id="服务器搭建"><a href="#服务器搭建" class="headerlink" title="服务器搭建"></a>服务器搭建</h2><p>传统服务器：  </p>
+<pre><code> 宿主机： vmvare + cenntos（Ubuntu）= Linux
+ 物理机：  硬件 + 操作系统  
+</code></pre>
+<p>虚拟化服务器：   </p>
+<pre><code>  物理机 + host operating sever +  hypervisor + vmware
+ 
+</code></pre>
+<h2 id="容器技术"><a href="#容器技术" class="headerlink" title="容器技术"></a>容器技术</h2><p><strong>虚拟化工具</strong>：<br>VMware &emsp; Virtua &emsp;PCVirtualbox  </p>
+<ul>
+<li>vmware workstation（个人学习）  </li>
+<li>vmware ecxi（企业级）</li>
+</ul>
+<p>KVM&emsp;Docker</p>
+<p><strong>Docker的组件</strong><br>镜像&emsp;存储&emsp;网络&emsp;容器<br>docker file&emsp;dockerhub  </p>
+<h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><p>企业版（EE）&emsp;社区版（CE） </p>
+]]></content>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ubuntu学习</title>
+    <url>/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p><strong>在学习docker的时候遇到了些许困难，看来只会简单的linux命令不行，还是先深入学习一下ubuntu</strong>  </p>
+<span id="more"></span>  
+
+<pre><code>B站链接：https://www.bilibili.com/video/BV1na4y1773c?p=4
+（因为之前已经安装过ubuntu所以笔记从P7之后开始）
+</code></pre>
+<h2 id="快照与系统恢复"><a href="#快照与系统恢复" class="headerlink" title="快照与系统恢复"></a>快照与系统恢复</h2><p>系统异常：</p>
+<ol>
+<li>快照</li>
+<li>重装系统<h3 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h3><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E5%BF%AB%E7%85%A71.png"><h2 id="界面功能"><a href="#界面功能" class="headerlink" title="界面功能"></a>界面功能</h2>左上角活动 -&gt; 类似于Windows系统的win+Tab  </li>
+</ol>
+<h2 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h2><p>目录：<br>-l 详尽信息<br>pwd （print working directory）<br>~ 代表当前用户主目录<br>. 代表当前用户目录<br>.. 上一级目录<br>mkdir（make directory）创建目录  ，多级目录使用-p<br>rmdir （remove directory）删除目录（空）<br>rm （remove） -r（recursive递归）f（force）<br>cp A-&gt;B(将A复制到B)<br>mv 移动或者重命名  </p>
+<p>文件：<br><strong>文件权限</strong><br>-owner<br>-r（read）<br>-w（write）<br>-x （excut）<br>查看权限：ls -l<br>九个字符：<br>rw-自己  r–同组  r–别人<br>修改权限：chmod（chnage file mod）<br>chmod o+w name.txt<br>o表示别人 +w表示增加write权限<br>a（all）所有人  u自己<br><strong>修改属主</strong><br>chown（—R递归）<br>opt目录可以放一些公共的东西<br>先名后目录   </p>
+<p>归档：<br>tar （tape archive）打包成Tape包<br>例：tar -cvf example.tar exmple<br>其中<br>c，create，创建档案<br>v，verbose，显示详情<br>f，file<br>也可以多个文件打包成一个<br>解开tar -xvf （x，extract）后面加-C可以指定文件<br>tar -c<strong>z</strong>vf example.tar.gz example  </p>
+<p>软链接：<br>ln （link） -s（soft）本体 链接名  </p>
+<p>对用户操作：<br>useradd<br>sudo（管理员身份运行，需要sudoer）<br>-m 在/home下<br>sudo useradd -m name  创建<br>sudo password name  修改密码<br>sudo userdel name 删除用户（需要额外删除目录）  </p>
+<p>超级用户：root<br>sudo password root<br>su（switch user） root<br>exit<br>登录root的桌面环境：  </p>
+<ol>
+<li>终端切换root身份 </li>
+<li>修改系统配置文件，gedit /etc/pam.d/gdm-autologin<br>用#注释 auth required pam_succeed_if.so user !=root quiet_success<br>gedit /etc/pam.d/gdm-password<br>注释 auth requiredpam_succeed_if.so user!= root quiet success  </li>
+<li>重启  </li>
+</ol>
+<p>用户组：<br>groupadd group  创建组<br>useradd -m（modified） -g group name    创建用户入组<br>usermod -g boys name 修改用户入组<br>cat /etc/goup 组<br>cat etc/password    </p>
+<h2 id="可执行脚本"><a href="#可执行脚本" class="headerlink" title="可执行脚本"></a>可执行脚本</h2><p>脚本：Script，一种解释执行的程序<br>Linux下常见的三种脚本程序：  </p>
+<ul>
+<li>Shell  &emsp;*.sh  </li>
+<li>Perl    &emsp; *.pl  </li>
+<li>Python &emsp;*.py  </li>
+</ul>
+<p>可以到脚本目录直接执行脚本，也可以到脚本解释器执行脚本<br><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E8%84%9A%E6%9C%AC1.png"><br><strong>shell脚本</strong><br>创建编辑<br>#！/bin/sh<br>echo “hello world”<br>添加可执行权限<br>chmod +x hello.sh<br>执行程序<br>./hello.sh  </p>
+]]></content>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>“教你搭建属于自己的博客”</title>
     <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
     <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
@@ -235,17 +235,6 @@
 <h2 id="iLovePDF"><a href="#iLovePDF" class="headerlink" title="iLovePDF"></a><a href="https://www.ilovepdf.com/zh-cn">iLovePDF</a></h2><p>该网站可实现在线编辑PDF文件  </p>
 <h2 id="AirPortal"><a href="#AirPortal" class="headerlink" title="AirPortal"></a><a href="https://airportal.cn/">AirPortal</a></h2><p>可以实现通过网页传文件的骚操作  </p>
 <h2 id="西电网站合集-链接为西电导航"><a href="#西电网站合集-链接为西电导航" class="headerlink" title="西电网站合集(链接为西电导航)"></a><a href="https://xidian.cc/">西电网站合集(链接为西电导航)</a></h2><p><a href="https://rs.xidian.cc/">https://rs.xidian.cc/</a><br>西电睿思yyds，高清电影、游戏、音乐均在睿思，注：需要校园网和邀请码<br><a href="https://lib.xidian.edu.cn/">https://lib.xidian.edu.cn/</a><br>西电图书馆，本来还想推荐爱学术来着，后来一想有图书馆数据库谁用那个，注：本科生常用数据库有很多好东西，但需要校园<br>网</p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>油猴插件推荐</title>
-    <url>/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<p><strong>俗话说的好，没有油猴插件的浏览器，不算真正意义上的浏览器。上一篇介绍了几个宝藏网站，这次教你使用油猴脚本，让你的上网体验再次提升</strong>  </p>
-<span id="more"></span>    
-<h2 id="油猴的安装"><a href="#油猴的安装" class="headerlink" title="油猴的安装"></a>油猴的安装</h2><p>Windows系统自带的Microsoft Edge、火狐浏览器、谷歌浏览器等均可支持油猴扩展<br>1.在浏览器设置中找到插件或者扩展<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E5%8F%B6%E5%AD%90%E7%9A%84%E5%8D%9A%E5%AE%A2.png" alt=" "></p>
 ]]></content>
       <tags>
         <tag>生活</tag>
@@ -301,6 +290,21 @@
 <h2 id="制作人：xmz"><a href="#制作人：xmz" class="headerlink" title="制作人：xmz"></a>制作人：xmz</h2>]]></content>
       <tags>
         <tag>与xmz的合作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>油猴插件推荐</title>
+    <url>/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<p><strong>俗话说的好，没有油猴插件的浏览器，算不上真正意义上的浏览器。上一篇介绍了几个宝藏网站，这次教你使用油猴脚本，让你的上网体验再次得到提升</strong>  </p>
+<span id="more"></span>    
+<h2 id="油猴的优点"><a href="#油猴的优点" class="headerlink" title="油猴的优点"></a>油猴的优点</h2><p>油猴支持丰富的网站脚本，从自动刷网课、免vip追剧，下载B站视频到图片搜索、调整字体、设置护眼模式等，并且安装管理简易，不需要编程基础，完全就是点点点，对用户非常友好</p>
+<h2 id="油猴的安装"><a href="#油猴的安装" class="headerlink" title="油猴的安装"></a>油猴的安装</h2><p>Windows系统自带的Microsoft Edge、火狐浏览器、谷歌浏览器等均可支持油猴扩展<br>1.在浏览器设置中找到插件或者扩展<br>火狐：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E5%8F%B6%E5%AD%90%E7%9A%84%E5%8D%9A%E5%AE%A2.png" alt=" "><br>Microsoft Edge：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B4.png" alt=" "><br>点击并找到更多插件的选项，搜索tempermonkey或者油猴<br>安装完成你就可以在浏览器的上方工具栏中找到它了<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B41.png" alt=" ">  </p>
+<h2 id="油猴插件"><a href="#油猴插件" class="headerlink" title="油猴插件"></a>油猴插件</h2><p>点击油猴图标，点击获取新脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B42.png" alt=" "><br>一般会选择GreasyFork。你可以在里面搜索你想要的脚本，点击安装即可使用（记得刷新网页）。<br>点击油猴图标可对插件进行管理，不用某个脚本时（多开会占用一定内存），你可以选择把它关掉或者删除  </p>
+<h2 id="自己在用的脚本"><a href="#自己在用的脚本" class="headerlink" title="自己在用的脚本"></a>自己在用的脚本</h2><p>1.AC-baidu-重定向优化百度搜狗谷歌必应搜索_favicon_双列<br>好用，真好用，作用让是你的搜索结果变成这样<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B43.png" alt=" "><br>2.字体渲染<br>当你第一次用这个脚本的时候，你会感觉眼睛一下舒服了许多<br>3.全网VIP破解<br>这个其实我下了但没有用，原因一是我不用爱奇艺、腾讯视频之类，二是作者注明了会收取一定广告费用，但是我一个舍友因为追综艺一直在用<br><strong>4.UserJS</strong><br>授人以鱼不如授人以渔，这个脚本会检索出对于当前网页大家都在用什么脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B44.png" alt=" ">  </p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>油猴脚本是开源的，这意味着所以人都可以去审查它的（安全性有<strong>一定</strong>保证），当然也可以按照自己的需求对它进行改编，油猴脚本众多，大家还需要进行探索，找到适合自己的脚本。 </p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
 </search>
