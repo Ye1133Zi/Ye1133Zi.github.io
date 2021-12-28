@@ -151,6 +151,26 @@
       </tags>
   </entry>
   <entry>
+    <title>“教你搭建属于自己的博客”</title>
+    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
+    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
+<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
+<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>“hexo搜索功能出错的解决方案”</title>
+    <url>/2021/12/17/%E4%B8%BAHext%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<p><strong>今天在为hexo博客添加搜索功能时,本地生成可正常使用，上传到gihub时首页出现错位，修改主题文件中有关search的参数limits（将100改为1000成功解决问题)。</strong></p>
+]]></content>
+      <tags>
+        <tag>debug日志</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ubuntu学习</title>
     <url>/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p><strong>在学习docker的时候遇到了些许困难，看来只会简单的linux命令不行，还是先深入学习一下ubuntu</strong>  </p>
@@ -189,26 +209,6 @@
       </tags>
   </entry>
   <entry>
-    <title>“教你搭建属于自己的博客”</title>
-    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
-    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
-<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
-<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>“hexo搜索功能出错的解决方案”</title>
-    <url>/2021/12/17/%E4%B8%BAHext%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E6%8A%A5%E9%94%99/</url>
-    <content><![CDATA[<p><strong>今天在为hexo博客添加搜索功能时,本地生成可正常使用，上传到gihub时首页出现错位，修改主题文件中有关search的参数limits（将100改为1000成功解决问题)。</strong></p>
-]]></content>
-      <tags>
-        <tag>debug日志</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于几个网络工具</title>
     <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p><strong>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍</strong><br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：  </p>
@@ -229,12 +229,15 @@
 <h2 id="学吧导航"><a href="#学吧导航" class="headerlink" title="学吧导航"></a><a href="https://www.xue8nav.com/">学吧导航</a></h2><p>一个超好用的学习导航，还可以自定义导航内容  </p>
 <h2 id="笔仙儿导航"><a href="#笔仙儿导航" class="headerlink" title="笔仙儿导航"></a><a href="http://bixianer.com/">笔仙儿导航</a></h2><p>之前用的导航，比较综合，也十分好用，不过因为站点不稳定，就换成学吧了  </p>
 <h2 id="Guerrilla-Mail"><a href="#Guerrilla-Mail" class="headerlink" title="Guerrilla Mail"></a><a href="https://www.guerrillamail.com/inbox">Guerrilla Mail</a></h2><p>无需注册，随机生成N个临时邮箱供你使用，匿名操作和反复白嫖的神器  </p>
-<h2 id="田间小站"><a href="#田间小站" class="headerlink" title="田间小站"></a><a href="https://www.tjxz.cc/">田间小站</a></h2><p>小词详解、单词溯源、英语幽默、美国习语均在田间小站，而且并有在线短篇小说和免费下载的经典长篇和期刊  </p>
-<h2 id="英语真题在线"><a href="#英语真题在线" class="headerlink" title="英语真题在线"></a><a href="https://zhenti.burningvocabulary.com/">英语真题在线</a></h2><p>免费在线预览或下载四六级真题，并提供听力和答案。<br>注：临考阶段因为盈利暂时会对非会员关闭，所以推荐提前下载 </p>
 <h2 id="优品PPT"><a href="#优品PPT" class="headerlink" title="优品PPT"></a><a href="https://www.ypppt.com/">优品PPT</a></h2><p>用了六年还是那么良心，免注册免费下载PPT模板 </p>
 <h2 id="iLovePDF"><a href="#iLovePDF" class="headerlink" title="iLovePDF"></a><a href="https://www.ilovepdf.com/zh-cn">iLovePDF</a></h2><p>该网站可实现在线编辑PDF文件  </p>
 <h2 id="AirPortal"><a href="#AirPortal" class="headerlink" title="AirPortal"></a><a href="https://airportal.cn/">AirPortal</a></h2><p>可以实现通过网页传文件的骚操作  </p>
-<h2 id="西电网站合集-链接为西电导航"><a href="#西电网站合集-链接为西电导航" class="headerlink" title="西电网站合集(链接为西电导航)"></a><a href="https://xidian.cc/">西电网站合集(链接为西电导航)</a></h2><p><a href="https://rs.xidian.cc/">https://rs.xidian.cc/</a><br>西电睿思yyds，高清电影、游戏、音乐均在睿思，注：需要校园网和邀请码<br><a href="https://lib.xidian.edu.cn/">https://lib.xidian.edu.cn/</a><br>西电图书馆，本来还想推荐爱学术来着，后来一想有图书馆数据库谁用那个，注：本科生常用数据库有很多好东西，但需要校园<br>网</p>
+<h2 id="田间小站"><a href="#田间小站" class="headerlink" title="田间小站"></a><a href="https://www.tjxz.cc/">田间小站</a></h2><p>小词详解、单词溯源、英语幽默、美国习语均在田间小站，而且并有在线短篇小说和免费下载的经典长篇和期刊    </p>
+<h2 id="英语真题在线"><a href="#英语真题在线" class="headerlink" title="英语真题在线"></a><a href="https://zhenti.burningvocabulary.com/">英语真题在线</a></h2><p>免费在线预览或下载四六级真题，并提供听力和答案。<br>注：临考阶段因为盈利暂时会对非会员关闭，所以推荐提前下载 </p>
+<h2 id="古诗文网"><a href="#古诗文网" class="headerlink" title="古诗文网"></a><a href="https://www.gushiwen.cn/">古诗文网</a></h2><p>不妨来点诗词歌赋装点一下自己，另外我很喜欢它的公众号，排队等车必备</p>
+<h2 id="全历史"><a href="#全历史" class="headerlink" title="全历史"></a><a href="https://www.allhistory.com/">全历史</a></h2><p>学习历史的宝藏网站  </p>
+<h2 id="中华珍宝馆"><a href="#中华珍宝馆" class="headerlink" title="中华珍宝馆"></a><a href="http://ltfc.net/exhibit/essence">中华珍宝馆</a></h2><p>养生摸鱼必备，里面有超多高清古画和书法，记得高中我找过几张当班里电脑的壁纸  </p>
+<h2 id="西电网站合集-链接为西电导航"><a href="#西电网站合集-链接为西电导航" class="headerlink" title="西电网站合集(链接为西电导航)"></a><a href="https://xidian.cc/">西电网站合集(链接为西电导航)</a></h2><p><a href="https://rs.xidian.cc/">https://rs.xidian.cc/</a><br>西电睿思yyds，高清电影、游戏、音乐均在睿思，注：需要校园网和邀请码<br><a href="https://lib.xidian.edu.cn/">https://lib.xidian.edu.cn/</a><br>西电图书馆，本来还想推荐爱学术来着，后来一想有图书馆数据库谁用那个，注：本科生常用数据库有很多好东西，但需要校园<br>网 </p>
 ]]></content>
       <tags>
         <tag>生活</tag>
@@ -256,6 +259,21 @@
 ]]></content>
       <tags>
         <tag>debug日志</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>油猴插件推荐</title>
+    <url>/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<p><strong>俗话说的好，没有油猴插件的浏览器，算不上真正意义上的浏览器。上一篇介绍了几个宝藏网站，这次教你使用油猴脚本，让你的上网体验再次得到提升</strong>  </p>
+<span id="more"></span>    
+<h2 id="油猴的优点"><a href="#油猴的优点" class="headerlink" title="油猴的优点"></a>油猴的优点</h2><p>油猴支持丰富的网站脚本，从自动刷网课、免vip追剧，下载B站视频到图片搜索、调整字体、设置护眼模式等，并且安装管理简易，不需要编程基础，完全就是点点点，对用户非常友好</p>
+<h2 id="油猴的安装"><a href="#油猴的安装" class="headerlink" title="油猴的安装"></a>油猴的安装</h2><p>Windows系统自带的Microsoft Edge、火狐浏览器、谷歌浏览器等均可支持油猴扩展<br>1.在浏览器设置中找到插件或者扩展<br>火狐：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E5%8F%B6%E5%AD%90%E7%9A%84%E5%8D%9A%E5%AE%A2.png" alt=" "><br>Microsoft Edge：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B4.png" alt=" "><br>点击并找到更多插件的选项，搜索tempermonkey或者油猴<br>安装完成你就可以在浏览器的上方工具栏中找到它了<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B41.png" alt=" ">  </p>
+<h2 id="油猴插件"><a href="#油猴插件" class="headerlink" title="油猴插件"></a>油猴插件</h2><p>点击油猴图标，点击获取新脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B42.png" alt=" "><br>一般会选择GreasyFork。你可以在里面搜索你想要的脚本，点击安装即可使用（记得刷新网页）。<br>点击油猴图标可对插件进行管理，不用某个脚本时（多开会占用一定内存），你可以选择把它关掉或者删除  </p>
+<h2 id="自己在用的脚本"><a href="#自己在用的脚本" class="headerlink" title="自己在用的脚本"></a>自己在用的脚本</h2><p>1.AC-baidu-重定向优化百度搜狗谷歌必应搜索_favicon_双列<br>好用，真好用，作用让是你的搜索结果变成这样<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B43.png" alt=" "><br>2.字体渲染<br>当你第一次用这个脚本的时候，你会感觉眼睛一下舒服了许多<br>3.全网VIP破解<br>这个其实我下了但没有用，原因一是我不用爱奇艺、腾讯视频之类，二是作者注明了会收取一定广告费用，但是我一个舍友因为追综艺一直在用<br><strong>4.UserJS</strong><br>授人以鱼不如授人以渔，这个脚本会检索出对于当前网页大家都在用什么脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B44.png" alt=" ">  </p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>油猴脚本是开源的，这意味着所以人都可以去审查它的（安全性有<strong>一定</strong>保证），当然也可以按照自己的需求对它进行改编，油猴脚本众多，大家还需要进行探索，找到适合自己的脚本。 </p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -290,21 +308,6 @@
 <h2 id="制作人：xmz"><a href="#制作人：xmz" class="headerlink" title="制作人：xmz"></a>制作人：xmz</h2>]]></content>
       <tags>
         <tag>与xmz的合作</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>油猴插件推荐</title>
-    <url>/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<p><strong>俗话说的好，没有油猴插件的浏览器，算不上真正意义上的浏览器。上一篇介绍了几个宝藏网站，这次教你使用油猴脚本，让你的上网体验再次得到提升</strong>  </p>
-<span id="more"></span>    
-<h2 id="油猴的优点"><a href="#油猴的优点" class="headerlink" title="油猴的优点"></a>油猴的优点</h2><p>油猴支持丰富的网站脚本，从自动刷网课、免vip追剧，下载B站视频到图片搜索、调整字体、设置护眼模式等，并且安装管理简易，不需要编程基础，完全就是点点点，对用户非常友好</p>
-<h2 id="油猴的安装"><a href="#油猴的安装" class="headerlink" title="油猴的安装"></a>油猴的安装</h2><p>Windows系统自带的Microsoft Edge、火狐浏览器、谷歌浏览器等均可支持油猴扩展<br>1.在浏览器设置中找到插件或者扩展<br>火狐：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E5%8F%B6%E5%AD%90%E7%9A%84%E5%8D%9A%E5%AE%A2.png" alt=" "><br>Microsoft Edge：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B4.png" alt=" "><br>点击并找到更多插件的选项，搜索tempermonkey或者油猴<br>安装完成你就可以在浏览器的上方工具栏中找到它了<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B41.png" alt=" ">  </p>
-<h2 id="油猴插件"><a href="#油猴插件" class="headerlink" title="油猴插件"></a>油猴插件</h2><p>点击油猴图标，点击获取新脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B42.png" alt=" "><br>一般会选择GreasyFork。你可以在里面搜索你想要的脚本，点击安装即可使用（记得刷新网页）。<br>点击油猴图标可对插件进行管理，不用某个脚本时（多开会占用一定内存），你可以选择把它关掉或者删除  </p>
-<h2 id="自己在用的脚本"><a href="#自己在用的脚本" class="headerlink" title="自己在用的脚本"></a>自己在用的脚本</h2><p>1.AC-baidu-重定向优化百度搜狗谷歌必应搜索_favicon_双列<br>好用，真好用，作用让是你的搜索结果变成这样<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B43.png" alt=" "><br>2.字体渲染<br>当你第一次用这个脚本的时候，你会感觉眼睛一下舒服了许多<br>3.全网VIP破解<br>这个其实我下了但没有用，原因一是我不用爱奇艺、腾讯视频之类，二是作者注明了会收取一定广告费用，但是我一个舍友因为追综艺一直在用<br><strong>4.UserJS</strong><br>授人以鱼不如授人以渔，这个脚本会检索出对于当前网页大家都在用什么脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B44.png" alt=" ">  </p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>油猴脚本是开源的，这意味着所以人都可以去审查它的（安全性有<strong>一定</strong>保证），当然也可以按照自己的需求对它进行改编，油猴脚本众多，大家还需要进行探索，找到适合自己的脚本。 </p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
 </search>
