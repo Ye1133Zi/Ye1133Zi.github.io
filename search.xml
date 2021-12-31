@@ -144,7 +144,14 @@
 </ul>
 <p>KVM&emsp;Docker</p>
 <p><strong>Docker的组件</strong><br>镜像&emsp;存储&emsp;网络&emsp;容器<br>docker file&emsp;dockerhub  </p>
-<h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><p>企业版（EE）&emsp;社区版（CE） </p>
+<h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><p>企业版（EE）&emsp;社区版（CE）  </p>
+<h2 id="开启linux内核的流量转发"><a href="#开启linux内核的流量转发" class="headerlink" title="开启linux内核的流量转发"></a>开启linux内核的流量转发</h2><p>生成文件<br><code>cat &lt;&lt;EOF &gt; /etc/sysctl.d/docker.conf net.bridge.bridge-nf-call-ip6tables = 1 net.bridge.bridge-nf-call-iptables = 1 net.ipv4.conf.default.rp_filter = 0 net.ipv4.conf.all.rp_filter = 0 net.ipv4.ip_forward=1 EOF</code>（好像需要root身份）<br>检验<br><code>ls /etc/sysctl.d/docker.conf</code><br>加载<br><code>modprobe br_netfilter</code><br><code>sysctl -p /etc/sysctl.d/docker.conf</code><br>配置docker加速器<br><code>mkdir -p /etc/docker</code><br><code>touch /etc/docker/daemon.json</code><br><code>vim /etc/docker/daemon.json</code><br>(没有vim可以通过apt install vim<br>命令下载)<br>输入以下内容<br><code>&#123;</code><br> <code>&quot;registry-mirrors&quot; : [</code><br><code> &quot;https://8xpk5wnt.mirror.aliyuncs.com&quot;</code><br><code> ]</code><br><code>&#125;</code><br>esc ：wq退出<br>查看检验<br><code>cat /etc/docker/daemon.json</code>  </p>
+<h2 id="启动docker"><a href="#启动docker" class="headerlink" title="启动docker"></a>启动docker</h2><pre><code>        systemctl daemon-reload 
+        systemctl enable docker 
+        systemctl restart docker  
+</code></pre>
+<h2 id="查看docker"><a href="#查看docker" class="headerlink" title="查看docker"></a>查看docker</h2><p><code>docker images</code><br><code>docker ps</code><br><code>docker version</code>    </p>
+<h2 id="启动第一个dockers容器"><a href="#启动第一个dockers容器" class="headerlink" title="启动第一个dockers容器"></a>启动第一个dockers容器</h2><h3 id="获取镜像"><a href="#获取镜像" class="headerlink" title="获取镜像"></a>获取镜像</h3><p>以nginx为例<br>搜索<br><code>docker search nginx</code><br>拉取<br><code>docker pull nginx</code><br>删除<br><code>docker images ls</code>(查找ID)<br><code>docker rmi ID</code>  </p>
 ]]></content>
       <tags>
         <tag>笔记</tag>
@@ -184,25 +191,30 @@
 <li>快照</li>
 <li>重装系统<h3 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h3><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E5%BF%AB%E7%85%A71.png"><h2 id="界面功能"><a href="#界面功能" class="headerlink" title="界面功能"></a>界面功能</h2>左上角活动 -&gt; 类似于Windows系统的win+Tab  </li>
 </ol>
-<h2 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h2><p>目录：<br>-l 详尽信息<br>pwd （print working directory）<br>~ 代表当前用户主目录<br>. 代表当前用户目录<br>.. 上一级目录<br>mkdir（make directory）创建目录  ，多级目录使用-p<br>rmdir （remove directory）删除目录（空）<br>rm （remove） -r（recursive递归）f（force）<br>cp A-&gt;B(将A复制到B)<br>mv 移动或者重命名  </p>
-<p>文件：<br><strong>文件权限</strong><br>-owner<br>-r（read）<br>-w（write）<br>-x （excut）<br>查看权限：ls -l<br>九个字符：<br>rw-自己  r–同组  r–别人<br>修改权限：chmod（chnage file mod）<br>chmod o+w name.txt<br>o表示别人 +w表示增加write权限<br>a（all）所有人  u自己<br><strong>修改属主</strong><br>chown（—R递归）<br>opt目录可以放一些公共的东西<br>先名后目录   </p>
-<p>归档：<br>tar （tape archive）打包成Tape包<br>例：tar -cvf example.tar exmple<br>其中<br>c，create，创建档案<br>v，verbose，显示详情<br>f，file<br>也可以多个文件打包成一个<br>解开tar -xvf （x，extract）后面加-C可以指定文件<br>tar -c<strong>z</strong>vf example.tar.gz example  </p>
-<p>软链接：<br>ln （link） -s（soft）本体 链接名  </p>
-<p>对用户操作：<br>useradd<br>sudo（管理员身份运行，需要sudoer）<br>-m 在/home下<br>sudo useradd -m name  创建<br>sudo password name  修改密码<br>sudo userdel name 删除用户（需要额外删除目录）  </p>
-<p>超级用户：root<br>sudo password root<br>su（switch user） root<br>exit<br>登录root的桌面环境：  </p>
-<ol>
+<h2 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h2><h3 id="目录："><a href="#目录：" class="headerlink" title="目录："></a>目录：</h3><p>-l 详尽信息<br>pwd （print working directory）<br>~ 代表当前用户主目录<br>. 代表当前用户目录<br>.. 上一级目录<br>mkdir（make directory）创建目录  ，多级目录使用-p<br>rmdir （remove directory）删除目录（空）<br>rm （remove） -r（recursive递归）f（force）<br>cp A-&gt;B(将A复制到B)<br>mv 移动或者重命名  </p>
+<h3 id="文件："><a href="#文件：" class="headerlink" title="文件："></a>文件：</h3><p><strong>文件权限</strong><br>-owner<br>-r（read）<br>-w（write）<br>-x （excut）<br>查看权限：ls -l<br>九个字符：<br>rw-自己  r–同组  r–别人<br>修改权限：chmod（chnage file mod）<br>chmod o+w name.txt<br>o表示别人 +w表示增加write权限<br>a（all）所有人  u自己<br><strong>修改属主</strong><br>chown（—R递归）<br>opt目录可以放一些公共的东西<br>先名后目录   </p>
+<h3 id="归档："><a href="#归档：" class="headerlink" title="归档："></a>归档：</h3><p>tar （tape archive）打包成Tape包<br>例：tar -cvf example.tar exmple<br>其中<br>c，create，创建档案<br>v，verbose，显示详情<br>f，file<br>也可以多个文件打包成一个<br>解开tar -xvf （x，extract）后面加-C可以指定文件<br>tar -c<strong>z</strong>vf example.tar.gz example  </p>
+<h3 id="软链接："><a href="#软链接：" class="headerlink" title="软链接："></a>软链接：</h3><p>ln （link） -s（soft）本体 链接名  </p>
+<h3 id="对用户操作："><a href="#对用户操作：" class="headerlink" title="对用户操作："></a>对用户操作：</h3><p>useradd<br>sudo（管理员身份运行，需要sudoer）<br>-m 在/home下<br>sudo useradd -m name  创建<br>sudo password name  修改密码<br>sudo userdel name 删除用户（需要额外删除目录）  </p>
+<h3 id="超级用户：root"><a href="#超级用户：root" class="headerlink" title="超级用户：root"></a>超级用户：root</h3><p>sudo password root<br>su（switch user） root<br>sudo su<br>exit  </p>
+<h3 id="登录root的桌面环境："><a href="#登录root的桌面环境：" class="headerlink" title="登录root的桌面环境："></a>登录root的桌面环境：</h3><ol>
 <li>终端切换root身份 </li>
 <li>修改系统配置文件，gedit /etc/pam.d/gdm-autologin<br>用#注释 auth required pam_succeed_if.so user !=root quiet_success<br>gedit /etc/pam.d/gdm-password<br>注释 auth requiredpam_succeed_if.so user!= root quiet success  </li>
 <li>重启  </li>
 </ol>
-<p>用户组：<br>groupadd group  创建组<br>useradd -m（modified） -g group name    创建用户入组<br>usermod -g boys name 修改用户入组<br>cat /etc/goup 组<br>cat etc/password    </p>
-<h2 id="可执行脚本"><a href="#可执行脚本" class="headerlink" title="可执行脚本"></a>可执行脚本</h2><p>脚本：Script，一种解释执行的程序<br>Linux下常见的三种脚本程序：  </p>
+<h3 id="用户组："><a href="#用户组：" class="headerlink" title="用户组："></a>用户组：</h3><p>groupadd group  创建组<br>useradd -m（modified） -g group name    创建用户入组<br>usermod -g boys name 修改用户入组<br>cat /etc/group 组<br>cat etc/password    </p>
+<h3 id="可执行脚本"><a href="#可执行脚本" class="headerlink" title="可执行脚本"></a>可执行脚本</h3><p>脚本：Script，一种解释执行的程序<br>Linux下常见的三种脚本程序：  </p>
 <ul>
 <li>Shell  &emsp;*.sh  </li>
 <li>Perl    &emsp; *.pl  </li>
 <li>Python &emsp;*.py  </li>
 </ul>
-<p>可以到脚本目录直接执行脚本，也可以到脚本解释器执行脚本<br><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E8%84%9A%E6%9C%AC1.png"><br><strong>shell脚本</strong><br>创建编辑<br>#！/bin/sh<br>echo “hello world”<br>添加可执行权限<br>chmod +x hello.sh<br>执行程序<br>./hello.sh  </p>
+<p>可以到脚本目录直接执行脚本，也可以到脚本解释器执行脚本<br><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E8%84%9A%E6%9C%AC1.png">  </p>
+<h3 id="shell脚本"><a href="#shell脚本" class="headerlink" title="shell脚本"></a><strong>shell脚本</strong></h3><p>创建编辑<br><code>#！/bin/sh   </code><br><code>echo &quot;hello world&quot;</code><br>添加可执行权限<br><code>chmod +x hello.sh  </code><br>执行程序<br><code>./hello.sh   </code> </p>
+<h3 id="查看Ubuntu版本"><a href="#查看Ubuntu版本" class="headerlink" title="查看Ubuntu版本"></a>查看Ubuntu版本</h3><p><code>cat /etc/lsb-release  </code><br><code>cat /etc/os-release  </code><br>uname -a  </p>
+<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p><code>apt-get update</code>  </p>
+<h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><p>配置开机自启<br><code>sudo systemctl enable（关  闭换成diable） docker  </code><br>查看 Docker 的运行状态：<br><code>sudo systemctl status docker</code><br>启动或停止docker命令<br><code>sudo service docker start</code> 启动<br><code>sudo service docker stop</code> 关闭    </p>
+<h3 id="辅助"><a href="#辅助" class="headerlink" title="辅助"></a>辅助</h3><p><code>clear</code> 清屏<br><code>history</code>罗列历史命令  </p>
 ]]></content>
       <tags>
         <tag>笔记</tag>
@@ -308,6 +320,18 @@
 <h2 id="制作人：xmz"><a href="#制作人：xmz" class="headerlink" title="制作人：xmz"></a>制作人：xmz</h2>]]></content>
       <tags>
         <tag>与xmz的合作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ubuntu安装docker</title>
+    <url>/2021/12/29/ubuntu%E5%AE%89%E8%A3%85docker/</url>
+    <content><![CDATA[<p><strong>在学习docker的安装时，由于教程中的系统是centos，而我更熟悉ubuntu，所以我需要另外去找在Ubuntu系统下安装docker的方法</strong>  </p>
+<span id="more"></span>  
+<p>设为管理员模式<br><code>sudo su</code><br><code>cd</code><br>更新<br><code>apt-get update</code><br>下载依赖<br><code>apt-get install apt-transport-https ca-certificates curl gnupg-agent </code></p>
+<p><code>software-properties-common</code><br>添加密钥<br><code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg |apt-key add </code><br>验证<br><code>apt-key fingerprint 0EBFCD88</code><br>添加仓库<br><code>sudo add-apt-repository \    &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \    $(lsb_release -cs) \    stable&quot; </code><br>更新<br><code>sudo apt-get update </code><br>安装docker<br><code>sudo apt-get install docker-ce docker-ce-cli containerd.io </code><br>检验安装<br><code>sudo docker run hello-world </code><br>配置非root用户使用docker<br><code>groupadd docker  </code><br><code>sudo usermod -aG docker （用户名） </code><br>使配置生效(建议还是注销)<br><code>newgrp docker </code><br>检验<br><code>docker run hello-world  </code><br>配置开机自启<br><code>sudo systemctl enable（关  闭换成diable） docker  </code><br>查看 Docker 的运行状态：<br><code>sudo systemctl status docker</code><br>启动或停止docker命令<br><code>sudo service docker start</code> 启动<br><code>sudo service docker stop</code> 关闭<br>参考<br><a href="https://www.bilibili.com/video/BV1jE411JDocker">在 Ubuntu 上安装 Docker【日出一点一】</a><br><a href="https://blog.sunriseydy.top/technology/server-blog/server/ubuntu_install_docker/7Df?from=search&seid=5364338390793269848&spm_id_from=333.337.0.0">博客文章地址</a><br><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">docker官方文档</a> </p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
       </tags>
   </entry>
 </search>
