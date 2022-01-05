@@ -28,7 +28,7 @@
 <meta property="og:description" content="学业指导老师让我们学习docker，写成报告作为大作业，之前自己也研究了下VMware，在上面安装了Ubuntu，正好趁此熟悉一下Linux操作系统，顺便为将来搭建服务器打基础。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-12-25T06:28:07.000Z">
-<meta property="article:modified_time" content="2021-12-30T12:24:06.678Z">
+<meta property="article:modified_time" content="2022-01-02T06:57:36.766Z">
 <meta property="article:author" content="YeZi">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-12-30 20:24:06" itemprop="dateModified" datetime="2021-12-30T20:24:06+08:00">2021-12-30</time>
+                <time title="修改时间：2022-01-02 14:57:36" itemprop="dateModified" datetime="2022-01-02T14:57:36+08:00">2022-01-02</time>
               </span>
 
           
@@ -226,7 +226,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.2k</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -268,7 +268,7 @@
         systemctl restart docker  
 </code></pre>
 <h2 id="查看docker"><a href="#查看docker" class="headerlink" title="查看docker"></a>查看docker</h2><p><code>docker images</code><br><code>docker ps</code><br><code>docker version</code>    </p>
-<h2 id="启动第一个dockers容器"><a href="#启动第一个dockers容器" class="headerlink" title="启动第一个dockers容器"></a>启动第一个dockers容器</h2><h3 id="获取镜像"><a href="#获取镜像" class="headerlink" title="获取镜像"></a>获取镜像</h3><p>以nginx为例<br>搜索<br><code>docker search nginx</code><br>拉取<br><code>docker pull nginx</code><br>删除<br><code>docker images ls</code>(查找ID)<br><code>docker rmi ID</code>  </p>
+<h2 id="启动第一个dockers容器"><a href="#启动第一个dockers容器" class="headerlink" title="启动第一个dockers容器"></a>启动第一个dockers容器</h2><p>以nginx为例<br>搜索<br><code>docker search nginx</code><br>拉取<br><code>docker pull nginx</code><br>删除<br><code>docker images ls</code>(查找ID)<br><code>docker rmi ID</code><br>运行<br>docker run 参数   镜像的名字/id<br><code>docker run  -d（后台运行） -p 80:80（端口映射） nginx  </code><br>会返回一个容器的id<br><code>netstat -tunlp</code> 查看端口<br><code>ip -a</code>查看ip / <code>ifconfig</code><br>查看容器是否在运行<br><code>doker  ps  </code><br>停止容器<br><code>docker stop 容器id</code><br>开启<br><code>docker start 容器ip</code>  </p>
 
     </div>
 
@@ -367,7 +367,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#docker-%E5%AE%B9%E5%99%A8"><span class="nav-number">1.</span> <span class="nav-text">docker 容器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA"><span class="nav-number">1.1.</span> <span class="nav-text">服务器搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF"><span class="nav-number">1.2.</span> <span class="nav-text">容器技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Docker"><span class="nav-number">1.3.</span> <span class="nav-text">安装Docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%90%AFlinux%E5%86%85%E6%A0%B8%E7%9A%84%E6%B5%81%E9%87%8F%E8%BD%AC%E5%8F%91"><span class="nav-number">1.4.</span> <span class="nav-text">开启linux内核的流量转发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8docker"><span class="nav-number">1.5.</span> <span class="nav-text">启动docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8Bdocker"><span class="nav-number">1.6.</span> <span class="nav-text">查看docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E7%AC%AC%E4%B8%80%E4%B8%AAdockers%E5%AE%B9%E5%99%A8"><span class="nav-number">1.7.</span> <span class="nav-text">启动第一个dockers容器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E9%95%9C%E5%83%8F"><span class="nav-number">1.7.1.</span> <span class="nav-text">获取镜像</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#docker-%E5%AE%B9%E5%99%A8"><span class="nav-number">1.</span> <span class="nav-text">docker 容器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA"><span class="nav-number">1.1.</span> <span class="nav-text">服务器搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF"><span class="nav-number">1.2.</span> <span class="nav-text">容器技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Docker"><span class="nav-number">1.3.</span> <span class="nav-text">安装Docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%90%AFlinux%E5%86%85%E6%A0%B8%E7%9A%84%E6%B5%81%E9%87%8F%E8%BD%AC%E5%8F%91"><span class="nav-number">1.4.</span> <span class="nav-text">开启linux内核的流量转发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8docker"><span class="nav-number">1.5.</span> <span class="nav-text">启动docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8Bdocker"><span class="nav-number">1.6.</span> <span class="nav-text">查看docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E7%AC%AC%E4%B8%80%E4%B8%AAdockers%E5%AE%B9%E5%99%A8"><span class="nav-number">1.7.</span> <span class="nav-text">启动第一个dockers容器</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -382,14 +382,14 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -424,8 +424,8 @@
 
 <div class="copyright">
   
-  &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -435,13 +435,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">10k</span>
+    <span title="站点总字数">11k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">9 分钟</span>
+    <span title="站点阅读时长">10 分钟</span>
 </div>
 
         
