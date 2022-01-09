@@ -1,6 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Python学习</title>
+    <url>/2022/01/02/Python%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>人生苦短，我学python</p>
+<span id="more"></span>
+<h2 id="海龟制图"><a href="#海龟制图" class="headerlink" title="海龟制图"></a>海龟制图</h2><p><code>import turtle</code> 引入<br><code>turtle.write(&quot;嘿嘿嘿&quot;)</code> 输入字符串<br><code>turtle.showturtle()</code>   显示字符串<br><code>turtle.forward(300)</code> 前进<br><code>turtle.goto（0，54）</code> 移到坐标<br><code>turtle.penup()</code>  抬笔<br><code>turtle.pendown()</code> 落笔<br><code>turtle.circle()</code> 画画<br><code>turtle.width()</code> 设置粗细<br><code>turtle.color()</code>  设置颜色  </p>
+<h2 id="python与c不一样的地方"><a href="#python与c不一样的地方" class="headerlink" title="python与c不一样的地方"></a>python与c不一样的地方</h2><p>赋值<br>a,b,c = 1,2,3<br>a,b = b,a<br>// 整数除法<br>** 幂<br>divemod（）同时得到商和余数<br>round（） 四色五入<br>3&lt;4&lt;4 关系运算符可以连用  </p>
+<h2 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h2><p>Python使用Unicode编码<br>相互转换：ord（） chr（）<br>多行注释用三个单引号或双引号<br>使用print加入,end=实现不换行<br>字符串处理(以a为示例字符串)：</p>
+<pre><code>str（）
+a = a.replace(原字符,替换字符)  
+[start:end:step]   
+a.split()  默认空格  
+join（）  
+in / not in
+
+a.startwith()  
+a.endwith()  
+a.find()  
+a.rfind()
+a.count（）
+
+a.isalnum() 是否全为字母或数字
+a.isalpha() 是否全为字母（含汉字）
+a.isspace() 是否为空白字符  
+a.isupper()
+a.islower()       
+
+strip() 去除首尾  
+lstrip（）
+rstrip（）  
+
+a.capitalize() 首字母大写  
+a.title() 每个单词首字母大写  
+a.upper()   所有单词大写   
+a.lower()    全部小写  
+a.swapcase()  大小写互换  
+
+排版：
+center()
+lijust()
+rjust()   
+
+格式化： 
+str.format()
+
+io和array
+import io
+io.StrngIO（）
+.getvalue()  
+.seek() 移动指针  
+.write()
+</code></pre>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><pre><code>创建:
+a = []
+a = list(字符串或range() )
+
+
+
+
+
+
+
+ 
+</code></pre>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python题目分享</title>
+    <url>/2022/01/06/python%E9%A2%98%E7%9B%AE%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<p><strong>刷题ing……</strong></p>
+<span id="more"></span>  
+<h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p><strong>题目</strong>：企业发放的奖金根据利润提成。利润(I)低于或等于10万元时，奖金可提10%；利润高于10万元，低于20万元时，低于10万元的部分按10%提成，高于10万元的部分，可提成7.5%；20万到40万之间时，高于20万元的部分，可提成5%；40万到60万之间时高于40万元的部分，可提成3%；60万到100万之间时，高于60万元的部分，可提成1.5%，高于100万元时，超过100万元的部分按1%提成，从键盘输入当月利润I，求应发放奖金总数？<br><strong>巧答</strong>：利用两个列表，省去大量if else语句</p>
+<pre><code>i = int(input(&#39;净利润:&#39;))
+arr = [1000000,600000,400000,200000,100000,0]
+rat = [0.01,0.015,0.03,0.05,0.075,0.1]
+r = 0
+for idx in range(0,6):
+    if i&gt;arr[idx]:
+        r+=(i-arr[idx])*rat[idx]
+        print ((i-arr[idx])*rat[idx])
+        i=arr[idx]
+print (r)  
+</code></pre>
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p><strong>题目</strong>：一个整数，它加上100后是一个完全平方数，再加上168又是一个完全平方数，请问该数是多少？<br><strong>分析</strong>:<br>假设该数为 x。<br>1、则：x + 100 = n2, x + 100 + 168 = m2<br>2、计算等式：m2 - n2 = (m + n)(m - n) = 168<br>3、设置： m + n = i，m - n = j，i * j =168，i 和 j 至少一个是偶数<br>4、可得： m = (i + j) / 2， n = (i - j) / 2，i 和 j 要么都是偶数，要么都是奇数。<br>5、从 3 和 4 推导可知道，i 与 j 均是大于等于 2 的偶数。<br>6、由于 i * j = 168， j&gt;=2，则 1 &lt; i &lt; 168 / 2 + 1。<br>7、接下来将 i 的所有数字循环计算即可。  </p>
+<pre><code>for i in range(1,85):
+    if (168 % i == 0):
+        j = 168 / i;
+        if  (i &gt; j and (i + j) % 2 == 0 and (i - j) % 2 == 0 ):
+            m = (i + j) / 2
+            n = (i - j) / 2
+            x = n * n - 100
+            print(x)
+</code></pre>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MarkDown语法学习</title>
     <url>/2021/12/16/MarkDown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p><strong>通过hexo和gihub搭建的博客文章可以采用.md（Markdown）文件，我决定以边学边写的方式，通过此篇博客进行Markdown语法学习。</strong>  </p>
@@ -126,75 +227,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python学习</title>
-    <url>/2022/01/02/Python%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>人生苦短，我学python</p>
-<span id="more"></span>
-<h2 id="海龟制图"><a href="#海龟制图" class="headerlink" title="海龟制图"></a>海龟制图</h2><p><code>import turtle</code> 引入<br><code>turtle.write(&quot;嘿嘿嘿&quot;)</code> 输入字符串<br><code>turtle.showturtle()</code>   显示字符串<br><code>turtle.forward(300)</code> 前进<br><code>turtle.goto（0，54）</code> 移到坐标<br><code>turtle.penup()</code>  抬笔<br><code>turtle.pendown()</code> 落笔<br><code>turtle.circle()</code> 画画<br><code>turtle.width()</code> 设置粗细<br><code>turtle.color()</code>  设置颜色  </p>
-<h2 id="python与c不一样的地方"><a href="#python与c不一样的地方" class="headerlink" title="python与c不一样的地方"></a>python与c不一样的地方</h2><p>赋值<br>a,b,c = 1,2,3<br>a,b = b,a<br>// 整数除法<br>** 幂<br>divemod（）同时得到商和余数<br>round（） 四色五入<br>3&lt;4&lt;4 关系运算符可以连用  </p>
-<h2 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h2><p>Python使用Unicode编码<br>相互转换：ord（） chr（）<br>多行注释用三个单引号或双引号<br>使用print加入,end=实现不换行<br>字符串处理(以a为示例字符串)：</p>
-<pre><code>str（）
-a = a.replace(原字符,替换字符)  
-[start:end:step]   
-a.split()  默认空格  
-join（）  
-in / not in
-
-a.startwith()  
-a.endwith()  
-a.find()  
-a.rfind()
-a.count（）
-
-a.isalnum() 是否全为字母或数字
-a.isalpha() 是否全为字母（含汉字）
-a.isspace() 是否为空白字符  
-a.isupper()
-a.islower()       
-
-strip() 去除首尾  
-lstrip（）
-rstrip（）  
-
-a.capitalize() 首字母大写  
-a.title() 每个单词首字母大写  
-a.upper()   所有单词大写   
-a.lower()    全部小写  
-a.swapcase()  大小写互换  
-
-排版：
-center()
-lijust()
-rjust()   
-
-格式化： 
-str.format()
-
-io和array
-import io
-io.StrngIO（）
-.getvalue()  
-.seek() 移动指针  
-.write()
-</code></pre>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><pre><code>创建:
-a = []
-a = list(字符串或range() )
-
-
-
-
-
-
-
- 
-</code></pre>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>docker学习</title>
     <url>/2021/12/25/docker%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p><strong>学业指导老师让我们学习docker，写成报告作为大作业，之前自己也研究了下VMware，在上面安装了Ubuntu，正好趁此熟悉一下Linux操作系统，顺便为将来搭建服务器打基础。</strong><br> <span id="more"></span></p>
@@ -283,33 +315,11 @@ a = list(字符串或range() )
       </tags>
   </entry>
   <entry>
-    <title>“教你搭建属于自己的博客”</title>
-    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
-    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
-<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
-<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>“hexo搜索功能出错的解决方案”</title>
-    <url>/2021/12/17/%E4%B8%BAHext%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E6%8A%A5%E9%94%99/</url>
-    <content><![CDATA[<p><strong>今天在为hexo博客添加搜索功能时,本地生成可正常使用，上传到gihub时首页出现错位，修改主题文件中有关search的参数limits（将100改为1000成功解决问题)。</strong></p>
-]]></content>
-      <tags>
-        <tag>debug日志</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于几个网络工具</title>
-    <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p><strong>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍</strong><br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：  </p>
-<span id="more"></span>  
-<h4 id="一，网易uu加速器"><a href="#一，网易uu加速器" class="headerlink" title="一，网易uu加速器"></a>一，网易uu加速器</h4><p>可以免费加速steam社区，解决一些加好友、访问创意工坊、送游戏之类的问题。</p>
-<h4 id="二，Sidecar"><a href="#二，Sidecar" class="headerlink" title="二，Sidecar"></a>二，Sidecar</h4><p>一款免费开源的，用于专门加速GitHub这个全球最大的<br>同性交友网站。而且就在我用gitbash上传博客出现奇怪报错（挂小飞机、按网上指示修改文件参数、回退文件内容都没用），最后无可奈何到了重装nodejs边缘<br>的时候是它自带的NPM加速拯救了整个世界。<br>    注：可在github上获取  </p>
-<h4 id="三，科学上网"><a href="#三，科学上网" class="headerlink" title="三，科学上网"></a>三，科学上网</h4><p>这个最好了解一下翻墙原理，谨慎使用，不要发敏感言<br>论，注意隐私安全（在YouTube上看了下抓包，好像在服务器端窃取你的信息还是很容易的)。<br>    附一篇很有用的博客：<br>    <a href="https://tecrobe.github.io/blog/post/how-to-break-wall/">https://tecrobe.github.io/blog/post/how-to-break-wall/</a></p>
+    <title>为python的idle增添清屏功能</title>
+    <url>/2022/01/09/%E4%B8%BApython%E7%9A%84idle%E5%A2%9E%E6%B7%BB%E6%B8%85%E5%B1%8F%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<p><strong>Python的IDLE中的交互模式在某些情况下确实很方便，但代码一旦多了就很难受，为此我专门去网上查了查，找到了增加清屏功能的方法</strong></p>
+<span id="more"></span>
+<p>参考博客：<a href="https://blog.csdn.net/zhangbeizhen18/article/details/89214894">https://blog.csdn.net/zhangbeizhen18/article/details/89214894</a></p>
 ]]></content>
       <tags>
         <tag>技术</tag>
@@ -318,7 +328,8 @@ a = list(字符串或range() )
   <entry>
     <title>快捷键</title>
     <url>/2022/01/02/%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-    <content><![CDATA[<span id="more"></span>  
+    <content><![CDATA[<p><strong>记录一下快捷键</strong></p>
+<span id="more"></span>  
 <h2 id="IDLE"><a href="#IDLE" class="headerlink" title="IDLE"></a>IDLE</h2><p>Alt + N &emsp; / &emsp; Alt + P 查看上下历史命令<br>Ctrl + F6 重启shell<br>F1  打开帮助文件<br>Alt + /  补全曾经出现的单词<br>Ctrl + [&emsp; /&emsp;Ctrl +] 缩进代码和取消缩进<br>Alt + M 查看源码<br>Alt + C 打开类浏览器<br>F5 运行程序  
  </p>
 ]]></content>
@@ -367,21 +378,6 @@ a = list(字符串或range() )
       </tags>
   </entry>
   <entry>
-    <title>油猴插件推荐</title>
-    <url>/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<p><strong>俗话说的好，没有油猴插件的浏览器，算不上真正意义上的浏览器。上一篇介绍了几个宝藏网站，这次教你使用油猴脚本，让你的上网体验再次得到提升</strong>  </p>
-<span id="more"></span>    
-<h2 id="油猴的优点"><a href="#油猴的优点" class="headerlink" title="油猴的优点"></a>油猴的优点</h2><p>油猴支持丰富的网站脚本，从自动刷网课、免vip追剧，下载B站视频到图片搜索、调整字体、设置护眼模式等，并且安装管理简易，不需要编程基础，完全就是点点点，对用户非常友好</p>
-<h2 id="油猴的安装"><a href="#油猴的安装" class="headerlink" title="油猴的安装"></a>油猴的安装</h2><p>Windows系统自带的Microsoft Edge、火狐浏览器、谷歌浏览器等均可支持油猴扩展<br>1.在浏览器设置中找到插件或者扩展<br>火狐：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E5%8F%B6%E5%AD%90%E7%9A%84%E5%8D%9A%E5%AE%A2.png" alt=" "><br>Microsoft Edge：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B4.png" alt=" "><br>点击并找到更多插件的选项，搜索tempermonkey或者油猴<br>安装完成你就可以在浏览器的上方工具栏中找到它了<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B41.png" alt=" ">  </p>
-<h2 id="油猴插件"><a href="#油猴插件" class="headerlink" title="油猴插件"></a>油猴插件</h2><p>点击油猴图标，点击获取新脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B42.png" alt=" "><br>一般会选择GreasyFork。你可以在里面搜索你想要的脚本，点击安装即可使用（记得刷新网页）。<br>点击油猴图标可对插件进行管理，不用某个脚本时（多开会占用一定内存），你可以选择把它关掉或者删除  </p>
-<h2 id="自己在用的脚本"><a href="#自己在用的脚本" class="headerlink" title="自己在用的脚本"></a>自己在用的脚本</h2><p>1.AC-baidu-重定向优化百度搜狗谷歌必应搜索_favicon_双列<br>好用，真好用，作用让是你的搜索结果变成这样<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B43.png" alt=" "><br>2.字体渲染<br>当你第一次用这个脚本的时候，你会感觉眼睛一下舒服了许多<br>3.全网VIP破解<br>这个其实我下了但没有用，原因一是我不用爱奇艺、腾讯视频之类，二是作者注明了会收取一定广告费用，但是我一个舍友因为追综艺一直在用<br><strong>4.UserJS</strong><br>授人以鱼不如授人以渔，这个脚本会检索出对于当前网页大家都在用什么脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B44.png" alt=" ">  </p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>油猴脚本是开源的，这意味着所以人都可以去审查它的（安全性有<strong>一定</strong>保证），当然也可以按照自己的需求对它进行改编，油猴脚本众多，大家还需要进行探索，找到适合自己的脚本。 </p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>桌面美化</title>
     <url>/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/</url>
     <content><![CDATA[<pre><code>本篇博客与xmz合作完成（主要是他写的，我只负责转成.md格式），感谢舍友xmz的创作与分享！
@@ -413,6 +409,54 @@ a = list(字符串或range() )
 <h2 id="制作人：xmz"><a href="#制作人：xmz" class="headerlink" title="制作人：xmz"></a>制作人：xmz</h2>]]></content>
       <tags>
         <tag>与xmz的合作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>油猴插件推荐</title>
+    <url>/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<p><strong>俗话说的好，没有油猴插件的浏览器，算不上真正意义上的浏览器。上一篇介绍了几个宝藏网站，这次教你使用油猴脚本，让你的上网体验再次得到提升</strong>  </p>
+<span id="more"></span>    
+<h2 id="油猴的优点"><a href="#油猴的优点" class="headerlink" title="油猴的优点"></a>油猴的优点</h2><p>油猴支持丰富的网站脚本，从自动刷网课、免vip追剧，下载B站视频到图片搜索、调整字体、设置护眼模式等，并且安装管理简易，不需要编程基础，完全就是点点点，对用户非常友好</p>
+<h2 id="油猴的安装"><a href="#油猴的安装" class="headerlink" title="油猴的安装"></a>油猴的安装</h2><p>Windows系统自带的Microsoft Edge、火狐浏览器、谷歌浏览器等均可支持油猴扩展<br>1.在浏览器设置中找到插件或者扩展<br>火狐：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E5%8F%B6%E5%AD%90%E7%9A%84%E5%8D%9A%E5%AE%A2.png" alt=" "><br>Microsoft Edge：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B4.png" alt=" "><br>点击并找到更多插件的选项，搜索tempermonkey或者油猴<br>安装完成你就可以在浏览器的上方工具栏中找到它了<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B41.png" alt=" ">  </p>
+<h2 id="油猴插件"><a href="#油猴插件" class="headerlink" title="油猴插件"></a>油猴插件</h2><p>点击油猴图标，点击获取新脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B42.png" alt=" "><br>一般会选择GreasyFork。你可以在里面搜索你想要的脚本，点击安装即可使用（记得刷新网页）。<br>点击油猴图标可对插件进行管理，不用某个脚本时（多开会占用一定内存），你可以选择把它关掉或者删除  </p>
+<h2 id="自己在用的脚本"><a href="#自己在用的脚本" class="headerlink" title="自己在用的脚本"></a>自己在用的脚本</h2><p>1.AC-baidu-重定向优化百度搜狗谷歌必应搜索_favicon_双列<br>好用，真好用，作用让是你的搜索结果变成这样<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B43.png" alt=" "><br>2.字体渲染<br>当你第一次用这个脚本的时候，你会感觉眼睛一下舒服了许多<br>3.全网VIP破解<br>这个其实我下了但没有用，原因一是我不用爱奇艺、腾讯视频之类，二是作者注明了会收取一定广告费用，但是我一个舍友因为追综艺一直在用<br><strong>4.UserJS</strong><br>授人以鱼不如授人以渔，这个脚本会检索出对于当前网页大家都在用什么脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B44.png" alt=" ">  </p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>油猴脚本是开源的，这意味着所以人都可以去审查它的（安全性有<strong>一定</strong>保证），当然也可以按照自己的需求对它进行改编，油猴脚本众多，大家还需要进行探索，找到适合自己的脚本。 </p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于几个网络工具</title>
+    <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<p><strong>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍</strong><br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：  </p>
+<span id="more"></span>  
+<h4 id="一，网易uu加速器"><a href="#一，网易uu加速器" class="headerlink" title="一，网易uu加速器"></a>一，网易uu加速器</h4><p>可以免费加速steam社区，解决一些加好友、访问创意工坊、送游戏之类的问题。</p>
+<h4 id="二，Sidecar"><a href="#二，Sidecar" class="headerlink" title="二，Sidecar"></a>二，Sidecar</h4><p>一款免费开源的，用于专门加速GitHub这个全球最大的<br>同性交友网站。而且就在我用gitbash上传博客出现奇怪报错（挂小飞机、按网上指示修改文件参数、回退文件内容都没用），最后无可奈何到了重装nodejs边缘<br>的时候是它自带的NPM加速拯救了整个世界。<br>    注：可在github上获取  </p>
+<h4 id="三，科学上网"><a href="#三，科学上网" class="headerlink" title="三，科学上网"></a>三，科学上网</h4><p>这个最好了解一下翻墙原理，谨慎使用，不要发敏感言<br>论，注意隐私安全（在YouTube上看了下抓包，好像在服务器端窃取你的信息还是很容易的)。<br>    附一篇很有用的博客：<br>    <a href="https://tecrobe.github.io/blog/post/how-to-break-wall/">https://tecrobe.github.io/blog/post/how-to-break-wall/</a></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>“教你搭建属于自己的博客”</title>
+    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
+    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
+<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
+<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>“hexo搜索功能出错的解决方案”</title>
+    <url>/2021/12/17/%E4%B8%BAHext%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<p><strong>今天在为hexo博客添加搜索功能时,本地生成可正常使用，上传到gihub时首页出现错位，修改主题文件中有关search的参数limits（将100改为1000成功解决问题)。</strong></p>
+]]></content>
+      <tags>
+        <tag>debug日志</tag>
       </tags>
   </entry>
 </search>
