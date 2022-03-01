@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","width":200,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="大致学完html基础后，开始学习css，向python脚本迈进！">
+  <meta name="description" content="大致学完html基础后，开始学习css，向python脚本迈进">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css学习">
 <meta property="og:url" content="http://example.com/2022/02/05/css%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="叶子的博客">
-<meta property="og:description" content="大致学完html基础后，开始学习css，向python脚本迈进！">
+<meta property="og:description" content="大致学完html基础后，开始学习css，向python脚本迈进">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-02-05T09:43:44.000Z">
-<meta property="article:modified_time" content="2022-02-08T12:03:52.324Z">
+<meta property="article:modified_time" content="2022-02-16T08:14:05.101Z">
 <meta property="article:author" content="YeZi">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-08 20:03:52" itemprop="dateModified" datetime="2022-02-08T20:03:52+08:00">2022-02-08</time>
+                <time title="修改时间：2022-02-16 16:14:05" itemprop="dateModified" datetime="2022-02-16T16:14:05+08:00">2022-02-16</time>
               </span>
 
           
@@ -226,14 +226,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.7k</span>
+              <span>2.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -245,7 +245,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>大致学完html基础后，开始学习css，向python脚本迈进！</p>
+        <p><strong>大致学完html基础后，开始学习css，向python脚本迈进</strong></p>
 <span id="more"></span>
 <h2 id="一，层叠样式表"><a href="#一，层叠样式表" class="headerlink" title="一，层叠样式表"></a>一，层叠样式表</h2><h2 id="二，设置形式"><a href="#二，设置形式" class="headerlink" title="二，设置形式"></a>二，设置形式</h2><h3 id="内联"><a href="#内联" class="headerlink" title="内联"></a>内联</h3><p>只对一个标签生效（不推荐使用）<br>    <p style= "color:red; font-size: 64psx">大风起兮</p><br>效果：</p>
 <p style= "color:red; font-size: 64psx">大风起兮</p>
@@ -293,20 +293,20 @@
 
 所有元素都会发生改变
 </code></pre>
-<h2 id="选择器的高级用法"><a href="#选择器的高级用法" class="headerlink" title="选择器的高级用法"></a>选择器的高级用法</h2><h3 id="复合选择器"><a href="#复合选择器" class="headerlink" title="复合选择器"></a>复合选择器</h3><h2 id="交集"><a href="#交集" class="headerlink" title="交集"></a>交集</h2><pre><code>.red&#123;
+<h2 id="选择器的高级用法"><a href="#选择器的高级用法" class="headerlink" title="选择器的高级用法"></a>选择器的高级用法</h2><h3 id="复合选择器"><a href="#复合选择器" class="headerlink" title="复合选择器"></a>复合选择器</h3><h4 id="交集"><a href="#交集" class="headerlink" title="交集"></a>交集</h4><pre><code>.red&#123;
     color:&quot;red&quot;;
 &#125;
 div.red&#123;
     font-size:34px;
 &#125;
 </code></pre>
-<h2 id="并集"><a href="#并集" class="headerlink" title="并集"></a>并集</h2><pre><code>.acd , adc&#123;
+<h4 id="并集"><a href="#并集" class="headerlink" title="并集"></a>并集</h4><pre><code>.acd , adc&#123;
     ......
 &#125;
 </code></pre>
 <h3 id="关系选择器"><a href="#关系选择器" class="headerlink" title="关系选择器"></a>关系选择器</h3><h4 id="父子"><a href="#父子" class="headerlink" title="父子"></a>父子</h4><pre><code>`div&gt;span`
 </code></pre>
-<h3 id="后代"><a href="#后代" class="headerlink" title="后代"></a>后代</h3><p><code>div span</code></p>
+<h3 id="后代"><a href="#后代" class="headerlink" title="后代"></a>后代</h3><p><code>div span</code><br>(选中所以后代为plate *)</p>
 <h3 id="兄弟"><a href="#兄弟" class="headerlink" title="兄弟"></a>兄弟</h3><pre><code>`P + span`下一个
 `p ~ span`下边所有
 </code></pre>
@@ -323,7 +323,14 @@ div.red&#123;
 <li>[属性名*=属性值]（包含）</li>
 </ul>
 <h3 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h3><p>伪类（不存在的，特殊的类），如第一个子元素，被点击的类，鼠标移入的类，一般以”:”开头</p>
-<h4 id="排序选择"><a href="#排序选择" class="headerlink" title="排序选择"></a>排序选择</h4><p>为了代替ul&gt;li.first<br>如:<br>ul&gt;li:frist-child（其他元素也参与排序，不参与的用first-of-child）<br>ul&gt;li:nth-child(0)—-&gt;()内填n表示所以，填2n（even）表示偶数序号</p>
+<h4 id="排序选择"><a href="#排序选择" class="headerlink" title="排序选择"></a>排序选择</h4><p>为了代替ul&gt;li.first<br>如:<br>ul&gt;li:frist-child（其他元素也参与排序，不参与的用first-of-type）</p>
+<p>only-of-type表示选择单一的那个</p>
+<p>ul&gt;li:nth-child(0)—-&gt;</p>
+<ul>
+<li>()内填n表示所有</li>
+<li>填2n（even）表示偶数序号，</li>
+<li>n+d表示从d开始</li>
+</ul>
 <h4 id="非选择器"><a href="#非选择器" class="headerlink" title="非选择器"></a>非选择器</h4><p>：not（）</p>
 <h4 id="超链接选择器"><a href="#超链接选择器" class="headerlink" title="超链接选择器"></a>超链接选择器</h4><ul>
 <li><p>link 正常的</p>
@@ -337,6 +344,7 @@ div.red&#123;
 </code></pre>
 <p>  }<br>  a:visited{</p>
 <p>  }<br>  visited考虑到隐私不能直接调整大小</p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>：empty 空的那个</p>
 <h3 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h3><p>使用：：开头</p>
 <h4 id="选中首字母、首行"><a href="#选中首字母、首行" class="headerlink" title="选中首字母、首行"></a>选中首字母、首行</h4><p>  P::first-letter<br>  p：：first-line{</p>
 <pre><code>  background-color:yellow;
@@ -358,6 +366,85 @@ div.red&#123;
     color:&quot;red&quot;;
 &#125;
 </code></pre>
+<h2 id="继承和优先级"><a href="#继承和优先级" class="headerlink" title="继承和优先级"></a>继承和优先级</h2><p>一般背景、格式不被继承</p>
+<p>选择器权重</p>
+<ol>
+<li><p>内联样式 –&gt; 1，0，0，0</p>
+</li>
+<li><p>id选择器 –&gt; 0，1，0，0</p>
+</li>
+<li><p>类和伪类选择器 –&gt; 0，0，1，0</p>
+</li>
+<li><p>元素选择器 –&gt; 0，0，0，1</p>
+</li>
+<li><p>通配选择器 –&gt; 0，0，0，0</p>
+</li>
+<li><p>继承选择器 –&gt; 无优先级</p>
+</li>
+<li><p>加入importanrt属性有最高优先级（慎用）<br>(“,”并集单独计算，不相加，单类选择器再高也不能跨越数量级)</p>
+<h2 id="大小与颜色"><a href="#大小与颜色" class="headerlink" title="大小与颜色"></a>大小与颜色</h2><h3 id="像素和百分比，em和rem"><a href="#像素和百分比，em和rem" class="headerlink" title="像素和百分比，em和rem"></a>像素和百分比，em和rem</h3><p> .box1{</p>
+<pre><code> width:100px;
+</code></pre>
+<p> }<br> .box2{</p>
+<pre><code> width:50%;(相对于父辈大小)
+</code></pre>
+<p> }<br> .box3{</p>
+<pre><code> width:10em;（相对于元素的字体大小1em = 1font-size，默认16像素）
+</code></pre>
+<p> }<br> .box4{</p>
+<pre><code> wdith:10rem;
+ #相对于html的字体大小计算
+</code></pre>
+<p> }</p>
+<h3 id="RGB与RGBA，HSL与HSLA"><a href="#RGB与RGBA，HSL与HSLA" class="headerlink" title="RGB与RGBA，HSL与HSLA"></a>RGB与RGBA，HSL与HSLA</h3><p>使用RGB值表示颜色</p>
+</li>
+</ol>
+<ul>
+<li><p>R-red </p>
+</li>
+<li><p>G-green</p>
+</li>
+<li><p>B-blue</p>
+</li>
+<li><p>0~255</p>
+</li>
+<li><p>语法：rgb（255，0，0）<br>加入A表示透明<br>使用十六进制表示RGB：<br><code>background-color:#ff0000</code>(都是两位重复可简写)<br>H：色相（0-360）<br>S：饱和度（0-100%）<br>L：亮度（0-100%）</p>
+<h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><h3 id="文档流"><a href="#文档流" class="headerlink" title="文档流"></a>文档流</h3><p>层式结构的最底层称为文档流</p>
+<h4 id="元素在文档流中的特点"><a href="#元素在文档流中的特点" class="headerlink" title="元素在文档流中的特点"></a>元素在文档流中的特点</h4></li>
+<li><p>块元素</p>
+<ul>
+<li>独占一行</li>
+<li>默认宽度是父元素的全部</li>
+<li>默认高度被子元素撑开</li>
+</ul>
+</li>
+<li><p>行内元素</p>
+<ul>
+<li>不会独占一行</li>
+<li>不能容纳时换行</li>
+</ul>
+</li>
+</ul>
+<h3 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h3><h4 id="组成部分"><a href="#组成部分" class="headerlink" title="组成部分"></a>组成部分</h4><ul>
+<li>内容区（content）</li>
+<li>边框（border)</li>
+<li>内边距（padding）</li>
+<li>外边距（margin）<h4 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h4></li>
+<li>border-width<br>边框宽度，顺序为上右下左，对称可省略</li>
+<li>border-top/right/botttom/left-width/sytle/</li>
+<li>border-color，默认黑色</li>
+<li>border-style<ul>
+<li>solid,实线</li>
+<li>dotted，点状虚线</li>
+<li>dashed ，虚线</li>
+<li>double，双线</li>
+<li>none，没有</li>
+</ul>
+</li>
+<li><strong>border</strong>一套全齐<h4 id="内边距"><a href="#内边距" class="headerlink" title="内边距"></a>内边距</h4>内容区和边界之间的距离(会影响盒子大小，默认采取背景颜色)</li>
+<li>padding-top/right/…</li>
+<li>padding一套齐全<h4 id="外边距"><a href="#外边距" class="headerlink" title="外边距"></a>外边距</h4>margin-top/bottom<br>设置左、上默认移动元素，设置下、右移动其他元素  <h4 id="水平布局与垂直布局"><a href="#水平布局与垂直布局" class="headerlink" title="水平布局与垂直布局"></a>水平布局与垂直布局</h4>垂直溢出overflow（-x/y）：visiable，hidden，scoll，auto<h4 id="行内元素的盒模型"><a href="#行内元素的盒模型" class="headerlink" title="行内元素的盒模型"></a>行内元素的盒模型</h4>行内元素垂直边距不推挤，宽高不影响<br>display：inline（行内元素），block（块元素），inline-block（设置宽高，不独占一行），table（表格），none（不在页面中显示）<br>visibilty：visiable，hidden<h3 id="默认样式"><a href="#默认样式" class="headerlink" title="默认样式"></a>默认样式</h3>重置样式表</li>
+</ul>
 
     </div>
 
@@ -394,7 +481,10 @@ div.red&#123;
     <a href="/2022/01/31/html%E5%AD%A6%E4%B9%A0/" rel="prev" title="html学习">
       <i class="fa fa-chevron-left"></i> html学习
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/02/09/%E6%94%B9%E9%80%A0%E5%90%8E%E7%9A%84%E9%93%B6%E6%B2%B3%E9%93%81%E9%81%93%E4%B9%8B%E5%A4%9C/" rel="next" title="改造后的银河铁道之夜">
+      改造后的银河铁道之夜 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -453,7 +543,7 @@ div.red&#123;
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%EF%BC%8C%E5%B1%82%E5%8F%A0%E6%A0%B7%E5%BC%8F%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">一，层叠样式表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%EF%BC%8C%E8%AE%BE%E7%BD%AE%E5%BD%A2%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">二，设置形式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E8%81%94"><span class="nav-number">2.1.</span> <span class="nav-text">内联</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8"><span class="nav-number">2.2.</span> <span class="nav-text">内部样式表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%96%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8"><span class="nav-number">2.3.</span> <span class="nav-text">外部样式表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">3.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">4.</span> <span class="nav-text">选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%AF%E6%A0%87%E7%AD%BE%E6%B3%95"><span class="nav-number">4.1.</span> <span class="nav-text">纯标签法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#id%E6%B3%95"><span class="nav-number">4.2.</span> <span class="nav-text">id法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%88class%E5%B1%9E%E6%80%A7%EF%BC%89"><span class="nav-number">4.3.</span> <span class="nav-text">类选择器（class属性）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E9%85%8D%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">4.4.</span> <span class="nav-text">通配选择器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95"><span class="nav-number">5.</span> <span class="nav-text">选择器的高级用法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">5.1.</span> <span class="nav-text">复合选择器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E9%9B%86"><span class="nav-number">6.</span> <span class="nav-text">交集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B9%B6%E9%9B%86"><span class="nav-number">7.</span> <span class="nav-text">并集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">7.1.</span> <span class="nav-text">关系选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%88%B6%E5%AD%90"><span class="nav-number">7.1.1.</span> <span class="nav-text">父子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8E%E4%BB%A3"><span class="nav-number">7.2.</span> <span class="nav-text">后代</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%84%E5%BC%9F"><span class="nav-number">7.3.</span> <span class="nav-text">兄弟</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">7.4.</span> <span class="nav-text">属性选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">7.5.</span> <span class="nav-text">伪类选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F%E9%80%89%E6%8B%A9"><span class="nav-number">7.5.1.</span> <span class="nav-text">排序选择</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%9E%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">7.5.2.</span> <span class="nav-text">非选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">7.5.3.</span> <span class="nav-text">超链接选择器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%AA%E5%85%83%E7%B4%A0%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">7.6.</span> <span class="nav-text">伪元素选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%89%E4%B8%AD%E9%A6%96%E5%AD%97%E6%AF%8D%E3%80%81%E9%A6%96%E8%A1%8C"><span class="nav-number">7.6.1.</span> <span class="nav-text">选中首字母、首行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A2%AB%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E9%80%89%E4%B8%AD%E7%9A%84%E6%96%87%E5%AD%97"><span class="nav-number">7.6.2.</span> <span class="nav-text">被鼠标右键选中的文字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%E7%9A%84%E5%BC%80%E5%A7%8B%E5%92%8C%E7%BB%93%E5%B0%BE"><span class="nav-number">7.6.3.</span> <span class="nav-text">元素的开始和结尾</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%EF%BC%8C%E5%B1%82%E5%8F%A0%E6%A0%B7%E5%BC%8F%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">一，层叠样式表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%EF%BC%8C%E8%AE%BE%E7%BD%AE%E5%BD%A2%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">二，设置形式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E8%81%94"><span class="nav-number">2.1.</span> <span class="nav-text">内联</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8"><span class="nav-number">2.2.</span> <span class="nav-text">内部样式表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%96%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8"><span class="nav-number">2.3.</span> <span class="nav-text">外部样式表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">3.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">4.</span> <span class="nav-text">选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%AF%E6%A0%87%E7%AD%BE%E6%B3%95"><span class="nav-number">4.1.</span> <span class="nav-text">纯标签法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#id%E6%B3%95"><span class="nav-number">4.2.</span> <span class="nav-text">id法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%88class%E5%B1%9E%E6%80%A7%EF%BC%89"><span class="nav-number">4.3.</span> <span class="nav-text">类选择器（class属性）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E9%85%8D%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">4.4.</span> <span class="nav-text">通配选择器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95"><span class="nav-number">5.</span> <span class="nav-text">选择器的高级用法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">5.1.</span> <span class="nav-text">复合选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%A4%E9%9B%86"><span class="nav-number">5.1.1.</span> <span class="nav-text">交集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B9%B6%E9%9B%86"><span class="nav-number">5.1.2.</span> <span class="nav-text">并集</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">5.2.</span> <span class="nav-text">关系选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%88%B6%E5%AD%90"><span class="nav-number">5.2.1.</span> <span class="nav-text">父子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8E%E4%BB%A3"><span class="nav-number">5.3.</span> <span class="nav-text">后代</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%84%E5%BC%9F"><span class="nav-number">5.4.</span> <span class="nav-text">兄弟</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">5.5.</span> <span class="nav-text">属性选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">5.6.</span> <span class="nav-text">伪类选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F%E9%80%89%E6%8B%A9"><span class="nav-number">5.6.1.</span> <span class="nav-text">排序选择</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%9E%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">5.6.2.</span> <span class="nav-text">非选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">5.6.3.</span> <span class="nav-text">超链接选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">5.6.4.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%AA%E5%85%83%E7%B4%A0%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">5.7.</span> <span class="nav-text">伪元素选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%89%E4%B8%AD%E9%A6%96%E5%AD%97%E6%AF%8D%E3%80%81%E9%A6%96%E8%A1%8C"><span class="nav-number">5.7.1.</span> <span class="nav-text">选中首字母、首行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A2%AB%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E9%80%89%E4%B8%AD%E7%9A%84%E6%96%87%E5%AD%97"><span class="nav-number">5.7.2.</span> <span class="nav-text">被鼠标右键选中的文字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%E7%9A%84%E5%BC%80%E5%A7%8B%E5%92%8C%E7%BB%93%E5%B0%BE"><span class="nav-number">5.7.3.</span> <span class="nav-text">元素的开始和结尾</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF%E5%92%8C%E4%BC%98%E5%85%88%E7%BA%A7"><span class="nav-number">6.</span> <span class="nav-text">继承和优先级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E5%B0%8F%E4%B8%8E%E9%A2%9C%E8%89%B2"><span class="nav-number">7.</span> <span class="nav-text">大小与颜色</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%83%8F%E7%B4%A0%E5%92%8C%E7%99%BE%E5%88%86%E6%AF%94%EF%BC%8Cem%E5%92%8Crem"><span class="nav-number">7.1.</span> <span class="nav-text">像素和百分比，em和rem</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RGB%E4%B8%8ERGBA%EF%BC%8CHSL%E4%B8%8EHSLA"><span class="nav-number">7.2.</span> <span class="nav-text">RGB与RGBA，HSL与HSLA</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%83%E5%B1%80"><span class="nav-number">8.</span> <span class="nav-text">布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E6%A1%A3%E6%B5%81"><span class="nav-number">8.1.</span> <span class="nav-text">文档流</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%E5%9C%A8%E6%96%87%E6%A1%A3%E6%B5%81%E4%B8%AD%E7%9A%84%E7%89%B9%E7%82%B9"><span class="nav-number">8.1.1.</span> <span class="nav-text">元素在文档流中的特点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B"><span class="nav-number">8.2.</span> <span class="nav-text">盒子模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="nav-number">8.2.1.</span> <span class="nav-text">组成部分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BE%B9%E6%A1%86"><span class="nav-number">8.2.2.</span> <span class="nav-text">边框</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%85%E8%BE%B9%E8%B7%9D"><span class="nav-number">8.2.3.</span> <span class="nav-text">内边距</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%96%E8%BE%B9%E8%B7%9D"><span class="nav-number">8.2.4.</span> <span class="nav-text">外边距</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B0%B4%E5%B9%B3%E5%B8%83%E5%B1%80%E4%B8%8E%E5%9E%82%E7%9B%B4%E5%B8%83%E5%B1%80"><span class="nav-number">8.2.5.</span> <span class="nav-text">水平布局与垂直布局</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E7%9A%84%E7%9B%92%E6%A8%A1%E5%9E%8B"><span class="nav-number">8.2.6.</span> <span class="nav-text">行内元素的盒模型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F"><span class="nav-number">8.3.</span> <span class="nav-text">默认样式</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -468,7 +558,7 @@ div.red&#123;
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -521,13 +611,13 @@ div.red&#123;
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">18k</span>
+    <span title="站点总字数">26k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">17 分钟</span>
+    <span title="站点阅读时长">24 分钟</span>
 </div>
 
         
