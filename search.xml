@@ -882,9 +882,10 @@ div.red&#123;
  src：url（&#39;&#39;）format（‘truetype’）;路径
 </code></pre>
 <p> }</p>
-<h3 id="RGB与RGBA，HSL与HSLA"><a href="#RGB与RGBA，HSL与HSLA" class="headerlink" title="RGB与RGBA，HSL与HSLA"></a>RGB与RGBA，HSL与HSLA</h3><p>使用RGB值表示颜色</p>
+<h3 id="字体图标（iconfont）"><a href="#字体图标（iconfont）" class="headerlink" title="字体图标（iconfont）"></a>字体图标（iconfont）</h3><p> 使用font-face<br> （阿里图标字体和font Awesome（英文））</p>
 </li>
 </ol>
+<h3 id="RGB与RGBA，HSL与HSLA"><a href="#RGB与RGBA，HSL与HSLA" class="headerlink" title="RGB与RGBA，HSL与HSLA"></a>RGB与RGBA，HSL与HSLA</h3><p>使用RGB值表示颜色</p>
 <ul>
 <li><p>R-red </p>
 </li>
@@ -1355,7 +1356,7 @@ mpstat(先安装sysstat: sudo spt-get install sysstat)
 <li>成员变量（定义在类的内部）</li>
 <li>局部变量</li>
 <li>方法参数</li>
-<li>catch语句块入口参数（异常处理参数）<h2 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h2>引用变量a，b<br>a = b 只是把b的地址赋给a</li>
+<li>catch语句块入口参数（异常处理参数）<h2 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h2>引用变量a，b<br>a = b 只是把b的地址赋给a<h2 id="eclipse使用技巧"><a href="#eclipse使用技巧" class="headerlink" title="eclipse使用技巧"></a>eclipse使用技巧</h2>ctrl + 1 自动添加方法<br>sout + 回车 写入System.out.println(“”);<br><img src="/2022/02/28/java%E7%AC%94%E8%AE%B0/%E5%BF%AB%E6%8D%B7%E9%94%AE.png" alt="快捷键"></li>
 </ol>
 ]]></content>
       <tags>
