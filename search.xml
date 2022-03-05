@@ -126,285 +126,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Ubuntu查看硬件信息</title>
-    <url>/2022/02/10/Ubuntu%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<p><strong>新买的两个4g内存条到了，试一试ok不ok</strong></p>
-<span id="more"></span>
-<p>参考博客：<a href="https://blog.csdn.net/chuanyu/article/details/46611793">https://blog.csdn.net/chuanyu/article/details/46611793</a><br>总命令： lshw</p>
-<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><pre><code># uname -a               # 查看内核/操作系统/CPU信息
-# head -n 1 /etc/issue   # 查看操作系统版本 
-# cat /proc/cpuinfo      # 查看CPU信息
-# hostname               # 查看计算机名 
-# lspci -tv              # 列出所有PCI设备
-# lsusb -tv              # 列出所有USB设备 
-# lsmod                  # 列出加载的内核模块
-# env                    # 查看环境变量
-</code></pre>
-<h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><pre><code># free -m                # 查看内存使用量和交换区使用量 
-# df -h                  # 查看各分区使用情况 
-# du -sh &lt;目录名&gt;        # 查看指定目录的大小 
-# grep MemTotal /proc/meminfo   # 查看内存总量
-# grep MemFree /proc/meminfo    # 查看空闲内存量
-# uptime                 # 查看系统运行时间、用户数、负载 
-# cat /proc/loadavg      # 查看系统负载
-</code></pre>
-<h2 id="磁盘和分区"><a href="#磁盘和分区" class="headerlink" title="磁盘和分区"></a>磁盘和分区</h2><pre><code># mount | column -t      # 查看挂接的分区状态 
-# fdisk -l               # 查看所有分区 
-# swapon -s              # 查看所有交换分区
-# hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备) 
-# dmesg | grep IDE       # 查看启动时IDE设备检测状况
-</code></pre>
-<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><pre><code># ifconfig               # 查看所有网络接口的属性
-# iptables -L            # 查看防火墙设置 
-# route -n               # 查看路由表 
-# netstat -lntp          # 查看所有监听端口 
-# netstat -antp          # 查看所有已经建立的连接
-# netstat -s             # 查看网络统计信息
-</code></pre>
-<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><pre><code># ps -ef                 # 查看所有进程 
-# top                    # 实时显示进程状态
-</code></pre>
-<h2 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h2><pre><code># w                      # 查看活动用户 
-# id &lt;用户名&gt;            # 查看指定用户信息 
-# last                   # 查看用户登录日志 
-# cut -d: -f1 /etc/passwd   # 查看系统所有用户 
-# cut -d: -f1 /etc/group    # 查看系统所有组 
-# crontab -l             # 查看当前用户的计划任务
-</code></pre>
-<h2 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h2><pre><code># chkconfig --list       # 列出所有系统服务 
-# chkconfig --list | grep on    # 列出所有启动的系统服务
-</code></pre>
-<h2 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h2><pre><code># rpm -qa                # 查看所有安装的软件包
-</code></pre>
-<h2 id="常用命令整理如下："><a href="#常用命令整理如下：" class="headerlink" title="常用命令整理如下："></a>常用命令整理如下：</h2><pre><code>查看主板的序列号: dmidecode | grep -i ’serial number’
-
-用硬件检测程序kuduz探测新硬件：service kudzu start ( or restart)
-
-查看CPU信息：cat /proc/cpuinfo [dmesg | grep -i &#39;cpu&#39;][dmidecode -t processor]
-
-查看内存信息：cat /proc/meminfo [free -m][vmstat]
-
-查看板卡信息：cat /proc/pci
-
-查看显卡/声卡信息：lspci |grep -i ‘VGA’[dmesg | grep -i &#39;VGA&#39;]
-
-查看网卡信息：dmesg | grep -i ‘eth’[cat /etc/sysconfig/hwconf | grep -i eth][lspci | grep -i &#39;eth&#39;]
-查看PCI信息：lspci (相比cat /proc/pci更直观）
-
-查看USB设备：cat /proc/bus/usb/devices
-
-查看键盘和鼠标:cat /proc/bus/input/devices
-
-查看系统硬盘信息和使用情况：fdisk &amp; disk – l &amp; df
-
-查看各设备的中断请求(IRQ):cat /proc/interrupts
-
-查看系统体系结构：uname -a
-
-查看及启动系统的32位或64位内核模式：isalist –v [isainfo –v][isainfo –b]
-
-dmidecode查看硬件信息，包括bios、cpu、内存等信息
-
-测定当前的显示器刷新频率：/usr/sbin/ffbconfig –rev \?
-
-查看系统配置：/usr/platform/sun4u/sbin/prtdiag –v
-
-查看当前系统中已经应用的补丁：showrev –p
-
-显示当前的运行级别：who –rH
-
-查看当前的bind版本信息：nslookup –class=chaos –q=txt version.bind
-
-dmesg | more 查看硬件信息
-lspci 显示外设信息, 如usb，网卡等信息
-lsnod 查看已加载的驱动
-lshw
-psrinfo -v 查看当前处理器的类型和速度（主频）
-prtconf -v 打印当前的OBP版本号
-iostat –E 查看硬盘物理信息(vendor, RPM, Capacity)
-prtvtoc /dev/rdsk/c0t0d0s 查看磁盘的几何参数和分区信息
-df –F ufs –o i 显示已经使用和未使用的i-node数目
-isalist –v
-
-对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
-Cpuinfo 主机CPU信息
-Dma 主机DMA通道信息
-Filesystems 文件系统信息
-Interrupts 主机中断信息
-Ioprots 主机I/O端口号信息
-Meninfo 主机内存信息
-Version Linux内存版本信息
-
-备注： proc – process information pseudo-filesystem 进程信息伪装文件系统
-
-RPM
-
-    在Linux 操作系统中，有一个系统软件包，它的功能类似于Windows里面的“添加/删除程序”，但是功能又比“添加/删除程序”强很多，它就是 Red Hat Package Manager(简称RPM)。此工具包最先是由Red Hat公司推出的，后来被其他Linux开发商所借用。由于它为Linux使用者省去了很多时间，所以被广泛应用于在Linux下安装、删除软件。下面就 给大家介绍一下它的具体使用方法。
-
-1.我们得到一个新软件，在安装之前，一般都要先查看一下这个软件包里有什么内容，假设这个文件是：Linux-1.4-6.i368.rpm，我们可以用这条命令查看：
-
-rpm -qpi Linux-1.4-6.i368.rpm
-
-系统将会列出这个软件包的详细资料，包括含有多少个文件、各文件名称、文件大小、创建时间、编译日期等信息。
-
-2.上面列出的所有文件在安装时不一定全部安装，就像Windows下程序的安装方式分为典型、完全、自定义一样，Linux也会让你选择安装方式，此时我们可以用下面这条命令查看软件包将会在系统里安装哪些部分，以方便我们的选择：
-
-rpm -qpl Linux-1.4-6.i368.rpm
-
-3. 选择安装方式后，开始安装。我们可以用rpm-ivh Linux-1.4-6.i368.rpm命令安装此软件。在安装过程中，若系统提示此软件已安装过或因其他原因无法继续安装，但若我们确实想执行安装命 令，可以在 -ivh后加一参数“-replacepkgs”：
-
-rpm -ivh -replacepkgs Linux-1.4-6.i368.rpm
-
-4.有时我们卸载某个安装过的软件，只需执行rpm-e &lt;文件名&gt;;命令即可。
-
-5.对低版本软件进行升级是提高其功能的好办法，这样可以省去我们卸载后再安装新软件的麻烦，要升级某个软件，只须执行如下命令：rpm -uvh &lt;文件名&gt;;，注意：此时的文件名必须是要升级软件的升级补丁
-
-6. 另外一个安装软件的方法可谓是Linux的独到之处，同时也是RMP强大功能的一个表现：通过FTP站点直接在线安装软件。当找到含有你所需软件的站点并 与此网站连接后，执行下面的命令即可实现在线安装，譬如在线安装Linux-1.4-6.i368.rpm，可以用命令： www.it165.net
-
-rpm -i ftp://ftp.pht.com/pub/linux/redhat/...-1.4-6.i368.rpm
-
-7. 在我们使用电脑过程中，难免会有误操作，若我们误删了几个文件而影响了系统的性能时，怎样查找到底少了哪些文件呢?RPM软件包提供了一个查找损坏文件的 功能，执行此命令：rpm -Va即可，Linux将为你列出所有损坏的文件。你可以通过Linux的安装光盘进行修复。
-
-8.Linux系统中文件繁多，在使用过程中，难免会碰到我们不认识的文件，在Windows下我们可以用“开始/查找”菜单快速判断某个文件属于哪个文件夹，在Linux中，下面这条命令行可以帮助我们快速判定某个文件属于哪个软件包：
-
-rpm -qf &lt;文件名&gt;;
-
-9.当每个软件包安装在Linux系统后，安装文件都会到RPM数据库中“报到”，所以，我们要查询某个已安装软件的属性时，只需到此数据库中查找即可。注意：此时的查询命令不同于1和8介绍的查询，这种方法只适用于已安装过的软件包！命令格式：
-
-rpm -参数　&lt;文件名&gt;;
-</code></pre>
-<h2 id="APT-GET"><a href="#APT-GET" class="headerlink" title="APT-GET"></a>APT-GET</h2><pre><code>apt-get update——在修改/etc/apt/sources.list或者/etc/apt/preferences之后运行该命令。此外您需要定期运行这一命令以确保您的软件包列表是最新的。
-apt-get install packagename——安装一个新软件包（参见下文的aptitude） 
-apt-get remove packagename——卸载一个已安装的软件包（保留配置文件） 
-apt-get --purge remove packagename——卸载一个已安装的软件包（删除配置文件） 
-dpkg --force-all --purge packagename 有些软件很难卸载，而且还阻止了别的软件的应用，就可以用这个，不过有点冒险。 
-apt-get autoclean apt会把已装或已卸的软件都备份在硬盘上，所以如果需要空间的话，可以让这个命令来删除你已经删掉的软件 
-apt-get clean 这个命令会把安装的软件的备份也删除，不过这样不会影响软件的使用的。 
-apt-get upgrade——更新所有已安装的软件包 
-apt-get dist-upgrade——将系统升级到新版本 
-apt-cache search string——在软件包列表中搜索字符串 
-dpkg -l package-name-pattern——列出所有与模式相匹配的软件包。如果您不知道软件包的全名，您可以使用“*package-name-pattern*”。
-aptitude——详细查看已安装或可用的软件包。与apt-get类似，aptitude可以通过命令行方式调用，但仅限于某些命令——最常见的有安装和卸载命令。由于aptitude比apt-get了解更多信息，可以说它更适合用来进行安装和卸载。
-apt-cache showpkg pkgs——显示软件包信息。 
-apt-cache dumpavail——打印可用软件包列表。 
-apt-cache show pkgs——显示软件包记录，类似于dpkg –print-avail。 
-apt-cache pkgnames——打印软件包列表中所有软件包的名称。 
-dpkg -S file——这个文件属于哪个已安装软件包。 
-dpkg -L package——列出软件包中的所有文件。 
-apt-file search filename——查找包含特定文件的软件包（不一定是已安装的），这些文件的文件名中含有指定的字符串。apt-file是一个独立的软件包。您必须 先使用apt-get install来安装它，然后运行apt-file update。如果apt-file search filename输出的内容太多，您可以尝试使用apt-file search filename | grep -w filename（只显示指定字符串作为完整的单词出现在其中的那些文件名）或者类似方法，例如：apt-file search filename | grep /bin/（只显示位于诸如/bin或/usr/bin这些文件夹中的文件，如果您要查找的是某个特定的执行文件的话，这样做是有帮助的）。
-</code></pre>
-<h2 id="ubuntu查看版本命令"><a href="#ubuntu查看版本命令" class="headerlink" title="ubuntu查看版本命令"></a>ubuntu查看版本命令</h2><pre><code>方法一：
-在终端中执行下列指令： cat /etc/issue
-方法二：
-使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。
-执行指令如下： sudo lsb_release -a
-方法三：
-打开“系统监视器”，选择“系统”
-Ubuntu查看版本命令
-1. lshw
-lshw命令显示详细硬件信息。
-如果要用概要方式显示，可以加上short参数：lshw-short
-要显示指定硬件信息，加上class(或C)参数：lshw -classmemory
-2. sysstat
-监测系统性能及效率的一组工具，这些工具对于我们收集系统性能数据，
-比如CPU使用率、硬盘和网络吞吐数据。
-3. lspci -v (相比cat/proc/pci更直观）
-查看PCI信息，lspci 是读取 hwdata 数据库。
-4. uname -a
-查看系统体系结构。
-5. dmidecode
-查看硬件信息，包括bios、cpu、内存等信息
-6. dmesg
-显示内核缓冲区系统控制信息，如系统启动时的信息会写到/var/log/。
-注：dmesg 工具并不是专门用来查看硬件芯片组标识的工具，
-但通过这个工具能让我们知道机器中的硬件的一些参数；因为系统在启动的时候，
-会写一些硬件相关的日志到 /var/log/message* 或/var/log/boot* 文件中。
-7. lshal 和hal-device-manager
-8. 查看 /proc
-对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
-Cpuinfo 主机CPU信息
-Dma 主机DMA通道信息
-Filesystems 文件系统信息
-Interrupts 主机中断信息
-Ioprots 主机I/O端口号信息
-Meninfo 主机内存信息
-Version Linux内存版本信息
-查看CPU信息：cat /proc/cpuinfo 查看板卡信息：cat /proc/pci 查看内存信息：cat/proc/meminfo 查看USB设备：cat /proc/bus/usb/devices 查看键盘和鼠标：cat/proc/bus/input/devices 查看各设备的中断请求(IRQ)：cat/proc/interrupts
-</code></pre>
-<h2 id="主板信息"><a href="#主板信息" class="headerlink" title="主板信息:"></a>主板信息:</h2><pre><code>sudo demidecode | grep -i ‘serial number’
-</code></pre>
-<h2 id="CPU信息"><a href="#CPU信息" class="headerlink" title="CPU信息:"></a>CPU信息:</h2><pre><code>cat /proc/cpuinfo
-dmesg | grep -i ‘cpu’
-sudo dmidecode -t processor
-</code></pre>
-<h2 id="硬盘信息"><a href="#硬盘信息" class="headerlink" title="硬盘信息:"></a>硬盘信息:</h2><pre><code>查看分区情况:
-sudo fdisk -l
-
-查看大小情况:
-df -h
-
-查看使用情况:
-du -h
-sudo hdparm -I /dev/sda
-dmesg | grep sda
-</code></pre>
-<h2 id="内存信息"><a href="#内存信息" class="headerlink" title="内存信息:"></a>内存信息:</h2><pre><code>cat /proc/meminfo
-dmesg | grep mem
-free -m
-vmstat
-sudo dmidecode | grep -i mem
-</code></pre>
-<h2 id="网卡信息"><a href="#网卡信息" class="headerlink" title="网卡信息:"></a>网卡信息:</h2><pre><code>dmesg | grep -i ‘eth’
-lspci | grep -i ‘eth’
-
-ethtool -i eht0
-ethhool -k eth0
-ethtool -g eth0
-</code></pre>
-<h2 id="查看鼠标和键盘"><a href="#查看鼠标和键盘" class="headerlink" title="查看鼠标和键盘:"></a>查看鼠标和键盘:</h2><pre><code>cat /proc/bus/input/devices
-</code></pre>
-<h2 id="查看各设备的中断请求-IRQ"><a href="#查看各设备的中断请求-IRQ" class="headerlink" title="查看各设备的中断请求(IRQ):"></a>查看各设备的中断请求(IRQ):</h2><pre><code>cat /proc/interrupts
-</code></pre>
-<h2 id="显卡信息"><a href="#显卡信息" class="headerlink" title="显卡信息:"></a>显卡信息:</h2><pre><code>lspci | grep -i ‘VGA’
-dmesg | grep -i ‘VGA’
-</code></pre>
-<h2 id="声卡信息"><a href="#声卡信息" class="headerlink" title="声卡信息:"></a>声卡信息:</h2><pre><code>查看声卡型号:
-lspci | grep -i audio
-
-查看型号ac97的声卡驱动模块:
-modprobe -l | grep ac97
-
-查看声卡信息:
-cat /proc/asound/cards
-
-查看alsa-utils本:
-alsactl -v
-
-查看内核alsa版本:
-cat /proc/asound/version
-
-声卡信息:
-aplay -l
-
-硬件信息之声卡:
-sudo lshw -C sound
-
-模块状态之声音:
-lsmod | grep -i snd
-
-alsa音频配置:
-alsamixer
-</code></pre>
-<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令:"></a>其他命令:</h2><pre><code>dmesg
-lspci
-mpstat(先安装sysstat: sudo spt-get install sysstat) 
-</code></pre>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python学习</title>
     <url>/2022/01/02/Python%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>人生苦短，我学python</p>
@@ -851,6 +572,285 @@ div.red&#123;
       </tags>
   </entry>
   <entry>
+    <title>Ubuntu查看硬件信息</title>
+    <url>/2022/02/10/Ubuntu%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<p><strong>新买的两个4g内存条到了，试一试ok不ok</strong></p>
+<span id="more"></span>
+<p>参考博客：<a href="https://blog.csdn.net/chuanyu/article/details/46611793">https://blog.csdn.net/chuanyu/article/details/46611793</a><br>总命令： lshw</p>
+<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><pre><code># uname -a               # 查看内核/操作系统/CPU信息
+# head -n 1 /etc/issue   # 查看操作系统版本 
+# cat /proc/cpuinfo      # 查看CPU信息
+# hostname               # 查看计算机名 
+# lspci -tv              # 列出所有PCI设备
+# lsusb -tv              # 列出所有USB设备 
+# lsmod                  # 列出加载的内核模块
+# env                    # 查看环境变量
+</code></pre>
+<h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><pre><code># free -m                # 查看内存使用量和交换区使用量 
+# df -h                  # 查看各分区使用情况 
+# du -sh &lt;目录名&gt;        # 查看指定目录的大小 
+# grep MemTotal /proc/meminfo   # 查看内存总量
+# grep MemFree /proc/meminfo    # 查看空闲内存量
+# uptime                 # 查看系统运行时间、用户数、负载 
+# cat /proc/loadavg      # 查看系统负载
+</code></pre>
+<h2 id="磁盘和分区"><a href="#磁盘和分区" class="headerlink" title="磁盘和分区"></a>磁盘和分区</h2><pre><code># mount | column -t      # 查看挂接的分区状态 
+# fdisk -l               # 查看所有分区 
+# swapon -s              # 查看所有交换分区
+# hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备) 
+# dmesg | grep IDE       # 查看启动时IDE设备检测状况
+</code></pre>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><pre><code># ifconfig               # 查看所有网络接口的属性
+# iptables -L            # 查看防火墙设置 
+# route -n               # 查看路由表 
+# netstat -lntp          # 查看所有监听端口 
+# netstat -antp          # 查看所有已经建立的连接
+# netstat -s             # 查看网络统计信息
+</code></pre>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><pre><code># ps -ef                 # 查看所有进程 
+# top                    # 实时显示进程状态
+</code></pre>
+<h2 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h2><pre><code># w                      # 查看活动用户 
+# id &lt;用户名&gt;            # 查看指定用户信息 
+# last                   # 查看用户登录日志 
+# cut -d: -f1 /etc/passwd   # 查看系统所有用户 
+# cut -d: -f1 /etc/group    # 查看系统所有组 
+# crontab -l             # 查看当前用户的计划任务
+</code></pre>
+<h2 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h2><pre><code># chkconfig --list       # 列出所有系统服务 
+# chkconfig --list | grep on    # 列出所有启动的系统服务
+</code></pre>
+<h2 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h2><pre><code># rpm -qa                # 查看所有安装的软件包
+</code></pre>
+<h2 id="常用命令整理如下："><a href="#常用命令整理如下：" class="headerlink" title="常用命令整理如下："></a>常用命令整理如下：</h2><pre><code>查看主板的序列号: dmidecode | grep -i ’serial number’
+
+用硬件检测程序kuduz探测新硬件：service kudzu start ( or restart)
+
+查看CPU信息：cat /proc/cpuinfo [dmesg | grep -i &#39;cpu&#39;][dmidecode -t processor]
+
+查看内存信息：cat /proc/meminfo [free -m][vmstat]
+
+查看板卡信息：cat /proc/pci
+
+查看显卡/声卡信息：lspci |grep -i ‘VGA’[dmesg | grep -i &#39;VGA&#39;]
+
+查看网卡信息：dmesg | grep -i ‘eth’[cat /etc/sysconfig/hwconf | grep -i eth][lspci | grep -i &#39;eth&#39;]
+查看PCI信息：lspci (相比cat /proc/pci更直观）
+
+查看USB设备：cat /proc/bus/usb/devices
+
+查看键盘和鼠标:cat /proc/bus/input/devices
+
+查看系统硬盘信息和使用情况：fdisk &amp; disk – l &amp; df
+
+查看各设备的中断请求(IRQ):cat /proc/interrupts
+
+查看系统体系结构：uname -a
+
+查看及启动系统的32位或64位内核模式：isalist –v [isainfo –v][isainfo –b]
+
+dmidecode查看硬件信息，包括bios、cpu、内存等信息
+
+测定当前的显示器刷新频率：/usr/sbin/ffbconfig –rev \?
+
+查看系统配置：/usr/platform/sun4u/sbin/prtdiag –v
+
+查看当前系统中已经应用的补丁：showrev –p
+
+显示当前的运行级别：who –rH
+
+查看当前的bind版本信息：nslookup –class=chaos –q=txt version.bind
+
+dmesg | more 查看硬件信息
+lspci 显示外设信息, 如usb，网卡等信息
+lsnod 查看已加载的驱动
+lshw
+psrinfo -v 查看当前处理器的类型和速度（主频）
+prtconf -v 打印当前的OBP版本号
+iostat –E 查看硬盘物理信息(vendor, RPM, Capacity)
+prtvtoc /dev/rdsk/c0t0d0s 查看磁盘的几何参数和分区信息
+df –F ufs –o i 显示已经使用和未使用的i-node数目
+isalist –v
+
+对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
+Cpuinfo 主机CPU信息
+Dma 主机DMA通道信息
+Filesystems 文件系统信息
+Interrupts 主机中断信息
+Ioprots 主机I/O端口号信息
+Meninfo 主机内存信息
+Version Linux内存版本信息
+
+备注： proc – process information pseudo-filesystem 进程信息伪装文件系统
+
+RPM
+
+    在Linux 操作系统中，有一个系统软件包，它的功能类似于Windows里面的“添加/删除程序”，但是功能又比“添加/删除程序”强很多，它就是 Red Hat Package Manager(简称RPM)。此工具包最先是由Red Hat公司推出的，后来被其他Linux开发商所借用。由于它为Linux使用者省去了很多时间，所以被广泛应用于在Linux下安装、删除软件。下面就 给大家介绍一下它的具体使用方法。
+
+1.我们得到一个新软件，在安装之前，一般都要先查看一下这个软件包里有什么内容，假设这个文件是：Linux-1.4-6.i368.rpm，我们可以用这条命令查看：
+
+rpm -qpi Linux-1.4-6.i368.rpm
+
+系统将会列出这个软件包的详细资料，包括含有多少个文件、各文件名称、文件大小、创建时间、编译日期等信息。
+
+2.上面列出的所有文件在安装时不一定全部安装，就像Windows下程序的安装方式分为典型、完全、自定义一样，Linux也会让你选择安装方式，此时我们可以用下面这条命令查看软件包将会在系统里安装哪些部分，以方便我们的选择：
+
+rpm -qpl Linux-1.4-6.i368.rpm
+
+3. 选择安装方式后，开始安装。我们可以用rpm-ivh Linux-1.4-6.i368.rpm命令安装此软件。在安装过程中，若系统提示此软件已安装过或因其他原因无法继续安装，但若我们确实想执行安装命 令，可以在 -ivh后加一参数“-replacepkgs”：
+
+rpm -ivh -replacepkgs Linux-1.4-6.i368.rpm
+
+4.有时我们卸载某个安装过的软件，只需执行rpm-e &lt;文件名&gt;;命令即可。
+
+5.对低版本软件进行升级是提高其功能的好办法，这样可以省去我们卸载后再安装新软件的麻烦，要升级某个软件，只须执行如下命令：rpm -uvh &lt;文件名&gt;;，注意：此时的文件名必须是要升级软件的升级补丁
+
+6. 另外一个安装软件的方法可谓是Linux的独到之处，同时也是RMP强大功能的一个表现：通过FTP站点直接在线安装软件。当找到含有你所需软件的站点并 与此网站连接后，执行下面的命令即可实现在线安装，譬如在线安装Linux-1.4-6.i368.rpm，可以用命令： www.it165.net
+
+rpm -i ftp://ftp.pht.com/pub/linux/redhat/...-1.4-6.i368.rpm
+
+7. 在我们使用电脑过程中，难免会有误操作，若我们误删了几个文件而影响了系统的性能时，怎样查找到底少了哪些文件呢?RPM软件包提供了一个查找损坏文件的 功能，执行此命令：rpm -Va即可，Linux将为你列出所有损坏的文件。你可以通过Linux的安装光盘进行修复。
+
+8.Linux系统中文件繁多，在使用过程中，难免会碰到我们不认识的文件，在Windows下我们可以用“开始/查找”菜单快速判断某个文件属于哪个文件夹，在Linux中，下面这条命令行可以帮助我们快速判定某个文件属于哪个软件包：
+
+rpm -qf &lt;文件名&gt;;
+
+9.当每个软件包安装在Linux系统后，安装文件都会到RPM数据库中“报到”，所以，我们要查询某个已安装软件的属性时，只需到此数据库中查找即可。注意：此时的查询命令不同于1和8介绍的查询，这种方法只适用于已安装过的软件包！命令格式：
+
+rpm -参数　&lt;文件名&gt;;
+</code></pre>
+<h2 id="APT-GET"><a href="#APT-GET" class="headerlink" title="APT-GET"></a>APT-GET</h2><pre><code>apt-get update——在修改/etc/apt/sources.list或者/etc/apt/preferences之后运行该命令。此外您需要定期运行这一命令以确保您的软件包列表是最新的。
+apt-get install packagename——安装一个新软件包（参见下文的aptitude） 
+apt-get remove packagename——卸载一个已安装的软件包（保留配置文件） 
+apt-get --purge remove packagename——卸载一个已安装的软件包（删除配置文件） 
+dpkg --force-all --purge packagename 有些软件很难卸载，而且还阻止了别的软件的应用，就可以用这个，不过有点冒险。 
+apt-get autoclean apt会把已装或已卸的软件都备份在硬盘上，所以如果需要空间的话，可以让这个命令来删除你已经删掉的软件 
+apt-get clean 这个命令会把安装的软件的备份也删除，不过这样不会影响软件的使用的。 
+apt-get upgrade——更新所有已安装的软件包 
+apt-get dist-upgrade——将系统升级到新版本 
+apt-cache search string——在软件包列表中搜索字符串 
+dpkg -l package-name-pattern——列出所有与模式相匹配的软件包。如果您不知道软件包的全名，您可以使用“*package-name-pattern*”。
+aptitude——详细查看已安装或可用的软件包。与apt-get类似，aptitude可以通过命令行方式调用，但仅限于某些命令——最常见的有安装和卸载命令。由于aptitude比apt-get了解更多信息，可以说它更适合用来进行安装和卸载。
+apt-cache showpkg pkgs——显示软件包信息。 
+apt-cache dumpavail——打印可用软件包列表。 
+apt-cache show pkgs——显示软件包记录，类似于dpkg –print-avail。 
+apt-cache pkgnames——打印软件包列表中所有软件包的名称。 
+dpkg -S file——这个文件属于哪个已安装软件包。 
+dpkg -L package——列出软件包中的所有文件。 
+apt-file search filename——查找包含特定文件的软件包（不一定是已安装的），这些文件的文件名中含有指定的字符串。apt-file是一个独立的软件包。您必须 先使用apt-get install来安装它，然后运行apt-file update。如果apt-file search filename输出的内容太多，您可以尝试使用apt-file search filename | grep -w filename（只显示指定字符串作为完整的单词出现在其中的那些文件名）或者类似方法，例如：apt-file search filename | grep /bin/（只显示位于诸如/bin或/usr/bin这些文件夹中的文件，如果您要查找的是某个特定的执行文件的话，这样做是有帮助的）。
+</code></pre>
+<h2 id="ubuntu查看版本命令"><a href="#ubuntu查看版本命令" class="headerlink" title="ubuntu查看版本命令"></a>ubuntu查看版本命令</h2><pre><code>方法一：
+在终端中执行下列指令： cat /etc/issue
+方法二：
+使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。
+执行指令如下： sudo lsb_release -a
+方法三：
+打开“系统监视器”，选择“系统”
+Ubuntu查看版本命令
+1. lshw
+lshw命令显示详细硬件信息。
+如果要用概要方式显示，可以加上short参数：lshw-short
+要显示指定硬件信息，加上class(或C)参数：lshw -classmemory
+2. sysstat
+监测系统性能及效率的一组工具，这些工具对于我们收集系统性能数据，
+比如CPU使用率、硬盘和网络吞吐数据。
+3. lspci -v (相比cat/proc/pci更直观）
+查看PCI信息，lspci 是读取 hwdata 数据库。
+4. uname -a
+查看系统体系结构。
+5. dmidecode
+查看硬件信息，包括bios、cpu、内存等信息
+6. dmesg
+显示内核缓冲区系统控制信息，如系统启动时的信息会写到/var/log/。
+注：dmesg 工具并不是专门用来查看硬件芯片组标识的工具，
+但通过这个工具能让我们知道机器中的硬件的一些参数；因为系统在启动的时候，
+会写一些硬件相关的日志到 /var/log/message* 或/var/log/boot* 文件中。
+7. lshal 和hal-device-manager
+8. 查看 /proc
+对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
+Cpuinfo 主机CPU信息
+Dma 主机DMA通道信息
+Filesystems 文件系统信息
+Interrupts 主机中断信息
+Ioprots 主机I/O端口号信息
+Meninfo 主机内存信息
+Version Linux内存版本信息
+查看CPU信息：cat /proc/cpuinfo 查看板卡信息：cat /proc/pci 查看内存信息：cat/proc/meminfo 查看USB设备：cat /proc/bus/usb/devices 查看键盘和鼠标：cat/proc/bus/input/devices 查看各设备的中断请求(IRQ)：cat/proc/interrupts
+</code></pre>
+<h2 id="主板信息"><a href="#主板信息" class="headerlink" title="主板信息:"></a>主板信息:</h2><pre><code>sudo demidecode | grep -i ‘serial number’
+</code></pre>
+<h2 id="CPU信息"><a href="#CPU信息" class="headerlink" title="CPU信息:"></a>CPU信息:</h2><pre><code>cat /proc/cpuinfo
+dmesg | grep -i ‘cpu’
+sudo dmidecode -t processor
+</code></pre>
+<h2 id="硬盘信息"><a href="#硬盘信息" class="headerlink" title="硬盘信息:"></a>硬盘信息:</h2><pre><code>查看分区情况:
+sudo fdisk -l
+
+查看大小情况:
+df -h
+
+查看使用情况:
+du -h
+sudo hdparm -I /dev/sda
+dmesg | grep sda
+</code></pre>
+<h2 id="内存信息"><a href="#内存信息" class="headerlink" title="内存信息:"></a>内存信息:</h2><pre><code>cat /proc/meminfo
+dmesg | grep mem
+free -m
+vmstat
+sudo dmidecode | grep -i mem
+</code></pre>
+<h2 id="网卡信息"><a href="#网卡信息" class="headerlink" title="网卡信息:"></a>网卡信息:</h2><pre><code>dmesg | grep -i ‘eth’
+lspci | grep -i ‘eth’
+
+ethtool -i eht0
+ethhool -k eth0
+ethtool -g eth0
+</code></pre>
+<h2 id="查看鼠标和键盘"><a href="#查看鼠标和键盘" class="headerlink" title="查看鼠标和键盘:"></a>查看鼠标和键盘:</h2><pre><code>cat /proc/bus/input/devices
+</code></pre>
+<h2 id="查看各设备的中断请求-IRQ"><a href="#查看各设备的中断请求-IRQ" class="headerlink" title="查看各设备的中断请求(IRQ):"></a>查看各设备的中断请求(IRQ):</h2><pre><code>cat /proc/interrupts
+</code></pre>
+<h2 id="显卡信息"><a href="#显卡信息" class="headerlink" title="显卡信息:"></a>显卡信息:</h2><pre><code>lspci | grep -i ‘VGA’
+dmesg | grep -i ‘VGA’
+</code></pre>
+<h2 id="声卡信息"><a href="#声卡信息" class="headerlink" title="声卡信息:"></a>声卡信息:</h2><pre><code>查看声卡型号:
+lspci | grep -i audio
+
+查看型号ac97的声卡驱动模块:
+modprobe -l | grep ac97
+
+查看声卡信息:
+cat /proc/asound/cards
+
+查看alsa-utils本:
+alsactl -v
+
+查看内核alsa版本:
+cat /proc/asound/version
+
+声卡信息:
+aplay -l
+
+硬件信息之声卡:
+sudo lshw -C sound
+
+模块状态之声音:
+lsmod | grep -i snd
+
+alsa音频配置:
+alsamixer
+</code></pre>
+<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令:"></a>其他命令:</h2><pre><code>dmesg
+lspci
+mpstat(先安装sysstat: sudo spt-get install sysstat) 
+</code></pre>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>html学习</title>
     <url>/2022/01/31/html%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p><strong>学习python爬虫需要html基础，而且markdown文件支持html写法，所以专门来学习一下</strong></p>
@@ -996,6 +996,23 @@ div.red&#123;
       </tags>
   </entry>
   <entry>
+    <title>java安装以及配置环境</title>
+    <url>/2022/03/01/java%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<p>安装一下Java</p>
+<span id="more"></span>
+<h2 id="版本选择"><a href="#版本选择" class="headerlink" title="版本选择"></a>版本选择</h2><p>Java有许多版本，我在下载前也是纠结了好久，将自己查找的一些信息罗列如下</p>
+<h3 id="英文简称"><a href="#英文简称" class="headerlink" title="英文简称"></a>英文简称</h3><p>LTS：长期支持版，稳定<br>非LTS：实验版，新功能多</p>
+<p>SE：Java Platform Standard Edition，Java 平台标准版<br>EE：Java Platform Enterprise Edition，Java 平台企业版<br>ME：Java Platform Micro Edition，Java 平台微型版</p>
+<p>JRE：(Java Runtime Enviroment)是Java的运行环境，用来运行java程序<br>JDK：(Java Development Kit)又称J2SDK(Java2 Software Development Kit)，是Java开发工具包，包含了JRE<br>详见：<a href="https://www.php.cn/java/guide/449867.html">《jdk和jre的区别》</a></p>
+<h3 id="版本新旧问题"><a href="#版本新旧问题" class="headerlink" title="版本新旧问题"></a>版本新旧问题</h3><p>b站上的网课以及翁恺老师的java网课都使用了Java8版本。并且看知乎的一个回答，感觉JAVA8在目前生产环境中最常用。但是，自我感觉如果是学习用途的话，还是乐意去接受新版本，即使出了问题能学到一些新特性，所以选择安装了最新版的Java 17 LTS SE JDK版本</p>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网地址 ：<br><a href="https://www.oracle.com/java/technologies/downloads/">https://www.oracle.com/java/technologies/downloads/</a></p>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p>参考b站视频：<br><a href="https://www.oracle.com/java/technologies/downloads/">win10下(Java环境)JDK环境变量配置</a><br>视频中的一个路径：;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar</p>
+]]></content>
+      <tags>
+        <tag>debug日志</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>java笔记</title>
     <url>/2022/02/28/java%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>学习Java</p>
@@ -1034,83 +1051,10 @@ div.red&#123;
       </tags>
   </entry>
   <entry>
-    <title>java安装以及配置环境</title>
-    <url>/2022/03/01/java%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83/</url>
-    <content><![CDATA[<p>安装一下Java</p>
-<span id="more"></span>
-<h2 id="版本选择"><a href="#版本选择" class="headerlink" title="版本选择"></a>版本选择</h2><p>Java有许多版本，我在下载前也是纠结了好久，将自己查找的一些信息罗列如下</p>
-<h3 id="英文简称"><a href="#英文简称" class="headerlink" title="英文简称"></a>英文简称</h3><p>LTS：长期支持版，稳定<br>非LTS：实验版，新功能多</p>
-<p>SE：Java Platform Standard Edition，Java 平台标准版<br>EE：Java Platform Enterprise Edition，Java 平台企业版<br>ME：Java Platform Micro Edition，Java 平台微型版</p>
-<p>JRE：(Java Runtime Enviroment)是Java的运行环境，用来运行java程序<br>JDK：(Java Development Kit)又称J2SDK(Java2 Software Development Kit)，是Java开发工具包，包含了JRE<br>详见：<a href="https://www.php.cn/java/guide/449867.html">《jdk和jre的区别》</a></p>
-<h3 id="版本新旧问题"><a href="#版本新旧问题" class="headerlink" title="版本新旧问题"></a>版本新旧问题</h3><p>b站上的网课以及翁恺老师的java网课都使用了Java8版本。并且看知乎的一个回答，感觉JAVA8在目前生产环境中最常用。但是，自我感觉如果是学习用途的话，还是乐意去接受新版本，即使出了问题能学到一些新特性，所以选择安装了最新版的Java 17 LTS SE JDK版本</p>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网地址 ：<br><a href="https://www.oracle.com/java/technologies/downloads/">https://www.oracle.com/java/technologies/downloads/</a></p>
-<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p>参考b站视频：<br><a href="https://www.oracle.com/java/technologies/downloads/">win10下(Java环境)JDK环境变量配置</a><br>视频中的一个路径：;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar</p>
-]]></content>
-      <tags>
-        <tag>debug日志</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>python爬虫学习</title>
     <url>/2022/02/26/python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p><strong>开始学习爬虫了</strong></p>
 <span id="more"></span>
-]]></content>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ubuntu安装docker</title>
-    <url>/2021/12/29/ubuntu%E5%AE%89%E8%A3%85docker/</url>
-    <content><![CDATA[<p><strong>在学习docker的安装时，由于教程中的系统是centos，而我更熟悉ubuntu，所以我需要另外去找在Ubuntu系统下安装docker的方法</strong>  </p>
-<span id="more"></span>  
-<p>设为管理员模式<br><code>sudo su</code><br><code>cd</code><br>更新<br><code>apt-get update</code><br>下载依赖<br><code>apt-get install apt-transport-https ca-certificates curl gnupg-agent </code></p>
-<p><code>software-properties-common</code><br>添加密钥<br><code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg |apt-key add </code><br>验证<br><code>apt-key fingerprint 0EBFCD88</code><br>添加仓库<br><code>sudo add-apt-repository \    &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \    $(lsb_release -cs) \    stable&quot; </code><br>更新<br><code>sudo apt-get update </code><br>安装docker<br><code>sudo apt-get install docker-ce docker-ce-cli containerd.io </code><br>检验安装<br><code>sudo docker run hello-world </code><br>配置非root用户使用docker<br><code>groupadd docker  </code><br><code>sudo usermod -aG docker （用户名） </code><br>使配置生效(建议还是注销)<br><code>newgrp docker </code><br>检验<br><code>docker run hello-world  </code><br>配置开机自启<br><code>sudo systemctl enable（关  闭换成diable） docker  </code><br>查看 Docker 的运行状态：<br><code>sudo systemctl status docker</code><br>启动或停止docker命令<br><code>sudo service docker start</code> 启动<br><code>sudo service docker stop</code> 关闭<br>参考<br><a href="https://www.bilibili.com/video/BV1jE411JDocker">在 Ubuntu 上安装 Docker【日出一点一】</a><br><a href="https://blog.sunriseydy.top/technology/server-blog/server/ubuntu_install_docker/7Df?from=search&seid=5364338390793269848&spm_id_from=333.337.0.0">博客文章地址</a><br><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">docker官方文档</a> </p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ubuntu学习</title>
-    <url>/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p><strong>在学习docker的时候遇到了些许困难，看来只会简单的linux命令不行，还是先深入学习一下ubuntu</strong>  </p>
-<span id="more"></span>  
-
-<pre><code>B站链接：https://www.bilibili.com/video/BV1na4y1773c?p=4
-（因为之前已经安装过ubuntu所以笔记从P7之后开始）
-</code></pre>
-<h2 id="快照与系统恢复"><a href="#快照与系统恢复" class="headerlink" title="快照与系统恢复"></a>快照与系统恢复</h2><p>系统异常：</p>
-<ol>
-<li>快照</li>
-<li>重装系统<h3 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h3><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E5%BF%AB%E7%85%A71.png"><h2 id="界面功能"><a href="#界面功能" class="headerlink" title="界面功能"></a>界面功能</h2>左上角活动 -&gt; 类似于Windows系统的win+Tab  </li>
-</ol>
-<h2 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h2><h3 id="目录："><a href="#目录：" class="headerlink" title="目录："></a>目录：</h3><p>-l 详尽信息<br>pwd （print working directory）<br>~ 代表当前用户主目录<br>. 代表当前用户目录<br>.. 上一级目录<br>mkdir（make directory）创建目录  ，多级目录使用-p<br>rmdir （remove directory）删除目录（空）<br>rm （remove） -r（recursive递归）f（force）<br>cp A-&gt;B(将A复制到B)<br>mv 移动或者重命名  </p>
-<h3 id="文件："><a href="#文件：" class="headerlink" title="文件："></a>文件：</h3><p><strong>文件权限</strong><br>-owner<br>-r（read）<br>-w（write）<br>-x （excut）<br>查看权限：ls -l<br>九个字符：<br>rw-自己  r–同组  r–别人<br>修改权限：chmod（chnage file mod）<br>chmod o+w name.txt<br>o表示别人 +w表示增加write权限<br>a（all）所有人  u自己<br><strong>修改属主</strong><br>chown（—R递归）<br>opt目录可以放一些公共的东西<br>先名后目录   </p>
-<h3 id="归档："><a href="#归档：" class="headerlink" title="归档："></a>归档：</h3><p>tar （tape archive）打包成Tape包<br>例：tar -cvf example.tar exmple<br>其中<br>c，create，创建档案<br>v，verbose，显示详情<br>f，file<br>也可以多个文件打包成一个<br>解开tar -xvf （x，extract）后面加-C可以指定文件<br>tar -c<strong>z</strong>vf example.tar.gz example  </p>
-<h3 id="软链接："><a href="#软链接：" class="headerlink" title="软链接："></a>软链接：</h3><p>ln （link） -s（soft）本体 链接名  </p>
-<h3 id="对用户操作："><a href="#对用户操作：" class="headerlink" title="对用户操作："></a>对用户操作：</h3><p>useradd<br>sudo（管理员身份运行，需要sudoer）<br>-m 在/home下<br>sudo useradd -m name  创建<br>sudo password name  修改密码<br>sudo userdel name 删除用户（需要额外删除目录）  </p>
-<h3 id="超级用户：root"><a href="#超级用户：root" class="headerlink" title="超级用户：root"></a>超级用户：root</h3><p>sudo password root<br>su（switch user） root<br>sudo su<br>exit  </p>
-<h3 id="登录root的桌面环境："><a href="#登录root的桌面环境：" class="headerlink" title="登录root的桌面环境："></a>登录root的桌面环境：</h3><ol>
-<li>终端切换root身份 </li>
-<li>修改系统配置文件，gedit /etc/pam.d/gdm-autologin<br>用#注释 auth required pam_succeed_if.so user !=root quiet_success<br>gedit /etc/pam.d/gdm-password<br>注释 auth requiredpam_succeed_if.so user!= root quiet success  </li>
-<li>重启  </li>
-</ol>
-<h3 id="用户组："><a href="#用户组：" class="headerlink" title="用户组："></a>用户组：</h3><p>groupadd group  创建组<br>useradd -m（modified） -g group name    创建用户入组<br>usermod -g boys name 修改用户入组<br>cat /etc/group 组<br>cat etc/password    </p>
-<h3 id="可执行脚本"><a href="#可执行脚本" class="headerlink" title="可执行脚本"></a>可执行脚本</h3><p>脚本：Script，一种解释执行的程序<br>Linux下常见的三种脚本程序：  </p>
-<ul>
-<li>Shell  &emsp;*.sh  </li>
-<li>Perl    &emsp; *.pl  </li>
-<li>Python &emsp;*.py  </li>
-</ul>
-<p>可以到脚本目录直接执行脚本，也可以到脚本解释器执行脚本<br><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E8%84%9A%E6%9C%AC1.png">  </p>
-<h3 id="shell脚本"><a href="#shell脚本" class="headerlink" title="shell脚本"></a><strong>shell脚本</strong></h3><p>创建编辑<br><code>#！/bin/sh   </code><br><code>echo &quot;hello world&quot;</code><br>添加可执行权限<br><code>chmod +x hello.sh  </code><br>执行程序<br><code>./hello.sh   </code> </p>
-<h3 id="查看Ubuntu版本"><a href="#查看Ubuntu版本" class="headerlink" title="查看Ubuntu版本"></a>查看Ubuntu版本</h3><p><code>cat /etc/lsb-release  </code><br><code>cat /etc/os-release  </code><br>uname -a  </p>
-<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p><code>apt-get update</code>  </p>
-<h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><p>配置开机自启<br><code>sudo systemctl enable（关  闭换成diable） docker  </code><br>查看 Docker 的运行状态：<br><code>sudo systemctl status docker</code><br>启动或停止docker命令<br><code>sudo service docker start</code> 启动<br><code>sudo service docker stop</code> 关闭    </p>
-<h3 id="辅助"><a href="#辅助" class="headerlink" title="辅助"></a>辅助</h3><p><code>clear</code> 清屏<br><code>history</code>罗列历史命令  </p>
-<h3 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h3><p><code>ip -a</code>/<code>ifconfig</code>查看ip<br><code>netstat -tunlp</code> 查看端口</p>
 ]]></content>
       <tags>
         <tag>笔记</tag>
@@ -1161,11 +1105,56 @@ for i in a:
       </tags>
   </entry>
   <entry>
-    <title>“教你搭建属于自己的博客”</title>
-    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
-    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
-<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
-<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
+    <title>ubuntu学习</title>
+    <url>/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p><strong>在学习docker的时候遇到了些许困难，看来只会简单的linux命令不行，还是先深入学习一下ubuntu</strong>  </p>
+<span id="more"></span>  
+
+<pre><code>B站链接：https://www.bilibili.com/video/BV1na4y1773c?p=4
+（因为之前已经安装过ubuntu所以笔记从P7之后开始）
+</code></pre>
+<h2 id="快照与系统恢复"><a href="#快照与系统恢复" class="headerlink" title="快照与系统恢复"></a>快照与系统恢复</h2><p>系统异常：</p>
+<ol>
+<li>快照</li>
+<li>重装系统<h3 id="快照"><a href="#快照" class="headerlink" title="快照"></a>快照</h3><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E5%BF%AB%E7%85%A71.png"><h2 id="界面功能"><a href="#界面功能" class="headerlink" title="界面功能"></a>界面功能</h2>左上角活动 -&gt; 类似于Windows系统的win+Tab  </li>
+</ol>
+<h2 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h2><h3 id="目录："><a href="#目录：" class="headerlink" title="目录："></a>目录：</h3><p>-l 详尽信息<br>pwd （print working directory）<br>~ 代表当前用户主目录<br>. 代表当前用户目录<br>.. 上一级目录<br>mkdir（make directory）创建目录  ，多级目录使用-p<br>rmdir （remove directory）删除目录（空）<br>rm （remove） -r（recursive递归）f（force）<br>cp A-&gt;B(将A复制到B)<br>mv 移动或者重命名  </p>
+<h3 id="文件："><a href="#文件：" class="headerlink" title="文件："></a>文件：</h3><p><strong>文件权限</strong><br>-owner<br>-r（read）<br>-w（write）<br>-x （excut）<br>查看权限：ls -l<br>九个字符：<br>rw-自己  r–同组  r–别人<br>修改权限：chmod（chnage file mod）<br>chmod o+w name.txt<br>o表示别人 +w表示增加write权限<br>a（all）所有人  u自己<br><strong>修改属主</strong><br>chown（—R递归）<br>opt目录可以放一些公共的东西<br>先名后目录   </p>
+<h3 id="归档："><a href="#归档：" class="headerlink" title="归档："></a>归档：</h3><p>tar （tape archive）打包成Tape包<br>例：tar -cvf example.tar exmple<br>其中<br>c，create，创建档案<br>v，verbose，显示详情<br>f，file<br>也可以多个文件打包成一个<br>解开tar -xvf （x，extract）后面加-C可以指定文件<br>tar -c<strong>z</strong>vf example.tar.gz example  </p>
+<h3 id="软链接："><a href="#软链接：" class="headerlink" title="软链接："></a>软链接：</h3><p>ln （link） -s（soft）本体 链接名  </p>
+<h3 id="对用户操作："><a href="#对用户操作：" class="headerlink" title="对用户操作："></a>对用户操作：</h3><p>useradd<br>sudo（管理员身份运行，需要sudoer）<br>-m 在/home下<br>sudo useradd -m name  创建<br>sudo password name  修改密码<br>sudo userdel name 删除用户（需要额外删除目录）  </p>
+<h3 id="超级用户：root"><a href="#超级用户：root" class="headerlink" title="超级用户：root"></a>超级用户：root</h3><p>sudo password root<br>su（switch user） root<br>sudo su<br>exit  </p>
+<h3 id="登录root的桌面环境："><a href="#登录root的桌面环境：" class="headerlink" title="登录root的桌面环境："></a>登录root的桌面环境：</h3><ol>
+<li>终端切换root身份 </li>
+<li>修改系统配置文件，gedit /etc/pam.d/gdm-autologin<br>用#注释 auth required pam_succeed_if.so user !=root quiet_success<br>gedit /etc/pam.d/gdm-password<br>注释 auth requiredpam_succeed_if.so user!= root quiet success  </li>
+<li>重启  </li>
+</ol>
+<h3 id="用户组："><a href="#用户组：" class="headerlink" title="用户组："></a>用户组：</h3><p>groupadd group  创建组<br>useradd -m（modified） -g group name    创建用户入组<br>usermod -g boys name 修改用户入组<br>cat /etc/group 组<br>cat etc/password    </p>
+<h3 id="可执行脚本"><a href="#可执行脚本" class="headerlink" title="可执行脚本"></a>可执行脚本</h3><p>脚本：Script，一种解释执行的程序<br>Linux下常见的三种脚本程序：  </p>
+<ul>
+<li>Shell  &emsp;*.sh  </li>
+<li>Perl    &emsp; *.pl  </li>
+<li>Python &emsp;*.py  </li>
+</ul>
+<p>可以到脚本目录直接执行脚本，也可以到脚本解释器执行脚本<br><img src="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/%E8%84%9A%E6%9C%AC1.png">  </p>
+<h3 id="shell脚本"><a href="#shell脚本" class="headerlink" title="shell脚本"></a><strong>shell脚本</strong></h3><p>创建编辑<br><code>#！/bin/sh   </code><br><code>echo &quot;hello world&quot;</code><br>添加可执行权限<br><code>chmod +x hello.sh  </code><br>执行程序<br><code>./hello.sh   </code> </p>
+<h3 id="查看Ubuntu版本"><a href="#查看Ubuntu版本" class="headerlink" title="查看Ubuntu版本"></a>查看Ubuntu版本</h3><p><code>cat /etc/lsb-release  </code><br><code>cat /etc/os-release  </code><br>uname -a  </p>
+<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p><code>apt-get update</code>  </p>
+<h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><p>配置开机自启<br><code>sudo systemctl enable（关  闭换成diable） docker  </code><br>查看 Docker 的运行状态：<br><code>sudo systemctl status docker</code><br>启动或停止docker命令<br><code>sudo service docker start</code> 启动<br><code>sudo service docker stop</code> 关闭    </p>
+<h3 id="辅助"><a href="#辅助" class="headerlink" title="辅助"></a>辅助</h3><p><code>clear</code> 清屏<br><code>history</code>罗列历史命令  </p>
+<h3 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h3><p><code>ip -a</code>/<code>ifconfig</code>查看ip<br><code>netstat -tunlp</code> 查看端口</p>
+]]></content>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ubuntu安装docker</title>
+    <url>/2021/12/29/ubuntu%E5%AE%89%E8%A3%85docker/</url>
+    <content><![CDATA[<p><strong>在学习docker的安装时，由于教程中的系统是centos，而我更熟悉ubuntu，所以我需要另外去找在Ubuntu系统下安装docker的方法</strong>  </p>
+<span id="more"></span>  
+<p>设为管理员模式<br><code>sudo su</code><br><code>cd</code><br>更新<br><code>apt-get update</code><br>下载依赖<br><code>apt-get install apt-transport-https ca-certificates curl gnupg-agent </code></p>
+<p><code>software-properties-common</code><br>添加密钥<br><code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg |apt-key add </code><br>验证<br><code>apt-key fingerprint 0EBFCD88</code><br>添加仓库<br><code>sudo add-apt-repository \    &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \    $(lsb_release -cs) \    stable&quot; </code><br>更新<br><code>sudo apt-get update </code><br>安装docker<br><code>sudo apt-get install docker-ce docker-ce-cli containerd.io </code><br>检验安装<br><code>sudo docker run hello-world </code><br>配置非root用户使用docker<br><code>groupadd docker  </code><br><code>sudo usermod -aG docker （用户名） </code><br>使配置生效(建议还是注销)<br><code>newgrp docker </code><br>检验<br><code>docker run hello-world  </code><br>配置开机自启<br><code>sudo systemctl enable（关  闭换成diable） docker  </code><br>查看 Docker 的运行状态：<br><code>sudo systemctl status docker</code><br>启动或停止docker命令<br><code>sudo service docker start</code> 启动<br><code>sudo service docker stop</code> 关闭<br>参考<br><a href="https://www.bilibili.com/video/BV1jE411JDocker">在 Ubuntu 上安装 Docker【日出一点一】</a><br><a href="https://blog.sunriseydy.top/technology/server-blog/server/ubuntu_install_docker/7Df?from=search&seid=5364338390793269848&spm_id_from=333.337.0.0">博客文章地址</a><br><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">docker官方文档</a> </p>
 ]]></content>
       <tags>
         <tag>技术</tag>
@@ -1192,6 +1181,17 @@ for i in a:
       </tags>
   </entry>
   <entry>
+    <title>“教你搭建属于自己的博客”</title>
+    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
+    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
+<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
+<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于几个网络工具</title>
     <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p><strong>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍</strong><br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：  </p>
@@ -1199,6 +1199,18 @@ for i in a:
 <h4 id="一，网易uu加速器"><a href="#一，网易uu加速器" class="headerlink" title="一，网易uu加速器"></a>一，网易uu加速器</h4><p>可以免费加速steam社区，解决一些加好友、访问创意工坊、送游戏之类的问题。</p>
 <h4 id="二，Sidecar"><a href="#二，Sidecar" class="headerlink" title="二，Sidecar"></a>二，Sidecar</h4><p>一款免费开源的，用于专门加速GitHub这个全球最大的<br>同性交友网站。而且就在我用gitbash上传博客出现奇怪报错（挂小飞机、按网上指示修改文件参数、回退文件内容都没用），最后无可奈何到了重装nodejs边缘<br>的时候是它自带的NPM加速拯救了整个世界。<br>    注：可在github上获取  </p>
 <h4 id="三，科学上网"><a href="#三，科学上网" class="headerlink" title="三，科学上网"></a>三，科学上网</h4><p>这个最好了解一下翻墙原理，谨慎使用，不要发敏感言<br>论，注意隐私安全（在YouTube上看了下抓包，好像在服务器端窃取你的信息还是很容易的)。<br>    附一篇很有用的博客：<br>    <a href="https://tecrobe.github.io/blog/post/how-to-break-wall/">https://tecrobe.github.io/blog/post/how-to-break-wall/</a></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>快捷键</title>
+    <url>/2022/01/02/%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<p><strong>记录一下快捷键</strong></p>
+<span id="more"></span>  
+<h2 id="IDLE"><a href="#IDLE" class="headerlink" title="IDLE"></a>IDLE</h2><p>Alt + N &emsp; / &emsp; Alt + P 查看上下历史命令<br>Ctrl + F6 重启shell<br>F1  打开帮助文件<br>Alt + /  补全曾经出现的单词<br>Ctrl + [&emsp; /&emsp;Ctrl +] 缩进代码和取消缩进<br>Alt + M 查看源码<br>Alt + C 打开类浏览器<br>F5 运行程序  
+ </p>
 ]]></content>
       <tags>
         <tag>技术</tag>
@@ -1216,18 +1228,6 @@ for i in a:
 <p>第三步：打开电脑，用USB线连接电脑与手机，手机上点击允许文件传输之类的选项。在电脑上按第一步的路径在打开，将视频文件复制到电脑上的储存区域，拔掉USB线</p>
 <p>第四步：打开文件夹，会看到两个文件，一个叫video（视频），一个叫audio（音频）。我们需要把他们合起来播放（Potplay下的方法是用打开视频，右键-&gt;打开-&gt;导入音频），其它播放软件如qq影音、爱奇艺之类的，可以百度：某某某怎样导入音频</p>
 <p><strong>注：如果导入音频的那个窗口中看不见audio，可以试试直接改文件后缀名为.mp3（比较暴力，但我成功了），或者转一下码</strong></p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>快捷键</title>
-    <url>/2022/01/02/%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-    <content><![CDATA[<p><strong>记录一下快捷键</strong></p>
-<span id="more"></span>  
-<h2 id="IDLE"><a href="#IDLE" class="headerlink" title="IDLE"></a>IDLE</h2><p>Alt + N &emsp; / &emsp; Alt + P 查看上下历史命令<br>Ctrl + F6 重启shell<br>F1  打开帮助文件<br>Alt + /  补全曾经出现的单词<br>Ctrl + [&emsp; /&emsp;Ctrl +] 缩进代码和取消缩进<br>Alt + M 查看源码<br>Alt + C 打开类浏览器<br>F5 运行程序  
- </p>
 ]]></content>
       <tags>
         <tag>技术</tag>
@@ -1282,6 +1282,14 @@ for i in a:
       </tags>
   </entry>
   <entry>
+    <title>时钟练习</title>
+    <url>/2022/03/05/%E6%97%B6%E9%92%9F%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows系统下查找当前占用特定端口的程序</title>
     <url>/2022/01/09/%E6%9F%A5%E7%9C%8B%E6%98%AF%E5%93%AA%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%9A%84%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p><strong>今天使用一个软件时显示1085端口占用，我想找出时那个程序在占用它</strong></p>
@@ -1296,14 +1304,6 @@ for i in a:
 ]]></content>
       <tags>
         <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>时钟练习</title>
-    <url>/2022/03/05/%E6%97%B6%E9%92%9F%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1383,5 +1383,329 @@ for i in a:
       <tags>
         <tag>与xmz的合作</tag>
       </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/03/05/%E6%97%B6%E9%92%9F%E7%BB%83%E4%B9%A0/watch/</url>
+    <content><![CDATA[<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时钟</title>
+<style>
+    #watch .frame-face{
+    position: relative;
+    width: 30em;
+    height: 30em;
+    margin: 2em auto;
+    border-radius: 15em;
+    background: -webkit-linear-gradient(top,#f9f9f9,#666); 
+    background: -moz-linear-gradient(top, #f9f9f9, #666);
+    background: linear-gradient(top, #f9f9f9, #666);
+    box-shadow: 0.5em 0.5em 4em rgb(0,0,0,0.8);
+}
+#watch .frame-face:before{
+    content: '';
+    width: 29.4em;
+    height: 29.4em;
+    border-radius: 14.7em;
+    position: absolute;
+    top: .3em ;
+    left: .3em;
+    background: -webkit-radial-gradient(ellipse at center, rgba(246, 248, 249, 1) 0%, rgba(229, 235, 238, 1) 65%, rgba(205, 212, 217, 1) 66%, rgba(245, 247, 249, 1) 100%);
+    background: -moz-radial-gradient(ellipse at center, rgba(246, 248, 249, 1) 0%, rgba(229, 235, 238, 1) 65%, rgba(205, 212, 217, 1) 66%, rgba(245, 247, 249, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(246, 248, 249, 1) 0%, rgba(229, 235, 238, 1) 65%, rgba(205, 212, 217, 1) 66%, rgba(245, 247, 249, 1) 100%);
+
+}
+#watch .frame-face:after{
+    content: '';
+    width: 28em;
+    height: 28em;
+    border-radius: 14.2em;
+    position: absolute;
+    top: .9em;
+    left: .9em;
+    box-shadow: inset rgba(0, 0, 0, .2) .2em .2em 1em;
+    border: .1em solid rgba(0, 0, 0, .2);
+    background: -webkit-linear-gradient(top, #fff, #ccc);
+    background: -moz-linear-gradient(top, #fff, #ccc);
+    background: linear-gradient(top, #fff, #ccc);
+}
+#minute-marks li {
+    display: block;
+    width: 0.2em;
+    height: 0.6em;
+    background: #929394;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.4em 0 0 -0.1em;
+    z-index: 2;
+    
+}
+#digits {
+    width: 30em;
+    height: 30em;
+    border-radius: 15em;
+    position: absolute;
+    top: -0.8em;
+    left: 49%;
+    margin-left: -16em;
+    z-index: 1;
+}
+#digits li {
+  font-size: 1.6em;
+  display: block;
+  width: 1.6em;
+  height: 1.6em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 1.6em;
+  text-align: center;
+  margin: -.8em 0 0 -.8em;
+  font-weight: bold;
+}
+
+#digits li:nth-child(1) {
+  transform: translate(7em, 0)
+}
+
+#digits li:nth-child(2) {
+  transform: translate(0, 7em)
+}
+
+#digits li:nth-child(3) {
+  transform: translate(-7em, 0)
+}
+
+#digits li:nth-child(4) {
+  transform: translate(0, -7em)
+}
+#digits:before {
+  content:'';
+  width:1.6em;
+  height:1.6em;
+  border-radius:.8em;
+  position:absolute;
+  top:50%; left:50%;
+  margin:-.8em 0 0 -.8em;
+  background:#121314;
+}
+#digits:after {
+  content:'';
+  width:4em;
+  height:4em;
+  border-radius:2.2em;
+  position:absolute;
+  top:50%; left:50%;
+  margin:-2.1em 0 0 -2.1em;
+  border:.1em solid #c6c6c6;
+  background:-webkit-radial-gradient(ellipse at center, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
+  background:-moz-radial-gradient(ellipse at center, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
+  background:radial-gradient(ellipse at center, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
+}
+#watch .hours-hand {
+    width:.8em;
+    height:7em;
+    border-radius:0 0 .9em .9em;
+    background:#232425;
+    position:absolute;
+    bottom:50%; left:50%;
+    margin:0 0 -.8em -.4em;
+    box-shadow:#232425 0 0 2px;
+    transform-origin:0.4em 6.2em;
+    transform:rotate(-0deg);
+    z-index: 3;
+}
+#watch .hours-hand:before {
+    content:'';
+    background:inherit;
+    width:1.8em;
+    height:.8em;
+    border-radius:0 0 .8em .8em;
+    box-shadow:#232425 0 0 1px;
+    position:absolute;
+    top:-.7em; left:-.5em;
+    z-index: 3;
+}
+#watch .hours-hand:after {
+    content:'';
+    width:0; height:0;
+    border:.9em solid #232425;
+    border-width:0 .9em 2.4em .9em;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    position:absolute;
+    top:-3.1em; left:-.5em;
+    z-index: 3;
+}
+#watch .minutes-hand {
+    width:.8em;
+    height:12.5em;
+    border-radius:.5em;
+    background:#343536;
+    position:absolute;
+    bottom:50%; left:50%;
+    margin:0 0 -1.5em -.4em;
+    box-shadow:#343536 0 0 2px;
+    transform-origin:0.4em 11em;
+    z-index: 3;
+}
+
+/* 秒针 */
+#watch .seconds-hand {
+  width:.2em;
+  height:14em;
+  border-radius:.1em .1em 0 0/10em 10em 0 0;
+  background:rgb(228, 90, 62);
+  position:absolute;
+  bottom:50%; left:50%;
+  margin:0 0 -2em -.1em;
+  box-shadow:rgba(0,0,0,.8) 0 0 .2em;
+  transform-origin:0.1em 12em;
+  z-index: 3;
+}
+#watch .seconds-hand:after {
+  content:'';
+  width:1.4em;
+  height:1.4em;
+  border-radius:.7em;
+  background:inherit;
+  position:absolute;
+  left:-.65em; bottom:1.35em;
+  z-index: 3;
+}
+#watch .seconds-hand:before {
+  content:'';
+  width:.8em;
+  height:3em;
+  border-radius:.2em .2em .4em .4em/.2em .2em 2em 2em;
+  box-shadow:rgba(0,0,0,.8) 0 0 .2em;
+  background:inherit;
+  position:absolute;
+  left:-.35em; bottom:-3em;
+  z-index: 3;
+}
+#watch .digital-wrap {
+  z-index: 2;
+  width:9em;
+  height:3em;
+  border:.1em solid #222;
+  border-radius:.2em;
+  position:absolute;
+  top:57%; left:50%;
+  margin:3em 0 0 -4.5em;
+  overflow:hidden;
+  background:#4c4c4c;
+  background:-webkit-linear-gradient(top, #4c4c4c,#0f0f0f);
+  background:-moz-linear-gradient(top, #4c4c4c, #0f0f0f);
+  background:-ms-linear-gradient(top, #4c4c4c,#0f0f0f);
+  background:-o-linear-gradient(top, #4c4c4c,#0f0f0f);
+  background:linear-gradient(to bottom, #4c4c4c,#0f0f0f);
+}
+#watch .digital-wrap ul {
+  width:3em;
+  float:left;
+  border-right:.1em solid #000;
+  color:#ddd;
+  font-family:Consolas, monaco, monospace;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 0%;
+}
+#watch .digital-wrap ul:last-child { 
+  width: 2.8em; border:none 
+}
+</style>
+<script>
+    window.onload = function () {
+        // 生成刻度
+        let markWrap = document.getElementById('minute-marks')
+
+        for (let index = 0; index < 60; index++) {
+            let markItem = document.createElement('li')
+            markItem.style.cssText = "transform:rotate(" + index * 6 + "deg) translateY(-12.7em)";
+            if (index % 5 == 0) {
+            markItem.style.width = "0.3em";
+            markItem.style.height = "1em";
+            }
+            markWrap.appendChild(markItem)
+        }
+    }
+    setInterval(function () {
+        var time = new Date();
+        var hour = time.getHours()
+        var minute = time.getMinutes();
+        var second = time.getSeconds();
+        var hournum;
+        if (hour > 12) {
+        hournum = ((hour - 12) + minute / 60)*30 ;
+        } else {
+        hournum = (hour + minute / 60 * 100)*6 ; 
+        }
+        var minnum = (minute + second / 60-0.5)*6;
+        var sennum = second*6;
+        document.getElementsByClassName("hours-hand")[0].style.transform = "rotate(" + hournum + "deg)"
+        document.getElementsByClassName("minutes-hand")[0].style.transform = "rotate(" + minnum + "deg)"
+        document.getElementsByClassName("seconds-hand")[0].style.transform = "rotate(" + sennum + "deg)"
+        
+        if(hour<10){
+            hour="0"+parseInt(hour);
+        }
+        if(minute<10){
+            minute="0"+parseInt(minute);
+        }
+        if(second<10){
+            second="0"+parseInt(second);
+         }
+        document.getElementsByClassName("digit-hours")[0].innerHTML=hour+"";
+        document.getElementsByClassName("digit-minutes")[0].innerHTML=minute;
+        document.getElementsByClassName("digit-seconds")[0].innerHTML=second;
+    }, 1000);
+    
+   
+</script>
+</head>
+
+<body>
+    
+    <div id="watch">
+        <!-- 表盘 -->
+        <div class="frame-face"> 
+            
+            <ul id="minute-marks">
+               
+            </ul> 
+            <!-- 刻度 -->
+            <ul id="digits">
+                <li>3</li>
+                <li>6</li>
+                <li>9</li>
+                <li>12</li>
+            </ul> 
+            
+            <!-- 指针 -->
+            <div class="hours-hand"></div>
+            <div class="minutes-hand"></div>
+            <div class="seconds-hand"></div>
+            <!-- 数字表盘 -->
+            <div class="digital-wrap">
+                <ul class="digit-hours"></ul>
+                <ul class="digit-minutes"></ul>
+                <ul class="digit-seconds"></ul>
+            </div>
+        
+        </div>
+        
+        
+        
+    </div>
+    
+</body>
+
+</html>]]></content>
   </entry>
 </search>
