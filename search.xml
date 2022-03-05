@@ -126,6 +126,285 @@
       </tags>
   </entry>
   <entry>
+    <title>Ubuntu查看硬件信息</title>
+    <url>/2022/02/10/Ubuntu%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<p><strong>新买的两个4g内存条到了，试一试ok不ok</strong></p>
+<span id="more"></span>
+<p>参考博客：<a href="https://blog.csdn.net/chuanyu/article/details/46611793">https://blog.csdn.net/chuanyu/article/details/46611793</a><br>总命令： lshw</p>
+<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><pre><code># uname -a               # 查看内核/操作系统/CPU信息
+# head -n 1 /etc/issue   # 查看操作系统版本 
+# cat /proc/cpuinfo      # 查看CPU信息
+# hostname               # 查看计算机名 
+# lspci -tv              # 列出所有PCI设备
+# lsusb -tv              # 列出所有USB设备 
+# lsmod                  # 列出加载的内核模块
+# env                    # 查看环境变量
+</code></pre>
+<h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><pre><code># free -m                # 查看内存使用量和交换区使用量 
+# df -h                  # 查看各分区使用情况 
+# du -sh &lt;目录名&gt;        # 查看指定目录的大小 
+# grep MemTotal /proc/meminfo   # 查看内存总量
+# grep MemFree /proc/meminfo    # 查看空闲内存量
+# uptime                 # 查看系统运行时间、用户数、负载 
+# cat /proc/loadavg      # 查看系统负载
+</code></pre>
+<h2 id="磁盘和分区"><a href="#磁盘和分区" class="headerlink" title="磁盘和分区"></a>磁盘和分区</h2><pre><code># mount | column -t      # 查看挂接的分区状态 
+# fdisk -l               # 查看所有分区 
+# swapon -s              # 查看所有交换分区
+# hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备) 
+# dmesg | grep IDE       # 查看启动时IDE设备检测状况
+</code></pre>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><pre><code># ifconfig               # 查看所有网络接口的属性
+# iptables -L            # 查看防火墙设置 
+# route -n               # 查看路由表 
+# netstat -lntp          # 查看所有监听端口 
+# netstat -antp          # 查看所有已经建立的连接
+# netstat -s             # 查看网络统计信息
+</code></pre>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><pre><code># ps -ef                 # 查看所有进程 
+# top                    # 实时显示进程状态
+</code></pre>
+<h2 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h2><pre><code># w                      # 查看活动用户 
+# id &lt;用户名&gt;            # 查看指定用户信息 
+# last                   # 查看用户登录日志 
+# cut -d: -f1 /etc/passwd   # 查看系统所有用户 
+# cut -d: -f1 /etc/group    # 查看系统所有组 
+# crontab -l             # 查看当前用户的计划任务
+</code></pre>
+<h2 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h2><pre><code># chkconfig --list       # 列出所有系统服务 
+# chkconfig --list | grep on    # 列出所有启动的系统服务
+</code></pre>
+<h2 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h2><pre><code># rpm -qa                # 查看所有安装的软件包
+</code></pre>
+<h2 id="常用命令整理如下："><a href="#常用命令整理如下：" class="headerlink" title="常用命令整理如下："></a>常用命令整理如下：</h2><pre><code>查看主板的序列号: dmidecode | grep -i ’serial number’
+
+用硬件检测程序kuduz探测新硬件：service kudzu start ( or restart)
+
+查看CPU信息：cat /proc/cpuinfo [dmesg | grep -i &#39;cpu&#39;][dmidecode -t processor]
+
+查看内存信息：cat /proc/meminfo [free -m][vmstat]
+
+查看板卡信息：cat /proc/pci
+
+查看显卡/声卡信息：lspci |grep -i ‘VGA’[dmesg | grep -i &#39;VGA&#39;]
+
+查看网卡信息：dmesg | grep -i ‘eth’[cat /etc/sysconfig/hwconf | grep -i eth][lspci | grep -i &#39;eth&#39;]
+查看PCI信息：lspci (相比cat /proc/pci更直观）
+
+查看USB设备：cat /proc/bus/usb/devices
+
+查看键盘和鼠标:cat /proc/bus/input/devices
+
+查看系统硬盘信息和使用情况：fdisk &amp; disk – l &amp; df
+
+查看各设备的中断请求(IRQ):cat /proc/interrupts
+
+查看系统体系结构：uname -a
+
+查看及启动系统的32位或64位内核模式：isalist –v [isainfo –v][isainfo –b]
+
+dmidecode查看硬件信息，包括bios、cpu、内存等信息
+
+测定当前的显示器刷新频率：/usr/sbin/ffbconfig –rev \?
+
+查看系统配置：/usr/platform/sun4u/sbin/prtdiag –v
+
+查看当前系统中已经应用的补丁：showrev –p
+
+显示当前的运行级别：who –rH
+
+查看当前的bind版本信息：nslookup –class=chaos –q=txt version.bind
+
+dmesg | more 查看硬件信息
+lspci 显示外设信息, 如usb，网卡等信息
+lsnod 查看已加载的驱动
+lshw
+psrinfo -v 查看当前处理器的类型和速度（主频）
+prtconf -v 打印当前的OBP版本号
+iostat –E 查看硬盘物理信息(vendor, RPM, Capacity)
+prtvtoc /dev/rdsk/c0t0d0s 查看磁盘的几何参数和分区信息
+df –F ufs –o i 显示已经使用和未使用的i-node数目
+isalist –v
+
+对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
+Cpuinfo 主机CPU信息
+Dma 主机DMA通道信息
+Filesystems 文件系统信息
+Interrupts 主机中断信息
+Ioprots 主机I/O端口号信息
+Meninfo 主机内存信息
+Version Linux内存版本信息
+
+备注： proc – process information pseudo-filesystem 进程信息伪装文件系统
+
+RPM
+
+    在Linux 操作系统中，有一个系统软件包，它的功能类似于Windows里面的“添加/删除程序”，但是功能又比“添加/删除程序”强很多，它就是 Red Hat Package Manager(简称RPM)。此工具包最先是由Red Hat公司推出的，后来被其他Linux开发商所借用。由于它为Linux使用者省去了很多时间，所以被广泛应用于在Linux下安装、删除软件。下面就 给大家介绍一下它的具体使用方法。
+
+1.我们得到一个新软件，在安装之前，一般都要先查看一下这个软件包里有什么内容，假设这个文件是：Linux-1.4-6.i368.rpm，我们可以用这条命令查看：
+
+rpm -qpi Linux-1.4-6.i368.rpm
+
+系统将会列出这个软件包的详细资料，包括含有多少个文件、各文件名称、文件大小、创建时间、编译日期等信息。
+
+2.上面列出的所有文件在安装时不一定全部安装，就像Windows下程序的安装方式分为典型、完全、自定义一样，Linux也会让你选择安装方式，此时我们可以用下面这条命令查看软件包将会在系统里安装哪些部分，以方便我们的选择：
+
+rpm -qpl Linux-1.4-6.i368.rpm
+
+3. 选择安装方式后，开始安装。我们可以用rpm-ivh Linux-1.4-6.i368.rpm命令安装此软件。在安装过程中，若系统提示此软件已安装过或因其他原因无法继续安装，但若我们确实想执行安装命 令，可以在 -ivh后加一参数“-replacepkgs”：
+
+rpm -ivh -replacepkgs Linux-1.4-6.i368.rpm
+
+4.有时我们卸载某个安装过的软件，只需执行rpm-e &lt;文件名&gt;;命令即可。
+
+5.对低版本软件进行升级是提高其功能的好办法，这样可以省去我们卸载后再安装新软件的麻烦，要升级某个软件，只须执行如下命令：rpm -uvh &lt;文件名&gt;;，注意：此时的文件名必须是要升级软件的升级补丁
+
+6. 另外一个安装软件的方法可谓是Linux的独到之处，同时也是RMP强大功能的一个表现：通过FTP站点直接在线安装软件。当找到含有你所需软件的站点并 与此网站连接后，执行下面的命令即可实现在线安装，譬如在线安装Linux-1.4-6.i368.rpm，可以用命令： www.it165.net
+
+rpm -i ftp://ftp.pht.com/pub/linux/redhat/...-1.4-6.i368.rpm
+
+7. 在我们使用电脑过程中，难免会有误操作，若我们误删了几个文件而影响了系统的性能时，怎样查找到底少了哪些文件呢?RPM软件包提供了一个查找损坏文件的 功能，执行此命令：rpm -Va即可，Linux将为你列出所有损坏的文件。你可以通过Linux的安装光盘进行修复。
+
+8.Linux系统中文件繁多，在使用过程中，难免会碰到我们不认识的文件，在Windows下我们可以用“开始/查找”菜单快速判断某个文件属于哪个文件夹，在Linux中，下面这条命令行可以帮助我们快速判定某个文件属于哪个软件包：
+
+rpm -qf &lt;文件名&gt;;
+
+9.当每个软件包安装在Linux系统后，安装文件都会到RPM数据库中“报到”，所以，我们要查询某个已安装软件的属性时，只需到此数据库中查找即可。注意：此时的查询命令不同于1和8介绍的查询，这种方法只适用于已安装过的软件包！命令格式：
+
+rpm -参数　&lt;文件名&gt;;
+</code></pre>
+<h2 id="APT-GET"><a href="#APT-GET" class="headerlink" title="APT-GET"></a>APT-GET</h2><pre><code>apt-get update——在修改/etc/apt/sources.list或者/etc/apt/preferences之后运行该命令。此外您需要定期运行这一命令以确保您的软件包列表是最新的。
+apt-get install packagename——安装一个新软件包（参见下文的aptitude） 
+apt-get remove packagename——卸载一个已安装的软件包（保留配置文件） 
+apt-get --purge remove packagename——卸载一个已安装的软件包（删除配置文件） 
+dpkg --force-all --purge packagename 有些软件很难卸载，而且还阻止了别的软件的应用，就可以用这个，不过有点冒险。 
+apt-get autoclean apt会把已装或已卸的软件都备份在硬盘上，所以如果需要空间的话，可以让这个命令来删除你已经删掉的软件 
+apt-get clean 这个命令会把安装的软件的备份也删除，不过这样不会影响软件的使用的。 
+apt-get upgrade——更新所有已安装的软件包 
+apt-get dist-upgrade——将系统升级到新版本 
+apt-cache search string——在软件包列表中搜索字符串 
+dpkg -l package-name-pattern——列出所有与模式相匹配的软件包。如果您不知道软件包的全名，您可以使用“*package-name-pattern*”。
+aptitude——详细查看已安装或可用的软件包。与apt-get类似，aptitude可以通过命令行方式调用，但仅限于某些命令——最常见的有安装和卸载命令。由于aptitude比apt-get了解更多信息，可以说它更适合用来进行安装和卸载。
+apt-cache showpkg pkgs——显示软件包信息。 
+apt-cache dumpavail——打印可用软件包列表。 
+apt-cache show pkgs——显示软件包记录，类似于dpkg –print-avail。 
+apt-cache pkgnames——打印软件包列表中所有软件包的名称。 
+dpkg -S file——这个文件属于哪个已安装软件包。 
+dpkg -L package——列出软件包中的所有文件。 
+apt-file search filename——查找包含特定文件的软件包（不一定是已安装的），这些文件的文件名中含有指定的字符串。apt-file是一个独立的软件包。您必须 先使用apt-get install来安装它，然后运行apt-file update。如果apt-file search filename输出的内容太多，您可以尝试使用apt-file search filename | grep -w filename（只显示指定字符串作为完整的单词出现在其中的那些文件名）或者类似方法，例如：apt-file search filename | grep /bin/（只显示位于诸如/bin或/usr/bin这些文件夹中的文件，如果您要查找的是某个特定的执行文件的话，这样做是有帮助的）。
+</code></pre>
+<h2 id="ubuntu查看版本命令"><a href="#ubuntu查看版本命令" class="headerlink" title="ubuntu查看版本命令"></a>ubuntu查看版本命令</h2><pre><code>方法一：
+在终端中执行下列指令： cat /etc/issue
+方法二：
+使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。
+执行指令如下： sudo lsb_release -a
+方法三：
+打开“系统监视器”，选择“系统”
+Ubuntu查看版本命令
+1. lshw
+lshw命令显示详细硬件信息。
+如果要用概要方式显示，可以加上short参数：lshw-short
+要显示指定硬件信息，加上class(或C)参数：lshw -classmemory
+2. sysstat
+监测系统性能及效率的一组工具，这些工具对于我们收集系统性能数据，
+比如CPU使用率、硬盘和网络吞吐数据。
+3. lspci -v (相比cat/proc/pci更直观）
+查看PCI信息，lspci 是读取 hwdata 数据库。
+4. uname -a
+查看系统体系结构。
+5. dmidecode
+查看硬件信息，包括bios、cpu、内存等信息
+6. dmesg
+显示内核缓冲区系统控制信息，如系统启动时的信息会写到/var/log/。
+注：dmesg 工具并不是专门用来查看硬件芯片组标识的工具，
+但通过这个工具能让我们知道机器中的硬件的一些参数；因为系统在启动的时候，
+会写一些硬件相关的日志到 /var/log/message* 或/var/log/boot* 文件中。
+7. lshal 和hal-device-manager
+8. 查看 /proc
+对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
+Cpuinfo 主机CPU信息
+Dma 主机DMA通道信息
+Filesystems 文件系统信息
+Interrupts 主机中断信息
+Ioprots 主机I/O端口号信息
+Meninfo 主机内存信息
+Version Linux内存版本信息
+查看CPU信息：cat /proc/cpuinfo 查看板卡信息：cat /proc/pci 查看内存信息：cat/proc/meminfo 查看USB设备：cat /proc/bus/usb/devices 查看键盘和鼠标：cat/proc/bus/input/devices 查看各设备的中断请求(IRQ)：cat/proc/interrupts
+</code></pre>
+<h2 id="主板信息"><a href="#主板信息" class="headerlink" title="主板信息:"></a>主板信息:</h2><pre><code>sudo demidecode | grep -i ‘serial number’
+</code></pre>
+<h2 id="CPU信息"><a href="#CPU信息" class="headerlink" title="CPU信息:"></a>CPU信息:</h2><pre><code>cat /proc/cpuinfo
+dmesg | grep -i ‘cpu’
+sudo dmidecode -t processor
+</code></pre>
+<h2 id="硬盘信息"><a href="#硬盘信息" class="headerlink" title="硬盘信息:"></a>硬盘信息:</h2><pre><code>查看分区情况:
+sudo fdisk -l
+
+查看大小情况:
+df -h
+
+查看使用情况:
+du -h
+sudo hdparm -I /dev/sda
+dmesg | grep sda
+</code></pre>
+<h2 id="内存信息"><a href="#内存信息" class="headerlink" title="内存信息:"></a>内存信息:</h2><pre><code>cat /proc/meminfo
+dmesg | grep mem
+free -m
+vmstat
+sudo dmidecode | grep -i mem
+</code></pre>
+<h2 id="网卡信息"><a href="#网卡信息" class="headerlink" title="网卡信息:"></a>网卡信息:</h2><pre><code>dmesg | grep -i ‘eth’
+lspci | grep -i ‘eth’
+
+ethtool -i eht0
+ethhool -k eth0
+ethtool -g eth0
+</code></pre>
+<h2 id="查看鼠标和键盘"><a href="#查看鼠标和键盘" class="headerlink" title="查看鼠标和键盘:"></a>查看鼠标和键盘:</h2><pre><code>cat /proc/bus/input/devices
+</code></pre>
+<h2 id="查看各设备的中断请求-IRQ"><a href="#查看各设备的中断请求-IRQ" class="headerlink" title="查看各设备的中断请求(IRQ):"></a>查看各设备的中断请求(IRQ):</h2><pre><code>cat /proc/interrupts
+</code></pre>
+<h2 id="显卡信息"><a href="#显卡信息" class="headerlink" title="显卡信息:"></a>显卡信息:</h2><pre><code>lspci | grep -i ‘VGA’
+dmesg | grep -i ‘VGA’
+</code></pre>
+<h2 id="声卡信息"><a href="#声卡信息" class="headerlink" title="声卡信息:"></a>声卡信息:</h2><pre><code>查看声卡型号:
+lspci | grep -i audio
+
+查看型号ac97的声卡驱动模块:
+modprobe -l | grep ac97
+
+查看声卡信息:
+cat /proc/asound/cards
+
+查看alsa-utils本:
+alsactl -v
+
+查看内核alsa版本:
+cat /proc/asound/version
+
+声卡信息:
+aplay -l
+
+硬件信息之声卡:
+sudo lshw -C sound
+
+模块状态之声音:
+lsmod | grep -i snd
+
+alsa音频配置:
+alsamixer
+</code></pre>
+<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令:"></a>其他命令:</h2><pre><code>dmesg
+lspci
+mpstat(先安装sysstat: sudo spt-get install sysstat) 
+</code></pre>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python学习</title>
     <url>/2022/01/02/Python%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>人生苦短，我学python</p>
@@ -540,282 +819,35 @@ div.red&#123;
       </tags>
   </entry>
   <entry>
-    <title>Ubuntu查看硬件信息</title>
-    <url>/2022/02/10/Ubuntu%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<p><strong>新买的两个4g内存条到了，试一试ok不ok</strong></p>
-<span id="more"></span>
-<p>参考博客：<a href="https://blog.csdn.net/chuanyu/article/details/46611793">https://blog.csdn.net/chuanyu/article/details/46611793</a><br>总命令： lshw</p>
-<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><pre><code># uname -a               # 查看内核/操作系统/CPU信息
-# head -n 1 /etc/issue   # 查看操作系统版本 
-# cat /proc/cpuinfo      # 查看CPU信息
-# hostname               # 查看计算机名 
-# lspci -tv              # 列出所有PCI设备
-# lsusb -tv              # 列出所有USB设备 
-# lsmod                  # 列出加载的内核模块
-# env                    # 查看环境变量
+    <title>docker学习</title>
+    <url>/2021/12/25/docker%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p><strong>学业指导老师让我们学习docker，写成报告作为大作业，之前自己也研究了下VMware，在上面安装了Ubuntu，正好趁此熟悉一下Linux操作系统，顺便为将来搭建服务器打基础。</strong><br> <span id="more"></span></p>
+<h1 id="docker-容器"><a href="#docker-容器" class="headerlink" title="docker 容器"></a>docker 容器</h1><h2 id="服务器搭建"><a href="#服务器搭建" class="headerlink" title="服务器搭建"></a>服务器搭建</h2><p>传统服务器：  </p>
+<pre><code> 宿主机： vmvare + cenntos（Ubuntu）= Linux
+ 物理机：  硬件 + 操作系统  
 </code></pre>
-<h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><pre><code># free -m                # 查看内存使用量和交换区使用量 
-# df -h                  # 查看各分区使用情况 
-# du -sh &lt;目录名&gt;        # 查看指定目录的大小 
-# grep MemTotal /proc/meminfo   # 查看内存总量
-# grep MemFree /proc/meminfo    # 查看空闲内存量
-# uptime                 # 查看系统运行时间、用户数、负载 
-# cat /proc/loadavg      # 查看系统负载
+<p>虚拟化服务器：   </p>
+<pre><code>  物理机 + host operating sever +  hypervisor + vmware
+ 
 </code></pre>
-<h2 id="磁盘和分区"><a href="#磁盘和分区" class="headerlink" title="磁盘和分区"></a>磁盘和分区</h2><pre><code># mount | column -t      # 查看挂接的分区状态 
-# fdisk -l               # 查看所有分区 
-# swapon -s              # 查看所有交换分区
-# hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备) 
-# dmesg | grep IDE       # 查看启动时IDE设备检测状况
+<h2 id="容器技术"><a href="#容器技术" class="headerlink" title="容器技术"></a>容器技术</h2><p><strong>虚拟化工具</strong>：<br>VMware &emsp; Virtua &emsp;PCVirtualbox  </p>
+<ul>
+<li>vmware workstation（个人学习）  </li>
+<li>vmware ecxi（企业级）</li>
+</ul>
+<p>KVM&emsp;Docker</p>
+<p><strong>Docker的组件</strong><br>镜像&emsp;存储&emsp;网络&emsp;容器<br>docker file&emsp;dockerhub  </p>
+<h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><p>企业版（EE）&emsp;社区版（CE）  </p>
+<h2 id="开启linux内核的流量转发"><a href="#开启linux内核的流量转发" class="headerlink" title="开启linux内核的流量转发"></a>开启linux内核的流量转发</h2><p>生成文件<br><code>cat &lt;&lt;EOF &gt; /etc/sysctl.d/docker.conf net.bridge.bridge-nf-call-ip6tables = 1 net.bridge.bridge-nf-call-iptables = 1 net.ipv4.conf.default.rp_filter = 0 net.ipv4.conf.all.rp_filter = 0 net.ipv4.ip_forward=1 EOF</code>（好像需要root身份）<br>检验<br><code>ls /etc/sysctl.d/docker.conf</code><br>加载<br><code>modprobe br_netfilter</code><br><code>sysctl -p /etc/sysctl.d/docker.conf</code><br>配置docker加速器<br><code>mkdir -p /etc/docker</code><br><code>touch /etc/docker/daemon.json</code><br><code>vim /etc/docker/daemon.json</code><br>(没有vim可以通过apt install vim<br>命令下载)<br>输入以下内容<br><code>&#123;</code><br> <code>&quot;registry-mirrors&quot; : [</code><br><code> &quot;https://8xpk5wnt.mirror.aliyuncs.com&quot;</code><br><code> ]</code><br><code>&#125;</code><br>esc ：wq退出<br>查看检验<br><code>cat /etc/docker/daemon.json</code>  </p>
+<h2 id="启动docker"><a href="#启动docker" class="headerlink" title="启动docker"></a>启动docker</h2><pre><code>        systemctl daemon-reload 
+        systemctl enable docker 
+        systemctl restart docker  
 </code></pre>
-<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><pre><code># ifconfig               # 查看所有网络接口的属性
-# iptables -L            # 查看防火墙设置 
-# route -n               # 查看路由表 
-# netstat -lntp          # 查看所有监听端口 
-# netstat -antp          # 查看所有已经建立的连接
-# netstat -s             # 查看网络统计信息
-</code></pre>
-<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><pre><code># ps -ef                 # 查看所有进程 
-# top                    # 实时显示进程状态
-</code></pre>
-<h2 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h2><pre><code># w                      # 查看活动用户 
-# id &lt;用户名&gt;            # 查看指定用户信息 
-# last                   # 查看用户登录日志 
-# cut -d: -f1 /etc/passwd   # 查看系统所有用户 
-# cut -d: -f1 /etc/group    # 查看系统所有组 
-# crontab -l             # 查看当前用户的计划任务
-</code></pre>
-<h2 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h2><pre><code># chkconfig --list       # 列出所有系统服务 
-# chkconfig --list | grep on    # 列出所有启动的系统服务
-</code></pre>
-<h2 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h2><pre><code># rpm -qa                # 查看所有安装的软件包
-</code></pre>
-<h2 id="常用命令整理如下："><a href="#常用命令整理如下：" class="headerlink" title="常用命令整理如下："></a>常用命令整理如下：</h2><pre><code>查看主板的序列号: dmidecode | grep -i ’serial number’
-
-用硬件检测程序kuduz探测新硬件：service kudzu start ( or restart)
-
-查看CPU信息：cat /proc/cpuinfo [dmesg | grep -i &#39;cpu&#39;][dmidecode -t processor]
-
-查看内存信息：cat /proc/meminfo [free -m][vmstat]
-
-查看板卡信息：cat /proc/pci
-
-查看显卡/声卡信息：lspci |grep -i ‘VGA’[dmesg | grep -i &#39;VGA&#39;]
-
-查看网卡信息：dmesg | grep -i ‘eth’[cat /etc/sysconfig/hwconf | grep -i eth][lspci | grep -i &#39;eth&#39;]
-查看PCI信息：lspci (相比cat /proc/pci更直观）
-
-查看USB设备：cat /proc/bus/usb/devices
-
-查看键盘和鼠标:cat /proc/bus/input/devices
-
-查看系统硬盘信息和使用情况：fdisk &amp; disk – l &amp; df
-
-查看各设备的中断请求(IRQ):cat /proc/interrupts
-
-查看系统体系结构：uname -a
-
-查看及启动系统的32位或64位内核模式：isalist –v [isainfo –v][isainfo –b]
-
-dmidecode查看硬件信息，包括bios、cpu、内存等信息
-
-测定当前的显示器刷新频率：/usr/sbin/ffbconfig –rev \?
-
-查看系统配置：/usr/platform/sun4u/sbin/prtdiag –v
-
-查看当前系统中已经应用的补丁：showrev –p
-
-显示当前的运行级别：who –rH
-
-查看当前的bind版本信息：nslookup –class=chaos –q=txt version.bind
-
-dmesg | more 查看硬件信息
-lspci 显示外设信息, 如usb，网卡等信息
-lsnod 查看已加载的驱动
-lshw
-psrinfo -v 查看当前处理器的类型和速度（主频）
-prtconf -v 打印当前的OBP版本号
-iostat –E 查看硬盘物理信息(vendor, RPM, Capacity)
-prtvtoc /dev/rdsk/c0t0d0s 查看磁盘的几何参数和分区信息
-df –F ufs –o i 显示已经使用和未使用的i-node数目
-isalist –v
-
-对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
-Cpuinfo 主机CPU信息
-Dma 主机DMA通道信息
-Filesystems 文件系统信息
-Interrupts 主机中断信息
-Ioprots 主机I/O端口号信息
-Meninfo 主机内存信息
-Version Linux内存版本信息
-
-备注： proc – process information pseudo-filesystem 进程信息伪装文件系统
-
-RPM
-
-    在Linux 操作系统中，有一个系统软件包，它的功能类似于Windows里面的“添加/删除程序”，但是功能又比“添加/删除程序”强很多，它就是 Red Hat Package Manager(简称RPM)。此工具包最先是由Red Hat公司推出的，后来被其他Linux开发商所借用。由于它为Linux使用者省去了很多时间，所以被广泛应用于在Linux下安装、删除软件。下面就 给大家介绍一下它的具体使用方法。
-
-1.我们得到一个新软件，在安装之前，一般都要先查看一下这个软件包里有什么内容，假设这个文件是：Linux-1.4-6.i368.rpm，我们可以用这条命令查看：
-
-rpm -qpi Linux-1.4-6.i368.rpm
-
-系统将会列出这个软件包的详细资料，包括含有多少个文件、各文件名称、文件大小、创建时间、编译日期等信息。
-
-2.上面列出的所有文件在安装时不一定全部安装，就像Windows下程序的安装方式分为典型、完全、自定义一样，Linux也会让你选择安装方式，此时我们可以用下面这条命令查看软件包将会在系统里安装哪些部分，以方便我们的选择：
-
-rpm -qpl Linux-1.4-6.i368.rpm
-
-3. 选择安装方式后，开始安装。我们可以用rpm-ivh Linux-1.4-6.i368.rpm命令安装此软件。在安装过程中，若系统提示此软件已安装过或因其他原因无法继续安装，但若我们确实想执行安装命 令，可以在 -ivh后加一参数“-replacepkgs”：
-
-rpm -ivh -replacepkgs Linux-1.4-6.i368.rpm
-
-4.有时我们卸载某个安装过的软件，只需执行rpm-e &lt;文件名&gt;;命令即可。
-
-5.对低版本软件进行升级是提高其功能的好办法，这样可以省去我们卸载后再安装新软件的麻烦，要升级某个软件，只须执行如下命令：rpm -uvh &lt;文件名&gt;;，注意：此时的文件名必须是要升级软件的升级补丁
-
-6. 另外一个安装软件的方法可谓是Linux的独到之处，同时也是RMP强大功能的一个表现：通过FTP站点直接在线安装软件。当找到含有你所需软件的站点并 与此网站连接后，执行下面的命令即可实现在线安装，譬如在线安装Linux-1.4-6.i368.rpm，可以用命令： www.it165.net
-
-rpm -i ftp://ftp.pht.com/pub/linux/redhat/...-1.4-6.i368.rpm
-
-7. 在我们使用电脑过程中，难免会有误操作，若我们误删了几个文件而影响了系统的性能时，怎样查找到底少了哪些文件呢?RPM软件包提供了一个查找损坏文件的 功能，执行此命令：rpm -Va即可，Linux将为你列出所有损坏的文件。你可以通过Linux的安装光盘进行修复。
-
-8.Linux系统中文件繁多，在使用过程中，难免会碰到我们不认识的文件，在Windows下我们可以用“开始/查找”菜单快速判断某个文件属于哪个文件夹，在Linux中，下面这条命令行可以帮助我们快速判定某个文件属于哪个软件包：
-
-rpm -qf &lt;文件名&gt;;
-
-9.当每个软件包安装在Linux系统后，安装文件都会到RPM数据库中“报到”，所以，我们要查询某个已安装软件的属性时，只需到此数据库中查找即可。注意：此时的查询命令不同于1和8介绍的查询，这种方法只适用于已安装过的软件包！命令格式：
-
-rpm -参数　&lt;文件名&gt;;
-</code></pre>
-<h2 id="APT-GET"><a href="#APT-GET" class="headerlink" title="APT-GET"></a>APT-GET</h2><pre><code>apt-get update——在修改/etc/apt/sources.list或者/etc/apt/preferences之后运行该命令。此外您需要定期运行这一命令以确保您的软件包列表是最新的。
-apt-get install packagename——安装一个新软件包（参见下文的aptitude） 
-apt-get remove packagename——卸载一个已安装的软件包（保留配置文件） 
-apt-get --purge remove packagename——卸载一个已安装的软件包（删除配置文件） 
-dpkg --force-all --purge packagename 有些软件很难卸载，而且还阻止了别的软件的应用，就可以用这个，不过有点冒险。 
-apt-get autoclean apt会把已装或已卸的软件都备份在硬盘上，所以如果需要空间的话，可以让这个命令来删除你已经删掉的软件 
-apt-get clean 这个命令会把安装的软件的备份也删除，不过这样不会影响软件的使用的。 
-apt-get upgrade——更新所有已安装的软件包 
-apt-get dist-upgrade——将系统升级到新版本 
-apt-cache search string——在软件包列表中搜索字符串 
-dpkg -l package-name-pattern——列出所有与模式相匹配的软件包。如果您不知道软件包的全名，您可以使用“*package-name-pattern*”。
-aptitude——详细查看已安装或可用的软件包。与apt-get类似，aptitude可以通过命令行方式调用，但仅限于某些命令——最常见的有安装和卸载命令。由于aptitude比apt-get了解更多信息，可以说它更适合用来进行安装和卸载。
-apt-cache showpkg pkgs——显示软件包信息。 
-apt-cache dumpavail——打印可用软件包列表。 
-apt-cache show pkgs——显示软件包记录，类似于dpkg –print-avail。 
-apt-cache pkgnames——打印软件包列表中所有软件包的名称。 
-dpkg -S file——这个文件属于哪个已安装软件包。 
-dpkg -L package——列出软件包中的所有文件。 
-apt-file search filename——查找包含特定文件的软件包（不一定是已安装的），这些文件的文件名中含有指定的字符串。apt-file是一个独立的软件包。您必须 先使用apt-get install来安装它，然后运行apt-file update。如果apt-file search filename输出的内容太多，您可以尝试使用apt-file search filename | grep -w filename（只显示指定字符串作为完整的单词出现在其中的那些文件名）或者类似方法，例如：apt-file search filename | grep /bin/（只显示位于诸如/bin或/usr/bin这些文件夹中的文件，如果您要查找的是某个特定的执行文件的话，这样做是有帮助的）。
-</code></pre>
-<h2 id="ubuntu查看版本命令"><a href="#ubuntu查看版本命令" class="headerlink" title="ubuntu查看版本命令"></a>ubuntu查看版本命令</h2><pre><code>方法一：
-在终端中执行下列指令： cat /etc/issue
-方法二：
-使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。
-执行指令如下： sudo lsb_release -a
-方法三：
-打开“系统监视器”，选择“系统”
-Ubuntu查看版本命令
-1. lshw
-lshw命令显示详细硬件信息。
-如果要用概要方式显示，可以加上short参数：lshw-short
-要显示指定硬件信息，加上class(或C)参数：lshw -classmemory
-2. sysstat
-监测系统性能及效率的一组工具，这些工具对于我们收集系统性能数据，
-比如CPU使用率、硬盘和网络吞吐数据。
-3. lspci -v (相比cat/proc/pci更直观）
-查看PCI信息，lspci 是读取 hwdata 数据库。
-4. uname -a
-查看系统体系结构。
-5. dmidecode
-查看硬件信息，包括bios、cpu、内存等信息
-6. dmesg
-显示内核缓冲区系统控制信息，如系统启动时的信息会写到/var/log/。
-注：dmesg 工具并不是专门用来查看硬件芯片组标识的工具，
-但通过这个工具能让我们知道机器中的硬件的一些参数；因为系统在启动的时候，
-会写一些硬件相关的日志到 /var/log/message* 或/var/log/boot* 文件中。
-7. lshal 和hal-device-manager
-8. 查看 /proc
-对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
-Cpuinfo 主机CPU信息
-Dma 主机DMA通道信息
-Filesystems 文件系统信息
-Interrupts 主机中断信息
-Ioprots 主机I/O端口号信息
-Meninfo 主机内存信息
-Version Linux内存版本信息
-查看CPU信息：cat /proc/cpuinfo 查看板卡信息：cat /proc/pci 查看内存信息：cat/proc/meminfo 查看USB设备：cat /proc/bus/usb/devices 查看键盘和鼠标：cat/proc/bus/input/devices 查看各设备的中断请求(IRQ)：cat/proc/interrupts
-</code></pre>
-<h2 id="主板信息"><a href="#主板信息" class="headerlink" title="主板信息:"></a>主板信息:</h2><pre><code>sudo demidecode | grep -i ‘serial number’
-</code></pre>
-<h2 id="CPU信息"><a href="#CPU信息" class="headerlink" title="CPU信息:"></a>CPU信息:</h2><pre><code>cat /proc/cpuinfo
-dmesg | grep -i ‘cpu’
-sudo dmidecode -t processor
-</code></pre>
-<h2 id="硬盘信息"><a href="#硬盘信息" class="headerlink" title="硬盘信息:"></a>硬盘信息:</h2><pre><code>查看分区情况:
-sudo fdisk -l
-
-查看大小情况:
-df -h
-
-查看使用情况:
-du -h
-sudo hdparm -I /dev/sda
-dmesg | grep sda
-</code></pre>
-<h2 id="内存信息"><a href="#内存信息" class="headerlink" title="内存信息:"></a>内存信息:</h2><pre><code>cat /proc/meminfo
-dmesg | grep mem
-free -m
-vmstat
-sudo dmidecode | grep -i mem
-</code></pre>
-<h2 id="网卡信息"><a href="#网卡信息" class="headerlink" title="网卡信息:"></a>网卡信息:</h2><pre><code>dmesg | grep -i ‘eth’
-lspci | grep -i ‘eth’
-
-ethtool -i eht0
-ethhool -k eth0
-ethtool -g eth0
-</code></pre>
-<h2 id="查看鼠标和键盘"><a href="#查看鼠标和键盘" class="headerlink" title="查看鼠标和键盘:"></a>查看鼠标和键盘:</h2><pre><code>cat /proc/bus/input/devices
-</code></pre>
-<h2 id="查看各设备的中断请求-IRQ"><a href="#查看各设备的中断请求-IRQ" class="headerlink" title="查看各设备的中断请求(IRQ):"></a>查看各设备的中断请求(IRQ):</h2><pre><code>cat /proc/interrupts
-</code></pre>
-<h2 id="显卡信息"><a href="#显卡信息" class="headerlink" title="显卡信息:"></a>显卡信息:</h2><pre><code>lspci | grep -i ‘VGA’
-dmesg | grep -i ‘VGA’
-</code></pre>
-<h2 id="声卡信息"><a href="#声卡信息" class="headerlink" title="声卡信息:"></a>声卡信息:</h2><pre><code>查看声卡型号:
-lspci | grep -i audio
-
-查看型号ac97的声卡驱动模块:
-modprobe -l | grep ac97
-
-查看声卡信息:
-cat /proc/asound/cards
-
-查看alsa-utils本:
-alsactl -v
-
-查看内核alsa版本:
-cat /proc/asound/version
-
-声卡信息:
-aplay -l
-
-硬件信息之声卡:
-sudo lshw -C sound
-
-模块状态之声音:
-lsmod | grep -i snd
-
-alsa音频配置:
-alsamixer
-</code></pre>
-<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令:"></a>其他命令:</h2><pre><code>dmesg
-lspci
-mpstat(先安装sysstat: sudo spt-get install sysstat) 
-</code></pre>
+<h2 id="查看docker"><a href="#查看docker" class="headerlink" title="查看docker"></a>查看docker</h2><p><code>docker images</code><br><code>docker ps</code><br><code>docker version</code>    </p>
+<h2 id="启动第一个dockers容器"><a href="#启动第一个dockers容器" class="headerlink" title="启动第一个dockers容器"></a>启动第一个dockers容器</h2><p>以nginx为例<br>搜索<br><code>docker search nginx</code><br>拉取<br><code>docker pull nginx</code><br>删除<br><code>docker images ls</code>(查找ID)<br><code>docker rmi ID</code><br>运行<br>docker run 参数   镜像的名字/id<br><code>docker run  -d（后台运行） -p 80:80（端口映射） nginx  </code><br>会返回一个容器的id<br><code>netstat -tunlp</code> 查看端口<br><code>ip -a</code>查看ip / <code>ifconfig</code><br>查看容器是否在运行<br><code>doker  ps  </code><br>停止容器<br><code>docker stop 容器id</code><br>开启<br><code>docker start 容器ip</code>  </p>
 ]]></content>
       <tags>
-        <tag>技术</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -964,48 +996,6 @@ mpstat(先安装sysstat: sudo spt-get install sysstat)
       </tags>
   </entry>
   <entry>
-    <title>docker学习</title>
-    <url>/2021/12/25/docker%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p><strong>学业指导老师让我们学习docker，写成报告作为大作业，之前自己也研究了下VMware，在上面安装了Ubuntu，正好趁此熟悉一下Linux操作系统，顺便为将来搭建服务器打基础。</strong><br> <span id="more"></span></p>
-<h1 id="docker-容器"><a href="#docker-容器" class="headerlink" title="docker 容器"></a>docker 容器</h1><h2 id="服务器搭建"><a href="#服务器搭建" class="headerlink" title="服务器搭建"></a>服务器搭建</h2><p>传统服务器：  </p>
-<pre><code> 宿主机： vmvare + cenntos（Ubuntu）= Linux
- 物理机：  硬件 + 操作系统  
-</code></pre>
-<p>虚拟化服务器：   </p>
-<pre><code>  物理机 + host operating sever +  hypervisor + vmware
- 
-</code></pre>
-<h2 id="容器技术"><a href="#容器技术" class="headerlink" title="容器技术"></a>容器技术</h2><p><strong>虚拟化工具</strong>：<br>VMware &emsp; Virtua &emsp;PCVirtualbox  </p>
-<ul>
-<li>vmware workstation（个人学习）  </li>
-<li>vmware ecxi（企业级）</li>
-</ul>
-<p>KVM&emsp;Docker</p>
-<p><strong>Docker的组件</strong><br>镜像&emsp;存储&emsp;网络&emsp;容器<br>docker file&emsp;dockerhub  </p>
-<h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><p>企业版（EE）&emsp;社区版（CE）  </p>
-<h2 id="开启linux内核的流量转发"><a href="#开启linux内核的流量转发" class="headerlink" title="开启linux内核的流量转发"></a>开启linux内核的流量转发</h2><p>生成文件<br><code>cat &lt;&lt;EOF &gt; /etc/sysctl.d/docker.conf net.bridge.bridge-nf-call-ip6tables = 1 net.bridge.bridge-nf-call-iptables = 1 net.ipv4.conf.default.rp_filter = 0 net.ipv4.conf.all.rp_filter = 0 net.ipv4.ip_forward=1 EOF</code>（好像需要root身份）<br>检验<br><code>ls /etc/sysctl.d/docker.conf</code><br>加载<br><code>modprobe br_netfilter</code><br><code>sysctl -p /etc/sysctl.d/docker.conf</code><br>配置docker加速器<br><code>mkdir -p /etc/docker</code><br><code>touch /etc/docker/daemon.json</code><br><code>vim /etc/docker/daemon.json</code><br>(没有vim可以通过apt install vim<br>命令下载)<br>输入以下内容<br><code>&#123;</code><br> <code>&quot;registry-mirrors&quot; : [</code><br><code> &quot;https://8xpk5wnt.mirror.aliyuncs.com&quot;</code><br><code> ]</code><br><code>&#125;</code><br>esc ：wq退出<br>查看检验<br><code>cat /etc/docker/daemon.json</code>  </p>
-<h2 id="启动docker"><a href="#启动docker" class="headerlink" title="启动docker"></a>启动docker</h2><pre><code>        systemctl daemon-reload 
-        systemctl enable docker 
-        systemctl restart docker  
-</code></pre>
-<h2 id="查看docker"><a href="#查看docker" class="headerlink" title="查看docker"></a>查看docker</h2><p><code>docker images</code><br><code>docker ps</code><br><code>docker version</code>    </p>
-<h2 id="启动第一个dockers容器"><a href="#启动第一个dockers容器" class="headerlink" title="启动第一个dockers容器"></a>启动第一个dockers容器</h2><p>以nginx为例<br>搜索<br><code>docker search nginx</code><br>拉取<br><code>docker pull nginx</code><br>删除<br><code>docker images ls</code>(查找ID)<br><code>docker rmi ID</code><br>运行<br>docker run 参数   镜像的名字/id<br><code>docker run  -d（后台运行） -p 80:80（端口映射） nginx  </code><br>会返回一个容器的id<br><code>netstat -tunlp</code> 查看端口<br><code>ip -a</code>查看ip / <code>ifconfig</code><br>查看容器是否在运行<br><code>doker  ps  </code><br>停止容器<br><code>docker stop 容器id</code><br>开启<br><code>docker start 容器ip</code>  </p>
-]]></content>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python爬虫学习</title>
-    <url>/2022/02/26/python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p><strong>开始学习爬虫了</strong></p>
-<span id="more"></span>
-]]></content>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>java安装以及配置环境</title>
     <url>/2022/03/01/java%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83/</url>
     <content><![CDATA[<p>安装一下Java</p>
@@ -1058,6 +1048,16 @@ mpstat(先安装sysstat: sudo spt-get install sysstat)
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python爬虫学习</title>
+    <url>/2022/02/26/python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p><strong>开始学习爬虫了</strong></p>
+<span id="more"></span>
+]]></content>
+      <tags>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1161,22 +1161,6 @@ for i in a:
       </tags>
   </entry>
   <entry>
-    <title>将HTML文件上传到hexo</title>
-    <url>/2022/03/05/%E5%B0%86HTML%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0hexo/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>为python的idle增添清屏功能</title>
-    <url>/2022/01/09/%E4%B8%BApython%E7%9A%84idle%E5%A2%9E%E6%B7%BB%E6%B8%85%E5%B1%8F%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<p><strong>Python的IDLE中的交互模式在某些情况下确实很方便，但代码一旦多了就很难受，为此我专门去网上查了查，找到了增加清屏功能的方法</strong></p>
-<span id="more"></span>
-<p>参考博客：<a href="https://blog.csdn.net/zhangbeizhen18/article/details/89214894">https://blog.csdn.net/zhangbeizhen18/article/details/89214894</a></p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>“教你搭建属于自己的博客”</title>
     <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
     <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
@@ -1197,6 +1181,71 @@ for i in a:
       </tags>
   </entry>
   <entry>
+    <title>为python的idle增添清屏功能</title>
+    <url>/2022/01/09/%E4%B8%BApython%E7%9A%84idle%E5%A2%9E%E6%B7%BB%E6%B8%85%E5%B1%8F%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<p><strong>Python的IDLE中的交互模式在某些情况下确实很方便，但代码一旦多了就很难受，为此我专门去网上查了查，找到了增加清屏功能的方法</strong></p>
+<span id="more"></span>
+<p>参考博客：<a href="https://blog.csdn.net/zhangbeizhen18/article/details/89214894">https://blog.csdn.net/zhangbeizhen18/article/details/89214894</a></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于几个网络工具</title>
+    <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<p><strong>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍</strong><br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：  </p>
+<span id="more"></span>  
+<h4 id="一，网易uu加速器"><a href="#一，网易uu加速器" class="headerlink" title="一，网易uu加速器"></a>一，网易uu加速器</h4><p>可以免费加速steam社区，解决一些加好友、访问创意工坊、送游戏之类的问题。</p>
+<h4 id="二，Sidecar"><a href="#二，Sidecar" class="headerlink" title="二，Sidecar"></a>二，Sidecar</h4><p>一款免费开源的，用于专门加速GitHub这个全球最大的<br>同性交友网站。而且就在我用gitbash上传博客出现奇怪报错（挂小飞机、按网上指示修改文件参数、回退文件内容都没用），最后无可奈何到了重装nodejs边缘<br>的时候是它自带的NPM加速拯救了整个世界。<br>    注：可在github上获取  </p>
+<h4 id="三，科学上网"><a href="#三，科学上网" class="headerlink" title="三，科学上网"></a>三，科学上网</h4><p>这个最好了解一下翻墙原理，谨慎使用，不要发敏感言<br>论，注意隐私安全（在YouTube上看了下抓包，好像在服务器端窃取你的信息还是很容易的)。<br>    附一篇很有用的博客：<br>    <a href="https://tecrobe.github.io/blog/post/how-to-break-wall/">https://tecrobe.github.io/blog/post/how-to-break-wall/</a></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>将HTML文件上传到hexo</title>
+    <url>/2022/03/05/%E5%B0%86HTML%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0hexo/</url>
+    <content><![CDATA[<p>想把自己的写的时钟上传到博客，所以学习了一下怎么上传</p>
+<span id="more"></span>
+<p>参考加摘选：<a href="https://blog.csdn.net/weixin_58068682/article/details/116611715">Hexo博客技巧：添加自定义html页面</a></p>
+<ol>
+<li>在source目录下新建文件夹</li>
+<li>找到博客根目录的配置文件_config.yml文件里，设置跳过渲染</li>
+</ol>
+<p><strong>单个文件，就写：</strong></p>
+<ul>
+<li>跳过渲染<pre><code>  skip_render: 
+      - &quot;xxxx.html&quot;
+</code></pre>
+</li>
+</ul>
+<p><strong>如果只创建了一个文件夹，要跳过它目录下所有文件的渲染，就写：</strong>  </p>
+<ul>
+<li>跳过文件夹下所有文件<pre><code>  skip_render: 
+      - &quot;文件夹名/*&quot;
+</code></pre>
+</li>
+</ul>
+<p><strong>如果父文件夹下还有子文件夹，就写：</strong></p>
+<ul>
+<li>跳过子文件夹<pre><code>  skip_render: 
+      - &quot;文件夹名/子文件夹名/*            
+      
+</code></pre>
+</li>
+</ul>
+<p><strong>或更简单粗暴的方式：</strong><br>    - 跳过文件夹下所有子文件夹和文件</p>
+<pre><code>skip_render: 
+- &quot;文件夹名/**&quot;   
+</code></pre>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>将手机上的B站视频传输到电脑端播放</title>
     <url>/2022/01/24/%E5%B0%86%E6%89%8B%E6%9C%BA%E4%B8%8A%E7%9A%84B%E7%AB%99%E8%A7%86%E9%A2%91%E4%BC%A0%E8%BE%93%E5%88%B0%E7%94%B5%E8%84%91%E7%AB%AF%E6%92%AD%E6%94%BE/</url>
     <content><![CDATA[<p><strong>今天坐高铁，发现其实座位上是有插座的，所以就研究了一番，将手机上缓存好的B站视频换到笔记本上观看</strong></p>
@@ -1214,13 +1263,12 @@ for i in a:
       </tags>
   </entry>
   <entry>
-    <title>关于几个网络工具</title>
-    <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p><strong>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍</strong><br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：  </p>
+    <title>快捷键</title>
+    <url>/2022/01/02/%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<p><strong>记录一下快捷键</strong></p>
 <span id="more"></span>  
-<h4 id="一，网易uu加速器"><a href="#一，网易uu加速器" class="headerlink" title="一，网易uu加速器"></a>一，网易uu加速器</h4><p>可以免费加速steam社区，解决一些加好友、访问创意工坊、送游戏之类的问题。</p>
-<h4 id="二，Sidecar"><a href="#二，Sidecar" class="headerlink" title="二，Sidecar"></a>二，Sidecar</h4><p>一款免费开源的，用于专门加速GitHub这个全球最大的<br>同性交友网站。而且就在我用gitbash上传博客出现奇怪报错（挂小飞机、按网上指示修改文件参数、回退文件内容都没用），最后无可奈何到了重装nodejs边缘<br>的时候是它自带的NPM加速拯救了整个世界。<br>    注：可在github上获取  </p>
-<h4 id="三，科学上网"><a href="#三，科学上网" class="headerlink" title="三，科学上网"></a>三，科学上网</h4><p>这个最好了解一下翻墙原理，谨慎使用，不要发敏感言<br>论，注意隐私安全（在YouTube上看了下抓包，好像在服务器端窃取你的信息还是很容易的)。<br>    附一篇很有用的博客：<br>    <a href="https://tecrobe.github.io/blog/post/how-to-break-wall/">https://tecrobe.github.io/blog/post/how-to-break-wall/</a></p>
+<h2 id="IDLE"><a href="#IDLE" class="headerlink" title="IDLE"></a>IDLE</h2><p>Alt + N &emsp; / &emsp; Alt + P 查看上下历史命令<br>Ctrl + F6 重启shell<br>F1  打开帮助文件<br>Alt + /  补全曾经出现的单词<br>Ctrl + [&emsp; /&emsp;Ctrl +] 缩进代码和取消缩进<br>Alt + M 查看源码<br>Alt + C 打开类浏览器<br>F5 运行程序  
+ </p>
 ]]></content>
       <tags>
         <tag>技术</tag>
@@ -1249,18 +1297,6 @@ for i in a:
       </tags>
   </entry>
   <entry>
-    <title>快捷键</title>
-    <url>/2022/01/02/%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-    <content><![CDATA[<p><strong>记录一下快捷键</strong></p>
-<span id="more"></span>  
-<h2 id="IDLE"><a href="#IDLE" class="headerlink" title="IDLE"></a>IDLE</h2><p>Alt + N &emsp; / &emsp; Alt + P 查看上下历史命令<br>Ctrl + F6 重启shell<br>F1  打开帮助文件<br>Alt + /  补全曾经出现的单词<br>Ctrl + [&emsp; /&emsp;Ctrl +] 缩进代码和取消缩进<br>Alt + M 查看源码<br>Alt + C 打开类浏览器<br>F5 运行程序  
- </p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>我的世界局域网ip地址错误及解决方案</title>
     <url>/2021/12/26/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%B1%80%E5%9F%9F%E7%BD%91ip%E5%9C%B0%E5%9D%80%E9%94%99%E8%AF%AF%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<p><strong>今天，想准备用Java版我的世界进行局域网和舍友进行联机，但有一个舍友搜索不到本地服务器，其他三人均可进行联机。</strong><br> <span id="more"></span>  </p>
@@ -1284,6 +1320,36 @@ for i in a:
     <content><![CDATA[]]></content>
       <tags>
         <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows系统下查找当前占用特定端口的程序</title>
+    <url>/2022/01/09/%E6%9F%A5%E7%9C%8B%E6%98%AF%E5%93%AA%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p><strong>今天使用一个软件时显示1085端口占用，我想找出时那个程序在占用它</strong></p>
+<span id="more"></span>
+
+<p>打开命令提示符程序（管理员身份）</p>
+<p> <code>netstat -ano</code>该命令为查看所有端口</p>
+<p> <code>netstat -aon|findstr &quot;1085(此处为端口号&quot;</code>该命令为查看特定端口</p>
+<p> 找到最后的程序代号（pid）后输入</p>
+<p> <code>tasklist|findstr &quot;2188(此处为程序代号）&quot;</code></p>
+<p> 结束掉该进程<br> <code>taskkill /T /F /PID 2188</code></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>时钟练习</title>
+    <url>/2022/03/05/%E6%97%B6%E9%92%9F%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<p>css + html + 学了两分钟的Javascript = 一个网页闹钟<br><a href="https://ye1133zi.github.io/watch/watch.html">点击此处可查看效果</a></p>
+<span id="more"></span>
+<p>参考：<a href="https://www.zhihu.com/question/40149352/answer/2359189296">https://www.zhihu.com/question/40149352/answer/2359189296</a><br>注：原文章：js中分针走动的单位有问题，应该是乘6而不是30，另外是需要设置层级和去除数字表的padding</p>
+<p>修改后我放在了：**<a href="https://ye1133zi.github.io/html/watch.html">不加hexo渲染的纯钟表源码</a>**, 可以下载下来查看</p>
+<p>最后，避免一下侵权<br>作者：百里青山<br>链接：<a href="https://www.zhihu.com/question/40149352/answer/2359189296">https://www.zhihu.com/question/40149352/answer/2359189296</a><br>来源：知乎</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -1325,36 +1391,6 @@ for i in a:
 <h2 id="油猴插件"><a href="#油猴插件" class="headerlink" title="油猴插件"></a>油猴插件</h2><p>点击油猴图标，点击获取新脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B42.png" alt=" "><br>一般会选择GreasyFork。你可以在里面搜索你想要的脚本，点击安装即可使用（记得刷新网页）。<br>点击油猴图标可对插件进行管理，不用某个脚本时（多开会占用一定内存），你可以选择把它关掉或者删除  </p>
 <h2 id="自己在用的脚本"><a href="#自己在用的脚本" class="headerlink" title="自己在用的脚本"></a>自己在用的脚本</h2><p>1.AC-baidu-重定向优化百度搜狗谷歌必应搜索_favicon_双列<br>好用，真好用，作用让是你的搜索结果变成这样<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B43.png" alt=" "><br>2.字体渲染<br>当你第一次用这个脚本的时候，你会感觉眼睛一下舒服了许多<br>3.全网VIP破解<br>这个其实我下了但没有用，原因一是我不用爱奇艺、腾讯视频之类，二是作者注明了会收取一定广告费用，但是我一个舍友因为追综艺一直在用<br><strong>4.UserJS</strong><br>授人以鱼不如授人以渔，这个脚本会检索出对于当前网页大家都在用什么脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B44.png" alt=" ">  </p>
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>油猴脚本是开源的，这意味着所以人都可以去审查它的（安全性有<strong>一定</strong>保证），当然也可以按照自己的需求对它进行改编，油猴脚本众多，大家还需要进行探索，找到适合自己的脚本。 </p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows系统下查找当前占用特定端口的程序</title>
-    <url>/2022/01/09/%E6%9F%A5%E7%9C%8B%E6%98%AF%E5%93%AA%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p><strong>今天使用一个软件时显示1085端口占用，我想找出时那个程序在占用它</strong></p>
-<span id="more"></span>
-
-<p>打开命令提示符程序（管理员身份）</p>
-<p> <code>netstat -ano</code>该命令为查看所有端口</p>
-<p> <code>netstat -aon|findstr &quot;1085(此处为端口号&quot;</code>该命令为查看特定端口</p>
-<p> 找到最后的程序代号（pid）后输入</p>
-<p> <code>tasklist|findstr &quot;2188(此处为程序代号）&quot;</code></p>
-<p> 结束掉该进程<br> <code>taskkill /T /F /PID 2188</code></p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>时钟练习</title>
-    <url>/2022/03/05/%E6%97%B6%E9%92%9F%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[<p><a href="https://ye1133zi.github.io/watch/watch.html">点击此处可查看效果</a></p>
-<span id="more"></span>
-<p>参考：<a href="https://www.zhihu.com/question/40149352/answer/2359189296">https://www.zhihu.com/question/40149352/answer/2359189296</a><br>注：原文章：js中分针走动的单位有问题，应该是乘6而不是30，另外是需要设置层级和去除数字表的padding</p>
-<p><strong>修改后我放在了：<a href="https://ye1133zi.github.io/html/watch.html">不加hexo渲染的纯钟表源码</a>,可以下载下来查看</strong></p>
-<p>最后，避免一下侵权<br>作者：百里青山<br>链接：<a href="https://www.zhihu.com/question/40149352/answer/2359189296">https://www.zhihu.com/question/40149352/answer/2359189296</a><br>来源：知乎</p>
 ]]></content>
       <tags>
         <tag>生活</tag>
