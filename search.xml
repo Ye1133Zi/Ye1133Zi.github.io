@@ -1,131 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Python学习</title>
-    <url>/2022/01/02/Python%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>人生苦短，我学python</p>
-<span id="more"></span>
-<h2 id="海龟制图"><a href="#海龟制图" class="headerlink" title="海龟制图"></a>海龟制图</h2><p><code>import turtle</code> 引入<br><code>turtle.write(&quot;嘿嘿嘿&quot;)</code> 输入字符串<br><code>turtle.showturtle()</code>   显示字符串<br><code>turtle.forward(300)</code> 前进<br><code>turtle.goto（0，54）</code> 移到坐标<br><code>turtle.penup()</code>  抬笔<br><code>turtle.pendown()</code> 落笔<br><code>turtle.circle()</code> 画画<br><code>turtle.width()</code> 设置粗细<br><code>turtle.color()</code>  设置颜色  </p>
-<h2 id="python与c不一样的地方"><a href="#python与c不一样的地方" class="headerlink" title="python与c不一样的地方"></a>python与c不一样的地方</h2><p>赋值<br>a,b,c = 1,2,3<br>a,b = b,a<br>// 整数除法<br>** 幂<br>divemod（）同时得到商和余数<br>round（） 四色五入<br>3&lt;4&lt;4 关系运算符可以连用  </p>
-<h2 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h2><p>Python使用Unicode编码<br>相互转换：ord（） chr（）<br>多行注释用三个单引号或双引号<br>使用print加入,end=实现不换行<br>字符串处理(以a为示例字符串)：</p>
-<pre><code>str（）
-a = a.replace(原字符,替换字符)  
-[start:end:step]   
-a.split()  默认空格  
-join（）  
-in / not in
-
-a.startwith()  
-a.endwith()  
-a.find()  
-a.rfind()
-a.count（）
-
-a.isalnum() 是否全为字母或数字
-a.isalpha() 是否全为字母（含汉字）
-a.isspace() 是否为空白字符  
-a.isupper()
-a.islower()       
-
-strip() 去除首尾  
-lstrip（）
-rstrip（）  
-
-a.capitalize() 首字母大写  
-a.title() 每个单词首字母大写  
-a.upper()   所有单词大写   
-a.lower()    全部小写  
-a.swapcase()  大小写互换  
-
-排版：
-center()
-lijust()
-rjust()   
-
-格式化： 
-str.format()
-
-io和array
-import io
-io.StrngIO（）
-.getvalue()  
-.seek() 移动指针  
-.write()
-</code></pre>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><pre><code>创建:
-a = []
-a = list(字符串或range() )
-修改：
-a.append()
-extend()
-insert()
-del a[1]
-pop()
-remove()
-index()
-</code></pre>
-<h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><pre><code>创建：
-s = set()
-s = &#123;&#125;
-s.add(1)
-s.remove()
-遍历：
-for x in s:
-并集：
-s1.s2
-交集：
-s1 &amp; s2
-对称差(作并集取交集）：
-s1 ^ s2
-s1 - s2
-</code></pre>
-<h2 id="包"><a href="#包" class="headerlink" title="包"></a>包</h2><pre><code>命名： _init_.py
-将模块A导入B：import A.B
-(包中包可以用.from表示，如将C中的A包引入B为：import C.A.B or from C import A)
- 
-</code></pre>
-<h2 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h2><pre><code>f = open（&quot;文件名&quot;,&quot;w/...&quot;) 
-f.close
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>字母</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>r</td>
-<td>只读方式打开</td>
-</tr>
-<tr>
-<td>w</td>
-<td>从头写入（覆盖）</td>
-</tr>
-<tr>
-<td>a</td>
-<td>从结尾写入</td>
-</tr>
-<tr>
-<td>rb</td>
-<td>二进制只读</td>
-</tr>
-<tr>
-<td>wb</td>
-<td>二进制写入</td>
-</tr>
-<tr>
-<td>ab</td>
-<td>二进制结尾写入</td>
-</tr>
-</tbody></table>
-<h2 id="More-菜鸟笔记"><a href="#More-菜鸟笔记" class="headerlink" title="More: 菜鸟笔记"></a>More: <a href="https://www.runoob.com/python3/python3-file-methods.html">菜鸟笔记</a></h2><h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>print(“www”,”baidu”,”com”,sep=”.”)</p>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MarkDown语法学习</title>
     <url>/2021/12/16/MarkDown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p><strong>通过hexo和gihub搭建的博客文章可以采用.md（Markdown）文件，我决定以边学边写的方式，通过此篇博客进行Markdown语法学习。</strong>  </p>
@@ -251,282 +126,128 @@ f.close
       </tags>
   </entry>
   <entry>
-    <title>Ubuntu查看硬件信息</title>
-    <url>/2022/02/10/Ubuntu%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<p><strong>新买的两个4g内存条到了，试一试ok不ok</strong></p>
+    <title>Python学习</title>
+    <url>/2022/01/02/Python%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>人生苦短，我学python</p>
 <span id="more"></span>
-<p>参考博客：<a href="https://blog.csdn.net/chuanyu/article/details/46611793">https://blog.csdn.net/chuanyu/article/details/46611793</a><br>总命令： lshw</p>
-<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><pre><code># uname -a               # 查看内核/操作系统/CPU信息
-# head -n 1 /etc/issue   # 查看操作系统版本 
-# cat /proc/cpuinfo      # 查看CPU信息
-# hostname               # 查看计算机名 
-# lspci -tv              # 列出所有PCI设备
-# lsusb -tv              # 列出所有USB设备 
-# lsmod                  # 列出加载的内核模块
-# env                    # 查看环境变量
+<h2 id="海龟制图"><a href="#海龟制图" class="headerlink" title="海龟制图"></a>海龟制图</h2><p><code>import turtle</code> 引入<br><code>turtle.write(&quot;嘿嘿嘿&quot;)</code> 输入字符串<br><code>turtle.showturtle()</code>   显示字符串<br><code>turtle.forward(300)</code> 前进<br><code>turtle.goto（0，54）</code> 移到坐标<br><code>turtle.penup()</code>  抬笔<br><code>turtle.pendown()</code> 落笔<br><code>turtle.circle()</code> 画画<br><code>turtle.width()</code> 设置粗细<br><code>turtle.color()</code>  设置颜色  </p>
+<h2 id="python与c不一样的地方"><a href="#python与c不一样的地方" class="headerlink" title="python与c不一样的地方"></a>python与c不一样的地方</h2><p>赋值<br>a,b,c = 1,2,3<br>a,b = b,a<br>// 整数除法<br>** 幂<br>divemod（）同时得到商和余数<br>round（） 四色五入<br>3&lt;4&lt;4 关系运算符可以连用  </p>
+<h2 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h2><p>Python使用Unicode编码<br>相互转换：ord（） chr（）<br>多行注释用三个单引号或双引号<br>使用print加入,end=实现不换行<br>字符串处理(以a为示例字符串)：</p>
+<pre><code>str（）
+a = a.replace(原字符,替换字符)  
+[start:end:step]   
+a.split()  默认空格  
+join（）  
+in / not in
+
+a.startwith()  
+a.endwith()  
+a.find()  
+a.rfind()
+a.count（）
+
+a.isalnum() 是否全为字母或数字
+a.isalpha() 是否全为字母（含汉字）
+a.isspace() 是否为空白字符  
+a.isupper()
+a.islower()       
+
+strip() 去除首尾  
+lstrip（）
+rstrip（）  
+
+a.capitalize() 首字母大写  
+a.title() 每个单词首字母大写  
+a.upper()   所有单词大写   
+a.lower()    全部小写  
+a.swapcase()  大小写互换  
+
+排版：
+center()
+lijust()
+rjust()   
+
+格式化： 
+str.format()
+
+io和array
+import io
+io.StrngIO（）
+.getvalue()  
+.seek() 移动指针  
+.write()
 </code></pre>
-<h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><pre><code># free -m                # 查看内存使用量和交换区使用量 
-# df -h                  # 查看各分区使用情况 
-# du -sh &lt;目录名&gt;        # 查看指定目录的大小 
-# grep MemTotal /proc/meminfo   # 查看内存总量
-# grep MemFree /proc/meminfo    # 查看空闲内存量
-# uptime                 # 查看系统运行时间、用户数、负载 
-# cat /proc/loadavg      # 查看系统负载
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><pre><code>创建:
+a = []
+a = list(字符串或range() )
+修改：
+a.append()
+extend()
+insert()
+del a[1]
+pop()
+remove()
+index()
 </code></pre>
-<h2 id="磁盘和分区"><a href="#磁盘和分区" class="headerlink" title="磁盘和分区"></a>磁盘和分区</h2><pre><code># mount | column -t      # 查看挂接的分区状态 
-# fdisk -l               # 查看所有分区 
-# swapon -s              # 查看所有交换分区
-# hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备) 
-# dmesg | grep IDE       # 查看启动时IDE设备检测状况
+<h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><pre><code>创建：
+s = set()
+s = &#123;&#125;
+s.add(1)
+s.remove()
+遍历：
+for x in s:
+并集：
+s1.s2
+交集：
+s1 &amp; s2
+对称差(作并集取交集）：
+s1 ^ s2
+s1 - s2
 </code></pre>
-<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><pre><code># ifconfig               # 查看所有网络接口的属性
-# iptables -L            # 查看防火墙设置 
-# route -n               # 查看路由表 
-# netstat -lntp          # 查看所有监听端口 
-# netstat -antp          # 查看所有已经建立的连接
-# netstat -s             # 查看网络统计信息
+<h2 id="包"><a href="#包" class="headerlink" title="包"></a>包</h2><pre><code>命名： _init_.py
+将模块A导入B：import A.B
+(包中包可以用.from表示，如将C中的A包引入B为：import C.A.B or from C import A)
+ 
 </code></pre>
-<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><pre><code># ps -ef                 # 查看所有进程 
-# top                    # 实时显示进程状态
+<h2 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h2><pre><code>f = open（&quot;文件名&quot;,&quot;w/...&quot;) 
+f.close
 </code></pre>
-<h2 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h2><pre><code># w                      # 查看活动用户 
-# id &lt;用户名&gt;            # 查看指定用户信息 
-# last                   # 查看用户登录日志 
-# cut -d: -f1 /etc/passwd   # 查看系统所有用户 
-# cut -d: -f1 /etc/group    # 查看系统所有组 
-# crontab -l             # 查看当前用户的计划任务
-</code></pre>
-<h2 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h2><pre><code># chkconfig --list       # 列出所有系统服务 
-# chkconfig --list | grep on    # 列出所有启动的系统服务
-</code></pre>
-<h2 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h2><pre><code># rpm -qa                # 查看所有安装的软件包
-</code></pre>
-<h2 id="常用命令整理如下："><a href="#常用命令整理如下：" class="headerlink" title="常用命令整理如下："></a>常用命令整理如下：</h2><pre><code>查看主板的序列号: dmidecode | grep -i ’serial number’
-
-用硬件检测程序kuduz探测新硬件：service kudzu start ( or restart)
-
-查看CPU信息：cat /proc/cpuinfo [dmesg | grep -i &#39;cpu&#39;][dmidecode -t processor]
-
-查看内存信息：cat /proc/meminfo [free -m][vmstat]
-
-查看板卡信息：cat /proc/pci
-
-查看显卡/声卡信息：lspci |grep -i ‘VGA’[dmesg | grep -i &#39;VGA&#39;]
-
-查看网卡信息：dmesg | grep -i ‘eth’[cat /etc/sysconfig/hwconf | grep -i eth][lspci | grep -i &#39;eth&#39;]
-查看PCI信息：lspci (相比cat /proc/pci更直观）
-
-查看USB设备：cat /proc/bus/usb/devices
-
-查看键盘和鼠标:cat /proc/bus/input/devices
-
-查看系统硬盘信息和使用情况：fdisk &amp; disk – l &amp; df
-
-查看各设备的中断请求(IRQ):cat /proc/interrupts
-
-查看系统体系结构：uname -a
-
-查看及启动系统的32位或64位内核模式：isalist –v [isainfo –v][isainfo –b]
-
-dmidecode查看硬件信息，包括bios、cpu、内存等信息
-
-测定当前的显示器刷新频率：/usr/sbin/ffbconfig –rev \?
-
-查看系统配置：/usr/platform/sun4u/sbin/prtdiag –v
-
-查看当前系统中已经应用的补丁：showrev –p
-
-显示当前的运行级别：who –rH
-
-查看当前的bind版本信息：nslookup –class=chaos –q=txt version.bind
-
-dmesg | more 查看硬件信息
-lspci 显示外设信息, 如usb，网卡等信息
-lsnod 查看已加载的驱动
-lshw
-psrinfo -v 查看当前处理器的类型和速度（主频）
-prtconf -v 打印当前的OBP版本号
-iostat –E 查看硬盘物理信息(vendor, RPM, Capacity)
-prtvtoc /dev/rdsk/c0t0d0s 查看磁盘的几何参数和分区信息
-df –F ufs –o i 显示已经使用和未使用的i-node数目
-isalist –v
-
-对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
-Cpuinfo 主机CPU信息
-Dma 主机DMA通道信息
-Filesystems 文件系统信息
-Interrupts 主机中断信息
-Ioprots 主机I/O端口号信息
-Meninfo 主机内存信息
-Version Linux内存版本信息
-
-备注： proc – process information pseudo-filesystem 进程信息伪装文件系统
-
-RPM
-
-    在Linux 操作系统中，有一个系统软件包，它的功能类似于Windows里面的“添加/删除程序”，但是功能又比“添加/删除程序”强很多，它就是 Red Hat Package Manager(简称RPM)。此工具包最先是由Red Hat公司推出的，后来被其他Linux开发商所借用。由于它为Linux使用者省去了很多时间，所以被广泛应用于在Linux下安装、删除软件。下面就 给大家介绍一下它的具体使用方法。
-
-1.我们得到一个新软件，在安装之前，一般都要先查看一下这个软件包里有什么内容，假设这个文件是：Linux-1.4-6.i368.rpm，我们可以用这条命令查看：
-
-rpm -qpi Linux-1.4-6.i368.rpm
-
-系统将会列出这个软件包的详细资料，包括含有多少个文件、各文件名称、文件大小、创建时间、编译日期等信息。
-
-2.上面列出的所有文件在安装时不一定全部安装，就像Windows下程序的安装方式分为典型、完全、自定义一样，Linux也会让你选择安装方式，此时我们可以用下面这条命令查看软件包将会在系统里安装哪些部分，以方便我们的选择：
-
-rpm -qpl Linux-1.4-6.i368.rpm
-
-3. 选择安装方式后，开始安装。我们可以用rpm-ivh Linux-1.4-6.i368.rpm命令安装此软件。在安装过程中，若系统提示此软件已安装过或因其他原因无法继续安装，但若我们确实想执行安装命 令，可以在 -ivh后加一参数“-replacepkgs”：
-
-rpm -ivh -replacepkgs Linux-1.4-6.i368.rpm
-
-4.有时我们卸载某个安装过的软件，只需执行rpm-e &lt;文件名&gt;;命令即可。
-
-5.对低版本软件进行升级是提高其功能的好办法，这样可以省去我们卸载后再安装新软件的麻烦，要升级某个软件，只须执行如下命令：rpm -uvh &lt;文件名&gt;;，注意：此时的文件名必须是要升级软件的升级补丁
-
-6. 另外一个安装软件的方法可谓是Linux的独到之处，同时也是RMP强大功能的一个表现：通过FTP站点直接在线安装软件。当找到含有你所需软件的站点并 与此网站连接后，执行下面的命令即可实现在线安装，譬如在线安装Linux-1.4-6.i368.rpm，可以用命令： www.it165.net
-
-rpm -i ftp://ftp.pht.com/pub/linux/redhat/...-1.4-6.i368.rpm
-
-7. 在我们使用电脑过程中，难免会有误操作，若我们误删了几个文件而影响了系统的性能时，怎样查找到底少了哪些文件呢?RPM软件包提供了一个查找损坏文件的 功能，执行此命令：rpm -Va即可，Linux将为你列出所有损坏的文件。你可以通过Linux的安装光盘进行修复。
-
-8.Linux系统中文件繁多，在使用过程中，难免会碰到我们不认识的文件，在Windows下我们可以用“开始/查找”菜单快速判断某个文件属于哪个文件夹，在Linux中，下面这条命令行可以帮助我们快速判定某个文件属于哪个软件包：
-
-rpm -qf &lt;文件名&gt;;
-
-9.当每个软件包安装在Linux系统后，安装文件都会到RPM数据库中“报到”，所以，我们要查询某个已安装软件的属性时，只需到此数据库中查找即可。注意：此时的查询命令不同于1和8介绍的查询，这种方法只适用于已安装过的软件包！命令格式：
-
-rpm -参数　&lt;文件名&gt;;
-</code></pre>
-<h2 id="APT-GET"><a href="#APT-GET" class="headerlink" title="APT-GET"></a>APT-GET</h2><pre><code>apt-get update——在修改/etc/apt/sources.list或者/etc/apt/preferences之后运行该命令。此外您需要定期运行这一命令以确保您的软件包列表是最新的。
-apt-get install packagename——安装一个新软件包（参见下文的aptitude） 
-apt-get remove packagename——卸载一个已安装的软件包（保留配置文件） 
-apt-get --purge remove packagename——卸载一个已安装的软件包（删除配置文件） 
-dpkg --force-all --purge packagename 有些软件很难卸载，而且还阻止了别的软件的应用，就可以用这个，不过有点冒险。 
-apt-get autoclean apt会把已装或已卸的软件都备份在硬盘上，所以如果需要空间的话，可以让这个命令来删除你已经删掉的软件 
-apt-get clean 这个命令会把安装的软件的备份也删除，不过这样不会影响软件的使用的。 
-apt-get upgrade——更新所有已安装的软件包 
-apt-get dist-upgrade——将系统升级到新版本 
-apt-cache search string——在软件包列表中搜索字符串 
-dpkg -l package-name-pattern——列出所有与模式相匹配的软件包。如果您不知道软件包的全名，您可以使用“*package-name-pattern*”。
-aptitude——详细查看已安装或可用的软件包。与apt-get类似，aptitude可以通过命令行方式调用，但仅限于某些命令——最常见的有安装和卸载命令。由于aptitude比apt-get了解更多信息，可以说它更适合用来进行安装和卸载。
-apt-cache showpkg pkgs——显示软件包信息。 
-apt-cache dumpavail——打印可用软件包列表。 
-apt-cache show pkgs——显示软件包记录，类似于dpkg –print-avail。 
-apt-cache pkgnames——打印软件包列表中所有软件包的名称。 
-dpkg -S file——这个文件属于哪个已安装软件包。 
-dpkg -L package——列出软件包中的所有文件。 
-apt-file search filename——查找包含特定文件的软件包（不一定是已安装的），这些文件的文件名中含有指定的字符串。apt-file是一个独立的软件包。您必须 先使用apt-get install来安装它，然后运行apt-file update。如果apt-file search filename输出的内容太多，您可以尝试使用apt-file search filename | grep -w filename（只显示指定字符串作为完整的单词出现在其中的那些文件名）或者类似方法，例如：apt-file search filename | grep /bin/（只显示位于诸如/bin或/usr/bin这些文件夹中的文件，如果您要查找的是某个特定的执行文件的话，这样做是有帮助的）。
-</code></pre>
-<h2 id="ubuntu查看版本命令"><a href="#ubuntu查看版本命令" class="headerlink" title="ubuntu查看版本命令"></a>ubuntu查看版本命令</h2><pre><code>方法一：
-在终端中执行下列指令： cat /etc/issue
-方法二：
-使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。
-执行指令如下： sudo lsb_release -a
-方法三：
-打开“系统监视器”，选择“系统”
-Ubuntu查看版本命令
-1. lshw
-lshw命令显示详细硬件信息。
-如果要用概要方式显示，可以加上short参数：lshw-short
-要显示指定硬件信息，加上class(或C)参数：lshw -classmemory
-2. sysstat
-监测系统性能及效率的一组工具，这些工具对于我们收集系统性能数据，
-比如CPU使用率、硬盘和网络吞吐数据。
-3. lspci -v (相比cat/proc/pci更直观）
-查看PCI信息，lspci 是读取 hwdata 数据库。
-4. uname -a
-查看系统体系结构。
-5. dmidecode
-查看硬件信息，包括bios、cpu、内存等信息
-6. dmesg
-显示内核缓冲区系统控制信息，如系统启动时的信息会写到/var/log/。
-注：dmesg 工具并不是专门用来查看硬件芯片组标识的工具，
-但通过这个工具能让我们知道机器中的硬件的一些参数；因为系统在启动的时候，
-会写一些硬件相关的日志到 /var/log/message* 或/var/log/boot* 文件中。
-7. lshal 和hal-device-manager
-8. 查看 /proc
-对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
-Cpuinfo 主机CPU信息
-Dma 主机DMA通道信息
-Filesystems 文件系统信息
-Interrupts 主机中断信息
-Ioprots 主机I/O端口号信息
-Meninfo 主机内存信息
-Version Linux内存版本信息
-查看CPU信息：cat /proc/cpuinfo 查看板卡信息：cat /proc/pci 查看内存信息：cat/proc/meminfo 查看USB设备：cat /proc/bus/usb/devices 查看键盘和鼠标：cat/proc/bus/input/devices 查看各设备的中断请求(IRQ)：cat/proc/interrupts
-</code></pre>
-<h2 id="主板信息"><a href="#主板信息" class="headerlink" title="主板信息:"></a>主板信息:</h2><pre><code>sudo demidecode | grep -i ‘serial number’
-</code></pre>
-<h2 id="CPU信息"><a href="#CPU信息" class="headerlink" title="CPU信息:"></a>CPU信息:</h2><pre><code>cat /proc/cpuinfo
-dmesg | grep -i ‘cpu’
-sudo dmidecode -t processor
-</code></pre>
-<h2 id="硬盘信息"><a href="#硬盘信息" class="headerlink" title="硬盘信息:"></a>硬盘信息:</h2><pre><code>查看分区情况:
-sudo fdisk -l
-
-查看大小情况:
-df -h
-
-查看使用情况:
-du -h
-sudo hdparm -I /dev/sda
-dmesg | grep sda
-</code></pre>
-<h2 id="内存信息"><a href="#内存信息" class="headerlink" title="内存信息:"></a>内存信息:</h2><pre><code>cat /proc/meminfo
-dmesg | grep mem
-free -m
-vmstat
-sudo dmidecode | grep -i mem
-</code></pre>
-<h2 id="网卡信息"><a href="#网卡信息" class="headerlink" title="网卡信息:"></a>网卡信息:</h2><pre><code>dmesg | grep -i ‘eth’
-lspci | grep -i ‘eth’
-
-ethtool -i eht0
-ethhool -k eth0
-ethtool -g eth0
-</code></pre>
-<h2 id="查看鼠标和键盘"><a href="#查看鼠标和键盘" class="headerlink" title="查看鼠标和键盘:"></a>查看鼠标和键盘:</h2><pre><code>cat /proc/bus/input/devices
-</code></pre>
-<h2 id="查看各设备的中断请求-IRQ"><a href="#查看各设备的中断请求-IRQ" class="headerlink" title="查看各设备的中断请求(IRQ):"></a>查看各设备的中断请求(IRQ):</h2><pre><code>cat /proc/interrupts
-</code></pre>
-<h2 id="显卡信息"><a href="#显卡信息" class="headerlink" title="显卡信息:"></a>显卡信息:</h2><pre><code>lspci | grep -i ‘VGA’
-dmesg | grep -i ‘VGA’
-</code></pre>
-<h2 id="声卡信息"><a href="#声卡信息" class="headerlink" title="声卡信息:"></a>声卡信息:</h2><pre><code>查看声卡型号:
-lspci | grep -i audio
-
-查看型号ac97的声卡驱动模块:
-modprobe -l | grep ac97
-
-查看声卡信息:
-cat /proc/asound/cards
-
-查看alsa-utils本:
-alsactl -v
-
-查看内核alsa版本:
-cat /proc/asound/version
-
-声卡信息:
-aplay -l
-
-硬件信息之声卡:
-sudo lshw -C sound
-
-模块状态之声音:
-lsmod | grep -i snd
-
-alsa音频配置:
-alsamixer
-</code></pre>
-<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令:"></a>其他命令:</h2><pre><code>dmesg
-lspci
-mpstat(先安装sysstat: sudo spt-get install sysstat) 
-</code></pre>
+<table>
+<thead>
+<tr>
+<th>字母</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>r</td>
+<td>只读方式打开</td>
+</tr>
+<tr>
+<td>w</td>
+<td>从头写入（覆盖）</td>
+</tr>
+<tr>
+<td>a</td>
+<td>从结尾写入</td>
+</tr>
+<tr>
+<td>rb</td>
+<td>二进制只读</td>
+</tr>
+<tr>
+<td>wb</td>
+<td>二进制写入</td>
+</tr>
+<tr>
+<td>ab</td>
+<td>二进制结尾写入</td>
+</tr>
+</tbody></table>
+<h2 id="More-菜鸟笔记"><a href="#More-菜鸟笔记" class="headerlink" title="More: 菜鸟笔记"></a>More: <a href="https://www.runoob.com/python3/python3-file-methods.html">菜鸟笔记</a></h2><h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>print(“www”,”baidu”,”com”,sep=”.”)</p>
 ]]></content>
       <tags>
-        <tag>技术</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -851,6 +572,323 @@ div.red&#123;
       </tags>
   </entry>
   <entry>
+    <title>java笔记</title>
+    <url>/2022/02/28/java%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>学习Java</p>
+<span id="more"></span>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><h3 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h3><p>//</p>
+<h3 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h3><p>/*<br>*/</p>
+<h3 id="文档注释"><a href="#文档注释" class="headerlink" title="文档注释"></a>文档注释</h3><p>/**<br>*/<br>文档注释可以通过 Javadoc 命令把文档注释中的内容生成文档，并输出到 HTML 文件中，方便记录程序信息。还可以包含一个或多个 @ 标签，每个 @ 标签都在新的一行开始</p>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>数据类型——&gt;定义了内存的编码格式</p>
+<p>布尔：boolean（c为bool）—Java中布尔值和整型值之间不能互相转换</p>
+<p>文本：char（使用16位的unincode）</p>
+<p>字符串：String（不是基本数据类型，是类）<br>StringBuild(可修改的字符)<br>StringBuffer（执行效率低，线程安全）</p>
+<pre><code>String greeting = new String（&quot;good morning)；构造方法
+调用，greeting.charAt(4)
+</code></pre>
+<h3 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h3><ul>
+<li>十进制</li>
+<li>十六进制</li>
+<li>八进制<h3 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h3></li>
+<li>浮点类型默认为Double类型<h4 id="NaN"><a href="#NaN" class="headerlink" title="NaN"></a>NaN</h4></li>
+</ul>
+<p><strong>全称：not a number</strong></p>
+<p>NAN是无序的，不能跟所有的数进行大小比较（加减乘除等）</p>
+<h3 id="复合数据类型"><a href="#复合数据类型" class="headerlink" title="复合数据类型"></a>复合数据类型</h3><h4 id="类的初步概念"><a href="#类的初步概念" class="headerlink" title="类的初步概念"></a>类的初步概念</h4><p>日期类型的两种不同定义的方式：<br>方法1：<br>int day，month, year;<br>int d1,m1,y1;<br>int d2, m2,y2;<br>方法2：<br>class Date{<br>    int day;<br>    int month;<br>    int year;<br>    void setDate(int a ,int b, int c);<br>}</p>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="变量的分类"><a href="#变量的分类" class="headerlink" title="变量的分类"></a>变量的分类</h3><p>语言机制：</p>
+<ol>
+<li>基本类型</li>
+<li>引用类型（受限的指针）<br>作用域：</li>
+<li>成员变量（定义在类的内部）</li>
+<li>局部变量</li>
+<li>方法参数</li>
+<li>catch语句块入口参数（异常处理参数）<h2 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h2>引用变量a，b<br>a = b 只是把b的地址赋给a<h2 id="eclipse使用技巧"><a href="#eclipse使用技巧" class="headerlink" title="eclipse使用技巧"></a>eclipse使用技巧</h2>ctrl + 1 自动添加方法<br>sout + 回车 写入System.out.println(“”);<br><img src="/2022/02/28/java%E7%AC%94%E8%AE%B0/%E5%BF%AB%E6%8D%B7%E9%94%AE.png" alt="快捷键"></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu查看硬件信息</title>
+    <url>/2022/02/10/Ubuntu%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<p><strong>新买的两个4g内存条到了，试一试ok不ok</strong></p>
+<span id="more"></span>
+<p>参考博客：<a href="https://blog.csdn.net/chuanyu/article/details/46611793">https://blog.csdn.net/chuanyu/article/details/46611793</a><br>总命令： lshw</p>
+<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><pre><code># uname -a               # 查看内核/操作系统/CPU信息
+# head -n 1 /etc/issue   # 查看操作系统版本 
+# cat /proc/cpuinfo      # 查看CPU信息
+# hostname               # 查看计算机名 
+# lspci -tv              # 列出所有PCI设备
+# lsusb -tv              # 列出所有USB设备 
+# lsmod                  # 列出加载的内核模块
+# env                    # 查看环境变量
+</code></pre>
+<h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><pre><code># free -m                # 查看内存使用量和交换区使用量 
+# df -h                  # 查看各分区使用情况 
+# du -sh &lt;目录名&gt;        # 查看指定目录的大小 
+# grep MemTotal /proc/meminfo   # 查看内存总量
+# grep MemFree /proc/meminfo    # 查看空闲内存量
+# uptime                 # 查看系统运行时间、用户数、负载 
+# cat /proc/loadavg      # 查看系统负载
+</code></pre>
+<h2 id="磁盘和分区"><a href="#磁盘和分区" class="headerlink" title="磁盘和分区"></a>磁盘和分区</h2><pre><code># mount | column -t      # 查看挂接的分区状态 
+# fdisk -l               # 查看所有分区 
+# swapon -s              # 查看所有交换分区
+# hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备) 
+# dmesg | grep IDE       # 查看启动时IDE设备检测状况
+</code></pre>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><pre><code># ifconfig               # 查看所有网络接口的属性
+# iptables -L            # 查看防火墙设置 
+# route -n               # 查看路由表 
+# netstat -lntp          # 查看所有监听端口 
+# netstat -antp          # 查看所有已经建立的连接
+# netstat -s             # 查看网络统计信息
+</code></pre>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><pre><code># ps -ef                 # 查看所有进程 
+# top                    # 实时显示进程状态
+</code></pre>
+<h2 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h2><pre><code># w                      # 查看活动用户 
+# id &lt;用户名&gt;            # 查看指定用户信息 
+# last                   # 查看用户登录日志 
+# cut -d: -f1 /etc/passwd   # 查看系统所有用户 
+# cut -d: -f1 /etc/group    # 查看系统所有组 
+# crontab -l             # 查看当前用户的计划任务
+</code></pre>
+<h2 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h2><pre><code># chkconfig --list       # 列出所有系统服务 
+# chkconfig --list | grep on    # 列出所有启动的系统服务
+</code></pre>
+<h2 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h2><pre><code># rpm -qa                # 查看所有安装的软件包
+</code></pre>
+<h2 id="常用命令整理如下："><a href="#常用命令整理如下：" class="headerlink" title="常用命令整理如下："></a>常用命令整理如下：</h2><pre><code>查看主板的序列号: dmidecode | grep -i ’serial number’
+
+用硬件检测程序kuduz探测新硬件：service kudzu start ( or restart)
+
+查看CPU信息：cat /proc/cpuinfo [dmesg | grep -i &#39;cpu&#39;][dmidecode -t processor]
+
+查看内存信息：cat /proc/meminfo [free -m][vmstat]
+
+查看板卡信息：cat /proc/pci
+
+查看显卡/声卡信息：lspci |grep -i ‘VGA’[dmesg | grep -i &#39;VGA&#39;]
+
+查看网卡信息：dmesg | grep -i ‘eth’[cat /etc/sysconfig/hwconf | grep -i eth][lspci | grep -i &#39;eth&#39;]
+查看PCI信息：lspci (相比cat /proc/pci更直观）
+
+查看USB设备：cat /proc/bus/usb/devices
+
+查看键盘和鼠标:cat /proc/bus/input/devices
+
+查看系统硬盘信息和使用情况：fdisk &amp; disk – l &amp; df
+
+查看各设备的中断请求(IRQ):cat /proc/interrupts
+
+查看系统体系结构：uname -a
+
+查看及启动系统的32位或64位内核模式：isalist –v [isainfo –v][isainfo –b]
+
+dmidecode查看硬件信息，包括bios、cpu、内存等信息
+
+测定当前的显示器刷新频率：/usr/sbin/ffbconfig –rev \?
+
+查看系统配置：/usr/platform/sun4u/sbin/prtdiag –v
+
+查看当前系统中已经应用的补丁：showrev –p
+
+显示当前的运行级别：who –rH
+
+查看当前的bind版本信息：nslookup –class=chaos –q=txt version.bind
+
+dmesg | more 查看硬件信息
+lspci 显示外设信息, 如usb，网卡等信息
+lsnod 查看已加载的驱动
+lshw
+psrinfo -v 查看当前处理器的类型和速度（主频）
+prtconf -v 打印当前的OBP版本号
+iostat –E 查看硬盘物理信息(vendor, RPM, Capacity)
+prtvtoc /dev/rdsk/c0t0d0s 查看磁盘的几何参数和分区信息
+df –F ufs –o i 显示已经使用和未使用的i-node数目
+isalist –v
+
+对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
+Cpuinfo 主机CPU信息
+Dma 主机DMA通道信息
+Filesystems 文件系统信息
+Interrupts 主机中断信息
+Ioprots 主机I/O端口号信息
+Meninfo 主机内存信息
+Version Linux内存版本信息
+
+备注： proc – process information pseudo-filesystem 进程信息伪装文件系统
+
+RPM
+
+    在Linux 操作系统中，有一个系统软件包，它的功能类似于Windows里面的“添加/删除程序”，但是功能又比“添加/删除程序”强很多，它就是 Red Hat Package Manager(简称RPM)。此工具包最先是由Red Hat公司推出的，后来被其他Linux开发商所借用。由于它为Linux使用者省去了很多时间，所以被广泛应用于在Linux下安装、删除软件。下面就 给大家介绍一下它的具体使用方法。
+
+1.我们得到一个新软件，在安装之前，一般都要先查看一下这个软件包里有什么内容，假设这个文件是：Linux-1.4-6.i368.rpm，我们可以用这条命令查看：
+
+rpm -qpi Linux-1.4-6.i368.rpm
+
+系统将会列出这个软件包的详细资料，包括含有多少个文件、各文件名称、文件大小、创建时间、编译日期等信息。
+
+2.上面列出的所有文件在安装时不一定全部安装，就像Windows下程序的安装方式分为典型、完全、自定义一样，Linux也会让你选择安装方式，此时我们可以用下面这条命令查看软件包将会在系统里安装哪些部分，以方便我们的选择：
+
+rpm -qpl Linux-1.4-6.i368.rpm
+
+3. 选择安装方式后，开始安装。我们可以用rpm-ivh Linux-1.4-6.i368.rpm命令安装此软件。在安装过程中，若系统提示此软件已安装过或因其他原因无法继续安装，但若我们确实想执行安装命 令，可以在 -ivh后加一参数“-replacepkgs”：
+
+rpm -ivh -replacepkgs Linux-1.4-6.i368.rpm
+
+4.有时我们卸载某个安装过的软件，只需执行rpm-e &lt;文件名&gt;;命令即可。
+
+5.对低版本软件进行升级是提高其功能的好办法，这样可以省去我们卸载后再安装新软件的麻烦，要升级某个软件，只须执行如下命令：rpm -uvh &lt;文件名&gt;;，注意：此时的文件名必须是要升级软件的升级补丁
+
+6. 另外一个安装软件的方法可谓是Linux的独到之处，同时也是RMP强大功能的一个表现：通过FTP站点直接在线安装软件。当找到含有你所需软件的站点并 与此网站连接后，执行下面的命令即可实现在线安装，譬如在线安装Linux-1.4-6.i368.rpm，可以用命令： www.it165.net
+
+rpm -i ftp://ftp.pht.com/pub/linux/redhat/...-1.4-6.i368.rpm
+
+7. 在我们使用电脑过程中，难免会有误操作，若我们误删了几个文件而影响了系统的性能时，怎样查找到底少了哪些文件呢?RPM软件包提供了一个查找损坏文件的 功能，执行此命令：rpm -Va即可，Linux将为你列出所有损坏的文件。你可以通过Linux的安装光盘进行修复。
+
+8.Linux系统中文件繁多，在使用过程中，难免会碰到我们不认识的文件，在Windows下我们可以用“开始/查找”菜单快速判断某个文件属于哪个文件夹，在Linux中，下面这条命令行可以帮助我们快速判定某个文件属于哪个软件包：
+
+rpm -qf &lt;文件名&gt;;
+
+9.当每个软件包安装在Linux系统后，安装文件都会到RPM数据库中“报到”，所以，我们要查询某个已安装软件的属性时，只需到此数据库中查找即可。注意：此时的查询命令不同于1和8介绍的查询，这种方法只适用于已安装过的软件包！命令格式：
+
+rpm -参数　&lt;文件名&gt;;
+</code></pre>
+<h2 id="APT-GET"><a href="#APT-GET" class="headerlink" title="APT-GET"></a>APT-GET</h2><pre><code>apt-get update——在修改/etc/apt/sources.list或者/etc/apt/preferences之后运行该命令。此外您需要定期运行这一命令以确保您的软件包列表是最新的。
+apt-get install packagename——安装一个新软件包（参见下文的aptitude） 
+apt-get remove packagename——卸载一个已安装的软件包（保留配置文件） 
+apt-get --purge remove packagename——卸载一个已安装的软件包（删除配置文件） 
+dpkg --force-all --purge packagename 有些软件很难卸载，而且还阻止了别的软件的应用，就可以用这个，不过有点冒险。 
+apt-get autoclean apt会把已装或已卸的软件都备份在硬盘上，所以如果需要空间的话，可以让这个命令来删除你已经删掉的软件 
+apt-get clean 这个命令会把安装的软件的备份也删除，不过这样不会影响软件的使用的。 
+apt-get upgrade——更新所有已安装的软件包 
+apt-get dist-upgrade——将系统升级到新版本 
+apt-cache search string——在软件包列表中搜索字符串 
+dpkg -l package-name-pattern——列出所有与模式相匹配的软件包。如果您不知道软件包的全名，您可以使用“*package-name-pattern*”。
+aptitude——详细查看已安装或可用的软件包。与apt-get类似，aptitude可以通过命令行方式调用，但仅限于某些命令——最常见的有安装和卸载命令。由于aptitude比apt-get了解更多信息，可以说它更适合用来进行安装和卸载。
+apt-cache showpkg pkgs——显示软件包信息。 
+apt-cache dumpavail——打印可用软件包列表。 
+apt-cache show pkgs——显示软件包记录，类似于dpkg –print-avail。 
+apt-cache pkgnames——打印软件包列表中所有软件包的名称。 
+dpkg -S file——这个文件属于哪个已安装软件包。 
+dpkg -L package——列出软件包中的所有文件。 
+apt-file search filename——查找包含特定文件的软件包（不一定是已安装的），这些文件的文件名中含有指定的字符串。apt-file是一个独立的软件包。您必须 先使用apt-get install来安装它，然后运行apt-file update。如果apt-file search filename输出的内容太多，您可以尝试使用apt-file search filename | grep -w filename（只显示指定字符串作为完整的单词出现在其中的那些文件名）或者类似方法，例如：apt-file search filename | grep /bin/（只显示位于诸如/bin或/usr/bin这些文件夹中的文件，如果您要查找的是某个特定的执行文件的话，这样做是有帮助的）。
+</code></pre>
+<h2 id="ubuntu查看版本命令"><a href="#ubuntu查看版本命令" class="headerlink" title="ubuntu查看版本命令"></a>ubuntu查看版本命令</h2><pre><code>方法一：
+在终端中执行下列指令： cat /etc/issue
+方法二：
+使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。
+执行指令如下： sudo lsb_release -a
+方法三：
+打开“系统监视器”，选择“系统”
+Ubuntu查看版本命令
+1. lshw
+lshw命令显示详细硬件信息。
+如果要用概要方式显示，可以加上short参数：lshw-short
+要显示指定硬件信息，加上class(或C)参数：lshw -classmemory
+2. sysstat
+监测系统性能及效率的一组工具，这些工具对于我们收集系统性能数据，
+比如CPU使用率、硬盘和网络吞吐数据。
+3. lspci -v (相比cat/proc/pci更直观）
+查看PCI信息，lspci 是读取 hwdata 数据库。
+4. uname -a
+查看系统体系结构。
+5. dmidecode
+查看硬件信息，包括bios、cpu、内存等信息
+6. dmesg
+显示内核缓冲区系统控制信息，如系统启动时的信息会写到/var/log/。
+注：dmesg 工具并不是专门用来查看硬件芯片组标识的工具，
+但通过这个工具能让我们知道机器中的硬件的一些参数；因为系统在启动的时候，
+会写一些硬件相关的日志到 /var/log/message* 或/var/log/boot* 文件中。
+7. lshal 和hal-device-manager
+8. 查看 /proc
+对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
+Cpuinfo 主机CPU信息
+Dma 主机DMA通道信息
+Filesystems 文件系统信息
+Interrupts 主机中断信息
+Ioprots 主机I/O端口号信息
+Meninfo 主机内存信息
+Version Linux内存版本信息
+查看CPU信息：cat /proc/cpuinfo 查看板卡信息：cat /proc/pci 查看内存信息：cat/proc/meminfo 查看USB设备：cat /proc/bus/usb/devices 查看键盘和鼠标：cat/proc/bus/input/devices 查看各设备的中断请求(IRQ)：cat/proc/interrupts
+</code></pre>
+<h2 id="主板信息"><a href="#主板信息" class="headerlink" title="主板信息:"></a>主板信息:</h2><pre><code>sudo demidecode | grep -i ‘serial number’
+</code></pre>
+<h2 id="CPU信息"><a href="#CPU信息" class="headerlink" title="CPU信息:"></a>CPU信息:</h2><pre><code>cat /proc/cpuinfo
+dmesg | grep -i ‘cpu’
+sudo dmidecode -t processor
+</code></pre>
+<h2 id="硬盘信息"><a href="#硬盘信息" class="headerlink" title="硬盘信息:"></a>硬盘信息:</h2><pre><code>查看分区情况:
+sudo fdisk -l
+
+查看大小情况:
+df -h
+
+查看使用情况:
+du -h
+sudo hdparm -I /dev/sda
+dmesg | grep sda
+</code></pre>
+<h2 id="内存信息"><a href="#内存信息" class="headerlink" title="内存信息:"></a>内存信息:</h2><pre><code>cat /proc/meminfo
+dmesg | grep mem
+free -m
+vmstat
+sudo dmidecode | grep -i mem
+</code></pre>
+<h2 id="网卡信息"><a href="#网卡信息" class="headerlink" title="网卡信息:"></a>网卡信息:</h2><pre><code>dmesg | grep -i ‘eth’
+lspci | grep -i ‘eth’
+
+ethtool -i eht0
+ethhool -k eth0
+ethtool -g eth0
+</code></pre>
+<h2 id="查看鼠标和键盘"><a href="#查看鼠标和键盘" class="headerlink" title="查看鼠标和键盘:"></a>查看鼠标和键盘:</h2><pre><code>cat /proc/bus/input/devices
+</code></pre>
+<h2 id="查看各设备的中断请求-IRQ"><a href="#查看各设备的中断请求-IRQ" class="headerlink" title="查看各设备的中断请求(IRQ):"></a>查看各设备的中断请求(IRQ):</h2><pre><code>cat /proc/interrupts
+</code></pre>
+<h2 id="显卡信息"><a href="#显卡信息" class="headerlink" title="显卡信息:"></a>显卡信息:</h2><pre><code>lspci | grep -i ‘VGA’
+dmesg | grep -i ‘VGA’
+</code></pre>
+<h2 id="声卡信息"><a href="#声卡信息" class="headerlink" title="声卡信息:"></a>声卡信息:</h2><pre><code>查看声卡型号:
+lspci | grep -i audio
+
+查看型号ac97的声卡驱动模块:
+modprobe -l | grep ac97
+
+查看声卡信息:
+cat /proc/asound/cards
+
+查看alsa-utils本:
+alsactl -v
+
+查看内核alsa版本:
+cat /proc/asound/version
+
+声卡信息:
+aplay -l
+
+硬件信息之声卡:
+sudo lshw -C sound
+
+模块状态之声音:
+lsmod | grep -i snd
+
+alsa音频配置:
+alsamixer
+</code></pre>
+<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令:"></a>其他命令:</h2><pre><code>dmesg
+lspci
+mpstat(先安装sysstat: sudo spt-get install sysstat) 
+</code></pre>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>java安装以及配置环境</title>
     <url>/2022/03/01/java%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83/</url>
     <content><![CDATA[<p>安装一下Java</p>
@@ -1013,41 +1051,13 @@ div.red&#123;
       </tags>
   </entry>
   <entry>
-    <title>java笔记</title>
-    <url>/2022/02/28/java%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>学习Java</p>
+    <title>python爬虫学习</title>
+    <url>/2022/02/26/python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p><strong>开始学习爬虫了</strong></p>
 <span id="more"></span>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><h3 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h3><p>//</p>
-<h3 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h3><p>/*<br>*/</p>
-<h3 id="文档注释"><a href="#文档注释" class="headerlink" title="文档注释"></a>文档注释</h3><p>/**<br>*/<br>文档注释可以通过 Javadoc 命令把文档注释中的内容生成文档，并输出到 HTML 文件中，方便记录程序信息。还可以包含一个或多个 @ 标签，每个 @ 标签都在新的一行开始</p>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>数据类型——&gt;定义了内存的编码格式</p>
-<p>布尔：boolean（c为bool）—Java中布尔值和整型值之间不能互相转换</p>
-<p>文本：char（使用16位的unincode）</p>
-<p>字符串：String（不是基本数据类型，是类）<br>StringBuild(可修改的字符)<br>StringBuffer（执行效率低，线程安全）</p>
-<pre><code>String greeting = new String（&quot;good morning)；构造方法
-调用，greeting.charAt(4)
-</code></pre>
-<h3 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h3><ul>
-<li>十进制</li>
-<li>十六进制</li>
-<li>八进制<h3 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h3></li>
-<li>浮点类型默认为Double类型<h4 id="NaN"><a href="#NaN" class="headerlink" title="NaN"></a>NaN</h4></li>
-</ul>
-<p><strong>全称：not a number</strong></p>
-<p>NAN是无序的，不能跟所有的数进行大小比较（加减乘除等）</p>
-<h3 id="复合数据类型"><a href="#复合数据类型" class="headerlink" title="复合数据类型"></a>复合数据类型</h3><h4 id="类的初步概念"><a href="#类的初步概念" class="headerlink" title="类的初步概念"></a>类的初步概念</h4><p>日期类型的两种不同定义的方式：<br>方法1：<br>int day，month, year;<br>int d1,m1,y1;<br>int d2, m2,y2;<br>方法2：<br>class Date{<br>    int day;<br>    int month;<br>    int year;<br>    void setDate(int a ,int b, int c);<br>}</p>
-<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="变量的分类"><a href="#变量的分类" class="headerlink" title="变量的分类"></a>变量的分类</h3><p>语言机制：</p>
-<ol>
-<li>基本类型</li>
-<li>引用类型（受限的指针）<br>作用域：</li>
-<li>成员变量（定义在类的内部）</li>
-<li>局部变量</li>
-<li>方法参数</li>
-<li>catch语句块入口参数（异常处理参数）<h2 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h2>引用变量a，b<br>a = b 只是把b的地址赋给a<h2 id="eclipse使用技巧"><a href="#eclipse使用技巧" class="headerlink" title="eclipse使用技巧"></a>eclipse使用技巧</h2>ctrl + 1 自动添加方法<br>sout + 回车 写入System.out.println(“”);<br><img src="/2022/02/28/java%E7%AC%94%E8%AE%B0/%E5%BF%AB%E6%8D%B7%E9%94%AE.png" alt="快捷键"></li>
-</ol>
 ]]></content>
       <tags>
-        <tag>学习笔记</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1092,25 +1102,6 @@ for i in a:
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python爬虫学习</title>
-    <url>/2022/02/26/python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p><strong>开始学习爬虫了</strong></p>
-<span id="more"></span>
-]]></content>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>“hexo搜索功能出错的解决方案”</title>
-    <url>/2021/12/17/%E4%B8%BAHext%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E6%8A%A5%E9%94%99/</url>
-    <content><![CDATA[<p><strong>今天在为hexo博客添加搜索功能时,本地生成可正常使用，上传到gihub时首页出现错位，修改主题文件中有关search的参数limits（将100改为1000成功解决问题)。</strong></p>
-]]></content>
-      <tags>
-        <tag>debug日志</tag>
       </tags>
   </entry>
   <entry>
@@ -1181,6 +1172,15 @@ for i in a:
       </tags>
   </entry>
   <entry>
+    <title>“hexo搜索功能出错的解决方案”</title>
+    <url>/2021/12/17/%E4%B8%BAHext%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<p><strong>今天在为hexo博客添加搜索功能时,本地生成可正常使用，上传到gihub时首页出现错位，修改主题文件中有关search的参数limits（将100改为1000成功解决问题)。</strong></p>
+]]></content>
+      <tags>
+        <tag>debug日志</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于几个网络工具</title>
     <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p><strong>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍</strong><br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：  </p>
@@ -1188,17 +1188,6 @@ for i in a:
 <h4 id="一，网易uu加速器"><a href="#一，网易uu加速器" class="headerlink" title="一，网易uu加速器"></a>一，网易uu加速器</h4><p>可以免费加速steam社区，解决一些加好友、访问创意工坊、送游戏之类的问题。</p>
 <h4 id="二，Sidecar"><a href="#二，Sidecar" class="headerlink" title="二，Sidecar"></a>二，Sidecar</h4><p>一款免费开源的，用于专门加速GitHub这个全球最大的<br>同性交友网站。而且就在我用gitbash上传博客出现奇怪报错（挂小飞机、按网上指示修改文件参数、回退文件内容都没用），最后无可奈何到了重装nodejs边缘<br>的时候是它自带的NPM加速拯救了整个世界。<br>    注：可在github上获取  </p>
 <h4 id="三，科学上网"><a href="#三，科学上网" class="headerlink" title="三，科学上网"></a>三，科学上网</h4><p>这个最好了解一下翻墙原理，谨慎使用，不要发敏感言<br>论，注意隐私安全（在YouTube上看了下抓包，好像在服务器端窃取你的信息还是很容易的)。<br>    附一篇很有用的博客：<br>    <a href="https://tecrobe.github.io/blog/post/how-to-break-wall/">https://tecrobe.github.io/blog/post/how-to-break-wall/</a></p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为python的idle增添清屏功能</title>
-    <url>/2022/01/09/%E4%B8%BApython%E7%9A%84idle%E5%A2%9E%E6%B7%BB%E6%B8%85%E5%B1%8F%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<p><strong>Python的IDLE中的交互模式在某些情况下确实很方便，但代码一旦多了就很难受，为此我专门去网上查了查，找到了增加清屏功能的方法</strong></p>
-<span id="more"></span>
-<p>参考博客：<a href="https://blog.csdn.net/zhangbeizhen18/article/details/89214894">https://blog.csdn.net/zhangbeizhen18/article/details/89214894</a></p>
 ]]></content>
       <tags>
         <tag>技术</tag>
@@ -1216,6 +1205,17 @@ for i in a:
 <p>第三步：打开电脑，用USB线连接电脑与手机，手机上点击允许文件传输之类的选项。在电脑上按第一步的路径在打开，将视频文件复制到电脑上的储存区域，拔掉USB线</p>
 <p>第四步：打开文件夹，会看到两个文件，一个叫video（视频），一个叫audio（音频）。我们需要把他们合起来播放（Potplay下的方法是用打开视频，右键-&gt;打开-&gt;导入音频），其它播放软件如qq影音、爱奇艺之类的，可以百度：某某某怎样导入音频</p>
 <p><strong>注：如果导入音频的那个窗口中看不见audio，可以试试直接改文件后缀名为.mp3（比较暴力，但我成功了），或者转一下码</strong></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为python的idle增添清屏功能</title>
+    <url>/2022/01/09/%E4%B8%BApython%E7%9A%84idle%E5%A2%9E%E6%B7%BB%E6%B8%85%E5%B1%8F%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<p><strong>Python的IDLE中的交互模式在某些情况下确实很方便，但代码一旦多了就很难受，为此我专门去网上查了查，找到了增加清屏功能的方法</strong></p>
+<span id="more"></span>
+<p>参考博客：<a href="https://blog.csdn.net/zhangbeizhen18/article/details/89214894">https://blog.csdn.net/zhangbeizhen18/article/details/89214894</a></p>
 ]]></content>
       <tags>
         <tag>技术</tag>
@@ -1274,18 +1274,17 @@ for i in a:
       </tags>
   </entry>
   <entry>
-    <title>改造后的银河铁道之夜</title>
-    <url>/2022/02/09/%E6%94%B9%E9%80%A0%E5%90%8E%E7%9A%84%E9%93%B6%E6%B2%B3%E9%93%81%E9%81%93%E4%B9%8B%E5%A4%9C/</url>
-    <content><![CDATA[]]></content>
+    <title>时钟练习</title>
+    <url>/2022/03/05/%E6%97%B6%E9%92%9F%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<iframe src="ye1133zi.github.io/htlm/watch.html"></iframe> ]]></content>
       <tags>
         <tag>生活</tag>
       </tags>
   </entry>
   <entry>
-    <title>时钟练习</title>
-    <url>/2022/03/05/%E6%97%B6%E9%92%9F%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[<p><a href="html/watch.html">watch</a></p>
-]]></content>
+    <title>改造后的银河铁道之夜</title>
+    <url>/2022/02/09/%E6%94%B9%E9%80%A0%E5%90%8E%E7%9A%84%E9%93%B6%E6%B2%B3%E9%93%81%E9%81%93%E4%B9%8B%E5%A4%9C/</url>
+    <content><![CDATA[]]></content>
       <tags>
         <tag>生活</tag>
       </tags>
@@ -1337,345 +1336,6 @@ for i in a:
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/03/05/%E6%97%B6%E9%92%9F%E7%BB%83%E4%B9%A0/index/</url>
-    <content><![CDATA[<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>时钟</title>
-<style>
-    #watch .frame-face{
-    position: relative;
-    width: 30em;
-    height: 30em;
-    margin: 2em auto;
-    border-radius: 15em;
-    background: -webkit-linear-gradient(top,#f9f9f9,#666); 
-    background: -moz-linear-gradient(top, #f9f9f9, #666);
-    background: linear-gradient(top, #f9f9f9, #666);
-    box-shadow: 0.5em 0.5em 4em rgb(0,0,0,0.8);
-}
-#watch .frame-face:before{
-    content: '';
-    width: 29.4em;
-    height: 29.4em;
-    border-radius: 14.7em;
-    position: absolute;
-    top: .3em ;
-    left: .3em;
-    background: -webkit-radial-gradient(ellipse at center, rgba(246, 248, 249, 1) 0%, rgba(229, 235, 238, 1) 65%, rgba(205, 212, 217, 1) 66%, rgba(245, 247, 249, 1) 100%);
-    background: -moz-radial-gradient(ellipse at center, rgba(246, 248, 249, 1) 0%, rgba(229, 235, 238, 1) 65%, rgba(205, 212, 217, 1) 66%, rgba(245, 247, 249, 1) 100%);
-    background: radial-gradient(ellipse at center, rgba(246, 248, 249, 1) 0%, rgba(229, 235, 238, 1) 65%, rgba(205, 212, 217, 1) 66%, rgba(245, 247, 249, 1) 100%);
-
-}
-#watch .frame-face:after{
-    content: '';
-    width: 28em;
-    height: 28em;
-    border-radius: 14.2em;
-    position: absolute;
-    top: .9em;
-    left: .9em;
-    box-shadow: inset rgba(0, 0, 0, .2) .2em .2em 1em;
-    border: .1em solid rgba(0, 0, 0, .2);
-    background: -webkit-linear-gradient(top, #fff, #ccc);
-    background: -moz-linear-gradient(top, #fff, #ccc);
-    background: linear-gradient(top, #fff, #ccc);
-}
-#minute-marks li {
-    display: block;
-    width: 0.2em;
-    height: 0.6em;
-    background: #929394;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -0.4em 0 0 -0.1em;
-    z-index: 2;
-    
-}
-#digits {
-    width: 30em;
-    height: 30em;
-    border-radius: 15em;
-    position: absolute;
-    top: -0.8em;
-    left: 49%;
-    margin-left: -16em;
-    z-index: 1;
-}
-#digits li {
-  font-size: 1.6em;
-  display: block;
-  width: 1.6em;
-  height: 1.6em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  line-height: 1.6em;
-  text-align: center;
-  margin: -.8em 0 0 -.8em;
-  font-weight: bold;
-}
-
-#digits li:nth-child(1) {
-  transform: translate(7em, 0)
-}
-
-#digits li:nth-child(2) {
-  transform: translate(0, 7em)
-}
-
-#digits li:nth-child(3) {
-  transform: translate(-7em, 0)
-}
-
-#digits li:nth-child(4) {
-  transform: translate(0, -7em)
-}
-#digits:before {
-  content:'';
-  width:1.6em;
-  height:1.6em;
-  border-radius:.8em;
-  position:absolute;
-  top:50%; left:50%;
-  margin:-.8em 0 0 -.8em;
-  background:#121314;
-}
-#digits:after {
-  content:'';
-  width:4em;
-  height:4em;
-  border-radius:2.2em;
-  position:absolute;
-  top:50%; left:50%;
-  margin:-2.1em 0 0 -2.1em;
-  border:.1em solid #c6c6c6;
-  background:-webkit-radial-gradient(ellipse at center, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
-  background:-moz-radial-gradient(ellipse at center, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
-  background:radial-gradient(ellipse at center, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
-}
-#watch .hours-hand {
-    width:.8em;
-    height:7em;
-    border-radius:0 0 .9em .9em;
-    background:#232425;
-    position:absolute;
-    bottom:50%; left:50%;
-    margin:0 0 -.8em -.4em;
-    box-shadow:#232425 0 0 2px;
-    transform-origin:0.4em 6.2em;
-    transform:rotate(-0deg);
-    z-index: 3;
-}
-#watch .hours-hand:before {
-    content:'';
-    background:inherit;
-    width:1.8em;
-    height:.8em;
-    border-radius:0 0 .8em .8em;
-    box-shadow:#232425 0 0 1px;
-    position:absolute;
-    top:-.7em; left:-.5em;
-    z-index: 3;
-}
-#watch .hours-hand:after {
-    content:'';
-    width:0; height:0;
-    border:.9em solid #232425;
-    border-width:0 .9em 2.4em .9em;
-    border-left-color:transparent;
-    border-right-color:transparent;
-    position:absolute;
-    top:-3.1em; left:-.5em;
-    z-index: 3;
-}
-#watch .minutes-hand {
-    width:.8em;
-    height:12.5em;
-    border-radius:.5em;
-    background:#343536;
-    position:absolute;
-    bottom:50%; left:50%;
-    margin:0 0 -1.5em -.4em;
-    box-shadow:#343536 0 0 2px;
-    transform-origin:0.4em 11em;
-    z-index: 3;
-}
-
-/* 秒针 */
-#watch .seconds-hand {
-  width:.2em;
-  height:14em;
-  border-radius:.1em .1em 0 0/10em 10em 0 0;
-  background:rgb(228, 90, 62);
-  position:absolute;
-  bottom:50%; left:50%;
-  margin:0 0 -2em -.1em;
-  box-shadow:rgba(0,0,0,.8) 0 0 .2em;
-  transform-origin:0.1em 12em;
-  z-index: 3;
-}
-#watch .seconds-hand:after {
-  content:'';
-  width:1.4em;
-  height:1.4em;
-  border-radius:.7em;
-  background:inherit;
-  position:absolute;
-  left:-.65em; bottom:1.35em;
-  z-index: 3;
-}
-#watch .seconds-hand:before {
-  content:'';
-  width:.8em;
-  height:3em;
-  border-radius:.2em .2em .4em .4em/.2em .2em 2em 2em;
-  box-shadow:rgba(0,0,0,.8) 0 0 .2em;
-  background:inherit;
-  position:absolute;
-  left:-.35em; bottom:-3em;
-  z-index: 3;
-}
-#watch .digital-wrap {
-  z-index: 2;
-  width:9em;
-  height:3em;
-  border:.1em solid #222;
-  border-radius:.2em;
-  position:absolute;
-  top:57%; left:50%;
-  margin:3em 0 0 -4.5em;
-  overflow:hidden;
-  background:#4c4c4c;
-  background:-webkit-linear-gradient(top, #4c4c4c,#0f0f0f);
-  background:-moz-linear-gradient(top, #4c4c4c, #0f0f0f);
-  background:-ms-linear-gradient(top, #4c4c4c,#0f0f0f);
-  background:-o-linear-gradient(top, #4c4c4c,#0f0f0f);
-  background:linear-gradient(to bottom, #4c4c4c,#0f0f0f);
-}
-#watch .digital-wrap ul {
-  width:3em;
-  float:left;
-  border-right:.1em solid #000;
-  color:#ddd;
-  font-family:Consolas, monaco, monospace;
-  text-align: center;
-  line-height: 1.5em;
-  padding: 0%;
-}
-#watch .digital-wrap ul:last-child { 
-  width: 2.8em; border:none 
-}
-</style>
-<script>
-    window.onload = function () {
-        // 生成刻度
-        let markWrap = document.getElementById('minute-marks')
-
-        for (let index = 0; index < 60; index++) {
-            let markItem = document.createElement('li')
-            markItem.style.cssText = "transform:rotate(" + index * 6 + "deg) translateY(-12.7em)";
-            if (index % 5 == 0) {
-            markItem.style.width = "0.3em";
-            markItem.style.height = "1em";
-            }
-            markWrap.appendChild(markItem)
-        }
-    }
-    setInterval(function () {
-        var time = new Date();
-        var hour = time.getHours()
-        var minute = time.getMinutes();
-        var second = time.getSeconds();
-        var hournum;
-        if (hour > 12) {
-        hournum = ((hour - 12) + minute / 60)*30 ;
-        } else {
-        hournum = (hour + minute / 60 * 100)*6 ; 
-        }
-        var minnum = (minute + second / 60-0.5)*6;
-        var sennum = second*6;
-        document.getElementsByClassName("hours-hand")[0].style.transform = "rotate(" + hournum + "deg)"
-        document.getElementsByClassName("minutes-hand")[0].style.transform = "rotate(" + minnum + "deg)"
-        document.getElementsByClassName("seconds-hand")[0].style.transform = "rotate(" + sennum + "deg)"
-        
-        if(hour<10){
-            hour="0"+parseInt(hour);
-        }
-        if(minute<10){
-            minute="0"+parseInt(minute);
-        }
-        if(second<10){
-            second="0"+parseInt(second);
-         }
-        document.getElementsByClassName("digit-hours")[0].innerHTML=hour+"";
-        document.getElementsByClassName("digit-minutes")[0].innerHTML=minute;
-        document.getElementsByClassName("digit-seconds")[0].innerHTML=second;
-    }, 1000);
-    
-   
-</script>
-</head>
-
-<body>
-    
-    <div id="watch">
-        <!-- 表盘 -->
-        <div class="frame-face"> 
-            
-            <ul id="minute-marks">
-               
-            </ul> 
-            <!-- 刻度 -->
-            <ul id="digits">
-                <li>3</li>
-                <li>6</li>
-                <li>9</li>
-                <li>12</li>
-            </ul> 
-            
-            <!-- 指针 -->
-            <div class="hours-hand"></div>
-            <div class="minutes-hand"></div>
-            <div class="seconds-hand"></div>
-            <!-- 数字表盘 -->
-            <div class="digital-wrap">
-                <ul class="digit-hours"></ul>
-                <ul class="digit-minutes"></ul>
-                <ul class="digit-seconds"></ul>
-            </div>
-        
-        </div>
-        
-        
-        
-    </div>
-    
-</body>
-
-</html>]]></content>
-  </entry>
-  <entry>
-    <title>油猴插件推荐</title>
-    <url>/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<p><strong>俗话说的好，没有油猴插件的浏览器，算不上真正意义上的浏览器。上一篇介绍了几个宝藏网站，这次教你使用油猴脚本，让你的上网体验再次得到提升</strong>  </p>
-<span id="more"></span>    
-<h2 id="油猴的优点"><a href="#油猴的优点" class="headerlink" title="油猴的优点"></a>油猴的优点</h2><p>油猴支持丰富的网站脚本，从自动刷网课、免vip追剧，下载B站视频到图片搜索、调整字体、设置护眼模式等，并且安装管理简易，不需要编程基础，完全就是点点点，对用户非常友好</p>
-<h2 id="油猴的安装"><a href="#油猴的安装" class="headerlink" title="油猴的安装"></a>油猴的安装</h2><p>Windows系统自带的Microsoft Edge、火狐浏览器、谷歌浏览器等均可支持油猴扩展<br>1.在浏览器设置中找到插件或者扩展<br>火狐：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E5%8F%B6%E5%AD%90%E7%9A%84%E5%8D%9A%E5%AE%A2.png" alt=" "><br>Microsoft Edge：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B4.png" alt=" "><br>点击并找到更多插件的选项，搜索tempermonkey或者油猴<br>安装完成你就可以在浏览器的上方工具栏中找到它了<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B41.png" alt=" ">  </p>
-<h2 id="油猴插件"><a href="#油猴插件" class="headerlink" title="油猴插件"></a>油猴插件</h2><p>点击油猴图标，点击获取新脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B42.png" alt=" "><br>一般会选择GreasyFork。你可以在里面搜索你想要的脚本，点击安装即可使用（记得刷新网页）。<br>点击油猴图标可对插件进行管理，不用某个脚本时（多开会占用一定内存），你可以选择把它关掉或者删除  </p>
-<h2 id="自己在用的脚本"><a href="#自己在用的脚本" class="headerlink" title="自己在用的脚本"></a>自己在用的脚本</h2><p>1.AC-baidu-重定向优化百度搜狗谷歌必应搜索_favicon_双列<br>好用，真好用，作用让是你的搜索结果变成这样<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B43.png" alt=" "><br>2.字体渲染<br>当你第一次用这个脚本的时候，你会感觉眼睛一下舒服了许多<br>3.全网VIP破解<br>这个其实我下了但没有用，原因一是我不用爱奇艺、腾讯视频之类，二是作者注明了会收取一定广告费用，但是我一个舍友因为追综艺一直在用<br><strong>4.UserJS</strong><br>授人以鱼不如授人以渔，这个脚本会检索出对于当前网页大家都在用什么脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B44.png" alt=" ">  </p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>油猴脚本是开源的，这意味着所以人都可以去审查它的（安全性有<strong>一定</strong>保证），当然也可以按照自己的需求对它进行改编，油猴脚本众多，大家还需要进行探索，找到适合自己的脚本。 </p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>桌面美化</title>
     <url>/2021/12/17/%E8%A7%A3%E9%94%81%E6%83%8A%E8%89%B3%E6%A1%8C%E9%9D%A2/</url>
     <content><![CDATA[<pre><code>本篇博客与xmz合作完成（主要是他写的，我只负责转成.md格式），感谢舍友xmz的创作与分享！
@@ -1707,6 +1367,21 @@ for i in a:
 <h2 id="制作人：xmz"><a href="#制作人：xmz" class="headerlink" title="制作人：xmz"></a>制作人：xmz</h2>]]></content>
       <tags>
         <tag>与xmz的合作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>油猴插件推荐</title>
+    <url>/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<p><strong>俗话说的好，没有油猴插件的浏览器，算不上真正意义上的浏览器。上一篇介绍了几个宝藏网站，这次教你使用油猴脚本，让你的上网体验再次得到提升</strong>  </p>
+<span id="more"></span>    
+<h2 id="油猴的优点"><a href="#油猴的优点" class="headerlink" title="油猴的优点"></a>油猴的优点</h2><p>油猴支持丰富的网站脚本，从自动刷网课、免vip追剧，下载B站视频到图片搜索、调整字体、设置护眼模式等，并且安装管理简易，不需要编程基础，完全就是点点点，对用户非常友好</p>
+<h2 id="油猴的安装"><a href="#油猴的安装" class="headerlink" title="油猴的安装"></a>油猴的安装</h2><p>Windows系统自带的Microsoft Edge、火狐浏览器、谷歌浏览器等均可支持油猴扩展<br>1.在浏览器设置中找到插件或者扩展<br>火狐：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E5%8F%B6%E5%AD%90%E7%9A%84%E5%8D%9A%E5%AE%A2.png" alt=" "><br>Microsoft Edge：<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B4.png" alt=" "><br>点击并找到更多插件的选项，搜索tempermonkey或者油猴<br>安装完成你就可以在浏览器的上方工具栏中找到它了<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B41.png" alt=" ">  </p>
+<h2 id="油猴插件"><a href="#油猴插件" class="headerlink" title="油猴插件"></a>油猴插件</h2><p>点击油猴图标，点击获取新脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B42.png" alt=" "><br>一般会选择GreasyFork。你可以在里面搜索你想要的脚本，点击安装即可使用（记得刷新网页）。<br>点击油猴图标可对插件进行管理，不用某个脚本时（多开会占用一定内存），你可以选择把它关掉或者删除  </p>
+<h2 id="自己在用的脚本"><a href="#自己在用的脚本" class="headerlink" title="自己在用的脚本"></a>自己在用的脚本</h2><p>1.AC-baidu-重定向优化百度搜狗谷歌必应搜索_favicon_双列<br>好用，真好用，作用让是你的搜索结果变成这样<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B43.png" alt=" "><br>2.字体渲染<br>当你第一次用这个脚本的时候，你会感觉眼睛一下舒服了许多<br>3.全网VIP破解<br>这个其实我下了但没有用，原因一是我不用爱奇艺、腾讯视频之类，二是作者注明了会收取一定广告费用，但是我一个舍友因为追综艺一直在用<br><strong>4.UserJS</strong><br>授人以鱼不如授人以渔，这个脚本会检索出对于当前网页大家都在用什么脚本<br><img src="/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%B2%B9%E7%8C%B44.png" alt=" ">  </p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>油猴脚本是开源的，这意味着所以人都可以去审查它的（安全性有<strong>一定</strong>保证），当然也可以按照自己的需求对它进行改编，油猴脚本众多，大家还需要进行探索，找到适合自己的脚本。 </p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
 </search>
