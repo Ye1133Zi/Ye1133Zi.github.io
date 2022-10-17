@@ -126,6 +126,30 @@
       </tags>
   </entry>
   <entry>
+    <title>PS学习</title>
+    <url>/2022/08/18/PS%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>学习一下大学生必备技巧PS</p>
+<span id="more"></span>
+<h2 id="功能与操作"><a href="#功能与操作" class="headerlink" title="功能与操作"></a>功能与操作</h2><h3 id="移动和缩放"><a href="#移动和缩放" class="headerlink" title="移动和缩放"></a>移动和缩放</h3><h4 id="缩放"><a href="#缩放" class="headerlink" title="缩放"></a>缩放</h4><p>抓手工具使用H调出或者按住空格转换<br>按住抓手工具不松弹出带有旋转视图工具的折叠面板（R）<br>ctrl+—  框选放大与细微缩放  双击抓手与缩放<br>在窗口中调出导航器</p>
+<h4 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h4><p>移动工具按V键切换<br>按住shift拖动可以进行原位图层复制<br>按住ctrl可以进行自动选择图层<br>按住Alt可以复制图层<br>按住shift键可以水平垂直复制<br>显示变换控件  </p>
+<h3 id="选区的使用"><a href="#选区的使用" class="headerlink" title="选区的使用"></a>选区的使用</h3><p>矩形选框工具快捷键M<br>拖拽选区时使用shift进行正方形选区，按住alt键从中心开始选区  </p>
+<h4 id="选区属性"><a href="#选区属性" class="headerlink" title="选区属性"></a>选区属性</h4><p>ctrl+d取消选区<br>ctrl+shift+d重新选择<br>ctrl+H隐藏选区<br>右击反向选择  </p>
+<h4 id="选区模式"><a href="#选区模式" class="headerlink" title="选区模式"></a>选区模式</h4><p>新选区<br>添加到选区 （按住shift切换）<br>从选区中减去（按住alt切换）<br>与选区交叉 （同时按住shift和alt键）  </p>
+<h4 id="羽化"><a href="#羽化" class="headerlink" title="羽化"></a>羽化</h4><p>选择菜单-修改-羽化（快捷键shift+F6）实现先选区后羽化  </p>
+<h4 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h4><h4 id="消除锯齿"><a href="#消除锯齿" class="headerlink" title="消除锯齿"></a>消除锯齿</h4><h4 id="单行选框工具"><a href="#单行选框工具" class="headerlink" title="单行选框工具"></a>单行选框工具</h4><h4 id="套索"><a href="#套索" class="headerlink" title="套索"></a>套索</h4><p>快捷键L  </p>
+<h4 id="魔棒工具"><a href="#魔棒工具" class="headerlink" title="魔棒工具"></a>魔棒工具</h4><p>快捷键W</p>
+<h4 id="快速选择工具"><a href="#快速选择工具" class="headerlink" title="快速选择工具"></a>快速选择工具</h4><h3 id="选区的编辑"><a href="#选区的编辑" class="headerlink" title="选区的编辑"></a>选区的编辑</h3><p>反向快捷键crtl+shift+I  </p>
+<h3 id="历史记录面板"><a href="#历史记录面板" class="headerlink" title="历史记录面板"></a>历史记录面板</h3><p>窗口-历史记录面板<br>ctrl+alt+z命令返回多步<br>从当前状态创建新文档<br>创建新快照<br>历史记录画笔工具  </p>
+<h3 id="画笔工具"><a href="#画笔工具" class="headerlink" title="画笔工具"></a>画笔工具</h3><p>按shift键画直线<br>按住alt键拾取颜色<br>按住alt键右键水平移动调节样式<br>预设面板-面板菜单-额外画笔（载入画笔）<br>编辑-定义画笔预设 </p>
+<h4 id="填充渐变"><a href="#填充渐变" class="headerlink" title="填充渐变"></a>填充渐变</h4><p>油漆桶工具，快捷键G<br>填充命令，shift+F5或后退键<br>内容识别  </p>
+<h3 id="变换"><a href="#变换" class="headerlink" title="变换"></a>变换</h3><p>编辑菜单-自由变换（ctrl+T）<br>按住alt键定位参考点<br>左上角为归零点<br>小三角为设置参考点为中心点<br>编辑菜单-变换-再次变换（ctrl+shift+T）<br>再次变换并复制（cjtrl+alt+shift+T）<br>鼠标在外侧结合shift旋转  </p>
+<h3 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h3><h4 id="模糊工具"><a href="#模糊工具" class="headerlink" title="模糊工具"></a>模糊工具</h4><h4 id="锐化工具"><a href="#锐化工具" class="headerlink" title="锐化工具"></a>锐化工具</h4><h4 id="涂抹工具"><a href="#涂抹工具" class="headerlink" title="涂抹工具"></a>涂抹工具</h4><h4 id="减淡工具"><a href="#减淡工具" class="headerlink" title="减淡工具"></a>减淡工具</h4><h4 id="加深工具"><a href="#加深工具" class="headerlink" title="加深工具"></a>加深工具</h4><h4 id="海绵工具"><a href="#海绵工具" class="headerlink" title="海绵工具"></a>海绵工具</h4><h4 id="图章工具"><a href="#图章工具" class="headerlink" title="图章工具"></a>图章工具</h4><h4 id="修复画笔工具"><a href="#修复画笔工具" class="headerlink" title="修复画笔工具"></a>修复画笔工具</h4><p>shift+J  </p>
+<h4 id="污点修复画笔工具"><a href="#污点修复画笔工具" class="headerlink" title="污点修复画笔工具"></a>污点修复画笔工具</h4><h4 id="修补工具"><a href="#修补工具" class="headerlink" title="修补工具"></a>修补工具</h4><h4 id="内容感知移动工具"><a href="#内容感知移动工具" class="headerlink" title="内容感知移动工具"></a>内容感知移动工具</h4><h4 id="红颜工具"><a href="#红颜工具" class="headerlink" title="红颜工具"></a>红颜工具</h4>]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python学习</title>
     <url>/2022/01/02/Python%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>人生苦短，我学python</p>
@@ -245,9 +269,507 @@ f.close
 </tr>
 </tbody></table>
 <h2 id="More-菜鸟笔记"><a href="#More-菜鸟笔记" class="headerlink" title="More: 菜鸟笔记"></a>More: <a href="https://www.runoob.com/python3/python3-file-methods.html">菜鸟笔记</a></h2><h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>print(“www”,”baidu”,”com”,sep=”.”)</p>
+<h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><h3 id="re库"><a href="#re库" class="headerlink" title="re库"></a>re库</h3><ol>
+<li>re.rearch –&gt; 在字符串中搜索匹配的第一个位置，返回match类型</li>
+<li>re.match –&gt; 从字符串开始位置起匹配正则表达式，返回match类型</li>
+<li>re.findall –&gt; 以列表形式返回全部比配到的字符串</li>
+<li>re.split –&gt; 将字符串按照匹配结果进行分割，返回列表类型</li>
+<li>re.finditer –&gt; 返回匹配结果的match迭代类型</li>
+<li>re.sub –&gt; 替换所有匹配到的片段，返回替换后列表类型</li>
+<li>re.l –&gt; 对大小写不敏感</li>
+<li>re.L –&gt; 做本地识别化匹配  </li>
+<li>re.M –&gt; 多行匹配，影响^和$  </li>
+<li>re.S –&gt; 使.匹配包含换行在内的所有字符</li>
+<li>re.U  –&gt; 根据Unicode解析字符</li>
+<li>re.X –&gt; 更灵活的格式</li>
+</ol>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>docker学习</title>
+    <url>/2021/12/25/docker%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p><strong>学业指导老师让我们学习docker，写成报告作为大作业，之前自己也研究了下VMware，在上面安装了Ubuntu，正好趁此熟悉一下Linux操作系统，顺便为将来搭建服务器打基础。</strong><br> <span id="more"></span></p>
+<h1 id="docker-容器"><a href="#docker-容器" class="headerlink" title="docker 容器"></a>docker 容器</h1><h2 id="服务器搭建"><a href="#服务器搭建" class="headerlink" title="服务器搭建"></a>服务器搭建</h2><p>传统服务器：  </p>
+<pre><code> 宿主机： vmvare + cenntos（Ubuntu）= Linux
+ 物理机：  硬件 + 操作系统  
+</code></pre>
+<p>虚拟化服务器：   </p>
+<pre><code>  物理机 + host operating sever +  hypervisor + vmware
+ 
+</code></pre>
+<h2 id="容器技术"><a href="#容器技术" class="headerlink" title="容器技术"></a>容器技术</h2><p><strong>虚拟化工具</strong>：<br>VMware &emsp; Virtua &emsp;PCVirtualbox  </p>
+<ul>
+<li>vmware workstation（个人学习）  </li>
+<li>vmware ecxi（企业级）</li>
+</ul>
+<p>KVM&emsp;Docker</p>
+<p><strong>Docker的组件</strong><br>镜像&emsp;存储&emsp;网络&emsp;容器<br>docker file&emsp;dockerhub  </p>
+<h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><p>企业版（EE）&emsp;社区版（CE）  </p>
+<h2 id="开启linux内核的流量转发"><a href="#开启linux内核的流量转发" class="headerlink" title="开启linux内核的流量转发"></a>开启linux内核的流量转发</h2><p>生成文件<br><code>cat &lt;&lt;EOF &gt; /etc/sysctl.d/docker.conf net.bridge.bridge-nf-call-ip6tables = 1 net.bridge.bridge-nf-call-iptables = 1 net.ipv4.conf.default.rp_filter = 0 net.ipv4.conf.all.rp_filter = 0 net.ipv4.ip_forward=1 EOF</code>（好像需要root身份）<br>检验<br><code>ls /etc/sysctl.d/docker.conf</code><br>加载<br><code>modprobe br_netfilter</code><br><code>sysctl -p /etc/sysctl.d/docker.conf</code><br>配置docker加速器<br><code>mkdir -p /etc/docker</code><br><code>touch /etc/docker/daemon.json</code><br><code>vim /etc/docker/daemon.json</code><br>(没有vim可以通过apt install vim<br>命令下载)<br>输入以下内容<br><code>&#123;</code><br> <code>&quot;registry-mirrors&quot; : [</code><br><code> &quot;https://8xpk5wnt.mirror.aliyuncs.com&quot;</code><br><code> ]</code><br><code>&#125;</code><br>esc ：wq退出<br>查看检验<br><code>cat /etc/docker/daemon.json</code>  </p>
+<h2 id="启动docker"><a href="#启动docker" class="headerlink" title="启动docker"></a>启动docker</h2><pre><code>        systemctl daemon-reload 
+        systemctl enable docker 
+        systemctl restart docker  
+</code></pre>
+<h2 id="查看docker"><a href="#查看docker" class="headerlink" title="查看docker"></a>查看docker</h2><p><code>docker images</code><br><code>docker ps</code><br><code>docker version</code>    </p>
+<h2 id="启动第一个dockers容器"><a href="#启动第一个dockers容器" class="headerlink" title="启动第一个dockers容器"></a>启动第一个dockers容器</h2><p>以nginx为例<br>搜索<br><code>docker search nginx</code><br>拉取<br><code>docker pull nginx</code><br>删除<br><code>docker images ls</code>(查找ID)<br><code>docker rmi ID</code><br>运行<br>docker run 参数   镜像的名字/id<br><code>docker run  -d（后台运行） -p 80:80（端口映射） nginx  </code><br>会返回一个容器的id<br><code>netstat -tunlp</code> 查看端口<br><code>ip -a</code>查看ip / <code>ifconfig</code><br>查看容器是否在运行<br><code>doker  ps  </code><br>停止容器<br><code>docker stop 容器id</code><br>开启<br><code>docker start 容器ip</code>  </p>
+]]></content>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git使用技巧</title>
+    <url>/2022/05/27/git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<p>记录一下git的常用指令和使用技巧</p>
+<span id="more"></span>
+<h2 id="上传GitHub"><a href="#上传GitHub" class="headerlink" title="上传GitHub"></a>上传GitHub</h2><p>git init 生成本地仓库<br>git add 添加文件至缓存区<br>git commit -m “”提交到仓库<br>git remote add origin url关联远程仓库<br>git push -u origin master 执行上传</p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>html学习</title>
+    <url>/2022/01/31/html%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p><strong>学习python爬虫需要html基础，而且markdown文件支持html写法，所以专门来学习一下</strong></p>
+<span id="more"></span>
+<p>学习参考：<a href="https://www.bilibili.com/video/BV1XJ411X7Ud?p=7&spm_id_from=pageDriver">【尚硅谷】Web前端零基础入门HTML5+CSS3基础教程丨初学者从入门到精通</a>  </p>
+<p><a href="https://lilichao.com/">视频中李立超老师的博客</a></p>
+<h2 id="一-注释"><a href="#一-注释" class="headerlink" title="一,注释"></a>一,注释</h2><pre><code>&lt;html&gt; 
+    &lt;head&gt;
+        &lt;title&gt;这是我的第一个网页&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;这是我的第二个网页&lt;/h1&gt;
+        &lt;!--
+            这是一个注释
+        --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+ 
+</code></pre>
+<h2 id="二，属性"><a href="#二，属性" class="headerlink" title="二，属性"></a>二，属性</h2><pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;这是我的第二个网页&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;
+            我想显示超大的&lt;font color=&#39;red&#39; size = 100 &gt;红字&lt;/font&gt;
+        &lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h2 id="三，网页结构"><a href="#三，网页结构" class="headerlink" title="三，网页结构"></a>三，网页结构</h2><pre><code>&lt;!doctype html&gt; 
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;!--
+            可以通过meta标签设置网页中的字符集，避免乱码
+        --&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        
+        &lt;title&gt;网页结构&lt;/title&gt;    
+    &lt;head&gt;
+    &lt;body&gt;
+    &lt;!--
+        迭代
+            网页版本
+                HTML4
+                XHTML2.0
+                HTML5
+                ....
+            文档声明(doctype)
+                -当前网页版本
+                -html5的文档声明
+                &lt;!doctype html&gt; 
+    --&gt;
+    &lt;body&gt;
+&lt;/html&gt;
+</code></pre>
+<h2 id="四，vscode"><a href="#四，vscode" class="headerlink" title="四，vscode"></a>四，vscode</h2><p>用！ + Tab可以直接生成网页架构<br>用ctrl + /添加注释<br>用ctrl + 回车可以使光标换行<br>用 F2 快速改名<br>用alt + shift + 下或者上 可以往上下复制<br>用 lorem 自动生成英文文本<br>用 ctrl + / 进行快速注释<br>用ul&gt;li + tab 快速创建无序列表格式、<br>用div.box2 快速创建class为box2的div元素<br>用alt + shift + F 格式化（自动排版）</p>
+<h2 id="五-，转义字符"><a href="#五-，转义字符" class="headerlink" title="五 ，转义字符"></a>五 ，转义字符</h2><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics">MDN官网</a></p>
+<p><a href="https://www.runoob.com/html/html-tutorial.html">菜鸟教程</a></p>
+<h2 id="六，meta"><a href="#六，meta" class="headerlink" title="六，meta"></a>六，meta</h2><p>charset: 字符集<br>name: 数据名称(keywords,description,http-equiv-“reflesh-)<br>content: 数据内容</p>
+<h2 id="七-语义化标签"><a href="#七-语义化标签" class="headerlink" title="七,语义化标签"></a>七,语义化标签</h2><h3 id="注意点："><a href="#注意点：" class="headerlink" title="注意点："></a>注意点：</h3><ol>
+<li>一般情况下网页下只有一个&lt;h1&gt;,&lt;h4&gt;-&lt;h6&gt;很少用</li>
+<li>在页面中独占一行的元素叫做快元素（block element），反之称为行内元素</li>
+</ol>
+<h3 id="行标签："><a href="#行标签：" class="headerlink" title="行标签："></a>行标签：</h3><p>1.&lt;p&gt;标签中不能放块标签<br>2. &lt;hgroup&gt;将标题分组<br>3. &lt;em&gt;表示语音语调的加重<br>4. &lt;strong&gt;表示强调<br>5. &lt;blockquote&gt;表示长引用，&lt;q&gt;表示短引用<br>6. &lt;br&gt;换行<br>7. &lt;span&gt;  在网页中选中文字 </p>
+<h3 id="块标签"><a href="#块标签" class="headerlink" title="块标签:"></a>块标签:</h3><ol>
+<li>&lt;header&gt;,&lt;main&gt;,&lt;footer&gt;</li>
+<li>&lt;niv&gt;导航 </li>
+<li>&lt;aside&gt;和主体相关的其他内容</li>
+<li>&lt;article&gt;文章</li>
+<li>&lt;section&gt;表示独立的区块</li>
+<li>&lt;div&gt;一个区块</li>
+</ol>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表:"></a>列表:</h3><p>列表分类：</p>
+<pre><code>1.有序列表
+2.无序列表
+3.定义列表
+</code></pre>
+<h4 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h4><p>使用&lt;ol&gt;标签创建有序列表<br>使用&lt;ul&gt;标签创建无序列表<br>使用&lt;li&gt;表示列表项<br>使用&lt;dl&gt;标签创建定义列表<br>使用&lt;dt&gt;表示定义内容<br>使用&lt;dd&gt;进行内容解释</p>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;第一个小目标&lt;/li&gt;
+    &lt;li&gt;第二个小目标&lt;/li&gt;
+    &lt;li&gt;第三个小目标&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>使用&lt;a&gt;标签定义超链接<br>使用href属性给出链接地址<br>如</p>
+<pre><code> &lt;a href=&quot;http://ye1133zi.github.io&quot;&gt;叶子的博客&lt;/a&gt;
+</code></pre>
+<p>相对路径<br>./ 或 ../(类linux)</p>
+<p>使用target属性（_self,_blank)选择新页面or当前页面打开超链接</p>
+<h4 id="回到顶部"><a href="#回到顶部" class="headerlink" title="回到顶部"></a>回到顶部</h4><pre><code>&lt;a href=&quot;#&quot;&gt;回到顶部&lt;/a&gt;
+</code></pre>
+<h4 id="标记"><a href="#标记" class="headerlink" title="标记"></a>标记</h4><p>使用id属性（锚点）标记标签，从而实现</p>
+<pre><code>&lt;a href=&quot;#bottom&quot;&gt;到底部&lt;/a&gt;
+...
+&lt;a id = &quot;bottom&quot;&gt;底部&lt;/a&gt;
+</code></pre>
+<h4 id="无效果的超链接"><a href="#无效果的超链接" class="headerlink" title="无效果的超链接"></a>无效果的超链接</h4><pre><code>&lt;a href=&quot;javascript:;&quot;&gt;随便点&lt;/a&gt;
+</code></pre>
+<h3 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h3><p>使用&lt;img&gt;自结束标签<br>src属性指定图片<br>alt添加描述，默认不会显示，有些浏览器在图片加载失败时显示<br>width和height属性设置大小</p>
+<h4 id="图片格式"><a href="#图片格式" class="headerlink" title="图片格式"></a>图片格式</h4><ol>
+<li>jpeg（jpg）<ul>
+<li>支持颜色比较丰富，不支持透明效果和动图</li>
+<li>用来显示照片</li>
+</ul>
+</li>
+<li>gif<ul>
+<li>支持颜色比较少，支持简单透明和动图</li>
+<li>用来显示颜色单一的图片，动图</li>
+</ul>
+</li>
+<li>png <ul>
+<li>支持颜色丰富，支持复杂透明，不支持动图（？）</li>
+<li>适合网页</li>
+</ul>
+</li>
+<li>webp<ul>
+<li>谷歌新推出的专门用来表示网页中的图片的一种格式</li>
+<li>效果和大小都比较好，但是兼容性差</li>
+</ul>
+</li>
+<li>base64<ul>
+<li>将图片使用base64进行编码，将图片转化为字符</li>
+<li>和网页一起加载</li>
+</ul>
+</li>
+</ol>
+<h3 id="音频，视频播放"><a href="#音频，视频播放" class="headerlink" title="音频，视频播放"></a>音频，视频播放</h3><h4 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h4><p>使用&lt;audio&gt;标签添加音频<br>添加controls属性让用户控制播放<br>添加autoplay属性设置自动播放，但是大部分浏览器不允许<br>添加loop属性控制循环播放<br>使用soure指定文件(多路径加播放失败后的提示)</p>
+<pre><code>    &lt;audio controls&gt;
+        &lt;!-- 对不起，宁德的浏览器不支持播放音频，请宁升级浏览器 --&gt;
+        &lt;source src=&quot;./source/audio.mp3&quot;&gt;
+        &lt;source src=&quot;./source/audio.ogg&quot;&gt;
+        &lt;embed src=&quot;.source/audio.mpp3type=&quot;audio/mp3&quot; wdith=300 height=100&gt;
+</code></pre>
+<p>使用/<embed>标签为老浏览器添加音视频（需要指定width和height）</p>
+<h4 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h4><p>使用&lt;video&gt;标签添加视频</p>
+<h3 id="内联框架"><a href="#内联框架" class="headerlink" title="内联框架"></a>内联框架</h3><p>使用&lt;iframe&gt;标签引入其他页面<br>frameborder属性表示框架的边界</p>
+<h2 id="八，报错"><a href="#八，报错" class="headerlink" title="八，报错"></a>八，报错</h2><p>404 网站未找到</p>
+<h2 id="九，彩蛋"><a href="#九，彩蛋" class="headerlink" title="九，彩蛋"></a>九，彩蛋</h2><p>彩蛋1：<br><code>&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=77217003&amp;bvid=BV1XJ411X7Ud&amp;cid=132017557&amp;page=26&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;</code><br>彩蛋2</p>
+]]></content>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>java安装以及配置环境</title>
+    <url>/2022/03/01/java%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<p>安装一下Java</p>
+<span id="more"></span>
+<h2 id="版本选择"><a href="#版本选择" class="headerlink" title="版本选择"></a>版本选择</h2><p>Java有许多版本，我在下载前也是纠结了好久，将自己查找的一些信息罗列如下</p>
+<h3 id="英文简称"><a href="#英文简称" class="headerlink" title="英文简称"></a>英文简称</h3><p>LTS：长期支持版，稳定<br>非LTS：实验版，新功能多</p>
+<p>SE：Java Platform Standard Edition，Java 平台标准版<br>EE：Java Platform Enterprise Edition，Java 平台企业版<br>ME：Java Platform Micro Edition，Java 平台微型版</p>
+<p>JRE：(Java Runtime Enviroment)是Java的运行环境，用来运行java程序<br>JDK：(Java Development Kit)又称J2SDK(Java2 Software Development Kit)，是Java开发工具包，包含了JRE<br>详见：<a href="https://www.php.cn/java/guide/449867.html">《jdk和jre的区别》</a></p>
+<h3 id="版本新旧问题"><a href="#版本新旧问题" class="headerlink" title="版本新旧问题"></a>版本新旧问题</h3><p>b站上的网课以及翁恺老师的java网课都使用了Java8版本。并且看知乎的一个回答，感觉JAVA8在目前生产环境中最常用。但是，自我感觉如果是学习用途的话，还是乐意去接受新版本，即使出了问题能学到一些新特性，所以选择安装了最新版的Java 17 LTS SE JDK版本</p>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网地址 ：<br><a href="https://www.oracle.com/java/technologies/downloads/">https://www.oracle.com/java/technologies/downloads/</a></p>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p>参考b站视频：<br><a href="https://www.oracle.com/java/technologies/downloads/">win10下(Java环境)JDK环境变量配置</a><br>视频中的一个路径：;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar</p>
+]]></content>
+      <tags>
+        <tag>debug日志</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu查看硬件信息</title>
+    <url>/2022/02/10/Ubuntu%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<p><strong>新买的两个4g内存条到了，试一试ok不ok</strong></p>
+<span id="more"></span>
+<p>参考博客：<a href="https://blog.csdn.net/chuanyu/article/details/46611793">https://blog.csdn.net/chuanyu/article/details/46611793</a><br>总命令： lshw</p>
+<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><pre><code># uname -a               # 查看内核/操作系统/CPU信息
+# head -n 1 /etc/issue   # 查看操作系统版本 
+# cat /proc/cpuinfo      # 查看CPU信息
+# hostname               # 查看计算机名 
+# lspci -tv              # 列出所有PCI设备
+# lsusb -tv              # 列出所有USB设备 
+# lsmod                  # 列出加载的内核模块
+# env                    # 查看环境变量
+</code></pre>
+<h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><pre><code># free -m                # 查看内存使用量和交换区使用量 
+# df -h                  # 查看各分区使用情况 
+# du -sh &lt;目录名&gt;        # 查看指定目录的大小 
+# grep MemTotal /proc/meminfo   # 查看内存总量
+# grep MemFree /proc/meminfo    # 查看空闲内存量
+# uptime                 # 查看系统运行时间、用户数、负载 
+# cat /proc/loadavg      # 查看系统负载
+</code></pre>
+<h2 id="磁盘和分区"><a href="#磁盘和分区" class="headerlink" title="磁盘和分区"></a>磁盘和分区</h2><pre><code># mount | column -t      # 查看挂接的分区状态 
+# fdisk -l               # 查看所有分区 
+# swapon -s              # 查看所有交换分区
+# hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备) 
+# dmesg | grep IDE       # 查看启动时IDE设备检测状况
+</code></pre>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><pre><code># ifconfig               # 查看所有网络接口的属性
+# iptables -L            # 查看防火墙设置 
+# route -n               # 查看路由表 
+# netstat -lntp          # 查看所有监听端口 
+# netstat -antp          # 查看所有已经建立的连接
+# netstat -s             # 查看网络统计信息
+</code></pre>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><pre><code># ps -ef                 # 查看所有进程 
+# top                    # 实时显示进程状态
+</code></pre>
+<h2 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h2><pre><code># w                      # 查看活动用户 
+# id &lt;用户名&gt;            # 查看指定用户信息 
+# last                   # 查看用户登录日志 
+# cut -d: -f1 /etc/passwd   # 查看系统所有用户 
+# cut -d: -f1 /etc/group    # 查看系统所有组 
+# crontab -l             # 查看当前用户的计划任务
+</code></pre>
+<h2 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h2><pre><code># chkconfig --list       # 列出所有系统服务 
+# chkconfig --list | grep on    # 列出所有启动的系统服务
+</code></pre>
+<h2 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h2><pre><code># rpm -qa                # 查看所有安装的软件包
+</code></pre>
+<h2 id="常用命令整理如下："><a href="#常用命令整理如下：" class="headerlink" title="常用命令整理如下："></a>常用命令整理如下：</h2><pre><code>查看主板的序列号: dmidecode | grep -i ’serial number’
+
+用硬件检测程序kuduz探测新硬件：service kudzu start ( or restart)
+
+查看CPU信息：cat /proc/cpuinfo [dmesg | grep -i &#39;cpu&#39;][dmidecode -t processor]
+
+查看内存信息：cat /proc/meminfo [free -m][vmstat]
+
+查看板卡信息：cat /proc/pci
+
+查看显卡/声卡信息：lspci |grep -i ‘VGA’[dmesg | grep -i &#39;VGA&#39;]
+
+查看网卡信息：dmesg | grep -i ‘eth’[cat /etc/sysconfig/hwconf | grep -i eth][lspci | grep -i &#39;eth&#39;]
+查看PCI信息：lspci (相比cat /proc/pci更直观）
+
+查看USB设备：cat /proc/bus/usb/devices
+
+查看键盘和鼠标:cat /proc/bus/input/devices
+
+查看系统硬盘信息和使用情况：fdisk &amp; disk – l &amp; df
+
+查看各设备的中断请求(IRQ):cat /proc/interrupts
+
+查看系统体系结构：uname -a
+
+查看及启动系统的32位或64位内核模式：isalist –v [isainfo –v][isainfo –b]
+
+dmidecode查看硬件信息，包括bios、cpu、内存等信息
+
+测定当前的显示器刷新频率：/usr/sbin/ffbconfig –rev \?
+
+查看系统配置：/usr/platform/sun4u/sbin/prtdiag –v
+
+查看当前系统中已经应用的补丁：showrev –p
+
+显示当前的运行级别：who –rH
+
+查看当前的bind版本信息：nslookup –class=chaos –q=txt version.bind
+
+dmesg | more 查看硬件信息
+lspci 显示外设信息, 如usb，网卡等信息
+lsnod 查看已加载的驱动
+lshw
+psrinfo -v 查看当前处理器的类型和速度（主频）
+prtconf -v 打印当前的OBP版本号
+iostat –E 查看硬盘物理信息(vendor, RPM, Capacity)
+prtvtoc /dev/rdsk/c0t0d0s 查看磁盘的几何参数和分区信息
+df –F ufs –o i 显示已经使用和未使用的i-node数目
+isalist –v
+
+对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
+Cpuinfo 主机CPU信息
+Dma 主机DMA通道信息
+Filesystems 文件系统信息
+Interrupts 主机中断信息
+Ioprots 主机I/O端口号信息
+Meninfo 主机内存信息
+Version Linux内存版本信息
+
+备注： proc – process information pseudo-filesystem 进程信息伪装文件系统
+
+RPM
+
+    在Linux 操作系统中，有一个系统软件包，它的功能类似于Windows里面的“添加/删除程序”，但是功能又比“添加/删除程序”强很多，它就是 Red Hat Package Manager(简称RPM)。此工具包最先是由Red Hat公司推出的，后来被其他Linux开发商所借用。由于它为Linux使用者省去了很多时间，所以被广泛应用于在Linux下安装、删除软件。下面就 给大家介绍一下它的具体使用方法。
+
+1.我们得到一个新软件，在安装之前，一般都要先查看一下这个软件包里有什么内容，假设这个文件是：Linux-1.4-6.i368.rpm，我们可以用这条命令查看：
+
+rpm -qpi Linux-1.4-6.i368.rpm
+
+系统将会列出这个软件包的详细资料，包括含有多少个文件、各文件名称、文件大小、创建时间、编译日期等信息。
+
+2.上面列出的所有文件在安装时不一定全部安装，就像Windows下程序的安装方式分为典型、完全、自定义一样，Linux也会让你选择安装方式，此时我们可以用下面这条命令查看软件包将会在系统里安装哪些部分，以方便我们的选择：
+
+rpm -qpl Linux-1.4-6.i368.rpm
+
+3. 选择安装方式后，开始安装。我们可以用rpm-ivh Linux-1.4-6.i368.rpm命令安装此软件。在安装过程中，若系统提示此软件已安装过或因其他原因无法继续安装，但若我们确实想执行安装命 令，可以在 -ivh后加一参数“-replacepkgs”：
+
+rpm -ivh -replacepkgs Linux-1.4-6.i368.rpm
+
+4.有时我们卸载某个安装过的软件，只需执行rpm-e &lt;文件名&gt;;命令即可。
+
+5.对低版本软件进行升级是提高其功能的好办法，这样可以省去我们卸载后再安装新软件的麻烦，要升级某个软件，只须执行如下命令：rpm -uvh &lt;文件名&gt;;，注意：此时的文件名必须是要升级软件的升级补丁
+
+6. 另外一个安装软件的方法可谓是Linux的独到之处，同时也是RMP强大功能的一个表现：通过FTP站点直接在线安装软件。当找到含有你所需软件的站点并 与此网站连接后，执行下面的命令即可实现在线安装，譬如在线安装Linux-1.4-6.i368.rpm，可以用命令： www.it165.net
+
+rpm -i ftp://ftp.pht.com/pub/linux/redhat/...-1.4-6.i368.rpm
+
+7. 在我们使用电脑过程中，难免会有误操作，若我们误删了几个文件而影响了系统的性能时，怎样查找到底少了哪些文件呢?RPM软件包提供了一个查找损坏文件的 功能，执行此命令：rpm -Va即可，Linux将为你列出所有损坏的文件。你可以通过Linux的安装光盘进行修复。
+
+8.Linux系统中文件繁多，在使用过程中，难免会碰到我们不认识的文件，在Windows下我们可以用“开始/查找”菜单快速判断某个文件属于哪个文件夹，在Linux中，下面这条命令行可以帮助我们快速判定某个文件属于哪个软件包：
+
+rpm -qf &lt;文件名&gt;;
+
+9.当每个软件包安装在Linux系统后，安装文件都会到RPM数据库中“报到”，所以，我们要查询某个已安装软件的属性时，只需到此数据库中查找即可。注意：此时的查询命令不同于1和8介绍的查询，这种方法只适用于已安装过的软件包！命令格式：
+
+rpm -参数　&lt;文件名&gt;;
+</code></pre>
+<h2 id="APT-GET"><a href="#APT-GET" class="headerlink" title="APT-GET"></a>APT-GET</h2><pre><code>apt-get update——在修改/etc/apt/sources.list或者/etc/apt/preferences之后运行该命令。此外您需要定期运行这一命令以确保您的软件包列表是最新的。
+apt-get install packagename——安装一个新软件包（参见下文的aptitude） 
+apt-get remove packagename——卸载一个已安装的软件包（保留配置文件） 
+apt-get --purge remove packagename——卸载一个已安装的软件包（删除配置文件） 
+dpkg --force-all --purge packagename 有些软件很难卸载，而且还阻止了别的软件的应用，就可以用这个，不过有点冒险。 
+apt-get autoclean apt会把已装或已卸的软件都备份在硬盘上，所以如果需要空间的话，可以让这个命令来删除你已经删掉的软件 
+apt-get clean 这个命令会把安装的软件的备份也删除，不过这样不会影响软件的使用的。 
+apt-get upgrade——更新所有已安装的软件包 
+apt-get dist-upgrade——将系统升级到新版本 
+apt-cache search string——在软件包列表中搜索字符串 
+dpkg -l package-name-pattern——列出所有与模式相匹配的软件包。如果您不知道软件包的全名，您可以使用“*package-name-pattern*”。
+aptitude——详细查看已安装或可用的软件包。与apt-get类似，aptitude可以通过命令行方式调用，但仅限于某些命令——最常见的有安装和卸载命令。由于aptitude比apt-get了解更多信息，可以说它更适合用来进行安装和卸载。
+apt-cache showpkg pkgs——显示软件包信息。 
+apt-cache dumpavail——打印可用软件包列表。 
+apt-cache show pkgs——显示软件包记录，类似于dpkg –print-avail。 
+apt-cache pkgnames——打印软件包列表中所有软件包的名称。 
+dpkg -S file——这个文件属于哪个已安装软件包。 
+dpkg -L package——列出软件包中的所有文件。 
+apt-file search filename——查找包含特定文件的软件包（不一定是已安装的），这些文件的文件名中含有指定的字符串。apt-file是一个独立的软件包。您必须 先使用apt-get install来安装它，然后运行apt-file update。如果apt-file search filename输出的内容太多，您可以尝试使用apt-file search filename | grep -w filename（只显示指定字符串作为完整的单词出现在其中的那些文件名）或者类似方法，例如：apt-file search filename | grep /bin/（只显示位于诸如/bin或/usr/bin这些文件夹中的文件，如果您要查找的是某个特定的执行文件的话，这样做是有帮助的）。
+</code></pre>
+<h2 id="ubuntu查看版本命令"><a href="#ubuntu查看版本命令" class="headerlink" title="ubuntu查看版本命令"></a>ubuntu查看版本命令</h2><pre><code>方法一：
+在终端中执行下列指令： cat /etc/issue
+方法二：
+使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。
+执行指令如下： sudo lsb_release -a
+方法三：
+打开“系统监视器”，选择“系统”
+Ubuntu查看版本命令
+1. lshw
+lshw命令显示详细硬件信息。
+如果要用概要方式显示，可以加上short参数：lshw-short
+要显示指定硬件信息，加上class(或C)参数：lshw -classmemory
+2. sysstat
+监测系统性能及效率的一组工具，这些工具对于我们收集系统性能数据，
+比如CPU使用率、硬盘和网络吞吐数据。
+3. lspci -v (相比cat/proc/pci更直观）
+查看PCI信息，lspci 是读取 hwdata 数据库。
+4. uname -a
+查看系统体系结构。
+5. dmidecode
+查看硬件信息，包括bios、cpu、内存等信息
+6. dmesg
+显示内核缓冲区系统控制信息，如系统启动时的信息会写到/var/log/。
+注：dmesg 工具并不是专门用来查看硬件芯片组标识的工具，
+但通过这个工具能让我们知道机器中的硬件的一些参数；因为系统在启动的时候，
+会写一些硬件相关的日志到 /var/log/message* 或/var/log/boot* 文件中。
+7. lshal 和hal-device-manager
+8. 查看 /proc
+对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
+Cpuinfo 主机CPU信息
+Dma 主机DMA通道信息
+Filesystems 文件系统信息
+Interrupts 主机中断信息
+Ioprots 主机I/O端口号信息
+Meninfo 主机内存信息
+Version Linux内存版本信息
+查看CPU信息：cat /proc/cpuinfo 查看板卡信息：cat /proc/pci 查看内存信息：cat/proc/meminfo 查看USB设备：cat /proc/bus/usb/devices 查看键盘和鼠标：cat/proc/bus/input/devices 查看各设备的中断请求(IRQ)：cat/proc/interrupts
+</code></pre>
+<h2 id="主板信息"><a href="#主板信息" class="headerlink" title="主板信息:"></a>主板信息:</h2><pre><code>sudo demidecode | grep -i ‘serial number’
+</code></pre>
+<h2 id="CPU信息"><a href="#CPU信息" class="headerlink" title="CPU信息:"></a>CPU信息:</h2><pre><code>cat /proc/cpuinfo
+dmesg | grep -i ‘cpu’
+sudo dmidecode -t processor
+</code></pre>
+<h2 id="硬盘信息"><a href="#硬盘信息" class="headerlink" title="硬盘信息:"></a>硬盘信息:</h2><pre><code>查看分区情况:
+sudo fdisk -l
+
+查看大小情况:
+df -h
+
+查看使用情况:
+du -h
+sudo hdparm -I /dev/sda
+dmesg | grep sda
+</code></pre>
+<h2 id="内存信息"><a href="#内存信息" class="headerlink" title="内存信息:"></a>内存信息:</h2><pre><code>cat /proc/meminfo
+dmesg | grep mem
+free -m
+vmstat
+sudo dmidecode | grep -i mem
+</code></pre>
+<h2 id="网卡信息"><a href="#网卡信息" class="headerlink" title="网卡信息:"></a>网卡信息:</h2><pre><code>dmesg | grep -i ‘eth’
+lspci | grep -i ‘eth’
+
+ethtool -i eht0
+ethhool -k eth0
+ethtool -g eth0
+</code></pre>
+<h2 id="查看鼠标和键盘"><a href="#查看鼠标和键盘" class="headerlink" title="查看鼠标和键盘:"></a>查看鼠标和键盘:</h2><pre><code>cat /proc/bus/input/devices
+</code></pre>
+<h2 id="查看各设备的中断请求-IRQ"><a href="#查看各设备的中断请求-IRQ" class="headerlink" title="查看各设备的中断请求(IRQ):"></a>查看各设备的中断请求(IRQ):</h2><pre><code>cat /proc/interrupts
+</code></pre>
+<h2 id="显卡信息"><a href="#显卡信息" class="headerlink" title="显卡信息:"></a>显卡信息:</h2><pre><code>lspci | grep -i ‘VGA’
+dmesg | grep -i ‘VGA’
+</code></pre>
+<h2 id="声卡信息"><a href="#声卡信息" class="headerlink" title="声卡信息:"></a>声卡信息:</h2><pre><code>查看声卡型号:
+lspci | grep -i audio
+
+查看型号ac97的声卡驱动模块:
+modprobe -l | grep ac97
+
+查看声卡信息:
+cat /proc/asound/cards
+
+查看alsa-utils本:
+alsactl -v
+
+查看内核alsa版本:
+cat /proc/asound/version
+
+声卡信息:
+aplay -l
+
+硬件信息之声卡:
+sudo lshw -C sound
+
+模块状态之声音:
+lsmod | grep -i snd
+
+alsa音频配置:
+alsamixer
+</code></pre>
+<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令:"></a>其他命令:</h2><pre><code>dmesg
+lspci
+mpstat(先安装sysstat: sudo spt-get install sysstat) 
+</code></pre>
+]]></content>
+      <tags>
+        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -540,552 +1062,12 @@ div.red&#123;
       </tags>
   </entry>
   <entry>
-    <title>docker学习</title>
-    <url>/2021/12/25/docker%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p><strong>学业指导老师让我们学习docker，写成报告作为大作业，之前自己也研究了下VMware，在上面安装了Ubuntu，正好趁此熟悉一下Linux操作系统，顺便为将来搭建服务器打基础。</strong><br> <span id="more"></span></p>
-<h1 id="docker-容器"><a href="#docker-容器" class="headerlink" title="docker 容器"></a>docker 容器</h1><h2 id="服务器搭建"><a href="#服务器搭建" class="headerlink" title="服务器搭建"></a>服务器搭建</h2><p>传统服务器：  </p>
-<pre><code> 宿主机： vmvare + cenntos（Ubuntu）= Linux
- 物理机：  硬件 + 操作系统  
-</code></pre>
-<p>虚拟化服务器：   </p>
-<pre><code>  物理机 + host operating sever +  hypervisor + vmware
- 
-</code></pre>
-<h2 id="容器技术"><a href="#容器技术" class="headerlink" title="容器技术"></a>容器技术</h2><p><strong>虚拟化工具</strong>：<br>VMware &emsp; Virtua &emsp;PCVirtualbox  </p>
-<ul>
-<li>vmware workstation（个人学习）  </li>
-<li>vmware ecxi（企业级）</li>
-</ul>
-<p>KVM&emsp;Docker</p>
-<p><strong>Docker的组件</strong><br>镜像&emsp;存储&emsp;网络&emsp;容器<br>docker file&emsp;dockerhub  </p>
-<h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><p>企业版（EE）&emsp;社区版（CE）  </p>
-<h2 id="开启linux内核的流量转发"><a href="#开启linux内核的流量转发" class="headerlink" title="开启linux内核的流量转发"></a>开启linux内核的流量转发</h2><p>生成文件<br><code>cat &lt;&lt;EOF &gt; /etc/sysctl.d/docker.conf net.bridge.bridge-nf-call-ip6tables = 1 net.bridge.bridge-nf-call-iptables = 1 net.ipv4.conf.default.rp_filter = 0 net.ipv4.conf.all.rp_filter = 0 net.ipv4.ip_forward=1 EOF</code>（好像需要root身份）<br>检验<br><code>ls /etc/sysctl.d/docker.conf</code><br>加载<br><code>modprobe br_netfilter</code><br><code>sysctl -p /etc/sysctl.d/docker.conf</code><br>配置docker加速器<br><code>mkdir -p /etc/docker</code><br><code>touch /etc/docker/daemon.json</code><br><code>vim /etc/docker/daemon.json</code><br>(没有vim可以通过apt install vim<br>命令下载)<br>输入以下内容<br><code>&#123;</code><br> <code>&quot;registry-mirrors&quot; : [</code><br><code> &quot;https://8xpk5wnt.mirror.aliyuncs.com&quot;</code><br><code> ]</code><br><code>&#125;</code><br>esc ：wq退出<br>查看检验<br><code>cat /etc/docker/daemon.json</code>  </p>
-<h2 id="启动docker"><a href="#启动docker" class="headerlink" title="启动docker"></a>启动docker</h2><pre><code>        systemctl daemon-reload 
-        systemctl enable docker 
-        systemctl restart docker  
-</code></pre>
-<h2 id="查看docker"><a href="#查看docker" class="headerlink" title="查看docker"></a>查看docker</h2><p><code>docker images</code><br><code>docker ps</code><br><code>docker version</code>    </p>
-<h2 id="启动第一个dockers容器"><a href="#启动第一个dockers容器" class="headerlink" title="启动第一个dockers容器"></a>启动第一个dockers容器</h2><p>以nginx为例<br>搜索<br><code>docker search nginx</code><br>拉取<br><code>docker pull nginx</code><br>删除<br><code>docker images ls</code>(查找ID)<br><code>docker rmi ID</code><br>运行<br>docker run 参数   镜像的名字/id<br><code>docker run  -d（后台运行） -p 80:80（端口映射） nginx  </code><br>会返回一个容器的id<br><code>netstat -tunlp</code> 查看端口<br><code>ip -a</code>查看ip / <code>ifconfig</code><br>查看容器是否在运行<br><code>doker  ps  </code><br>停止容器<br><code>docker stop 容器id</code><br>开启<br><code>docker start 容器ip</code>  </p>
-]]></content>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git使用技巧</title>
-    <url>/2022/05/27/git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<p>记录一下git的常用指令和使用技巧</p>
-<span id="more"></span>
-<h2 id="上传GitHub"><a href="#上传GitHub" class="headerlink" title="上传GitHub"></a>上传GitHub</h2><p>git init 生成本地仓库<br>git add 添加文件至缓存区<br>git commit -m “”提交到仓库<br>git remote add origin url关联远程仓库<br>git push -u origin master 执行上传</p>
+    <title>matlab</title>
+    <url>/2022/10/16/matlab/</url>
+    <content><![CDATA[<span id="more"></span>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ubuntu查看硬件信息</title>
-    <url>/2022/02/10/Ubuntu%E6%9F%A5%E7%9C%8B%E7%A1%AC%E4%BB%B6%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<p><strong>新买的两个4g内存条到了，试一试ok不ok</strong></p>
-<span id="more"></span>
-<p>参考博客：<a href="https://blog.csdn.net/chuanyu/article/details/46611793">https://blog.csdn.net/chuanyu/article/details/46611793</a><br>总命令： lshw</p>
-<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><pre><code># uname -a               # 查看内核/操作系统/CPU信息
-# head -n 1 /etc/issue   # 查看操作系统版本 
-# cat /proc/cpuinfo      # 查看CPU信息
-# hostname               # 查看计算机名 
-# lspci -tv              # 列出所有PCI设备
-# lsusb -tv              # 列出所有USB设备 
-# lsmod                  # 列出加载的内核模块
-# env                    # 查看环境变量
-</code></pre>
-<h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><pre><code># free -m                # 查看内存使用量和交换区使用量 
-# df -h                  # 查看各分区使用情况 
-# du -sh &lt;目录名&gt;        # 查看指定目录的大小 
-# grep MemTotal /proc/meminfo   # 查看内存总量
-# grep MemFree /proc/meminfo    # 查看空闲内存量
-# uptime                 # 查看系统运行时间、用户数、负载 
-# cat /proc/loadavg      # 查看系统负载
-</code></pre>
-<h2 id="磁盘和分区"><a href="#磁盘和分区" class="headerlink" title="磁盘和分区"></a>磁盘和分区</h2><pre><code># mount | column -t      # 查看挂接的分区状态 
-# fdisk -l               # 查看所有分区 
-# swapon -s              # 查看所有交换分区
-# hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备) 
-# dmesg | grep IDE       # 查看启动时IDE设备检测状况
-</code></pre>
-<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><pre><code># ifconfig               # 查看所有网络接口的属性
-# iptables -L            # 查看防火墙设置 
-# route -n               # 查看路由表 
-# netstat -lntp          # 查看所有监听端口 
-# netstat -antp          # 查看所有已经建立的连接
-# netstat -s             # 查看网络统计信息
-</code></pre>
-<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><pre><code># ps -ef                 # 查看所有进程 
-# top                    # 实时显示进程状态
-</code></pre>
-<h2 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h2><pre><code># w                      # 查看活动用户 
-# id &lt;用户名&gt;            # 查看指定用户信息 
-# last                   # 查看用户登录日志 
-# cut -d: -f1 /etc/passwd   # 查看系统所有用户 
-# cut -d: -f1 /etc/group    # 查看系统所有组 
-# crontab -l             # 查看当前用户的计划任务
-</code></pre>
-<h2 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h2><pre><code># chkconfig --list       # 列出所有系统服务 
-# chkconfig --list | grep on    # 列出所有启动的系统服务
-</code></pre>
-<h2 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h2><pre><code># rpm -qa                # 查看所有安装的软件包
-</code></pre>
-<h2 id="常用命令整理如下："><a href="#常用命令整理如下：" class="headerlink" title="常用命令整理如下："></a>常用命令整理如下：</h2><pre><code>查看主板的序列号: dmidecode | grep -i ’serial number’
-
-用硬件检测程序kuduz探测新硬件：service kudzu start ( or restart)
-
-查看CPU信息：cat /proc/cpuinfo [dmesg | grep -i &#39;cpu&#39;][dmidecode -t processor]
-
-查看内存信息：cat /proc/meminfo [free -m][vmstat]
-
-查看板卡信息：cat /proc/pci
-
-查看显卡/声卡信息：lspci |grep -i ‘VGA’[dmesg | grep -i &#39;VGA&#39;]
-
-查看网卡信息：dmesg | grep -i ‘eth’[cat /etc/sysconfig/hwconf | grep -i eth][lspci | grep -i &#39;eth&#39;]
-查看PCI信息：lspci (相比cat /proc/pci更直观）
-
-查看USB设备：cat /proc/bus/usb/devices
-
-查看键盘和鼠标:cat /proc/bus/input/devices
-
-查看系统硬盘信息和使用情况：fdisk &amp; disk – l &amp; df
-
-查看各设备的中断请求(IRQ):cat /proc/interrupts
-
-查看系统体系结构：uname -a
-
-查看及启动系统的32位或64位内核模式：isalist –v [isainfo –v][isainfo –b]
-
-dmidecode查看硬件信息，包括bios、cpu、内存等信息
-
-测定当前的显示器刷新频率：/usr/sbin/ffbconfig –rev \?
-
-查看系统配置：/usr/platform/sun4u/sbin/prtdiag –v
-
-查看当前系统中已经应用的补丁：showrev –p
-
-显示当前的运行级别：who –rH
-
-查看当前的bind版本信息：nslookup –class=chaos –q=txt version.bind
-
-dmesg | more 查看硬件信息
-lspci 显示外设信息, 如usb，网卡等信息
-lsnod 查看已加载的驱动
-lshw
-psrinfo -v 查看当前处理器的类型和速度（主频）
-prtconf -v 打印当前的OBP版本号
-iostat –E 查看硬盘物理信息(vendor, RPM, Capacity)
-prtvtoc /dev/rdsk/c0t0d0s 查看磁盘的几何参数和分区信息
-df –F ufs –o i 显示已经使用和未使用的i-node数目
-isalist –v
-
-对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
-Cpuinfo 主机CPU信息
-Dma 主机DMA通道信息
-Filesystems 文件系统信息
-Interrupts 主机中断信息
-Ioprots 主机I/O端口号信息
-Meninfo 主机内存信息
-Version Linux内存版本信息
-
-备注： proc – process information pseudo-filesystem 进程信息伪装文件系统
-
-RPM
-
-    在Linux 操作系统中，有一个系统软件包，它的功能类似于Windows里面的“添加/删除程序”，但是功能又比“添加/删除程序”强很多，它就是 Red Hat Package Manager(简称RPM)。此工具包最先是由Red Hat公司推出的，后来被其他Linux开发商所借用。由于它为Linux使用者省去了很多时间，所以被广泛应用于在Linux下安装、删除软件。下面就 给大家介绍一下它的具体使用方法。
-
-1.我们得到一个新软件，在安装之前，一般都要先查看一下这个软件包里有什么内容，假设这个文件是：Linux-1.4-6.i368.rpm，我们可以用这条命令查看：
-
-rpm -qpi Linux-1.4-6.i368.rpm
-
-系统将会列出这个软件包的详细资料，包括含有多少个文件、各文件名称、文件大小、创建时间、编译日期等信息。
-
-2.上面列出的所有文件在安装时不一定全部安装，就像Windows下程序的安装方式分为典型、完全、自定义一样，Linux也会让你选择安装方式，此时我们可以用下面这条命令查看软件包将会在系统里安装哪些部分，以方便我们的选择：
-
-rpm -qpl Linux-1.4-6.i368.rpm
-
-3. 选择安装方式后，开始安装。我们可以用rpm-ivh Linux-1.4-6.i368.rpm命令安装此软件。在安装过程中，若系统提示此软件已安装过或因其他原因无法继续安装，但若我们确实想执行安装命 令，可以在 -ivh后加一参数“-replacepkgs”：
-
-rpm -ivh -replacepkgs Linux-1.4-6.i368.rpm
-
-4.有时我们卸载某个安装过的软件，只需执行rpm-e &lt;文件名&gt;;命令即可。
-
-5.对低版本软件进行升级是提高其功能的好办法，这样可以省去我们卸载后再安装新软件的麻烦，要升级某个软件，只须执行如下命令：rpm -uvh &lt;文件名&gt;;，注意：此时的文件名必须是要升级软件的升级补丁
-
-6. 另外一个安装软件的方法可谓是Linux的独到之处，同时也是RMP强大功能的一个表现：通过FTP站点直接在线安装软件。当找到含有你所需软件的站点并 与此网站连接后，执行下面的命令即可实现在线安装，譬如在线安装Linux-1.4-6.i368.rpm，可以用命令： www.it165.net
-
-rpm -i ftp://ftp.pht.com/pub/linux/redhat/...-1.4-6.i368.rpm
-
-7. 在我们使用电脑过程中，难免会有误操作，若我们误删了几个文件而影响了系统的性能时，怎样查找到底少了哪些文件呢?RPM软件包提供了一个查找损坏文件的 功能，执行此命令：rpm -Va即可，Linux将为你列出所有损坏的文件。你可以通过Linux的安装光盘进行修复。
-
-8.Linux系统中文件繁多，在使用过程中，难免会碰到我们不认识的文件，在Windows下我们可以用“开始/查找”菜单快速判断某个文件属于哪个文件夹，在Linux中，下面这条命令行可以帮助我们快速判定某个文件属于哪个软件包：
-
-rpm -qf &lt;文件名&gt;;
-
-9.当每个软件包安装在Linux系统后，安装文件都会到RPM数据库中“报到”，所以，我们要查询某个已安装软件的属性时，只需到此数据库中查找即可。注意：此时的查询命令不同于1和8介绍的查询，这种方法只适用于已安装过的软件包！命令格式：
-
-rpm -参数　&lt;文件名&gt;;
-</code></pre>
-<h2 id="APT-GET"><a href="#APT-GET" class="headerlink" title="APT-GET"></a>APT-GET</h2><pre><code>apt-get update——在修改/etc/apt/sources.list或者/etc/apt/preferences之后运行该命令。此外您需要定期运行这一命令以确保您的软件包列表是最新的。
-apt-get install packagename——安装一个新软件包（参见下文的aptitude） 
-apt-get remove packagename——卸载一个已安装的软件包（保留配置文件） 
-apt-get --purge remove packagename——卸载一个已安装的软件包（删除配置文件） 
-dpkg --force-all --purge packagename 有些软件很难卸载，而且还阻止了别的软件的应用，就可以用这个，不过有点冒险。 
-apt-get autoclean apt会把已装或已卸的软件都备份在硬盘上，所以如果需要空间的话，可以让这个命令来删除你已经删掉的软件 
-apt-get clean 这个命令会把安装的软件的备份也删除，不过这样不会影响软件的使用的。 
-apt-get upgrade——更新所有已安装的软件包 
-apt-get dist-upgrade——将系统升级到新版本 
-apt-cache search string——在软件包列表中搜索字符串 
-dpkg -l package-name-pattern——列出所有与模式相匹配的软件包。如果您不知道软件包的全名，您可以使用“*package-name-pattern*”。
-aptitude——详细查看已安装或可用的软件包。与apt-get类似，aptitude可以通过命令行方式调用，但仅限于某些命令——最常见的有安装和卸载命令。由于aptitude比apt-get了解更多信息，可以说它更适合用来进行安装和卸载。
-apt-cache showpkg pkgs——显示软件包信息。 
-apt-cache dumpavail——打印可用软件包列表。 
-apt-cache show pkgs——显示软件包记录，类似于dpkg –print-avail。 
-apt-cache pkgnames——打印软件包列表中所有软件包的名称。 
-dpkg -S file——这个文件属于哪个已安装软件包。 
-dpkg -L package——列出软件包中的所有文件。 
-apt-file search filename——查找包含特定文件的软件包（不一定是已安装的），这些文件的文件名中含有指定的字符串。apt-file是一个独立的软件包。您必须 先使用apt-get install来安装它，然后运行apt-file update。如果apt-file search filename输出的内容太多，您可以尝试使用apt-file search filename | grep -w filename（只显示指定字符串作为完整的单词出现在其中的那些文件名）或者类似方法，例如：apt-file search filename | grep /bin/（只显示位于诸如/bin或/usr/bin这些文件夹中的文件，如果您要查找的是某个特定的执行文件的话，这样做是有帮助的）。
-</code></pre>
-<h2 id="ubuntu查看版本命令"><a href="#ubuntu查看版本命令" class="headerlink" title="ubuntu查看版本命令"></a>ubuntu查看版本命令</h2><pre><code>方法一：
-在终端中执行下列指令： cat /etc/issue
-方法二：
-使用 lsb_release 命令也可以查看 Ubuntu 的版本号，与方法一相比，内容更为详细。
-执行指令如下： sudo lsb_release -a
-方法三：
-打开“系统监视器”，选择“系统”
-Ubuntu查看版本命令
-1. lshw
-lshw命令显示详细硬件信息。
-如果要用概要方式显示，可以加上short参数：lshw-short
-要显示指定硬件信息，加上class(或C)参数：lshw -classmemory
-2. sysstat
-监测系统性能及效率的一组工具，这些工具对于我们收集系统性能数据，
-比如CPU使用率、硬盘和网络吞吐数据。
-3. lspci -v (相比cat/proc/pci更直观）
-查看PCI信息，lspci 是读取 hwdata 数据库。
-4. uname -a
-查看系统体系结构。
-5. dmidecode
-查看硬件信息，包括bios、cpu、内存等信息
-6. dmesg
-显示内核缓冲区系统控制信息，如系统启动时的信息会写到/var/log/。
-注：dmesg 工具并不是专门用来查看硬件芯片组标识的工具，
-但通过这个工具能让我们知道机器中的硬件的一些参数；因为系统在启动的时候，
-会写一些硬件相关的日志到 /var/log/message* 或/var/log/boot* 文件中。
-7. lshal 和hal-device-manager
-8. 查看 /proc
-对于“/proc”中文件可使用文件查看命令浏览其内容，文件中包含系统特定信息：
-Cpuinfo 主机CPU信息
-Dma 主机DMA通道信息
-Filesystems 文件系统信息
-Interrupts 主机中断信息
-Ioprots 主机I/O端口号信息
-Meninfo 主机内存信息
-Version Linux内存版本信息
-查看CPU信息：cat /proc/cpuinfo 查看板卡信息：cat /proc/pci 查看内存信息：cat/proc/meminfo 查看USB设备：cat /proc/bus/usb/devices 查看键盘和鼠标：cat/proc/bus/input/devices 查看各设备的中断请求(IRQ)：cat/proc/interrupts
-</code></pre>
-<h2 id="主板信息"><a href="#主板信息" class="headerlink" title="主板信息:"></a>主板信息:</h2><pre><code>sudo demidecode | grep -i ‘serial number’
-</code></pre>
-<h2 id="CPU信息"><a href="#CPU信息" class="headerlink" title="CPU信息:"></a>CPU信息:</h2><pre><code>cat /proc/cpuinfo
-dmesg | grep -i ‘cpu’
-sudo dmidecode -t processor
-</code></pre>
-<h2 id="硬盘信息"><a href="#硬盘信息" class="headerlink" title="硬盘信息:"></a>硬盘信息:</h2><pre><code>查看分区情况:
-sudo fdisk -l
-
-查看大小情况:
-df -h
-
-查看使用情况:
-du -h
-sudo hdparm -I /dev/sda
-dmesg | grep sda
-</code></pre>
-<h2 id="内存信息"><a href="#内存信息" class="headerlink" title="内存信息:"></a>内存信息:</h2><pre><code>cat /proc/meminfo
-dmesg | grep mem
-free -m
-vmstat
-sudo dmidecode | grep -i mem
-</code></pre>
-<h2 id="网卡信息"><a href="#网卡信息" class="headerlink" title="网卡信息:"></a>网卡信息:</h2><pre><code>dmesg | grep -i ‘eth’
-lspci | grep -i ‘eth’
-
-ethtool -i eht0
-ethhool -k eth0
-ethtool -g eth0
-</code></pre>
-<h2 id="查看鼠标和键盘"><a href="#查看鼠标和键盘" class="headerlink" title="查看鼠标和键盘:"></a>查看鼠标和键盘:</h2><pre><code>cat /proc/bus/input/devices
-</code></pre>
-<h2 id="查看各设备的中断请求-IRQ"><a href="#查看各设备的中断请求-IRQ" class="headerlink" title="查看各设备的中断请求(IRQ):"></a>查看各设备的中断请求(IRQ):</h2><pre><code>cat /proc/interrupts
-</code></pre>
-<h2 id="显卡信息"><a href="#显卡信息" class="headerlink" title="显卡信息:"></a>显卡信息:</h2><pre><code>lspci | grep -i ‘VGA’
-dmesg | grep -i ‘VGA’
-</code></pre>
-<h2 id="声卡信息"><a href="#声卡信息" class="headerlink" title="声卡信息:"></a>声卡信息:</h2><pre><code>查看声卡型号:
-lspci | grep -i audio
-
-查看型号ac97的声卡驱动模块:
-modprobe -l | grep ac97
-
-查看声卡信息:
-cat /proc/asound/cards
-
-查看alsa-utils本:
-alsactl -v
-
-查看内核alsa版本:
-cat /proc/asound/version
-
-声卡信息:
-aplay -l
-
-硬件信息之声卡:
-sudo lshw -C sound
-
-模块状态之声音:
-lsmod | grep -i snd
-
-alsa音频配置:
-alsamixer
-</code></pre>
-<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令:"></a>其他命令:</h2><pre><code>dmesg
-lspci
-mpstat(先安装sysstat: sudo spt-get install sysstat) 
-</code></pre>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>html学习</title>
-    <url>/2022/01/31/html%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p><strong>学习python爬虫需要html基础，而且markdown文件支持html写法，所以专门来学习一下</strong></p>
-<span id="more"></span>
-<p>学习参考：<a href="https://www.bilibili.com/video/BV1XJ411X7Ud?p=7&spm_id_from=pageDriver">【尚硅谷】Web前端零基础入门HTML5+CSS3基础教程丨初学者从入门到精通</a>  </p>
-<p><a href="https://lilichao.com/">视频中李立超老师的博客</a></p>
-<h2 id="一-注释"><a href="#一-注释" class="headerlink" title="一,注释"></a>一,注释</h2><pre><code>&lt;html&gt; 
-    &lt;head&gt;
-        &lt;title&gt;这是我的第一个网页&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;这是我的第二个网页&lt;/h1&gt;
-        &lt;!--
-            这是一个注释
-        --&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
- 
-</code></pre>
-<h2 id="二，属性"><a href="#二，属性" class="headerlink" title="二，属性"></a>二，属性</h2><pre><code>&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;这是我的第二个网页&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;
-            我想显示超大的&lt;font color=&#39;red&#39; size = 100 &gt;红字&lt;/font&gt;
-        &lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<h2 id="三，网页结构"><a href="#三，网页结构" class="headerlink" title="三，网页结构"></a>三，网页结构</h2><pre><code>&lt;!doctype html&gt; 
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;!--
-            可以通过meta标签设置网页中的字符集，避免乱码
-        --&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        
-        &lt;title&gt;网页结构&lt;/title&gt;    
-    &lt;head&gt;
-    &lt;body&gt;
-    &lt;!--
-        迭代
-            网页版本
-                HTML4
-                XHTML2.0
-                HTML5
-                ....
-            文档声明(doctype)
-                -当前网页版本
-                -html5的文档声明
-                &lt;!doctype html&gt; 
-    --&gt;
-    &lt;body&gt;
-&lt;/html&gt;
-</code></pre>
-<h2 id="四，vscode"><a href="#四，vscode" class="headerlink" title="四，vscode"></a>四，vscode</h2><p>用！ + Tab可以直接生成网页架构<br>用ctrl + /添加注释<br>用ctrl + 回车可以使光标换行<br>用 F2 快速改名<br>用alt + shift + 下或者上 可以往上下复制<br>用 lorem 自动生成英文文本<br>用 ctrl + / 进行快速注释<br>用ul&gt;li + tab 快速创建无序列表格式、<br>用div.box2 快速创建class为box2的div元素<br>用alt + shift + F 格式化（自动排版）</p>
-<h2 id="五-，转义字符"><a href="#五-，转义字符" class="headerlink" title="五 ，转义字符"></a>五 ，转义字符</h2><p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics">MDN官网</a></p>
-<p><a href="https://www.runoob.com/html/html-tutorial.html">菜鸟教程</a></p>
-<h2 id="六，meta"><a href="#六，meta" class="headerlink" title="六，meta"></a>六，meta</h2><p>charset: 字符集<br>name: 数据名称(keywords,description,http-equiv-“reflesh-)<br>content: 数据内容</p>
-<h2 id="七-语义化标签"><a href="#七-语义化标签" class="headerlink" title="七,语义化标签"></a>七,语义化标签</h2><h3 id="注意点："><a href="#注意点：" class="headerlink" title="注意点："></a>注意点：</h3><ol>
-<li>一般情况下网页下只有一个&lt;h1&gt;,&lt;h4&gt;-&lt;h6&gt;很少用</li>
-<li>在页面中独占一行的元素叫做快元素（block element），反之称为行内元素</li>
-</ol>
-<h3 id="行标签："><a href="#行标签：" class="headerlink" title="行标签："></a>行标签：</h3><p>1.&lt;p&gt;标签中不能放块标签<br>2. &lt;hgroup&gt;将标题分组<br>3. &lt;em&gt;表示语音语调的加重<br>4. &lt;strong&gt;表示强调<br>5. &lt;blockquote&gt;表示长引用，&lt;q&gt;表示短引用<br>6. &lt;br&gt;换行<br>7. &lt;span&gt;  在网页中选中文字 </p>
-<h3 id="块标签"><a href="#块标签" class="headerlink" title="块标签:"></a>块标签:</h3><ol>
-<li>&lt;header&gt;,&lt;main&gt;,&lt;footer&gt;</li>
-<li>&lt;niv&gt;导航 </li>
-<li>&lt;aside&gt;和主体相关的其他内容</li>
-<li>&lt;article&gt;文章</li>
-<li>&lt;section&gt;表示独立的区块</li>
-<li>&lt;div&gt;一个区块</li>
-</ol>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表:"></a>列表:</h3><p>列表分类：</p>
-<pre><code>1.有序列表
-2.无序列表
-3.定义列表
-</code></pre>
-<h4 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h4><p>使用&lt;ol&gt;标签创建有序列表<br>使用&lt;ul&gt;标签创建无序列表<br>使用&lt;li&gt;表示列表项<br>使用&lt;dl&gt;标签创建定义列表<br>使用&lt;dt&gt;表示定义内容<br>使用&lt;dd&gt;进行内容解释</p>
-<pre><code>&lt;ul&gt;
-    &lt;li&gt;第一个小目标&lt;/li&gt;
-    &lt;li&gt;第二个小目标&lt;/li&gt;
-    &lt;li&gt;第三个小目标&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>使用&lt;a&gt;标签定义超链接<br>使用href属性给出链接地址<br>如</p>
-<pre><code> &lt;a href=&quot;http://ye1133zi.github.io&quot;&gt;叶子的博客&lt;/a&gt;
-</code></pre>
-<p>相对路径<br>./ 或 ../(类linux)</p>
-<p>使用target属性（_self,_blank)选择新页面or当前页面打开超链接</p>
-<h4 id="回到顶部"><a href="#回到顶部" class="headerlink" title="回到顶部"></a>回到顶部</h4><pre><code>&lt;a href=&quot;#&quot;&gt;回到顶部&lt;/a&gt;
-</code></pre>
-<h4 id="标记"><a href="#标记" class="headerlink" title="标记"></a>标记</h4><p>使用id属性（锚点）标记标签，从而实现</p>
-<pre><code>&lt;a href=&quot;#bottom&quot;&gt;到底部&lt;/a&gt;
-...
-&lt;a id = &quot;bottom&quot;&gt;底部&lt;/a&gt;
-</code></pre>
-<h4 id="无效果的超链接"><a href="#无效果的超链接" class="headerlink" title="无效果的超链接"></a>无效果的超链接</h4><pre><code>&lt;a href=&quot;javascript:;&quot;&gt;随便点&lt;/a&gt;
-</code></pre>
-<h3 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h3><p>使用&lt;img&gt;自结束标签<br>src属性指定图片<br>alt添加描述，默认不会显示，有些浏览器在图片加载失败时显示<br>width和height属性设置大小</p>
-<h4 id="图片格式"><a href="#图片格式" class="headerlink" title="图片格式"></a>图片格式</h4><ol>
-<li>jpeg（jpg）<ul>
-<li>支持颜色比较丰富，不支持透明效果和动图</li>
-<li>用来显示照片</li>
-</ul>
-</li>
-<li>gif<ul>
-<li>支持颜色比较少，支持简单透明和动图</li>
-<li>用来显示颜色单一的图片，动图</li>
-</ul>
-</li>
-<li>png <ul>
-<li>支持颜色丰富，支持复杂透明，不支持动图（？）</li>
-<li>适合网页</li>
-</ul>
-</li>
-<li>webp<ul>
-<li>谷歌新推出的专门用来表示网页中的图片的一种格式</li>
-<li>效果和大小都比较好，但是兼容性差</li>
-</ul>
-</li>
-<li>base64<ul>
-<li>将图片使用base64进行编码，将图片转化为字符</li>
-<li>和网页一起加载</li>
-</ul>
-</li>
-</ol>
-<h3 id="音频，视频播放"><a href="#音频，视频播放" class="headerlink" title="音频，视频播放"></a>音频，视频播放</h3><h4 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h4><p>使用&lt;audio&gt;标签添加音频<br>添加controls属性让用户控制播放<br>添加autoplay属性设置自动播放，但是大部分浏览器不允许<br>添加loop属性控制循环播放<br>使用soure指定文件(多路径加播放失败后的提示)</p>
-<pre><code>    &lt;audio controls&gt;
-        &lt;!-- 对不起，宁德的浏览器不支持播放音频，请宁升级浏览器 --&gt;
-        &lt;source src=&quot;./source/audio.mp3&quot;&gt;
-        &lt;source src=&quot;./source/audio.ogg&quot;&gt;
-        &lt;embed src=&quot;.source/audio.mpp3type=&quot;audio/mp3&quot; wdith=300 height=100&gt;
-</code></pre>
-<p>使用/<embed>标签为老浏览器添加音视频（需要指定width和height）</p>
-<h4 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h4><p>使用&lt;video&gt;标签添加视频</p>
-<h3 id="内联框架"><a href="#内联框架" class="headerlink" title="内联框架"></a>内联框架</h3><p>使用&lt;iframe&gt;标签引入其他页面<br>frameborder属性表示框架的边界</p>
-<h2 id="八，报错"><a href="#八，报错" class="headerlink" title="八，报错"></a>八，报错</h2><p>404 网站未找到</p>
-<h2 id="九，彩蛋"><a href="#九，彩蛋" class="headerlink" title="九，彩蛋"></a>九，彩蛋</h2><p>彩蛋1：<br><code>&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=77217003&amp;bvid=BV1XJ411X7Ud&amp;cid=132017557&amp;page=26&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;</code><br>彩蛋2</p>
-]]></content>
-      <tags>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>java安装以及配置环境</title>
-    <url>/2022/03/01/java%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83/</url>
-    <content><![CDATA[<p>安装一下Java</p>
-<span id="more"></span>
-<h2 id="版本选择"><a href="#版本选择" class="headerlink" title="版本选择"></a>版本选择</h2><p>Java有许多版本，我在下载前也是纠结了好久，将自己查找的一些信息罗列如下</p>
-<h3 id="英文简称"><a href="#英文简称" class="headerlink" title="英文简称"></a>英文简称</h3><p>LTS：长期支持版，稳定<br>非LTS：实验版，新功能多</p>
-<p>SE：Java Platform Standard Edition，Java 平台标准版<br>EE：Java Platform Enterprise Edition，Java 平台企业版<br>ME：Java Platform Micro Edition，Java 平台微型版</p>
-<p>JRE：(Java Runtime Enviroment)是Java的运行环境，用来运行java程序<br>JDK：(Java Development Kit)又称J2SDK(Java2 Software Development Kit)，是Java开发工具包，包含了JRE<br>详见：<a href="https://www.php.cn/java/guide/449867.html">《jdk和jre的区别》</a></p>
-<h3 id="版本新旧问题"><a href="#版本新旧问题" class="headerlink" title="版本新旧问题"></a>版本新旧问题</h3><p>b站上的网课以及翁恺老师的java网课都使用了Java8版本。并且看知乎的一个回答，感觉JAVA8在目前生产环境中最常用。但是，自我感觉如果是学习用途的话，还是乐意去接受新版本，即使出了问题能学到一些新特性，所以选择安装了最新版的Java 17 LTS SE JDK版本</p>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网地址 ：<br><a href="https://www.oracle.com/java/technologies/downloads/">https://www.oracle.com/java/technologies/downloads/</a></p>
-<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p>参考b站视频：<br><a href="https://www.oracle.com/java/technologies/downloads/">win10下(Java环境)JDK环境变量配置</a><br>视频中的一个路径：;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar</p>
-]]></content>
-      <tags>
-        <tag>debug日志</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>java笔记</title>
-    <url>/2022/02/28/java%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>学习Java</p>
-<span id="more"></span>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><h3 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h3><p>//</p>
-<h3 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h3><p>/*<br>*/</p>
-<h3 id="文档注释"><a href="#文档注释" class="headerlink" title="文档注释"></a>文档注释</h3><p>/**<br>*/<br>文档注释可以通过 Javadoc 命令把文档注释中的内容生成文档，并输出到 HTML 文件中，方便记录程序信息。还可以包含一个或多个 @ 标签，每个 @ 标签都在新的一行开始</p>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>数据类型——&gt;定义了内存的编码格式</p>
-<p>布尔：boolean（c为bool）—Java中布尔值和整型值之间不能互相转换</p>
-<p>文本：char（使用16位的unincode）</p>
-<p>字符串：String（不是基本数据类型，是类）<br>StringBuild(可修改的字符)<br>StringBuffer（执行效率低，线程安全）</p>
-<pre><code>String greeting = new String（&quot;good morning)；构造方法
-调用，greeting.charAt(4)
-</code></pre>
-<h3 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h3><ul>
-<li>十进制</li>
-<li>十六进制</li>
-<li>八进制<h3 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h3></li>
-<li>浮点类型默认为Double类型<h4 id="NaN"><a href="#NaN" class="headerlink" title="NaN"></a>NaN</h4></li>
-</ul>
-<p><strong>全称：not a number</strong></p>
-<p>NAN是无序的，不能跟所有的数进行大小比较（加减乘除等）</p>
-<h3 id="复合数据类型"><a href="#复合数据类型" class="headerlink" title="复合数据类型"></a>复合数据类型</h3><h4 id="类的初步概念"><a href="#类的初步概念" class="headerlink" title="类的初步概念"></a>类的初步概念</h4><p>日期类型的两种不同定义的方式：<br>方法1：<br>int day，month, year;<br>int d1,m1,y1;<br>int d2, m2,y2;<br>方法2：<br>class Date{<br>    int day;<br>    int month;<br>    int year;<br>    void setDate(int a ,int b, int c);<br>}</p>
-<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="变量的分类"><a href="#变量的分类" class="headerlink" title="变量的分类"></a>变量的分类</h3><p>语言机制：</p>
-<ol>
-<li>基本类型</li>
-<li>引用类型（受限的指针）<br>作用域：</li>
-<li>成员变量（定义在类的内部）</li>
-<li>局部变量</li>
-<li>方法参数</li>
-<li>catch语句块入口参数（异常处理参数）<h2 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h2>引用变量a，b<br>a = b 只是把b的地址赋给a<h2 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h2></li>
-</ol>
-<p>+，-会把short、byte等转化为int，++，–不会<br>只有被除数为负数时，余数才是负数</p>
-<h2 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h2><p>==和！=比较的是变量的引用而非变量本身<br>比较内容是否相等–重写equals（）方法，基本数据类型没有equals的方法</p>
-<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><p>&amp;，|不短路<br>&amp;&amp;，||短路</p>
-<h2 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h2><blockquote>
-<blockquote>
-<blockquote>
-<p>无符号右移<br>带符号右移</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><p>for-each循环<br>例：<br>int[] data = {1,3,5,76,2};<br>for(int k  : data){</p>
-<p>}<br>continue的使用<br>MAIN_LOOP:<br>for(){<br>    for(){<br>        continue MAIN_LOOP;<br>    }<br>}</p>
-<h2 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h2><p>s.equals()<br>s.compareTo()<br>s.length()<br>s.charAt()<br>s.subString()<br>s.indexOf()</p>
-<h2 id="容器和数组"><a href="#容器和数组" class="headerlink" title="容器和数组"></a>容器和数组</h2><h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><p>HashSet<String> s = new HashSet<String>()<br>public String toString</p>
-<h3 id="散列表"><a href="#散列表" class="headerlink" title="散列表"></a>散列表</h3><p>HashMap&lt;Integer, String&gt; coinnames = new HashMap&lt;Integer, String&gt;()</p>
-<h3 id="可变数组"><a href="#可变数组" class="headerlink" title="可变数组"></a>可变数组</h3><p>ArrayList<String> a = new ArrayList<String>()</p>
-<h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><h2 id="eclipse使用技巧"><a href="#eclipse使用技巧" class="headerlink" title="eclipse使用技巧"></a>eclipse使用技巧</h2><p>ctrl + 1 自动添加方法<br>sout + 回车 写入System.out.println(“”);<br><img src="/2022/02/28/java%E7%AC%94%E8%AE%B0/%E5%BF%AB%E6%8D%B7%E9%94%AE.png" alt="快捷键"></p>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python爬虫学习</title>
-    <url>/2022/02/26/python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p><strong>开始学习爬虫了</strong></p>
-<span id="more"></span>
-]]></content>
-      <tags>
-        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1189,12 +1171,101 @@ for i in a:
       </tags>
   </entry>
   <entry>
+    <title>java笔记</title>
+    <url>/2022/02/28/java%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>学习Java</p>
+<span id="more"></span>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><h3 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h3><p>//</p>
+<h3 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h3><p>/*<br>*/</p>
+<h3 id="文档注释"><a href="#文档注释" class="headerlink" title="文档注释"></a>文档注释</h3><p>/**<br>*/<br>文档注释可以通过 Javadoc 命令把文档注释中的内容生成文档，并输出到 HTML 文件中，方便记录程序信息。还可以包含一个或多个 @ 标签，每个 @ 标签都在新的一行开始</p>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>数据类型——&gt;定义了内存的编码格式</p>
+<p>布尔：boolean（c为bool）—Java中布尔值和整型值之间不能互相转换</p>
+<p>文本：char（使用16位的unincode）</p>
+<p>字符串：String（不是基本数据类型，是类）<br>StringBuild(可修改的字符)<br>StringBuffer（执行效率低，线程安全）</p>
+<pre><code>String greeting = new String（&quot;good morning)；构造方法
+调用，greeting.charAt(4)
+</code></pre>
+<h3 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h3><ul>
+<li>十进制</li>
+<li>十六进制</li>
+<li>八进制<h3 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h3></li>
+<li>浮点类型默认为Double类型<h4 id="NaN"><a href="#NaN" class="headerlink" title="NaN"></a>NaN</h4></li>
+</ul>
+<p><strong>全称：not a number</strong></p>
+<p>NAN是无序的，不能跟所有的数进行大小比较（加减乘除等）</p>
+<h3 id="复合数据类型"><a href="#复合数据类型" class="headerlink" title="复合数据类型"></a>复合数据类型</h3><h4 id="类的初步概念"><a href="#类的初步概念" class="headerlink" title="类的初步概念"></a>类的初步概念</h4><p>日期类型的两种不同定义的方式：<br>方法1：<br>int day，month, year;<br>int d1,m1,y1;<br>int d2, m2,y2;<br>方法2：<br>class Date{<br>    int day;<br>    int month;<br>    int year;<br>    void setDate(int a ,int b, int c);<br>}</p>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="变量的分类"><a href="#变量的分类" class="headerlink" title="变量的分类"></a>变量的分类</h3><p>语言机制：</p>
+<ol>
+<li>基本类型</li>
+<li>引用类型（受限的指针）<br>作用域：</li>
+<li>成员变量（定义在类的内部）</li>
+<li>局部变量</li>
+<li>方法参数</li>
+<li>catch语句块入口参数（异常处理参数）<h2 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h2>引用变量a，b<br>a = b 只是把b的地址赋给a<h2 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h2></li>
+</ol>
+<p>+，-会把short、byte等转化为int，++，–不会<br>只有被除数为负数时，余数才是负数</p>
+<h2 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h2><p>==和！=比较的是变量的引用而非变量本身<br>比较内容是否相等–重写equals（）方法，基本数据类型没有equals的方法</p>
+<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><p>&amp;，|不短路<br>&amp;&amp;，||短路</p>
+<h2 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h2><blockquote>
+<blockquote>
+<blockquote>
+<p>无符号右移<br>带符号右移</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><p>for-each循环<br>例：<br>int[] data = {1,3,5,76,2};<br>for(int k  : data){</p>
+<p>}<br>continue的使用<br>MAIN_LOOP:<br>for(){<br>    for(){<br>        continue MAIN_LOOP;<br>    }<br>}</p>
+<h2 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h2><p>s.equals()<br>s.compareTo()<br>s.length()<br>s.charAt()<br>s.subString()<br>s.indexOf()</p>
+<h2 id="容器和数组"><a href="#容器和数组" class="headerlink" title="容器和数组"></a>容器和数组</h2><h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><p>HashSet<String> s = new HashSet<String>()<br>public String toString</p>
+<h3 id="散列表"><a href="#散列表" class="headerlink" title="散列表"></a>散列表</h3><p>HashMap&lt;Integer, String&gt; coinnames = new HashMap&lt;Integer, String&gt;()</p>
+<h3 id="可变数组"><a href="#可变数组" class="headerlink" title="可变数组"></a>可变数组</h3><p>ArrayList<String> a = new ArrayList<String>()</p>
+<h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><h2 id="eclipse使用技巧"><a href="#eclipse使用技巧" class="headerlink" title="eclipse使用技巧"></a>eclipse使用技巧</h2><p>ctrl + 1 自动添加方法<br>sout + 回车 写入System.out.println(“”);<br><img src="/2022/02/28/java%E7%AC%94%E8%AE%B0/%E5%BF%AB%E6%8D%B7%E9%94%AE.png" alt="快捷键"></p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>“hexo搜索功能出错的解决方案”</title>
     <url>/2021/12/17/%E4%B8%BAHext%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E6%8A%A5%E9%94%99/</url>
     <content><![CDATA[<p><strong>今天在为hexo博客添加搜索功能时,本地生成可正常使用，上传到gihub时首页出现错位，修改主题文件中有关search的参数limits（将100改为1000成功解决问题)。</strong></p>
 ]]></content>
       <tags>
         <tag>debug日志</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python爬虫学习</title>
+    <url>/2022/02/26/python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p><strong>开始学习爬虫了</strong></p>
+<span id="more"></span>
+]]></content>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>“教你搭建属于自己的博客”</title>
+    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
+    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
+<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
+<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于几个网络工具</title>
+    <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<p><strong>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍</strong><br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：  </p>
+<span id="more"></span>  
+<h4 id="一，网易uu加速器"><a href="#一，网易uu加速器" class="headerlink" title="一，网易uu加速器"></a>一，网易uu加速器</h4><p>可以免费加速steam社区，解决一些加好友、访问创意工坊、送游戏之类的问题。</p>
+<h4 id="二，Sidecar"><a href="#二，Sidecar" class="headerlink" title="二，Sidecar"></a>二，Sidecar</h4><p>一款免费开源的，用于专门加速GitHub这个全球最大的<br>同性交友网站。而且就在我用gitbash上传博客出现奇怪报错（挂小飞机、按网上指示修改文件参数、回退文件内容都没用），最后无可奈何到了重装nodejs边缘<br>的时候是它自带的NPM加速拯救了整个世界。<br>    注：可在github上获取  </p>
+<h4 id="三，科学上网"><a href="#三，科学上网" class="headerlink" title="三，科学上网"></a>三，科学上网</h4><p>这个最好了解一下翻墙原理，谨慎使用，不要发敏感言<br>论，注意隐私安全（在YouTube上看了下抓包，好像在服务器端窃取你的信息还是很容易的)。<br>    附一篇很有用的博客：<br>    <a href="https://tecrobe.github.io/blog/post/how-to-break-wall/">https://tecrobe.github.io/blog/post/how-to-break-wall/</a></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -1209,14 +1280,51 @@ for i in a:
       </tags>
   </entry>
   <entry>
-    <title>“教你搭建属于自己的博客”</title>
-    <url>/2021/12/15/%E2%80%9C%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%9D/</url>
-    <content><![CDATA[<p>执行难度：小白级<br>需求工具：b站，百度，gihub，简书，git，nodejs，科学上网工具（非必须），简单的linux指令（不会可以学，很简单）</p>
-<p>第一步：观看b站教学，安装git和hexo，配置环境，生成网站并发布到github，链接如下：<br><a href="https://www.bilibili.com/video/BV1mU4y1j72n">https://www.bilibili.com/video/BV1mU4y1j72n</a><br>第二部：按照简书的一篇技术博客，学习更换主题、新建一篇博客、修改模板等，链接如下：<br><a href="https://www.jianshu.com/p/6dfc7cfdc7e0">https://www.jianshu.com/p/6dfc7cfdc7e0</a></p>
-<p>注意点：<br>1.如果遇到gitbash指令报错，不要慌，可以复制error部分，百度搜索<br>2.使用git clone指令下载的东西如果过慢，可以试试科学上网，或者通过镜像下载（自行百度）<br>3.这是作者的第一篇博客，纯记事本写成，还需要不断学习，大家如有问题、见解，欢迎提问和指教</p>
+    <title>快捷键</title>
+    <url>/2022/01/02/%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<p><strong>记录一下快捷键</strong></p>
+<span id="more"></span>  
+<h2 id="IDLE"><a href="#IDLE" class="headerlink" title="IDLE"></a>IDLE</h2><p>Alt + N &emsp; / &emsp; Alt + P 查看上下历史命令<br>Ctrl + F6 重启shell<br>F1  打开帮助文件<br>Alt + /  补全曾经出现的单词<br>Ctrl + [&emsp; /&emsp;Ctrl +] 缩进代码和取消缩进<br>Alt + M 查看源码<br>Alt + C 打开类浏览器<br>F5 运行程序  
+ </p>
 ]]></content>
       <tags>
         <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>双创周英语口语课笔记</title>
+    <url>/2022/06/28/%E5%8F%8C%E5%88%9B%E5%91%A8%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E8%AF%BE%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="THE-WEDDING-PARTY"><a href="#THE-WEDDING-PARTY" class="headerlink" title="THE WEDDING PARTY"></a>THE WEDDING PARTY</h2><h3 id="roles"><a href="#roles" class="headerlink" title="roles:"></a>roles:</h3><p>ring bearer<br>flower girl  </p>
+<p>developmental Language</p>
+<p>emphasis<br>syllable</p>
+<p>residual income</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我收藏的几个网站</title>
+    <url>/2021/12/28/%E6%88%91%E6%94%B6%E8%97%8F%E7%9A%84%E5%87%A0%E4%B8%AA%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<p><strong>今天我来分享几个自己在用的宝藏网站，点击标题可转到相应网站</strong>  </p>
+<span id="more"></span>  
+<h2 id="学吧导航"><a href="#学吧导航" class="headerlink" title="学吧导航"></a><a href="https://www.xue8nav.com/">学吧导航</a></h2><p>一个超好用的学习导航，还可以自定义导航内容  </p>
+<h2 id="笔仙儿导航"><a href="#笔仙儿导航" class="headerlink" title="笔仙儿导航"></a><a href="http://bixianer.com/">笔仙儿导航</a></h2><p>之前用的导航，比较综合，也十分好用，不过因为站点不稳定，就换成学吧了  </p>
+<h2 id="Guerrilla-Mail"><a href="#Guerrilla-Mail" class="headerlink" title="Guerrilla Mail"></a><a href="https://www.guerrillamail.com/inbox">Guerrilla Mail</a></h2><p>无需注册，随机生成N个临时邮箱供你使用，匿名操作和反复白嫖的神器  </p>
+<h2 id="优品PPT"><a href="#优品PPT" class="headerlink" title="优品PPT"></a><a href="https://www.ypppt.com/">优品PPT</a></h2><p>用了六年还是那么良心，免注册免费下载PPT模板 </p>
+<h2 id="iLovePDF"><a href="#iLovePDF" class="headerlink" title="iLovePDF"></a><a href="https://www.ilovepdf.com/zh-cn">iLovePDF</a></h2><p>该网站可实现在线编辑PDF文件  </p>
+<h2 id="AirPortal"><a href="#AirPortal" class="headerlink" title="AirPortal"></a><a href="https://airportal.cn/">AirPortal</a></h2><p>可以实现通过网页传文件的骚操作  </p>
+<h2 id="田间小站"><a href="#田间小站" class="headerlink" title="田间小站"></a><a href="https://www.tjxz.cc/">田间小站</a></h2><p>小词详解、单词溯源、英语幽默、美国习语均在田间小站，而且并有在线短篇小说和免费下载的经典长篇和期刊    </p>
+<h2 id="英语真题在线"><a href="#英语真题在线" class="headerlink" title="英语真题在线"></a><a href="https://zhenti.burningvocabulary.com/">英语真题在线</a></h2><p>免费在线预览或下载四六级真题，并提供听力和答案。<br>注：临考阶段因为盈利暂时会对非会员关闭，所以推荐提前下载 </p>
+<h2 id="古诗文网"><a href="#古诗文网" class="headerlink" title="古诗文网"></a><a href="https://www.gushiwen.cn/">古诗文网</a></h2><p>不妨来点诗词歌赋装点一下自己，另外我很喜欢它的公众号，排队等车必备</p>
+<h2 id="全历史"><a href="#全历史" class="headerlink" title="全历史"></a><a href="https://www.allhistory.com/">全历史</a></h2><p>学习历史的宝藏网站  </p>
+<h2 id="中华珍宝馆"><a href="#中华珍宝馆" class="headerlink" title="中华珍宝馆"></a><a href="http://ltfc.net/exhibit/essence">中华珍宝馆</a></h2><p>养生摸鱼必备，里面有超多高清古画和书法，记得高中我找过几张当班里电脑的壁纸  </p>
+<h2 id="西电网站合集-链接为西电导航"><a href="#西电网站合集-链接为西电导航" class="headerlink" title="西电网站合集(链接为西电导航)"></a><a href="https://xidian.cc/">西电网站合集(链接为西电导航)</a></h2><p><a href="https://rs.xidian.cc/">https://rs.xidian.cc/</a><br>西电睿思yyds，高清电影、游戏、音乐均在睿思，注：需要校园网和邀请码<br><a href="https://lib.xidian.edu.cn/">https://lib.xidian.edu.cn/</a><br>西电图书馆，本来还想推荐爱学术来着，后来一想有图书馆数据库谁用那个，注：本科生常用数据库有很多好东西，但需要校园<br>网 </p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1278,68 +1386,13 @@ for i in a:
       </tags>
   </entry>
   <entry>
-    <title>关于几个网络工具</title>
-    <url>/2021/12/15/%E5%85%B3%E4%BA%8E%E5%87%A0%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p><strong>在使用steam社区、搜论文、上GitHub的时候，总会遇到一些网络上的障碍</strong><br>至于这些障碍是什么（懂得都懂，不懂的可以自行搜索“中国国家防火墙GFW”），这时，我们就需要一些必要的工具：  </p>
-<span id="more"></span>  
-<h4 id="一，网易uu加速器"><a href="#一，网易uu加速器" class="headerlink" title="一，网易uu加速器"></a>一，网易uu加速器</h4><p>可以免费加速steam社区，解决一些加好友、访问创意工坊、送游戏之类的问题。</p>
-<h4 id="二，Sidecar"><a href="#二，Sidecar" class="headerlink" title="二，Sidecar"></a>二，Sidecar</h4><p>一款免费开源的，用于专门加速GitHub这个全球最大的<br>同性交友网站。而且就在我用gitbash上传博客出现奇怪报错（挂小飞机、按网上指示修改文件参数、回退文件内容都没用），最后无可奈何到了重装nodejs边缘<br>的时候是它自带的NPM加速拯救了整个世界。<br>    注：可在github上获取  </p>
-<h4 id="三，科学上网"><a href="#三，科学上网" class="headerlink" title="三，科学上网"></a>三，科学上网</h4><p>这个最好了解一下翻墙原理，谨慎使用，不要发敏感言<br>论，注意隐私安全（在YouTube上看了下抓包，好像在服务器端窃取你的信息还是很容易的)。<br>    附一篇很有用的博客：<br>    <a href="https://tecrobe.github.io/blog/post/how-to-break-wall/">https://tecrobe.github.io/blog/post/how-to-break-wall/</a></p>
+    <title>数学建模</title>
+    <url>/2022/10/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</url>
+    <content><![CDATA[<span id="more"></span>
+<h2 id="层次分析法"><a href="#层次分析法" class="headerlink" title="层次分析法"></a>层次分析法</h2><p>虫部落快搜<br>思想：指标权重两两进行权重比较，从而推演出所有权重<br><img src="/2022/10/17/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/1.png" alt=" ">  </p>
 ]]></content>
       <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>快捷键</title>
-    <url>/2022/01/02/%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-    <content><![CDATA[<p><strong>记录一下快捷键</strong></p>
-<span id="more"></span>  
-<h2 id="IDLE"><a href="#IDLE" class="headerlink" title="IDLE"></a>IDLE</h2><p>Alt + N &emsp; / &emsp; Alt + P 查看上下历史命令<br>Ctrl + F6 重启shell<br>F1  打开帮助文件<br>Alt + /  补全曾经出现的单词<br>Ctrl + [&emsp; /&emsp;Ctrl +] 缩进代码和取消缩进<br>Alt + M 查看源码<br>Alt + C 打开类浏览器<br>F5 运行程序  
- </p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的世界局域网ip地址错误及解决方案</title>
-    <url>/2021/12/26/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%B1%80%E5%9F%9F%E7%BD%91ip%E5%9C%B0%E5%9D%80%E9%94%99%E8%AF%AF%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<p><strong>今天，想准备用Java版我的世界进行局域网和舍友进行联机，但有一个舍友搜索不到本地服务器，其他三人均可进行联机。</strong><br> <span id="more"></span>  </p>
-<h2 id="问题排查"><a href="#问题排查" class="headerlink" title="问题排查"></a>问题排查</h2><p> 打开两个游戏界面，一个负责创建局域网端口，一个负责加入  </p>
-<p> 现象：<br> 自己创建的局域网世界可以被自己搜索到，但是同校园网宿舍WiFi下，其他人创建的局域网世界搜索不到，自己的局域网世界，别人也搜索不到。 并且，自己创建的局域网世界所显示IP地址和其他人不一样（这里称它为错误IP）   </p>
-<p> 在shell中（管理员身份）使用ipconfig命令  </p>
-<p> 现象：<br> 发现自己本机实际IP和游戏中显示的错误IP不一致，按IP分段，本机实际IP与舍友同段，应该是正确的   </p>
-<p> 将网线连接路由器与问题设备  </p>
-<p> 现象：<br> ip改变，联机恢复正常  </p>
-<p> 继续研究ipconfig所提供的信息，发现错误IP和VMware的第一个虚拟网卡所提供的IP是一样的  </p>
-<h2 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h2><p> 打开控制面板-&gt;网络-&gt;高级选项，禁用VMware虚拟网卡或者以太网，成功解决问题  </p>
-<p>原来，所下载的Java版我的世界优先使用有线网络连接所分配的IP，所以误把VMware虚拟环境下所生成的IP当成有限网络IP优先使用</p>
-]]></content>
-      <tags>
-        <tag>debug日志</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我收藏的几个网站</title>
-    <url>/2021/12/28/%E6%88%91%E6%94%B6%E8%97%8F%E7%9A%84%E5%87%A0%E4%B8%AA%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<p><strong>今天我来分享几个自己在用的宝藏网站，点击标题可转到相应网站</strong>  </p>
-<span id="more"></span>  
-<h2 id="学吧导航"><a href="#学吧导航" class="headerlink" title="学吧导航"></a><a href="https://www.xue8nav.com/">学吧导航</a></h2><p>一个超好用的学习导航，还可以自定义导航内容  </p>
-<h2 id="笔仙儿导航"><a href="#笔仙儿导航" class="headerlink" title="笔仙儿导航"></a><a href="http://bixianer.com/">笔仙儿导航</a></h2><p>之前用的导航，比较综合，也十分好用，不过因为站点不稳定，就换成学吧了  </p>
-<h2 id="Guerrilla-Mail"><a href="#Guerrilla-Mail" class="headerlink" title="Guerrilla Mail"></a><a href="https://www.guerrillamail.com/inbox">Guerrilla Mail</a></h2><p>无需注册，随机生成N个临时邮箱供你使用，匿名操作和反复白嫖的神器  </p>
-<h2 id="优品PPT"><a href="#优品PPT" class="headerlink" title="优品PPT"></a><a href="https://www.ypppt.com/">优品PPT</a></h2><p>用了六年还是那么良心，免注册免费下载PPT模板 </p>
-<h2 id="iLovePDF"><a href="#iLovePDF" class="headerlink" title="iLovePDF"></a><a href="https://www.ilovepdf.com/zh-cn">iLovePDF</a></h2><p>该网站可实现在线编辑PDF文件  </p>
-<h2 id="AirPortal"><a href="#AirPortal" class="headerlink" title="AirPortal"></a><a href="https://airportal.cn/">AirPortal</a></h2><p>可以实现通过网页传文件的骚操作  </p>
-<h2 id="田间小站"><a href="#田间小站" class="headerlink" title="田间小站"></a><a href="https://www.tjxz.cc/">田间小站</a></h2><p>小词详解、单词溯源、英语幽默、美国习语均在田间小站，而且并有在线短篇小说和免费下载的经典长篇和期刊    </p>
-<h2 id="英语真题在线"><a href="#英语真题在线" class="headerlink" title="英语真题在线"></a><a href="https://zhenti.burningvocabulary.com/">英语真题在线</a></h2><p>免费在线预览或下载四六级真题，并提供听力和答案。<br>注：临考阶段因为盈利暂时会对非会员关闭，所以推荐提前下载 </p>
-<h2 id="古诗文网"><a href="#古诗文网" class="headerlink" title="古诗文网"></a><a href="https://www.gushiwen.cn/">古诗文网</a></h2><p>不妨来点诗词歌赋装点一下自己，另外我很喜欢它的公众号，排队等车必备</p>
-<h2 id="全历史"><a href="#全历史" class="headerlink" title="全历史"></a><a href="https://www.allhistory.com/">全历史</a></h2><p>学习历史的宝藏网站  </p>
-<h2 id="中华珍宝馆"><a href="#中华珍宝馆" class="headerlink" title="中华珍宝馆"></a><a href="http://ltfc.net/exhibit/essence">中华珍宝馆</a></h2><p>养生摸鱼必备，里面有超多高清古画和书法，记得高中我找过几张当班里电脑的壁纸  </p>
-<h2 id="西电网站合集-链接为西电导航"><a href="#西电网站合集-链接为西电导航" class="headerlink" title="西电网站合集(链接为西电导航)"></a><a href="https://xidian.cc/">西电网站合集(链接为西电导航)</a></h2><p><a href="https://rs.xidian.cc/">https://rs.xidian.cc/</a><br>西电睿思yyds，高清电影、游戏、音乐均在睿思，注：需要校园网和邀请码<br><a href="https://lib.xidian.edu.cn/">https://lib.xidian.edu.cn/</a><br>西电图书馆，本来还想推荐爱学术来着，后来一想有图书馆数据库谁用那个，注：本科生常用数据库有很多好东西，但需要校园<br>网 </p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1364,23 +1417,6 @@ for i in a:
       </tags>
   </entry>
   <entry>
-    <title>Windows系统下查找当前占用特定端口的程序</title>
-    <url>/2022/01/09/%E6%9F%A5%E7%9C%8B%E6%98%AF%E5%93%AA%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p><strong>今天使用一个软件时显示1085端口占用，我想找出时那个程序在占用它</strong></p>
-<span id="more"></span>
-
-<p>打开命令提示符程序（管理员身份）</p>
-<p> <code>netstat -ano</code>该命令为查看所有端口</p>
-<p> <code>netstat -aon|findstr &quot;1085(此处为端口号&quot;</code>该命令为查看特定端口</p>
-<p> 找到最后的程序代号（pid）后输入</p>
-<p> <code>tasklist|findstr &quot;2188(此处为程序代号）&quot;</code></p>
-<p> 结束掉该进程<br> <code>taskkill /T /F /PID 2188</code></p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>油猴插件推荐</title>
     <url>/2021/12/28/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<p><strong>俗话说的好，没有油猴插件的浏览器，算不上真正意义上的浏览器。上一篇介绍了几个宝藏网站，这次教你使用油猴脚本，让你的上网体验再次得到提升</strong>  </p>
@@ -1393,6 +1429,46 @@ for i in a:
 ]]></content>
       <tags>
         <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的世界局域网ip地址错误及解决方案</title>
+    <url>/2021/12/26/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%B1%80%E5%9F%9F%E7%BD%91ip%E5%9C%B0%E5%9D%80%E9%94%99%E8%AF%AF%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p><strong>今天，想准备用Java版我的世界进行局域网和舍友进行联机，但有一个舍友搜索不到本地服务器，其他三人均可进行联机。</strong><br> <span id="more"></span>  </p>
+<h2 id="问题排查"><a href="#问题排查" class="headerlink" title="问题排查"></a>问题排查</h2><p> 打开两个游戏界面，一个负责创建局域网端口，一个负责加入  </p>
+<p> 现象：<br> 自己创建的局域网世界可以被自己搜索到，但是同校园网宿舍WiFi下，其他人创建的局域网世界搜索不到，自己的局域网世界，别人也搜索不到。 并且，自己创建的局域网世界所显示IP地址和其他人不一样（这里称它为错误IP）   </p>
+<p> 在shell中（管理员身份）使用ipconfig命令  </p>
+<p> 现象：<br> 发现自己本机实际IP和游戏中显示的错误IP不一致，按IP分段，本机实际IP与舍友同段，应该是正确的   </p>
+<p> 将网线连接路由器与问题设备  </p>
+<p> 现象：<br> ip改变，联机恢复正常  </p>
+<p> 继续研究ipconfig所提供的信息，发现错误IP和VMware的第一个虚拟网卡所提供的IP是一样的  </p>
+<h2 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h2><p> 打开控制面板-&gt;网络-&gt;高级选项，禁用VMware虚拟网卡或者以太网，成功解决问题  </p>
+<p>原来，所下载的Java版我的世界优先使用有线网络连接所分配的IP，所以误把VMware虚拟环境下所生成的IP当成有限网络IP优先使用</p>
+]]></content>
+      <tags>
+        <tag>debug日志</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网络空间安全入门</title>
+    <url>/2022/05/10/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E5%AE%89%E5%85%A8%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<span id="more"></span>
+<h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><h3 id="信息安全五方面内容："><a href="#信息安全五方面内容：" class="headerlink" title="信息安全五方面内容："></a>信息安全五方面内容：</h3><p>确保信息的保密性、真实性、完整性，未授权拷贝、所寄生系统的安全性。</p>
+<h3 id="网络信息安全面临的挑战："><a href="#网络信息安全面临的挑战：" class="headerlink" title="网络信息安全面临的挑战："></a>网络信息安全面临的挑战：</h3><ol>
+<li>互联网体系结构的开放性</li>
+<li>通信协议的缺陷</li>
+<li>用户安全意识薄弱</li>
+<li>黑客行为</li>
+<li>恶意软件</li>
+<li>操作系统漏洞</li>
+<li>内部安全</li>
+<li>社会工程学</li>
+</ol>
+<h3 id="安全性攻击"><a href="#安全性攻击" class="headerlink" title="安全性攻击"></a>安全性攻击</h3><h4 id="被动攻击"><a href="#被动攻击" class="headerlink" title="被动攻击"></a>被动攻击</h4><p>（1）窃听<br>（2）流量分析<br>防御手段：数据加密  </p>
+<h4 id="主动攻击"><a href="#主动攻击" class="headerlink" title="主动攻击"></a>主动攻击</h4><p>（1）拒绝服务<br>（2）非法使用<br>（3）假冒<br>（4）旁路控制<br>（5）授权侵犯<br>（6）特洛伊木马<br>（7）陷阱门<br>（8）抵赖<br>（9）重放</p>
+<h3 id="网络信息安全的目标"><a href="#网络信息安全的目标" class="headerlink" title="网络信息安全的目标"></a>网络信息安全的目标</h3>]]></content>
+      <tags>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1430,6 +1506,23 @@ for i in a:
       </tags>
   </entry>
   <entry>
+    <title>Windows系统下查找当前占用特定端口的程序</title>
+    <url>/2022/01/09/%E6%9F%A5%E7%9C%8B%E6%98%AF%E5%93%AA%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p><strong>今天使用一个软件时显示1085端口占用，我想找出时那个程序在占用它</strong></p>
+<span id="more"></span>
+
+<p>打开命令提示符程序（管理员身份）</p>
+<p> <code>netstat -ano</code>该命令为查看所有端口</p>
+<p> <code>netstat -aon|findstr &quot;1085(此处为端口号&quot;</code>该命令为查看特定端口</p>
+<p> 找到最后的程序代号（pid）后输入</p>
+<p> <code>tasklist|findstr &quot;2188(此处为程序代号）&quot;</code></p>
+<p> 结束掉该进程<br> <code>taskkill /T /F /PID 2188</code></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>正则表达式学习</title>
     <url>/2022/01/11/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>学习一下万能的正则表达式</p>
@@ -1457,28 +1550,6 @@ for i in a:
 ]]></content>
       <tags>
         <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网络空间安全入门</title>
-    <url>/2022/05/10/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E5%AE%89%E5%85%A8%E5%85%A5%E9%97%A8/</url>
-    <content><![CDATA[<span id="more"></span>
-<h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><h3 id="信息安全五方面内容："><a href="#信息安全五方面内容：" class="headerlink" title="信息安全五方面内容："></a>信息安全五方面内容：</h3><p>确保信息的保密性、真实性、完整性，未授权拷贝、所寄生系统的安全性。</p>
-<h3 id="网络信息安全面临的挑战："><a href="#网络信息安全面临的挑战：" class="headerlink" title="网络信息安全面临的挑战："></a>网络信息安全面临的挑战：</h3><ol>
-<li>互联网体系结构的开放性</li>
-<li>通信协议的缺陷</li>
-<li>用户安全意识薄弱</li>
-<li>黑客行为</li>
-<li>恶意软件</li>
-<li>操作系统漏洞</li>
-<li>内部安全</li>
-<li>社会工程学</li>
-</ol>
-<h3 id="安全性攻击"><a href="#安全性攻击" class="headerlink" title="安全性攻击"></a>安全性攻击</h3><h4 id="被动攻击"><a href="#被动攻击" class="headerlink" title="被动攻击"></a>被动攻击</h4><p>（1）窃听<br>（2）流量分析<br>防御手段：数据加密  </p>
-<h4 id="主动攻击"><a href="#主动攻击" class="headerlink" title="主动攻击"></a>主动攻击</h4><p>（1）拒绝服务<br>（2）非法使用<br>（3）假冒<br>（4）旁路控制<br>（5）授权侵犯<br>（6）特洛伊木马<br>（7）陷阱门<br>（8）抵赖<br>（9）重放</p>
-<h3 id="网络信息安全的目标"><a href="#网络信息安全的目标" class="headerlink" title="网络信息安全的目标"></a>网络信息安全的目标</h3>]]></content>
-      <tags>
-        <tag>学习笔记</tag>
       </tags>
   </entry>
 </search>
