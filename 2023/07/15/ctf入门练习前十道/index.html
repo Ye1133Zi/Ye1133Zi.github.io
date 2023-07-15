@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","width":200,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="misc1.适合作为桌面【考察知识】反编译pyc文件、图片通道LSB 【知识点介绍】pyc是一种二进制文件，是由py文件经过编译后，生成的文件，是一种byte code，py文件变成pyc文件后，加载的速度有所提高，而且pyc是一种跨平台的字节码，是由python的虚拟机来执行的，这个是类似于JAVA或者.NET的虚拟机的概念      LSB即为最低有效位（Least Significant">
+  <meta name="description" content="在四叶草实习写的作业，正好要求是写md文件，搬运一下">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ctf入门练习前十道">
 <meta property="og:url" content="http://example.com/2023/07/15/ctf%E5%85%A5%E9%97%A8%E7%BB%83%E4%B9%A0%E5%89%8D%E5%8D%81%E9%81%93/index.html">
 <meta property="og:site_name" content="叶子的博客">
-<meta property="og:description" content="misc1.适合作为桌面【考察知识】反编译pyc文件、图片通道LSB 【知识点介绍】pyc是一种二进制文件，是由py文件经过编译后，生成的文件，是一种byte code，py文件变成pyc文件后，加载的速度有所提高，而且pyc是一种跨平台的字节码，是由python的虚拟机来执行的，这个是类似于JAVA或者.NET的虚拟机的概念      LSB即为最低有效位（Least Significant">
+<meta property="og:description" content="在四叶草实习写的作业，正好要求是写md文件，搬运一下">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2023/07/15/ctf%E5%85%A5%E9%97%A8%E7%BB%83%E4%B9%A0%E5%89%8D%E5%8D%81%E9%81%93/1.png">
 <meta property="og:image" content="http://example.com/2023/07/15/ctf%E5%85%A5%E9%97%A8%E7%BB%83%E4%B9%A0%E5%89%8D%E5%8D%81%E9%81%93/2.png">
@@ -59,7 +59,7 @@
 <meta property="og:image" content="http://example.com/2023/07/15/ctf%E5%85%A5%E9%97%A8%E7%BB%83%E4%B9%A0%E5%89%8D%E5%8D%81%E9%81%93/26.png">
 <meta property="og:image" content="http://example.com/2023/07/15/ctf%E5%85%A5%E9%97%A8%E7%BB%83%E4%B9%A0%E5%89%8D%E5%8D%81%E9%81%93/27.png">
 <meta property="article:published_time" content="2023-07-15T02:49:46.000Z">
-<meta property="article:modified_time" content="2023-07-15T02:53:39.507Z">
+<meta property="article:modified_time" content="2023-07-15T03:01:58.242Z">
 <meta property="article:author" content="YeZi">
 <meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
@@ -236,7 +236,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-07-15 10:49:46 / 修改时间：10:53:39" itemprop="dateCreated datePublished" datetime="2023-07-15T10:49:46+08:00">2023-07-15</time>
+              <time title="创建时间：2023-07-15 10:49:46 / 修改时间：11:01:58" itemprop="dateCreated datePublished" datetime="2023-07-15T10:49:46+08:00">2023-07-15</time>
             </span>
 
           
@@ -271,7 +271,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <!--在四叶草实习写的作业，正好要求是写md文件，搬运一下-->
+        <p>在四叶草实习写的作业，正好要求是写md文件，搬运一下</p>
+<span id="more"></span>
 <h2 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h2><h4 id="1-适合作为桌面"><a href="#1-适合作为桌面" class="headerlink" title="1.适合作为桌面"></a>1.适合作为桌面</h4><h5 id="【考察知识】"><a href="#【考察知识】" class="headerlink" title="【考察知识】"></a>【考察知识】</h5><p>反编译pyc文件、图片通道LSB</p>
 <h5 id="【知识点介绍】"><a href="#【知识点介绍】" class="headerlink" title="【知识点介绍】"></a>【知识点介绍】</h5><pre><code>pyc是一种二进制文件，是由py文件经过编译后，生成的文件，是一种byte code，py文件变成pyc文件后，加载的速度有所提高，而且pyc是一种跨平台的字节码，是由python的虚拟机来执行的，这个是类似于JAVA或者.NET的虚拟机的概念    
 
@@ -393,7 +394,10 @@ IDA Pro被广泛应用于软件逆向工程、漏洞研究、恶意软件分析�
     <a href="/2023/07/14/php%E5%AD%A6%E4%B9%A0/" rel="prev" title="php学习">
       <i class="fa fa-chevron-left"></i> php学习
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2023/07/15/ctf%E5%85%A5%E9%97%A8%E7%BB%83%E4%B9%A0%E5%90%8E%E5%8D%81%E9%81%93/" rel="next" title="ctf入门练习后十道">
+      ctf入门练习后十道 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -467,7 +471,7 @@ IDA Pro被广泛应用于软件逆向工程、漏洞研究、恶意软件分析�
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">38</span>
+          <span class="site-state-item-count">39</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -520,13 +524,13 @@ IDA Pro被广泛应用于软件逆向工程、漏洞研究、恶意软件分析�
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">44k</span>
+    <span title="站点总字数">52k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">40 分钟</span>
+    <span title="站点阅读时长">48 分钟</span>
 </div>
 
         
