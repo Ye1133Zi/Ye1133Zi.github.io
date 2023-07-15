@@ -2061,7 +2061,8 @@ https://www.php.net/manual/zh/filters.convert.php
   <entry>
     <title>dirsearch使用</title>
     <url>/2023/07/15/dirsearch%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<p>dirsearch</p>
+<span id="more"></span>
 <p>扫描的目标</p>
 <pre><code>    -u,--url                    目标url
     -l,--url-list=FILE          目标url文件路径 
