@@ -1781,9 +1781,10 @@ system($_POST[&#39;cmd&#39;]);
 <li>文件解析<br>在lIS6.0下，分号后面的不被解析，也就是说wooyun.asp;1.jpg 会被服务器看成是wooyun.<h4 id="IlS-7-0-7-5解析漏洞"><a href="#IlS-7-0-7-5解析漏洞" class="headerlink" title="IlS 7.0/7.5解析漏洞"></a>IlS 7.0/7.5解析漏洞</h4>IIS7/7.5在Fast-CGl运行模式下,在一个文件路径(/xx.jpg)后面加上/xx.php会将/xx.jpg/xx.php解析为php文件。<h4 id="llS1-7-5存在的短文件名漏洞-枚举）"><a href="#llS1-7-5存在的短文件名漏洞-枚举）" class="headerlink" title="llS1 -7.5存在的短文件名漏洞(枚举）"></a>llS1 -7.5存在的短文件名漏洞(枚举）</h4>为了兼容16位MS-DOS程序,Windows为文件名较长的文件(和文件夹)生成了对应的windows 8.3短文件名。在Windows下查看对应的短文件名,可以使用命令dir /<h3 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h3>Tomcat 是一个小型的轻量级应用服务器，在中小型系统和并发访问用户不是很多的场合下被普遍使用，是开发和调试 JSP 程序的首选。</li>
 </ol>
 <p>Tomcat 技术先进、性能稳定，而且免费，因而深受Java 爱好者的喜<br>爱并得到了部分软件开发商的认可，成为目前比较流行的Web 应用服务器。</p>
-<h1 id="第九天7-14"><a href="#第九天7-14" class="headerlink" title="第九天7.14"></a>第九天7.14</h1><h2 id="综合靶场"><a href="#综合靶场" class="headerlink" title="综合靶场"></a>综合靶场</h2><h3 id="dirsearch使用"><a href="#dirsearch使用" class="headerlink" title="dirsearch使用"></a>dirsearch使用</h3><pre><code>    dirsearch -e php,html,js,txt -u http://8.140.36.157:18001/ -x 403
+<h1 id="第九天7-14"><a href="#第九天7-14" class="headerlink" title="第九天7.14"></a>第九天7.14</h1><h2 id="综合靶场"><a href="#综合靶场" class="headerlink" title="综合靶场"></a>综合靶场</h2><h3 id="dirsearch使用"><a href="#dirsearch使用" class="headerlink" title="dirsearch使用"></a>dirsearch使用</h3><pre><code>    例：dirsearch -e php,html,js,txt -u http://8.140.36.157:18001/ -x 403
 </code></pre>
-<p>见笔记：</p>
+<p>后面内容太多我单拎了一个笔记记录<br>见笔记：<br><a href="https://ye1133zi.github.io/2023/07/15/dirsearch%E4%BD%BF%E7%94%A8/">https://ye1133zi.github.io/2023/07/15/dirsearch%E4%BD%BF%E7%94%A8/</a></p>
+<h1 id="第十天7-15"><a href="#第十天7-15" class="headerlink" title="第十天7.15"></a>第十天7.15</h1><h2 id="grep命令"><a href="#grep命令" class="headerlink" title="grep命令"></a>grep命令</h2><p>见菜鸟教程<br><a href="https://www.runoob.com/linux/linux-comm-grep.html">https://www.runoob.com/linux/linux-comm-grep.html</a></p>
 ]]></content>
       <tags>
         <tag>笔记</tag>
