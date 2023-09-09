@@ -146,7 +146,7 @@
 <h3 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h3><h4 id="模糊工具"><a href="#模糊工具" class="headerlink" title="模糊工具"></a>模糊工具</h4><h4 id="锐化工具"><a href="#锐化工具" class="headerlink" title="锐化工具"></a>锐化工具</h4><h4 id="涂抹工具"><a href="#涂抹工具" class="headerlink" title="涂抹工具"></a>涂抹工具</h4><h4 id="减淡工具"><a href="#减淡工具" class="headerlink" title="减淡工具"></a>减淡工具</h4><h4 id="加深工具"><a href="#加深工具" class="headerlink" title="加深工具"></a>加深工具</h4><h4 id="海绵工具"><a href="#海绵工具" class="headerlink" title="海绵工具"></a>海绵工具</h4><h4 id="图章工具"><a href="#图章工具" class="headerlink" title="图章工具"></a>图章工具</h4><h4 id="修复画笔工具"><a href="#修复画笔工具" class="headerlink" title="修复画笔工具"></a>修复画笔工具</h4><p>shift+J  </p>
 <h4 id="污点修复画笔工具"><a href="#污点修复画笔工具" class="headerlink" title="污点修复画笔工具"></a>污点修复画笔工具</h4><h4 id="修补工具"><a href="#修补工具" class="headerlink" title="修补工具"></a>修补工具</h4><h4 id="内容感知移动工具"><a href="#内容感知移动工具" class="headerlink" title="内容感知移动工具"></a>内容感知移动工具</h4><h4 id="红颜工具"><a href="#红颜工具" class="headerlink" title="红颜工具"></a>红颜工具</h4>]]></content>
       <tags>
-        <tag>笔记</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -473,7 +473,7 @@ f.close
 <h2 id="九，彩蛋"><a href="#九，彩蛋" class="headerlink" title="九，彩蛋"></a>九，彩蛋</h2><p>彩蛋1：<br><code>&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=77217003&amp;bvid=BV1XJ411X7Ud&amp;cid=132017557&amp;page=26&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;</code><br>彩蛋2</p>
 ]]></content>
       <tags>
-        <tag>笔记</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1058,7 +1058,7 @@ div.red&#123;
 </ul>
 ]]></content>
       <tags>
-        <tag>笔记</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1067,7 +1067,7 @@ div.red&#123;
     <content><![CDATA[<span id="more"></span>
 ]]></content>
       <tags>
-        <tag>笔记</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1155,7 +1155,7 @@ for i in a:
 <h3 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h3><p><code>ip -a</code>/<code>ifconfig</code>查看ip<br><code>netstat -tunlp</code> 查看端口</p>
 ]]></content>
       <tags>
-        <tag>笔记</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1264,7 +1264,7 @@ for i in a:
 <h2 id="post"><a href="#post" class="headerlink" title="post"></a>post</h2><p>post的请求必须通过编码<br><code>data = urllib.parse.urlencode(data).encode(&#39;utf-8&#39;)</code></p>
 ]]></content>
       <tags>
-        <tag>笔记</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1326,7 +1326,7 @@ for i in a:
 <p>residual income</p>
 <h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
       <tags>
-        <tag>笔记</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1583,7 +1583,7 @@ for i in a:
 <h2 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h2><p> re.I使匹配对大小写不敏感<br> re.L本地化（locale-aware）<br> re.M 多行匹配影响^和$<br> re.S 使.匹配包括换行在内的所有字符<br> re.U 根据Unicode字符集解析字符<br> re.X 灵活格式</p>
 ]]></content>
       <tags>
-        <tag>笔记</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1787,7 +1787,7 @@ system($_POST[&#39;cmd&#39;]);
 <h1 id="第十天7-15"><a href="#第十天7-15" class="headerlink" title="第十天7.15"></a>第十天7.15</h1><h2 id="grep命令"><a href="#grep命令" class="headerlink" title="grep命令"></a>grep命令</h2><p>见菜鸟教程<br><a href="https://www.runoob.com/linux/linux-comm-grep.html">https://www.runoob.com/linux/linux-comm-grep.html</a></p>
 ]]></content>
       <tags>
-        <tag>笔记</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
