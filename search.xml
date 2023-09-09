@@ -146,7 +146,7 @@
 <h3 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h3><h4 id="模糊工具"><a href="#模糊工具" class="headerlink" title="模糊工具"></a>模糊工具</h4><h4 id="锐化工具"><a href="#锐化工具" class="headerlink" title="锐化工具"></a>锐化工具</h4><h4 id="涂抹工具"><a href="#涂抹工具" class="headerlink" title="涂抹工具"></a>涂抹工具</h4><h4 id="减淡工具"><a href="#减淡工具" class="headerlink" title="减淡工具"></a>减淡工具</h4><h4 id="加深工具"><a href="#加深工具" class="headerlink" title="加深工具"></a>加深工具</h4><h4 id="海绵工具"><a href="#海绵工具" class="headerlink" title="海绵工具"></a>海绵工具</h4><h4 id="图章工具"><a href="#图章工具" class="headerlink" title="图章工具"></a>图章工具</h4><h4 id="修复画笔工具"><a href="#修复画笔工具" class="headerlink" title="修复画笔工具"></a>修复画笔工具</h4><p>shift+J  </p>
 <h4 id="污点修复画笔工具"><a href="#污点修复画笔工具" class="headerlink" title="污点修复画笔工具"></a>污点修复画笔工具</h4><h4 id="修补工具"><a href="#修补工具" class="headerlink" title="修补工具"></a>修补工具</h4><h4 id="内容感知移动工具"><a href="#内容感知移动工具" class="headerlink" title="内容感知移动工具"></a>内容感知移动工具</h4><h4 id="红颜工具"><a href="#红颜工具" class="headerlink" title="红颜工具"></a>红颜工具</h4>]]></content>
       <tags>
-        <tag>学习笔记</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -328,7 +328,7 @@ f.close
 <h2 id="上传GitHub"><a href="#上传GitHub" class="headerlink" title="上传GitHub"></a>上传GitHub</h2><p>git init 生成本地仓库<br>git add 添加文件至缓存区<br>git commit -m “”提交到仓库<br>git remote add origin url关联远程仓库<br>git push -u origin master 执行上传</p>
 ]]></content>
       <tags>
-        <tag>学习笔记</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1067,7 +1067,7 @@ div.red&#123;
     <content><![CDATA[<span id="more"></span>
 ]]></content>
       <tags>
-        <tag>学习笔记</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -1326,7 +1326,7 @@ for i in a:
 <p>residual income</p>
 <h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
       <tags>
-        <tag>学习笔记</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
