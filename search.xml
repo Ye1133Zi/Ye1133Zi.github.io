@@ -317,7 +317,7 @@ f.close
 <h2 id="启动第一个dockers容器"><a href="#启动第一个dockers容器" class="headerlink" title="启动第一个dockers容器"></a>启动第一个dockers容器</h2><p>以nginx为例<br>搜索<br><code>docker search nginx</code><br>拉取<br><code>docker pull nginx</code><br>删除<br><code>docker images ls</code>(查找ID)<br><code>docker rmi ID</code><br>运行<br>docker run 参数   镜像的名字/id<br><code>docker run  -d（后台运行） -p 80:80（端口映射） nginx  </code><br>会返回一个容器的id<br><code>netstat -tunlp</code> 查看端口<br><code>ip -a</code>查看ip / <code>ifconfig</code><br>查看容器是否在运行<br><code>doker  ps  </code><br>停止容器<br><code>docker stop 容器id</code><br>开启<br><code>docker start 容器ip</code>  </p>
 ]]></content>
       <tags>
-        <tag>笔记</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -328,7 +328,7 @@ f.close
 <h2 id="上传GitHub"><a href="#上传GitHub" class="headerlink" title="上传GitHub"></a>上传GitHub</h2><p>git init 生成本地仓库<br>git add 添加文件至缓存区<br>git commit -m “”提交到仓库<br>git remote add origin url关联远程仓库<br>git push -u origin master 执行上传</p>
 ]]></content>
       <tags>
-        <tag>笔记</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
