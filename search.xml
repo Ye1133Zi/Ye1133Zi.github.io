@@ -2106,4 +2106,49 @@ https://www.php.net/manual/zh/filters.convert.php
         <tag>学习笔记</tag>
       </tags>
   </entry>
+  <entry>
+    <title>stable_diffusion技巧</title>
+    <url>/2023/09/09/diffusion%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>红拂夜奔读后感</title>
+    <url>/2023/09/09/%E7%BA%A2%E6%8B%82%E5%A4%9C%E5%A5%94%E8%AF%BB%E5%90%8E%E6%84%9F/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>读书笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AlexNet【论文精读】</title>
+    <url>/2023/09/09/AlexNet%E3%80%90%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E3%80%91/</url>
+    <content><![CDATA[<h2 id="key-words"><a href="#key-words" class="headerlink" title="key_words"></a>key_words</h2><p> unsupervised_pre-training  object_recognition  overfitting CNN  </p>
+]]></content>
+      <tags>
+        <tag>读论文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>现代密码学</title>
+    <url>/2023/09/14/%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6/</url>
+    <content><![CDATA[<p>由于自己听不懂学校现代密码学老师在讲什么，只好找资料自己学习了</p>
+<span id="more"></span>
+<h2 id="学习参考"><a href="#学习参考" class="headerlink" title="学习参考"></a>学习参考</h2><p><a href="https://zhuanlan.zhihu.com/p/455104888">初学者怎样学习密码学</a><br><a href="https://github.com/h4m5t/Cryptography">GitHub上的学习资料分享</a><br><a href="https://www.bilibili.com/video/BV1yx411T78i/?vd_source=7403fb183a7b8f189d35254223be7336">Dan Boneh的密码学</a></p>
+<h2 id="Dan-Boneh的密码学"><a href="#Dan-Boneh的密码学" class="headerlink" title="Dan Boneh的密码学"></a>Dan Boneh的密码学</h2><h2 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h2>]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习</title>
+    <url>/2023/09/10/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h2 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h2><p>课程主页：<a href="https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php">https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php</a><br>Github：<a href="https://github.com/Fafa-DL/Lhy_Machine_Learning">https://github.com/Fafa-DL/Lhy_Machine_Learning</a>  </p>
+<h2 id="Chat-GPT"><a href="#Chat-GPT" class="headerlink" title="Chat GPT"></a>Chat GPT</h2><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>文字接龙<br>Instruct GPT<br><a href="https://arxiv.org/abs/2203.02155">https://arxiv.org/abs/2203.02155</a><br>预训练（自督导式学习——》基始模型<br>督导式学习<br>微调（finetue）<br>增强式学习（reinforcement learning,RL)</p>
+<h3 id="prompting-催眠"><a href="#prompting-催眠" class="headerlink" title="prompting(催眠)"></a>prompting(催眠)</h3><h3 id="Neural-Editing"><a href="#Neural-Editing" class="headerlink" title="Neural Editing"></a>Neural Editing</h3><h3 id="AI生成检测"><a href="#AI生成检测" class="headerlink" title="AI生成检测"></a>AI生成检测</h3><h2 id="Regression"><a href="#Regression" class="headerlink" title="Regression"></a>Regression</h2><p>Gradient Descent<br>local optimal<br>global optimal<br>convex<br>overfitting<br>Reghuularization</p>
+<h2 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h2><p>Generative Model<br>Gausssian Distribution<br><img src="/2023/09/10/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/Classification1.png" alt=" "><br>Maximum Likelihood  </p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
 </search>
