@@ -2109,7 +2109,8 @@ https://www.php.net/manual/zh/filters.convert.php
   <entry>
     <title>stable_diffusion技巧</title>
     <url>/2023/09/09/diffusion%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>未完待续</p>
+]]></content>
   </entry>
   <entry>
     <title>红拂夜奔读后感</title>
@@ -2125,7 +2126,8 @@ https://www.php.net/manual/zh/filters.convert.php
   <entry>
     <title>AlexNet【论文精读】</title>
     <url>/2023/09/09/AlexNet%E3%80%90%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%E3%80%91/</url>
-    <content><![CDATA[<h2 id="key-words"><a href="#key-words" class="headerlink" title="key_words"></a>key_words</h2><p> unsupervised_pre-training  object_recognition  overfitting CNN  </p>
+    <content><![CDATA[<p>未完待续</p>
+<h2 id="key-words"><a href="#key-words" class="headerlink" title="key_words"></a>key_words</h2><p> unsupervised_pre-training  object_recognition  overfitting CNN  </p>
 ]]></content>
       <tags>
         <tag>读论文</tag>
@@ -2175,6 +2177,33 @@ https://www.php.net/manual/zh/filters.convert.php
 <h3 id="prompting-催眠"><a href="#prompting-催眠" class="headerlink" title="prompting(催眠)"></a>prompting(催眠)</h3><h3 id="Neural-Editing"><a href="#Neural-Editing" class="headerlink" title="Neural Editing"></a>Neural Editing</h3><h3 id="AI生成检测"><a href="#AI生成检测" class="headerlink" title="AI生成检测"></a>AI生成检测</h3><h2 id="Regression"><a href="#Regression" class="headerlink" title="Regression"></a>Regression</h2><p>Gradient Descent<br>local optimal<br>global optimal<br>convex<br>overfitting<br>Reghuularization</p>
 <h2 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h2><p>Generative Model<br>Gausssian Distribution<br><img src="/2023/09/10/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/Classification1.png" alt=" "><br>Maximum Likelihood  </p>
 <h2 id="Locgistic-Regression"><a href="#Locgistic-Regression" class="headerlink" title="Locgistic Regression"></a>Locgistic Regression</h2><p><img src="/2023/09/10/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/Logist_Regression1.png" alt=" ">  </p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>删除efi分区</title>
+    <url>/2023/10/29/%E5%88%A0%E9%99%A4efi%E5%88%86%E5%8C%BA/</url>
+    <content><![CDATA[<p>双系统中Ubuntu引导项出错，后尝试boot-repair修复失败，决定重装另一个版本，但系统分区未能删除，找到方法如下</p>
+<span id="more"></span>  
+<p>网址：<br>1.<a href="https://blog.csdn.net/sinat_29957455/article/details/88726797">https://blog.csdn.net/sinat_29957455/article/details/88726797</a><br>2.<a href="https://www.easeus.com/partition-master/delete-efi-system-partition.html">https://www.easeus.com/partition-master/delete-efi-system-partition.html</a></p>
+<p>使用diskpart进入分区执行命令 SET ID=ebd0a0a2-b9e5-4433-87c0-68b6b72699c7</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>知识蒸馏</title>
+    <url>/2023/10/24/%E7%9F%A5%E8%AF%86%E8%92%B8%E9%A6%8F/</url>
+    <content><![CDATA[<p>知识蒸馏学习笔记</p>
+<span id="more"></span>
+<h2 id="知识蒸馏相关论文"><a href="#知识蒸馏相关论文" class="headerlink" title="知识蒸馏相关论文"></a>知识蒸馏相关论文</h2><ol>
+<li>Distilling the knowledge in a neural network –<a href="https://readpaper.com/paper/1821462560">https://readpaper.com/paper/1821462560</a></li>
+</ol>
+<h2 id="知识蒸馏开源代码"><a href="#知识蒸馏开源代码" class="headerlink" title="知识蒸馏开源代码"></a>知识蒸馏开源代码</h2><ol>
+<li>MMRazor–<a href="https://github.com/open-mmlab/mmrazor">https://github.com/open-mmlab/mmrazor</a></li>
+<li>RepDistill–<a href="https://github.com/HobbitLong/RepDistiller">https://github.com/HobbitLong/RepDistiller</a>  </li>
+<li></li>
+</ol>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
