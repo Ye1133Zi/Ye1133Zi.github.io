@@ -1888,10 +1888,17 @@ IDA Pro被广泛应用于软件逆向工程、漏洞研究、恶意软件分析�
   <entry>
     <title>php学习</title>
     <url>/2023/07/14/php%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>感觉有必要自学一下php</p>
+    <content><![CDATA[<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>感觉有必要自学一下php</p>
 <span id="more"></span>
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><h3 id="静态网站与动态网站"><a href="#静态网站与动态网站" class="headerlink" title="静态网站与动态网站"></a>静态网站与动态网站</h3><h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>域名、IP、DNS、端口（物理和虚拟）、</p>
-<h3 id="静态网站的访问"><a href="#静态网站的访问" class="headerlink" title="静态网站的访问"></a>静态网站的访问</h3><p>URL：Uniformed Resource Location</p>
+<h3 id="静态网站的访问"><a href="#静态网站的访问" class="headerlink" title="静态网站的访问"></a>静态网站的访问</h3><p>URL：Uniformed Resource Location<br>URI：Uniformed Resource Identify    </p>
+<h3 id="动态网址"><a href="#动态网址" class="headerlink" title="动态网址"></a>动态网址</h3><p>服务器端解析、数据库<br><img src="/1.jpeg"></p>
+<h3 id="获取Apache"><a href="#获取Apache" class="headerlink" title="获取Apache"></a>获取Apache</h3><h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><p>bin、htdocs、conf、modules<br>gtdocs Apache默认的主机地址</p>
+<h4 id="Httpd-exe"><a href="#Httpd-exe" class="headerlink" title="Httpd.exe"></a>Httpd.exe</h4><p>服务器进程，可以用来查看功能和错误</p>
+<ol>
+<li>httpd.exe -M    static 和shared </li>
+<li>httpd.exe -t   验证配置文件是否有效<h4 id="配置默认站点"><a href="#配置默认站点" class="headerlink" title="配置默认站点"></a>配置默认站点</h4>网站文件夹所在位置：Httpd.conf:Docunmentroot<br>为用户区别名：Httpd.conf:ServerName（可以使用listen监听端口）<h3 id="获取PHP"><a href="#获取PHP" class="headerlink" title="获取PHP"></a>获取PHP</h3><h4 id="目录-1"><a href="#目录-1" class="headerlink" title="目录"></a>目录</h4>ext：扩展、php.exe:php解释器、apache支持包、development和production配置文件  <h3 id="apache加载php"><a href="#apache加载php" class="headerlink" title="apache加载php"></a>apache加载php</h3><h4 id="在apache配置文件中配置php模块"><a href="#在apache配置文件中配置php模块" class="headerlink" title="在apache配置文件中配置php模块"></a>在apache配置文件中配置php模块</h4><h4 id="分配工作给php"><a href="#分配工作给php" class="headerlink" title="分配工作给php"></a>分配工作给php</h4><h4 id="加载php配置文件"><a href="#加载php配置文件" class="headerlink" title="加载php配置文件"></a>加载php配置文件</h4><h3 id="获取MYSQL"><a href="#获取MYSQL" class="headerlink" title="获取MYSQL"></a>获取MYSQL</h3><h4 id="目录-2"><a href="#目录-2" class="headerlink" title="目录"></a>目录</h4>bin目录常用命令  C/S，B/S</li>
+</ol>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
@@ -2077,6 +2084,48 @@ https://www.php.net/manual/zh/filters.convert.php
 <p>字典格式设置<br>        -w,–wordlists              自定义wordlist(以逗号分隔)<br>        –prefixes                  添加自定义前缀<br>        –suffixes              添加自定义后缀<br>        –only-selected            筛选出指定的文件拓展名或无文件拓展名的目录<br>        –remove-extensions         移除所有wordlist的后缀名 (admin.php –&gt; admin)<br>        -U, –uppercase            将字典转换为大写<br>        -L, –lowercase           将字典转换为小写<br>        -C, –capital              第一个字母大写剩下字母小写<br>响应结果的过滤<br>        -i                        保留的响应状态码(以逗号分隔,支持指定范围) 如(-i 200,300-399)<br>        -x                        排除的响应状态码(以逗号分隔,支持指定范围)  如(-x 301,500-599)<br>        –exclude-sizes             通过大小排除(以逗号分隔) 如(123B,4KB)<br>        –exclude-texts         通过文本内容排除响应(‘Not found’, ‘Error’)<br>        –exclude-regexps        通过正则匹配排除响应(‘Not foun[a-z]{1}’, ‘^Error$’)<br>        –exclude-redirects     通过正则跳转目标排除响应(‘<a href="https://okta.com/*&#39;">https://okta.com/*&#39;</a>)<br>        –minimal           最小响应报文长度<br>        –maximal           最大响应报文长度</p>
 <p>请求相关设置<br>        -m,–http-method          HTTP请求方法 默认为GET<br>        -d,–data           HTTP请求数据<br>        -H,–header          请求头 如(-H ‘Referer: example.com’ -H ‘Accept: <em>/</em>‘)<br>        –header-list=FILE      从文件中读取请求头<br>        -F,–follow-redirects        跟随HTTP跳转<br>        –user-agent            设置user-agent字段<br>        –cookie             设置cookie<br>连接相关设置<br>        –timeout=TIMEOUT         连接超时时间<br>        –ip=IP             服务器ip地址<br>        -s DELAY, –delay=DELAY     每次请求间隔的时间<br>        –proxy=PROXY         代理url 支持HTTP和SOCKS代理 如(localhost:8080, socks5://localhost:8088)<br>        –proxy-list=FILE         包含代理服务器的地址<br>        –matches-proxy=PROXY       Proxy to replay with found paths<br>        –scheme             默认的策略 用于从文件中导入请求或url中不包含协议<br>        –max-retries           最大重连次数<br>        -b,–request-by-hostname   强制通过域名连接，(默认为了速度,使用ip连接)<br>        –exit-on-error            出现错误时退出<br>        –debug              Debug模式<br>通用设置<br>        –version  显示dirsearch的版本<br>        -h –help   帮助提示<br>        -r,–recursive              递归爆破<br>        -R,–recursion-depth      最大递归的层数<br>        -t,–threads             线程数<br>        –subdirs                 扫描子目录 如(admin/ 则<a href="http://www.example.com/admin/+%E5%AD%97%E5%85%B8">www.example.com/admin/+字典</a>)<br>        –exclude-subdirs         在递归扫描中排除的子目录<br>        -q,–quiet-mode             安静模式<br>        –full-url                  打印出完整的url<br>        –no-color                  无颜色输出信息<br>输出模式<br>        –simple-report=OUTPUTFILE<br>        –plain-text-report=OUTPUTFILE<br>        –json-report=OUTPUTFILE<br>        –xml-report=OUTPUTFILE<br>        –markdown-report=OUTPUTFILE<br>        –csv-report=OUTPUTFILE</p>
 ]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习作业</title>
+    <url>/2023/12/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%BD%9C%E4%B8%9A/</url>
+    <content><![CDATA[<p>机器学习大作业，要求实现svm、k-means和lenet或resnt，记录一下</p>
+<span id="more"></span>
+<h2 id="鸢尾花数据集的使用"><a href="#鸢尾花数据集的使用" class="headerlink" title="鸢尾花数据集的使用"></a>鸢尾花数据集的使用</h2><p>参考专栏：<a href="https://zhuanlan.zhihu.com/p/466092810"></a>,注意到其有150个样本，4类属性，样本类别数为4</p>
+<h3 id="导入sklearn"><a href="#导入sklearn" class="headerlink" title="导入sklearn"></a>导入sklearn</h3><p>sklearn 全称 scikit-learn，导入时一需要注意名称，二需要视网络情况换源，三网上命令如果下载报错，需要换下顺序<br>我使用的命令：<br><code>pip install scikit-learn -i https://pypi.tuna.tsinghua.edu.cn/simple/</code></p>
+<h3 id="打乱顺序，批量读入数据"><a href="#打乱顺序，批量读入数据" class="headerlink" title="打乱顺序，批量读入数据"></a>打乱顺序，批量读入数据</h3><p>参考李沐老师的动手深度学习<a href="https://zh-v2.d2l.ai/chapter_linear-networks/linear-regression-scratch.html#id2"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def data_iter(batch_size,x,y):</span><br><span class="line">    num_examples = len(x)</span><br><span class="line">    print(num_examples)</span><br><span class="line">    indices = list(range(num_examples))</span><br><span class="line">    random.shuffle(indices)</span><br><span class="line">    for i in range(0, num_examples, batch_size):</span><br><span class="line">        batch_indices = np.array(</span><br><span class="line">            indices[i: min(i + batch_size, num_examples)])</span><br><span class="line">        yield x[batch_indices],y[batch_indices]</span><br></pre></td></tr></table></figure>
+<h3 id="划分数据集"><a href="#划分数据集" class="headerlink" title="划分数据集"></a>划分数据集</h3><p><code>x_train,x_test,y_train,y_test = train_test_split(ir_feature,ir_label,random_state=14 )</code></p>
+<h2 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h2><p>这里我选择使用skleran自带的svm函数，参考文章<a href="https://blog.csdn.net/Claire_chen_jia/article/details/110916001"></a>，<a href="https://zhuanlan.zhihu.com/p/134091240"></a>详细参数介绍如下:</p>
+<h3 id="sk-learn中svm参数选择"><a href="#sk-learn中svm参数选择" class="headerlink" title="sk-learn中svm参数选择"></a>sk-learn中svm参数选择</h3><p>kernel：选择的核函数</p>
+<ul>
+<li>linear：线性核函数<br>  线性核函数，是在数据线性可分的情况下使用的， 运算速度快，效果好。不足在于它不能处理线性不可分的数据。</li>
+<li>poly：多项式核函数<pre><code>  多项式核函数可以将数据从低维空间映射到高维空间，但参数比较多，计算量大。
+</code></pre>
+</li>
+<li>rbf：高斯核函数（默认）<pre><code>  高斯核函数同样可以将样本映射到高维空间， 但相比于多项式核函数来说所需的参数比较少，通常性能不错，所以是默认使用的核函数。
+</code></pre>
+</li>
+<li>sigmoid：sigmoid 核函数<pre><code>  了解深度学习的同学应该知道 sigmoid 经常用在神经网络的映射中。 因此当选用 sigmoid 核函数时，SVM 实现的是多层神经网络。
+</code></pre>
+</li>
+</ul>
+<p>C：代表目标函数的惩罚系数，默认为1.0，也就是正则化，也就是软间隔的调整</p>
+<ul>
+<li>当C越大时，分类器的准确性越高，所以容错率越低，泛化能力就变差。</li>
+<li>当C越小时，分类器的准确性降低，但容错率增大，泛化能力越强</li>
+</ul>
+<p>gamma：和函数系数，默认为样本特征的倒数。1/n_features</p>
+<h2 id="k-means"><a href="#k-means" class="headerlink" title="k-means"></a>k-means</h2><p>代码思路为初始化，进行循环归类，并更新中心点，图形化输出结果</p>
+<h3 id="图形化输出"><a href="#图形化输出" class="headerlink" title="图形化输出"></a>图形化输出</h3><p>这里使用matplotlib进行结果输出</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 绘制聚类结果的散点图</span><br><span class="line">matplotlib.use(&#x27;TkAgg&#x27;)</span><br><span class="line">for i in range(k):</span><br><span class="line">    plt.scatter(ir_feature[cls == i, 0], ir_feature[cls == i, 1], c=colors[i], label=f&#x27;Cluster &#123;i+1&#125;&#x27;)</span><br><span class="line">#plt.figure()</span><br><span class="line">plt.xlabel(&#x27;Feature 1&#x27;)</span><br><span class="line">plt.ylabel(&#x27;Feature 2&#x27;)</span><br><span class="line">plt.title(&#x27;K-Means Clustering of Iris Dataset&#x27;)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<h2 id="LeNet"><a href="#LeNet" class="headerlink" title="LeNet"></a>LeNet</h2><h3 id="模型实现"><a href="#模型实现" class="headerlink" title="模型实现"></a>模型实现</h3><p>参考：李沐老师的<a href="https://www.bilibili.com/video/BV1t44y1r7ct/?spm_id_from=333.999.0.0&vd_source=7403fb183a7b8f189d35254223be7336">动手学深度学习v2</a><br>两个卷积层+两个池化层+多层感知机</p>
+<h3 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h3><p><a href="https://www.autodl.com/home">AutoDL算力云</a><br>CPU ：12 核心<br>内存：90 GB<br>GPU ：NVIDIA GeForce RTX 3080 Ti, 1<br>pytorch 2.0.0,python3.8,ubuntu20.04</p>
+<h3 id="mnist数据集"><a href="#mnist数据集" class="headerlink" title="mnist数据集"></a>mnist数据集</h3><p><code>train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size=batch_size)</code></p>
+<h3 id="GPU加速"><a href="#GPU加速" class="headerlink" title="GPU加速"></a>GPU加速</h3><p>将张量移动到GPUdevice上，详见<a href="https://zh.d2l.ai/chapter_deep-learning-computation/use-gpu.html#id2"></a></p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
       <tags>
         <tag>学习笔记</tag>
       </tags>
