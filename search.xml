@@ -2251,4 +2251,26 @@ https://www.php.net/manual/zh/filters.convert.php
         <tag>学习笔记</tag>
       </tags>
   </entry>
+  <entry>
+    <title>ubuntu配置clash及解决端口占用报错</title>
+    <url>/2024/04/23/ubuntu%E9%85%8D%E7%BD%AEclash%E5%8F%8A%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<p>为Ubuntu服务器配置clash</p>
+<span id="more"></span>
+
+<p>基础教程：<a href="https://opclash.com/article/302.html">https://opclash.com/article/302.html</a>  </p>
+<p>我遇到了clash启动失败，9090和7890端口日志中显示被占用，但是查看端口占用进程只有clash一项的问题，解决参考如下博客：<br><a href="https://blog.csdn.net/YaoXingzhiLeo/article/details/131725630">https://blog.csdn.net/YaoXingzhiLeo/article/details/131725630</a><br>报错日志：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">base)root dserver:~/config/clash<span class="comment">#systemctl status clash</span></span><br><span class="line">clash.service-clash A rule-based tunnel <span class="keyword">in</span> Go</span><br><span class="line">Loaded:loaded (/etc/systemd/system/clash.service;enabled;vendor preset:enabled)</span><br><span class="line">Active:active (running)since Tue 2024-04-23 16:16:24 CST;1h 19min ago</span><br><span class="line">Docs:https://github.com/Dreamacro/clash/wiki</span><br><span class="line">Main PID:4155156 (clash)</span><br><span class="line">Tasks:25 (<span class="built_in">limit</span>:76924)</span><br><span class="line">Memory:21.4M</span><br><span class="line">CGroup:/system.slice/clash.service</span><br><span class="line">-4155156 /usr/<span class="built_in">local</span>/bin/clash-f /root/.config/clash/config.yaml</span><br><span class="line">23 16:16:24 server systemd[1]:started clash -A rule-based tunnel <span class="keyword">in</span> Go.</span><br><span class="line">23 16:16:24 server clash[4155156]:time=<span class="string">&quot;2024-04-23T16:16:24+08:00&quot;</span>level=info msg=<span class="string">&quot;Can&#x27;t find MMDB,start download&quot;</span></span><br><span class="line">23 16:16:26 server clash[4155156]:time=<span class="string">&quot;2024-04-23T16:16:26+08:00&quot;</span>level=info msg=<span class="string">&quot;start initial compatible provider&quot;</span></span><br><span class="line">23 16:16:26 server clash[4155156]:time=<span class="string">&quot;2024-04-23T16:16:26+08:00&quot;</span>level=info msg=<span class="string">&quot;Start initial compatible provider</span></span><br><span class="line"><span class="string">23 16:16:26 server clash[4155156]:time=&quot;</span>2024-04-23T16:16:26+08:00<span class="string">&quot;level=info msg=&quot;</span>start initial compatible provider XSUS<span class="string">&quot;</span></span><br><span class="line"><span class="string">23 16:16:26 server clash[4155156]:time=&quot;</span>2024-04-23T16:16:26+08:00<span class="string">&quot;level=error msg=&quot;</span>create addr 7890 tcp listener error.err:listen tcp 7890:<span class="built_in">bind</span>:address already <span class="keyword">in</span> use<span class="string">&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>附Clash as a Service的常用命令及web可视化配置clash网址：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">//运行</span><br><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl <span class="built_in">enable</span> clash</span><br><span class="line">systemctl start clash</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">//查看状态</span><br><span class="line">systemctl status clash</span><br><span class="line">journalctl -eu clash.service</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://birkhofflee.github.io/clash/introduction/service.html%3E">clash as a Service</a></p>
+<p><a href="http://clash.razord.top/#/proxies">clash.razord.top</a></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
 </search>
