@@ -2341,7 +2341,7 @@ https://www.php.net/manual/zh/filters.convert.php
 <p>简而言之，共一步,在LSW1中输入命令</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">qos lr outbound cir 500000 cbs 62500000</span><br><span class="line">qos lr inbound cir 500000 cbs 62500000</span><br></pre></td></tr></table></figure>
 
-<h2 id="任务四：ARP攻击的防护"><a href="#任务四：ARP攻击的防护" class="headerlink" title="任务四：ARP攻击的防护"></a>任务四：ARP攻击的防护</h2><p>通过指令arp speed-limit source-ip xxx maximum xxx进行ARP限速。arp speed-limit为配置ARP速率限制的操作，source-ip xxx设置限制的源IP地址，即限制此IP的ARP请求，maximum xxx设置最大的请求或响应数。这个指令的作用是限制指定源IP地址发出的ARP请求或响应的数量，以防止ARP泛洪攻击或其他恶意行为对网络造成过大的负载或干扰。</p>
+<h3 id="任务四：ARP攻击的防护"><a href="#任务四：ARP攻击的防护" class="headerlink" title="任务四：ARP攻击的防护"></a>任务四：ARP攻击的防护</h3><p>通过指令arp speed-limit source-ip xxx maximum xxx进行ARP限速。arp speed-limit为配置ARP速率限制的操作，source-ip xxx设置限制的源IP地址，即限制此IP的ARP请求，maximum xxx设置最大的请求或响应数。这个指令的作用是限制指定源IP地址发出的ARP请求或响应的数量，以防止ARP泛洪攻击或其他恶意行为对网络造成过大的负载或干扰。</p>
 <p>通过指令arp anti-attack rate-limit 50 1对端口进行限速并完成防护，arp anti-attack rate-limit配置了ARP反攻击速率限制的操作，50表示限制为50个ARP请求或响应，1表示时间间隔。这个指令的作用是限制在1秒内收到ARP请求或响应的数量不超过50个  。</p>
 <p>通过指令arp anti-attack entry-check fixed-mac enable进行ARP表项固化，arp anti-attack指示了配置ARP反攻击功能的操作，entry-check表示对ARP表中的条目进行检查，以确保它们的合法性，fixed-mac表示对于已知的合法ARP条目，将固定MAC地址，enable表示启用上述设置。这个指令的作用是在ARP反攻击功能中启用条目检查，并对已知的合法ARP条目固定MAC地址，以提高网络安全性，防止ARP欺骗攻击等恶意行为</p>
 <p>我们通过指令arp anti-attack gateway-duplicate enable进行ARP防网关冲突，其中gateway-duplicate表示检测网关地址的重复性。这个指令的作用是在ARP反攻击功能中启用对网关地址的重复检测。ARP反攻击功能会监测网络中的ARP消息，以检测是否有多个设备宣称拥有相同的网关IP地址，从而帮助防止ARP欺骗攻击。</p>
@@ -2409,6 +2409,7 @@ https://www.php.net/manual/zh/filters.convert.php
 <p>答： 在LSW1中对应的PC1的端口设置。</p>
 <p>问题二：解释ARP泛洪攻击的原理。</p>
 <p>答：ARP泛洪攻击主要有两种。第一种是攻击者发出大量能解析但无效的ARP请求，导致网关无法正常响应，从而造成网关部分的CPU利用率上升难以响应正常服务请求。一种是攻击者发送大量不能被解析的ARP请求，网关会被错误的ARP表充满导致无法更新维护正常ARP表，消耗网络带宽资源。</p>
+<h3 id="宋奔同学的笔记"><a href="#宋奔同学的笔记" class="headerlink" title="宋奔同学的笔记"></a>宋奔同学的笔记</h3><p><img src="/b1.png" alt="b1"><br><img src="/b2.png" alt="b2"></p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="%5Bggls.world%5D(http://www.ggls.world/archives/xi-dian--b-ce---ji-suan-ji-wang-luo-zong-he-shi)">西电-B测-计算机网络综合实验 | 广哥拉斯的树洞</a></p>
 <p><a href="https://support.huawei.com/enterprise/zh/doc/EDOC1100034260/8f1fd612#dc_cfg_ARP_SEC_0009">华为官网：配置防ARP泛洪攻击</a></p>
 <p><a href="https://support.huawei.com/enterprise/zh/doc/EDOC1000178157/e8b59bee">华为官网：配置ARP表现攻击</a>  </p>
