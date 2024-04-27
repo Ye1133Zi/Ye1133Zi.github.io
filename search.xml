@@ -2337,9 +2337,9 @@ https://www.php.net/manual/zh/filters.convert.php
 
 <h3 id="对主机A进行限速"><a href="#对主机A进行限速" class="headerlink" title="对主机A进行限速"></a>对主机A进行限速</h3><p>根据题目要求，我们要对PC1所连接的网络设备端口进出入口进行限速，限制在端口最大速率的50%。将其对应到实验的网络拓扑图，即LSW1中的GE0/0/0接口。首先，我们需要进入LSW1的命令行界面，通过指令进入系统视图并进入GE0/0/0接口视图。我们使用如下命令完成对接口的限速：qos lr inbound/outbound cir xxx cbs xxx。  </p>
 <p>在对指令的解释之前，我们首先需要了解GE和E的区别。GE是千兆(1000MB)以太网口，E是百兆(100MB)以太网口，在此我们使用千兆以太网口。在指令中，qos是服务质量，lr是信息速率，inbound是入口方向，outbound是出口方向，cir是承诺信息速率即限速后的速率，cbs是承诺突发大小即突发情况下能通过的最大速率。</p>
-<p>本实验中我们使用千兆以太网接口，因此其速率为1000MB=1000*1024Kb，对其限速到50%即0.5*1000*1024Kb=512000kb。到此，我们已经完成了任务三，完成了对PC1的限速。  </p>
+<p>本实验中我们使用千兆以太网接口，但从接口角度其速率为1000MB=1000*1024Kb，对其限速到50%即0.5*1000*1024Kb=512000kb，但是PC段速率为百兆，取较慢段速率的50%为5*100*1024Kb=51200kb。到此，我们已经完成了任务三，完成了对PC1的限速。  </p>
 <p>简而言之，共一步,在LSW1中输入命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">qos lr outbound cir 500000 cbs 62500000</span><br><span class="line">qos lr inbound cir 500000 cbs 62500000</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">qos lr outbound cir 50000 cbs 6250000</span><br><span class="line">qos lr inbound cir 50000 cbs 6250000</span><br></pre></td></tr></table></figure>
 
 <h3 id="任务四：ARP攻击的防护"><a href="#任务四：ARP攻击的防护" class="headerlink" title="任务四：ARP攻击的防护"></a>任务四：ARP攻击的防护</h3><p>通过指令arp speed-limit source-ip xxx maximum xxx进行ARP限速。arp speed-limit为配置ARP速率限制的操作，source-ip xxx设置限制的源IP地址，即限制此IP的ARP请求，maximum xxx设置最大的请求或响应数。这个指令的作用是限制指定源IP地址发出的ARP请求或响应的数量，以防止ARP泛洪攻击或其他恶意行为对网络造成过大的负载或干扰。</p>
 <p>通过指令arp anti-attack rate-limit 50 1对端口进行限速并完成防护，arp anti-attack rate-limit配置了ARP反攻击速率限制的操作，50表示限制为50个ARP请求或响应，1表示时间间隔。这个指令的作用是限制在1秒内收到ARP请求或响应的数量不超过50个  。</p>
