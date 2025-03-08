@@ -2133,6 +2133,21 @@ https://www.php.net/manual/zh/filters.convert.php
   <entry>
     <title>解决远程游戏语音回音：VB-Audio+windows录音侦听</title>
     <url>/2025/03/08/%E8%A7%A3%E5%86%B3%E8%BF%9C%E7%A8%8B%E6%B8%B8%E6%88%8F%E8%AF%AD%E9%9F%B3%E5%9B%9E%E9%9F%B3%EF%BC%9AVB-Audio-windows%E5%BD%95%E9%9F%B3%E4%BE%A6%E5%90%AC/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>用免费的VB-Audio+windows录音侦听巧妙解决远程控制游戏时的语音回音问题</p>
+<span id="more"></span>
+<h2 id="前情背景："><a href="#前情背景：" class="headerlink" title="前情背景："></a>前情背景：</h2><p>上周和好友使用网易uu远程控制，同时挂着微信语音，朋友那边出现了回音：远程控制软件默认会捕获系统所有声音，包括正在输出的朋友语音，又输出回朋友的耳朵。</p>
+<h2 id="初步解决方法："><a href="#初步解决方法：" class="headerlink" title="初步解决方法："></a>初步解决方法：</h2><p>第一步：被控端分出两个扬声器，一个只传游戏声音给远程控制软件，一个只传对方语言，这会导致被控端需要同时听两个扬声器（带两个耳机）</p>
+<h2 id="VB-Audio原理"><a href="#VB-Audio原理" class="headerlink" title="VB-Audio原理"></a>VB-Audio原理</h2><p>VB-Audio一个虚拟声卡驱动，它的作用是让你的扬声器（电脑声音）变成麦克风（语音输入），而windows正好可以侦听一个麦克风给一个扬声器</p>
+<h2 id="最终方案"><a href="#最终方案" class="headerlink" title="最终方案"></a>最终方案</h2><h3 id="步骤1：安装虚拟声卡"><a href="#步骤1：安装虚拟声卡" class="headerlink" title="步骤1：安装虚拟声卡"></a>步骤1：安装虚拟声卡</h3><ol>
+<li>前往VB-Audio官网下载VB-CABLE Driver</li>
+<li>安装成功后，在Windows声音设置中会出现CABLE Input（虚拟麦克风）和CABLE Output（虚拟扬声器）<h3 id="步骤2：配置音频输出分流"><a href="#步骤2：配置音频输出分流" class="headerlink" title="步骤2：配置音频输出分流"></a>步骤2：配置音频输出分流</h3></li>
+<li>设置默认播放设备：右键系统托盘音量图标 → 打开声音设置 → 将默认播放设备设为CABLE Output，此时系统所有声音（包括游戏音效、朋友语音）会输出到虚拟声卡</li>
+<li>单独指定语音软件输出：打开微信/Discord等语音软件 → 进入音频设置 → 将扬声器手动改为物理耳机/扬声器。原理：强制语音软件的音频直连真实耳机，与虚拟声卡隔离</li>
+<li>步骤3：启用Windows静音侦听打开控制面板 → 硬件和声音 → 声音 → 进入录制选项卡右键CABLE Input → 选择属性 → 进入侦听选项卡勾选侦听此设备。关键点：此操作会将虚拟声卡的声音“复制”到真实耳机，但由于语音软件已直连真实耳机，实际不会产生重复播放<h2 id="示意图"><a href="#示意图" class="headerlink" title="示意图"></a>示意图</h2><img src="/%E7%A4%BA%E6%84%8F%E5%9B%BE1.jpg" alt="1"></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>生活</tag>
+      </tags>
   </entry>
 </search>
