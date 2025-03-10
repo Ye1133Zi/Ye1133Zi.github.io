@@ -2140,14 +2140,36 @@ https://www.php.net/manual/zh/filters.convert.php
 <h2 id="VB-Audio原理"><a href="#VB-Audio原理" class="headerlink" title="VB-Audio原理"></a>VB-Audio原理</h2><p>VB-Audio一个虚拟声卡驱动，它的作用是让你的扬声器（电脑声音）变成麦克风（语音输入），而windows正好可以侦听一个麦克风给一个扬声器</p>
 <h2 id="最终方案"><a href="#最终方案" class="headerlink" title="最终方案"></a>最终方案</h2><h3 id="步骤1：安装虚拟声卡"><a href="#步骤1：安装虚拟声卡" class="headerlink" title="步骤1：安装虚拟声卡"></a>步骤1：安装虚拟声卡</h3><ol>
 <li>前往VB-Audio官网下载VB-CABLE Driver</li>
-<li>安装成功后，在Windows声音设置中会出现CABLE Input（虚拟麦克风）和CABLE Output（虚拟扬声器）<h3 id="步骤2：配置音频输出分流"><a href="#步骤2：配置音频输出分流" class="headerlink" title="步骤2：配置音频输出分流"></a>步骤2：配置音频输出分流</h3></li>
-<li>设置默认播放设备：右键系统托盘音量图标 → 打开声音设置 → 将默认播放设备设为CABLE Output，此时系统所有声音（包括游戏音效、朋友语音）会输出到虚拟声卡</li>
-<li>单独指定语音软件输出：打开微信/Discord等语音软件 → 进入音频设置 → 将扬声器手动改为物理耳机/扬声器。原理：强制语音软件的音频直连真实耳机，与虚拟声卡隔离</li>
-<li>步骤3：启用Windows静音侦听打开控制面板 → 硬件和声音 → 声音 → 进入录制选项卡右键CABLE Input → 选择属性 → 进入侦听选项卡勾选侦听此设备。关键点：此操作会将虚拟声卡的声音“复制”到真实耳机，但由于语音软件已直连真实耳机，实际不会产生重复播放<h2 id="示意图"><a href="#示意图" class="headerlink" title="示意图"></a>示意图</h2><img src="/%E7%A4%BA%E6%84%8F%E5%9B%BE1.jpg" alt="1"></li>
+<li>安装成功后，在Windows声音设置中会出现CABLE Input（虚拟麦克风）和CABLE Output（虚拟扬声器）</li>
 </ol>
+<h3 id="步骤2：配置音频输出分流"><a href="#步骤2：配置音频输出分流" class="headerlink" title="步骤2：配置音频输出分流"></a>步骤2：配置音频输出分流</h3><ol>
+<li>设置默认播放设备：右键系统托盘音量图标 → 打开声音设置 → 将默认播放设备设为CABLE Output，此时系统所有声音（包括游戏音效、朋友语音）会输出到虚拟声卡  </li>
+<li>单独指定语音软件输出：打开微信/Discord等语音软件 → 进入音频设置 → 将扬声器手动改为物理耳机/扬声器。原理：强制语音软件的音频直连真实耳机，与虚拟声卡隔离s</li>
+<li>步骤3：启用Windows静音侦听打开控制面板 → 硬件和声音 → 声音 → 进入录制选项卡右键CABLE Input → 选择属性 → 进入侦听选项卡勾选侦听此设备。关键点：此操作会将虚拟声卡的声音“复制”到真实耳机，但由于语音软件已直连真实耳机，实际不会产生重复播放</li>
+</ol>
+<h2 id="示意图"><a href="#示意图" class="headerlink" title="示意图"></a>示意图</h2><p><img src="/2025/03/08/%E8%A7%A3%E5%86%B3%E8%BF%9C%E7%A8%8B%E6%B8%B8%E6%88%8F%E8%AF%AD%E9%9F%B3%E5%9B%9E%E9%9F%B3%EF%BC%9AVB-Audio-windows%E5%BD%95%E9%9F%B3%E4%BE%A6%E5%90%AC/1.png" alt="1"></p>
 ]]></content>
       <tags>
         <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多模态伪造检测论文阅读笔记</title>
+    <url>/2025/03/09/%E5%A4%9A%E6%A8%A1%E6%80%81%E4%BC%AA%E9%80%A0%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>多模态伪造检测论文阅读整理</p>
+<span id="more"></span>
+<h2 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h2><h3 id="Evolving-from-Single-modal-to-Multi-modal-Facial-Deepfake-Detection-A-Survey"><a href="#Evolving-from-Single-modal-to-Multi-modal-Facial-Deepfake-Detection-A-Survey" class="headerlink" title="Evolving from Single-modal to Multi-modal  Facial Deepfake Detection: A Survey"></a>Evolving from Single-modal to Multi-modal  Facial Deepfake Detection: A Survey</h3><p>发表期刊：无<br>总结样研究下：</p>
+<ol>
+<li>多模态伪造方式[5] [6] [7]</li>
+<li>多模态融合技术[10], [11], [12], [13]</li>
+<li>深度伪造技术<br>[21], [24], [25], [26], [27], [28], [32], [33]</li>
+<li>不局限于人脸的伪造检测数据集<br>RWDF-23 [42], Zoom-DF [43], and AI-Face dataset [44]. The RWDF-23 dataset [42]<h2 id="基于大模型的多模态伪造检测"><a href="#基于大模型的多模态伪造检测" class="headerlink" title="基于大模型的多模态伪造检测"></a>基于大模型的多模态伪造检测</h2></li>
+</ol>
+<p>=</p>
+<p>发表期刊：TCSVT</p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
 </search>
