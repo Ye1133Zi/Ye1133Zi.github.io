@@ -2291,7 +2291,8 @@ https://www.php.net/manual/zh/filters.convert.php
     <url>/2025/10/10/%E4%BD%BF%E7%94%A8ubuntu%E8%87%AA%E5%B8%A6%E7%9A%84%E5%85%B1%E4%BA%AB%E5%8A%9F%E8%83%BD%E8%BF%9B%E8%A1%8C%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/</url>
     <content><![CDATA[<p><strong>通过路由器的端口映射功能，实验室可以将服务器的任意端口映射到路由器的指定端口，从而实现外部网络对内部局域网服务器的访问。同时，结合Ubuntu自带的共享功能和Windows的远程桌面连接功能，可以实现远程控制，提供低延迟和高分辨率的屏幕显示体验。</strong>    </p>
 <span id="more"></span> 
-<p>我使用过todesk、向日葵、teamviewer、anydesk等远程控制软件，但是todesk、向日葵延迟高，anydesk开始收费，只剩下teamviewer，登录还比较困难，延迟相对也高，在实验室师兄的推荐下开始配置Ubuntu的RDP远程连接</p>
+<p>我曾使用过多种远程控制软件，包括 ToDesk、向日葵、TeamViewer 和 AnyDesk。但在实际使用中，我遇到了一些问题。ToDesk 和向日葵的延迟较高，使用体验不理想；而 AnyDesk 开始收费，这让我无法继续使用。剩下的选择是 TeamViewer，但其登录过程繁琐，且延迟也相对较高。</p>
+<p>在实验室师兄的推荐下，我决定尝试配置 Ubuntu 的 RDP 远程连接。通过 Ubuntu 自带的共享功能，我能够有效地进行远程桌面操作，而且不再需要依赖收费或不稳定的第三方软件。</p>
 <h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>Ubuntu（Ubuntu22.04以后版本）自带RDP远程桌面，微软的 远程桌面协议（RDP） 是一个允许从一台计算机到另一台计算机进行图形化远程桌面连接的协议。RDP 的工作原理是让一台主机运行软件，允许其他几台计算机连接到它。</p>
 <h2 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h2><p><strong>ubuntu被控端设置：</strong></p>
 <ol>
