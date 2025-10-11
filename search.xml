@@ -2307,7 +2307,7 @@ https://www.php.net/manual/zh/filters.convert.php
 </ol>
 <p>参考连接<br><a href="https://blog.csdn.net/weixin_43654123/article/details/120844566">Ubuntu 设置屏幕分辨率显示Unknown display</a></p>
 <h3 id="禁用wayland协议"><a href="#禁用wayland协议" class="headerlink" title="禁用wayland协议"></a>禁用wayland协议</h3><p>Wayland 是一种显示服务器协议，它主要用于在操作系统中处理图形显示相关的事务。启用该协议会导致一些问题，例如图形界面渲染错误、远控软件、某些硬件不兼容等，网上也有说因这个协议XRDP黑屏、向日葵、腾讯会议连接失败，例如<a href="https://zhuanlan.zhihu.com/p/626916568">1</a>，<a href="https://blog.csdn.net/xie__jin__cheng/article/details/147560651">2</a>，<a href="https://blog.csdn.net/skysky97/article/details/122257588">3</a></p>
-<p>禁用方法很简单，找到/etc/gdm3/custom.conf，将WaylandEnable=false取消掉</p>
+<p>禁用方法很简单，找到/etc/gdm3/custom.conf，将WaylandEnable=false的注释井号键#取消掉</p>
 <h2 id="走过的弯路"><a href="#走过的弯路" class="headerlink" title="走过的弯路"></a>走过的弯路</h2><h3 id="ubuntu-20-0-4"><a href="#ubuntu-20-0-4" class="headerlink" title="ubuntu 20.0.4"></a>ubuntu 20.0.4</h3><p>ubuntu20.0.4未自带RDP，需要安装XRDP ，其是 RDP 的一个开源实现，不需要运行任何专有程序。XRDP 不仅试图遵循 RDP，而且还与常规的 RDP 客户端兼容，如 Remmina 和 GNOME Boxes。但在安装过程中也有许多麻烦(<strong>建议直接备份后升级ubuntu系统</strong>)</p>
 <h4 id="XRDP安装"><a href="#XRDP安装" class="headerlink" title="XRDP安装"></a>XRDP安装</h4><p><code>sudo apt install xrdp</code></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt install xserver-xorg-core</span><br><span class="line">sudo apt install xserver-xorg-input-all</span><br><span class="line">sudo apt install xorgxrdp</span><br></pre></td></tr></table></figure>
