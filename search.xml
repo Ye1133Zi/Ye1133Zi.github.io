@@ -2430,7 +2430,8 @@ https://www.php.net/manual/zh/filters.convert.php
   <entry>
     <title>Tmux 命令</title>
     <url>/2026/06/04/Tmux-%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<p>Tmux 命令</p>
+<span id="more"></span>
 
 <h1 id="tmux-常用命令速查"><a href="#tmux-常用命令速查" class="headerlink" title="tmux 常用命令速查"></a>tmux 常用命令速查</h1><h2 id="1-最常用命令"><a href="#1-最常用命令" class="headerlink" title="1. 最常用命令"></a>1. 最常用命令</h2><p>新建会话：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tmux new -s work</span><br></pre></td></tr></table></figure>
@@ -2679,7 +2680,7 @@ https://www.php.net/manual/zh/filters.convert.php
 <p>这就是 tmux 最核心的用法。</p>
 ]]></content>
       <tags>
-        <tag>常用命令 技术</tag>
+        <tag>常用命令</tag>
       </tags>
   </entry>
 </search>
