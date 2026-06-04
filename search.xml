@@ -2346,4 +2346,85 @@ https://www.php.net/manual/zh/filters.convert.php
         <tag>学习笔记</tag>
       </tags>
   </entry>
+  <entry>
+    <title>SSH 反向隧道共享本地代理</title>
+    <url>/2026/06/04/SSH-%E5%8F%8D%E5%90%91%E9%9A%A7%E9%81%93%E5%85%B1%E4%BA%AB%E6%9C%AC%E5%9C%B0%E4%BB%A3%E7%90%86/</url>
+    <content><![CDATA[<p>通过 SSH 反向端口转发（Remote Port Forwarding），将本地 Windows 电脑的代理共享给远程服务器。</p>
+<span id="more"></span>
+<h1 id="SSH反向隧道共享本地代理：配置与排错指南"><a href="#SSH反向隧道共享本地代理：配置与排错指南" class="headerlink" title="SSH反向隧道共享本地代理：配置与排错指南"></a>SSH反向隧道共享本地代理：配置与排错指南</h1><h2 id="1-原理简述"><a href="#1-原理简述" class="headerlink" title="1. 原理简述"></a>1. 原理简述</h2><p>简单来说，就是把本地 Windows 电脑上的代理网络，通过 SSH 隧道共享给远程 Linux 服务器使用。</p>
+<ul>
+<li><strong>Windows端</strong>：运行代理软件（如 Clash / v2rayN），开启“允许局域网连接”（Allow LAN），并监听一个特定端口（假设为 <code>7897</code>）。</li>
+<li><strong>SSH隧道</strong>：连接服务器时加上端口转发参数，把服务器针对 7897 端口的请求，原封不动地传回本地 Windows 的 7897 端口。</li>
+<li><strong>Linux端</strong>：设置环境变量，让服务器上的程序（如 pip、git、curl）把网络请求都发往本地的 7897 端口。</li>
+</ul>
+<hr>
+<h2 id="2-配置步骤"><a href="#2-配置步骤" class="headerlink" title="2. 配置步骤"></a>2. 配置步骤</h2><h3 id="2-1-Windows-端配置-自动连接"><a href="#2-1-Windows-端配置-自动连接" class="headerlink" title="2.1 Windows 端配置 (自动连接)"></a>2.1 Windows 端配置 (自动连接)</h3><p>为了不用每次都手动输入带有端口转发参数的长命令，可以直接修改 Windows 本地的 SSH 配置文件。打开 <code>C:\Users\你的用户名\.ssh\config</code>，添加以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host my_server</span><br><span class="line">    HostName 10.200.17.81</span><br><span class="line">    User intern</span><br><span class="line">    # 核心：将服务器的 7897 端口转发到本地 Windows 的 7897 端口</span><br><span class="line">    RemoteForward 7897 127.0.0.1:7897</span><br><span class="line">    # 保持连接，防止由于长时间无操作导致 SSH 自动断开</span><br><span class="line">    ServerAliveInterval 60</span><br><span class="line">    ServerAliveCountMax 3</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-Linux-端配置-环境变量快捷开关"><a href="#2-2-Linux-端配置-环境变量快捷开关" class="headerlink" title="2.2 Linux 端配置 (环境变量快捷开关)"></a>2.2 Linux 端配置 (环境变量快捷开关)</h3><p>登录服务器后，系统需要知道使用这个代理端口。可以将以下别名添加到服务器的 <code>~/.bashrc</code> 文件末尾，方便随时开启或关闭代理：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 开启代理</span></span><br><span class="line"><span class="built_in">alias</span> proxy_on=<span class="string">&#x27;</span></span><br><span class="line"><span class="string">    export http_proxy=http://127.0.0.1:7897</span></span><br><span class="line"><span class="string">    export https_proxy=http://127.0.0.1:7897</span></span><br><span class="line"><span class="string">    export HTTP_PROXY=http://127.0.0.1:7897</span></span><br><span class="line"><span class="string">    export HTTPS_PROXY=http://127.0.0.1:7897</span></span><br><span class="line"><span class="string">    git config --global http.proxy http://127.0.0.1:7897</span></span><br><span class="line"><span class="string">    git config --global https.proxy http://127.0.0.1:7897</span></span><br><span class="line"><span class="string">    echo &quot;代理已开启 (端口: 7897)&quot;</span></span><br><span class="line"><span class="string">&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭代理</span></span><br><span class="line"><span class="built_in">alias</span> proxy_off=<span class="string">&#x27;</span></span><br><span class="line"><span class="string">    unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY</span></span><br><span class="line"><span class="string">    git config --global --unset http.proxy</span></span><br><span class="line"><span class="string">    git config --global --unset https.proxy</span></span><br><span class="line"><span class="string">    echo &quot;代理已关闭&quot;</span></span><br><span class="line"><span class="string">&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>添加后运行 <code>source ~/.bashrc</code> 生效。</p>
+<hr>
+<h2 id="3-常见报错与排查方法"><a href="#3-常见报错与排查方法" class="headerlink" title="3. 常见报错与排查方法"></a>3. 常见报错与排查方法</h2><p>在实际使用中，SSH 连接可能会因为网络波动而意外断开。重新连接时，最容易遇到以下两个报错：</p>
+<h3 id="报错-1：端口被占用"><a href="#报错-1：端口被占用" class="headerlink" title="报错 1：端口被占用"></a>报错 1：端口被占用</h3><ul>
+<li><strong>提示</strong>：登录 SSH 时看到 <code>Warning: remote port forwarding failed for listen port 7897</code>。</li>
+<li><strong>原因</strong>：之前的 SSH 连接意外断开了，但服务器端没反应过来，后台还有残留进程在占用 7897 端口，导致新的隧道建不起来。</li>
+<li><strong>解决办法</strong>：在服务器上找出占用该端口的进程并强制结束它：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">fuser -k 7897/tcp</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+<p><em>注：如果没有 <code>fuser</code> 命令，可以用 <code>lsof -i :7897</code> 查出 PID，然后用 <code>kill -9</code> 结束。</em><br><strong>清理完毕后，必须退出当前 SSH 会话并重新连接。</strong></p>
+<h3 id="报错-2：连接被拒绝-隧道已断开"><a href="#报错-2：连接被拒绝-隧道已断开" class="headerlink" title="报错 2：连接被拒绝 (隧道已断开)"></a>报错 2：连接被拒绝 (隧道已断开)</h3><ul>
+<li><strong>提示</strong>：运行程序时报错 <code>write after end</code>，或者用 curl 测试时报错 <code>Connection refused</code>。</li>
+<li><strong>原因</strong>：虽然你在终端里执行过 <code>proxy_on</code>，系统知道要把请求发给 7897 端口，但是底层的 SSH 隧道其实已经断了，数据发过去没人接收。</li>
+<li><strong>解决办法（标准重置流程）</strong>：</li>
+</ul>
+<ol>
+<li>在服务器端执行 <code>fuser -k 7897/tcp</code> 确保端口没被占用。</li>
+<li>输入 <code>exit</code> 彻底断开当前的 SSH 连接窗口。</li>
+<li>在 Windows 上重新发起 SSH 连接。只要登录时没有跳出“端口被占用”的警告，隧道就重新建好了。</li>
+</ol>
+<hr>
+<h2 id="4-连接测试"><a href="#4-连接测试" class="headerlink" title="4. 连接测试"></a>4. 连接测试</h2><p>隧道建好后，通过以下两步确认代理是否真正生效：</p>
+<p><strong>第一步：测试隧道是否连通</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -I http://127.0.0.1:7897</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>如果返回 <code>HTTP/1.1 400 Bad Request</code>，这是<strong>正常且成功</strong>的现象。因为 7897 是代理端口，收到直接的 HTTP 请求返回 400，恰恰证明 Windows 端的代理软件已经收到了信号，隧道是通畅的。</p>
+<p><strong>第二步：测试外网访问</strong><br>开启代理环境变量，直接测试外部网站：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">proxy_on</span><br><span class="line">curl -I https://www.google.com</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>如果返回 <code>HTTP/1.1 200 Connection established</code> 紧接着 <code>HTTP/2 200</code>，说明从服务器到外网的链路已经完全通畅。</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>传统网安面经</title>
+    <url>/2026/06/04/%E4%BC%A0%E7%BB%9F%E7%BD%91%E5%AE%89%E9%9D%A2%E7%BB%8F/</url>
+    <content><![CDATA[<p>传统网络安全面试题目搜集整理</p>
+<span id="more"></span>]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AI prompt 搜集</title>
+    <url>/2026/06/04/AI-prompt-%E6%90%9C%E9%9B%86/</url>
+    <content><![CDATA[<p>跟AI对话总结的或则网上的好用提示词整理积累</p>
+<span id="more"></span>
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><h3 id="科研论文"><a href="#科研论文" class="headerlink" title="科研论文"></a>科研论文</h3><h3 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h3><p>这是一份经过提炼的通用型高质量博客写作提示词。无论是写职场经验、读书笔记、生活感悟还是行业分析，只要套用这个结构，AI 都能输出干脆利落、逻辑严密且高度结构化的优质长文，告别“AI味”的废话。</p>
+<p>你可以直接复制并在任何 AI 工具中使用：</p>
+<p>📝 通用高质量博客写作系统提示词<br>Markdown</p>
+<h1 id="角色设定"><a href="#角色设定" class="headerlink" title="角色设定"></a>角色设定</h1><p>你是一位资深的内容创作者和高级编辑。你的文字风格犀利、克制、逻辑严密，崇尚“少即是多”的极客表达美学。</p>
+<h1 id="任务目标"><a href="#任务目标" class="headerlink" title="任务目标"></a>任务目标</h1><p>根据我提供的主题或大纲，输出一篇高质量、结构化、可读性极强的博客文章。</p>
+<h1 id="语言与风格绝对禁忌-核心原则"><a href="#语言与风格绝对禁忌-核心原则" class="headerlink" title="语言与风格绝对禁忌 (核心原则)"></a>语言与风格绝对禁忌 (核心原则)</h1><ol>
+<li><strong>拒绝“AI味”套话</strong>：严禁使用“在当今快节奏的社会中”、“随着时代的发展”、“总而言之”、“毋庸置疑”等毫无信息量的开头和过渡句。</li>
+<li><strong>拒绝冗长说教</strong>：不要像教科书一样平铺直叙，把复杂的概念用大白话和生动的比喻讲清楚。</li>
+<li><strong>克制的情感</strong>：保持客观、专业且带有洞察力的语气，不要过度热情或使用过多的感叹号。</li>
+</ol>
+<h2 id="编程"><a href="#编程" class="headerlink" title="编程"></a>编程</h2>]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
 </search>
