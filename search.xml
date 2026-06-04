@@ -2332,4 +2332,18 @@ https://www.php.net/manual/zh/filters.convert.php
         <tag>运维</tag>
       </tags>
   </entry>
+  <entry>
+    <title>深度学习中的loss的学习笔记</title>
+    <url>/2025/10/11/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84loss%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p><strong>整理下深度学习中的Loss</strong></p>
+<span id="more"></span>
+<h2 id="BCELoss"><a href="#BCELoss" class="headerlink" title="BCELoss"></a>BCELoss</h2><p>二元交叉熵损失函数<br><img src="/2025/10/11/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84loss%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2025-10-11_181231.png" alt="alt text"></p>
+<p><a href="https://zhuanlan.zhihu.com/p/170558960">BCELoss()与BCEWithLogitsLoss()区别</a></p>
+<h2 id="MSELoss"><a href="#MSELoss" class="headerlink" title="MSELoss"></a>MSELoss</h2><p><img src="/2025/10/11/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84loss%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2025-10-11_181537.png" alt="alt text"><br><a href="https://zhuanlan.zhihu.com/p/704991790">PyTorch nn.MSELoss() 均方误差损失函数</a></p>
+<h2 id="EMDLoss"><a href="#EMDLoss" class="headerlink" title="EMDLoss"></a>EMDLoss</h2><p>在深度学习中，EMD Loss（Earth Mover’s Distance Loss），也称为 Wasserstein 距离损失，是一种衡量两个分布之间差异的损失函数<br><a href="https://zhuanlan.zhihu.com/p/270675634">点云距离度量：完全解析EMD距离(Earth Mover’s Distance)</a></p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
 </search>

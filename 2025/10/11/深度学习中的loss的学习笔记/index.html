@@ -20,18 +20,23 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","width":200,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="分享生活，分享技术">
-<meta property="og:type" content="website">
-<meta property="og:title" content="叶子的博客">
-<meta property="og:url" content="http://example.com/tags/%E7%AC%94%E8%AE%B0/index.html">
+  <meta name="description" content="整理下深度学习中的Loss">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深度学习中的loss的学习笔记">
+<meta property="og:url" content="http://example.com/2025/10/11/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84loss%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="叶子的博客">
-<meta property="og:description" content="分享生活，分享技术">
+<meta property="og:description" content="整理下深度学习中的Loss">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/10/11/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84loss%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2025-10-11_181231.png">
+<meta property="og:image" content="http://example.com/2025/10/11/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84loss%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2025-10-11_181537.png">
+<meta property="article:published_time" content="2025-10-11T10:09:09.000Z">
+<meta property="article:modified_time" content="2025-10-12T06:43:29.000Z">
 <meta property="article:author" content="YeZi">
-<meta property="article:tag" content="生活,转载,技术">
+<meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2025/10/11/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84loss%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2025-10-11_181231.png">
 
-<link rel="canonical" href="http://example.com/tags/%E7%AC%94%E8%AE%B0/">
+<link rel="canonical" href="http://example.com/2025/10/11/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84loss%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
 
 <script id="page-configurations">
@@ -39,12 +44,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>标签: 笔记 | 叶子的博客</title>
+  <title>深度学习中的loss的学习笔记 | 叶子的博客</title>
   
 
 
@@ -172,177 +177,126 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">笔记
-          <small>标签</small>
-        </h2>
-      </div>
+<div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/10/11/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84loss%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">    
+<span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="YeZi">
+      <meta itemprop="description" content="分享生活，分享技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          深度学习中的loss的学习笔记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-10-11 18:09:09" itemprop="dateCreated datePublished" datetime="2025-10-11T18:09:09+08:00">2025-10-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-10-12 14:43:29" itemprop="dateModified" datetime="2025-10-12T14:43:29+08:00">2025-10-12</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>217</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2023</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-07-06T13:01:52+08:00"
-              content="2023-07-06">
-          07-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2023/07/06/%E5%9B%9B%E5%8F%B6%E8%8D%89%E2%80%94%E2%80%94%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url">
-            <span itemprop="name">四叶草——生产实习笔记</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-02-26T19:58:33+08:00"
-              content="2022-02-26">
-          02-26
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/02/26/python%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/" itemprop="url">
-            <span itemprop="name">python爬虫学习</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-02-05T17:43:44+08:00"
-              content="2022-02-05">
-          02-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/02/05/css%E5%AD%A6%E4%B9%A0/" itemprop="url">
-            <span itemprop="name">css学习</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-01-31T11:16:24+08:00"
-              content="2022-01-31">
-          01-31
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/01/31/html%E5%AD%A6%E4%B9%A0/" itemprop="url">
-            <span itemprop="name">html学习</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-01-11T18:38:33+08:00"
-              content="2022-01-11">
-          01-11
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/01/11/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0/" itemprop="url">
-            <span itemprop="name">正则表达式学习</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-12-25T14:30:49+08:00"
-              content="2021-12-25">
-          12-25
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/12/25/ubuntu%E5%AD%A6%E4%B9%A0/" itemprop="url">
-            <span itemprop="name">ubuntu学习</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-12-25T14:28:07+08:00"
-              content="2021-12-25">
-          12-25
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/12/25/docker%E5%AD%A6%E4%B9%A0/" itemprop="url">
-            <span itemprop="name">docker学习</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
+        <p><strong>整理下深度学习中的Loss</strong></p>
+<span id="more"></span>
+<h2 id="BCELoss"><a href="#BCELoss" class="headerlink" title="BCELoss"></a>BCELoss</h2><p>二元交叉熵损失函数<br><img src="/2025/10/11/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84loss%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2025-10-11_181231.png" alt="alt text"></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/170558960">BCELoss()与BCEWithLogitsLoss()区别</a></p>
+<h2 id="MSELoss"><a href="#MSELoss" class="headerlink" title="MSELoss"></a>MSELoss</h2><p><img src="/2025/10/11/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84loss%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2025-10-11_181537.png" alt="alt text"><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/704991790">PyTorch nn.MSELoss() 均方误差损失函数</a></p>
+<h2 id="EMDLoss"><a href="#EMDLoss" class="headerlink" title="EMDLoss"></a>EMDLoss</h2><p>在深度学习中，EMD Loss（Earth Mover’s Distance Loss），也称为 Wasserstein 距离损失，是一种衡量两个分布之间差异的损失函数<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/270675634">点云距离度量：完全解析EMD距离(Earth Mover’s Distance)</a></p>
 
     </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>可加微信，打赏随意。</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpg" alt="YeZi 微信支付">
+        <p>微信支付</p>
+      </div>
+
   </div>
-  
-  
-  
+</div>
 
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag"># 学习笔记</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2025/10/10/%E4%BD%BF%E7%94%A8ubuntu%E8%87%AA%E5%B8%A6%E7%9A%84%E5%85%B1%E4%BA%AB%E5%8A%9F%E8%83%BD%E8%BF%9B%E8%A1%8C%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5/" rel="prev" title="使用ubuntu自带的共享功能进行远程连接">
+      <i class="fa fa-chevron-left"></i> 使用ubuntu自带的共享功能进行远程连接
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -395,6 +349,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#BCELoss"><span class="nav-number">1.</span> <span class="nav-text">BCELoss</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MSELoss"><span class="nav-number">2.</span> <span class="nav-text">MSELoss</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#EMDLoss"><span class="nav-number">3.</span> <span class="nav-text">EMDLoss</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
